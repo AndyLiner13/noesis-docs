@@ -1,0 +1,328 @@
+# ContentPresenter Class
+
+## namespace [Noesis](https://www.noesisengine.com/docs/Gui.Core._ClassHierarchy.html#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.controls.contentpresenter.aspx)
+
+Displays the content of [ContentControl](https://www.noesisengine.com/docs/Gui.Core._ContentControl.html).
+
+## Inheritance Hierarchy
+
+- [DispatcherObject](https://www.noesisengine.com/docs/Gui.DependencySystem._DispatcherObject.html)
+- [DependencyObject](https://www.noesisengine.com/docs/Gui.DependencySystem._DependencyObject.html)
+- [Visual](https://www.noesisengine.com/docs/Gui.Core._Visual.html)
+- [UIElement](https://www.noesisengine.com/docs/Gui.Core._UIElement.html)
+- [FrameworkElement](https://www.noesisengine.com/docs/Gui.Core._FrameworkElement.html)
+- ContentPresenter
+- [ScrollContentPresenter](https://www.noesisengine.com/docs/Gui.Core._ScrollContentPresenter.html)
+
+## Properties
+
+### From [FrameworkElement](https://www.noesisengine.com/docs/Gui.Core._FrameworkElement.html)
+
+| Property | Description |
+|----------|-------------|
+| ActualHeight | Gets the rendered height of this element. |
+| ActualWidth | Gets the rendered width of this element. |
+| BlendingMode | Gets or sets a value indicating how the element's contents are mixed with the background |
+| ContextMenu | Gets or sets the context menu element that should appear whenever the context menu is requested through user interface (UI) from within this element. |
+| Cursor | Gets or sets the cursor that displays when the mouse pointer is over this element. |
+| DataContext | Gets or sets the data context for an element when it participates in data binding |
+| DefaultStyleKey | Gets or sets the key to use to reference the style for this control, when theme styles are used or defined |
+| FlowDirection | Gets or sets the direction that text and other UI elements flow within any parent element that controls their layout |
+| FocusVisualStyle | Gets or sets a property that enables customization of appearance, effects, or other style characteristics that will apply to this element when it captures keyboard focus |
+| ForceCursor | Gets or sets a value that indicates whether this FrameworkElement should force the UI to render the cursor as declared by this element's Cursor property. |
+| Height | Gets or sets the suggested height of the element. |
+| HorizontalAlignment | Gets or sets the horizontal alignment characteristics applied to this element when it is composed within a parent element, such as a panel or items control |
+| InputScope | Gets or sets the context for input used by this element. The input scope, which modifies how input from alternative input methods is interpreted |
+| LayoutTransform | Gets or sets a graphics transformation that should apply to this element when layout is performed |
+| Margin | Gets or sets the outer margin of an element. |
+| MaxHeight | Gets or sets the maximum height constraint of the element. |
+| MaxWidth | Gets or sets the maximum width constraint of the element. |
+| MinHeight | Gets or sets the minimum height constraint of the element. |
+| MinWidth | Gets or sets the minimum width constraint of the element. |
+| Name | Gets or sets the identifying name of the element. The name provides a reference so that code-behind, such as event handler code, can refer to a markup element after it is constructed during processing by a XAML processor. |
+| OverridesDefaultStyle | Gets or sets a value that indicates whether this element incorporates style properties from theme styles |
+| PPAAIn | Gets or sets the value of the contraction of each vertex along the normal for PPAA. This property is inherited down by the visual tree |
+| PPAAMode | Gets or sets a value that indicates whether antialiasing geometry is generated for this element. This property is inherited down by the visual tree |
+| PPAAOut | Gets or sets the value of the extrusion of each vertex along the normal for PPAA. This property is inherited down by the visual tree |
+| Parent | Gets the logical parent element of this element |
+| Resources | Gets or sets the locally-defined resource dictionary |
+| Style | Gets or sets the style used by this element when it is rendered |
+| Tag | Gets or sets an arbitrary object value that can be used to store custom information about this element |
+| TemplatedParent | Gets or sets the template parent of this element. This property is not relevant if the element was not created through a template |
+| ToolTip | Gets or sets the tool-tip object that is displayed for this element in the user interface |
+| Triggers | Get the trigger collection |
+| UseLayoutRounding | Gets or sets a value that indicates whether layout rounding should be applied to this element's size and position during layout |
+| VerticalAlignment | Gets or sets the vertical alignment characteristics applied to this element when it is composed within a parent element such as a panel or items control. |
+| Width | Gets or sets the width of the element |
+
+### From [UIElement](https://www.noesisengine.com/docs/Gui.Core._UIElement.html)
+
+| Property | Description |
+|----------|-------------|
+| AllowDrop | Gets or sets a value indicating whether this element can be used as the target of a drag-and-drop operation |
+| Clip | Gets or sets the geometry used to define the outline of the contents of an element |
+| ClipToBounds | Gets or sets a value indicating whether to clip the content of this element (or content coming from the child elements of this element) to fit into the size of the containing element |
+| CommandBindings | Gets a collection of CommandBinding objects associated with this element |
+| DesiredSize | Gets control's desired size (calculated after Measure process) |
+| Effect | Gets or sets the bitmap effect to apply to the element |
+| Focusable | Gets or sets a value that indicates whether the element can receive focus |
+| InputBindings | Gets a collection of InputBinding objects associated with this element |
+| IsDoubleTapEnabled | Gets or sets a value that determines whether this element can originate DoubleTapped events |
+| IsEnabled | Gets or sets a value indicating whether this element is enabled in the user interface |
+| IsFocused | Indicates whether this element has the focus |
+| IsHitTestVisible | Gets or sets a value that declares whether this element can possibly be returned as a hit test result from some portion of its rendered content |
+| IsHoldingEnabled | Gets or sets a value that determines whether this element can originate Holding events |
+| IsKeyboardFocusWithin | Gets a value indicating whether keyboard focus is anywhere within the element or its visual tree child elements |
+| IsKeyboardFocused | Gets a value indicating whether this element has keyboard focus |
+| IsManipulationEnabled | Gets or sets a value that indicates whether manipulation events are enabled on this element |
+| IsMouseCaptureWithin | Gets a value that determines whether mouse capture is held by this element or by child elements in its visual tree |
+| IsMouseCaptured | Gets a value indicating whether the mouse is captured to this element |
+| IsMouseDirectlyOver | Gets a value that indicates whether the position of the mouse pointer corresponds to hit test results, which take element compositing into account. |
+| IsMouseOver | Gets a value indicating whether the mouse pointer is located over this element (including child elements in the visual tree) |
+| IsRightTapEnabled | Gets or sets a value that determines whether this element can originate RightTapped events |
+| IsTapEnabled | Gets or sets a value that determines whether this element can originate Tapped events |
+| IsVisible | Indicates whether this element is visible in the user interface |
+| Opacity | Gets or sets the opacity factor applied to the entire element when it is rendered |
+| OpacityMask | Gets or sets an opacity mask, as a Brush implementation that is applied to any alpha-channel masking for the rendered content of this element |
+| RenderSize | Gets calculated (during Arrange) render size |
+| RenderTransform | Gets or sets transform information that affects the rendering position of this element |
+| RenderTransformOrigin | Gets or sets the center point of any possible render transform declared by RenderTransform, relative to the bounds of the element |
+| Transform3D | Gets or sets the 3D effect to apply when rendering this element |
+| Visibility | Gets or sets the user interface visibility of this element |
+
+### From [Visual](https://www.noesisengine.com/docs/Gui.Core._Visual.html)
+
+| Property | Description |
+|----------|-------------|
+| View | Gets the view where this visual is connected to |
+
+### From [DispatcherObject](https://www.noesisengine.com/docs/Gui.DependencySystem._DispatcherObject.html)
+
+| Property | Description |
+|----------|-------------|
+| ThreadId | Gets the thread this DispatcherObject is associated with. Returns NoThreadId when this object is not attached to any thread. |
+
+### Own Properties
+
+| Property | Description |
+|----------|-------------|
+| Content | Gets or sets content |
+| ContentSource | Gets or sets the base name to use during automatic aliasing. |
+| ContentStringFormat | Gets or sets the format used to display the content of the control as a string. |
+| ContentTemplate | Gets or sets the template used to display the content of the control. |
+| ContentTemplateSelector | Gets or sets the DataTemplateSelector, which allows the application writer to provide custom logic for choosing the template that is used to display the content of the control. |
+
+## Attached Properties
+
+ContentPresenter has no attached properties
+
+## Methods
+
+### From [FrameworkElement](https://www.noesisengine.com/docs/Gui.Core._FrameworkElement.html)
+
+| Method | Description |
+|--------|-------------|
+| AncestorChanged() | Notifies when an ancestor has changed its parent |
+| AncestorNameScopeChanged() | Notifies when a NameScope in an ancestor has changed any of its items |
+| AncestorResourcesChanged() | Notifies when a change occurred in the resources dictionary of this element or an ancestor |
+| ApplyTemplate() | Template management Called on every Measure. Returns true if Visuals were added to the tree |
+| BringIntoView() | Attempts to bring this element into view, within any scrollable regions it is contained within. |
+| BringIntoView(targetRectangle) | Attempts to bring the provided region size of this element into view, within any scrollable regions it is contained within. |
+| ClearFrameworkTemplate() | Clears current template |
+| Clone(parent, templatedParent, template_) | Returns a clone of this element. Used when applying a template |
+| ConnectEvent(source, event, handler) | Attaches specified event to code-behind content. Return false when code-behind does not define the specified event handler |
+| ConnectField(object, name) | Attached specified named object to code-behind field |
+| FindName(name) | Provides accessors that simplifies access to the NameScope registration methods |
+| FindResource(key) | Finds a resource looking in the logical parent chain |
+| GetBindingExpression(dp) | Returns a binding expression if the target property has an active binding; otherwise, returns null |
+| GetFrameworkTemplate() | Gets applied template on this element |
+| GetParentOrTemplatedParent() | Gets the logical parent or the templated parent when logical parent is not available |
+| GetStateGroupsRoot() | Gets root for VisualState management |
+| GetTemplateChild(name) | Looks for a named element in the applied template |
+| GetTemplateRoot() | Gets the root element of the applied template |
+| GetTimeManager() | Gets the TimeManager that controls current element |
+| IsLoaded() | Gets a value that indicates whether this element has been loaded for presentation. |
+| SetBinding(dp, binding) | Attaches a binding to this element, based on the provided binding object |
+| SetBinding(dp, path) | Attaches a binding to this element, based on the provided source property name as a path qualification to the data source |
+| SetResourceReference(dp, name) | Sets up a resource reference in the target property to search for a resource with the specified name |
+
+### From [UIElement](https://www.noesisengine.com/docs/Gui.Core._UIElement.html)
+
+| Method | Description |
+|--------|-------------|
+| AddHandler(ev, handler) | Adds a handler to the specified routed event |
+| Arrange(finalRect) | Positions child elements and determines a size for a UIElement. Parent elements call this method from their ArrangeCore implementation to form a recursive layout update. This method constitutes the second pass of a layout update |
+| CaptureMouse() | Attempts to force capture of the mouse to this element |
+| CaptureTouch(touchDevice) | Attempts to force capture of a touch to this element |
+| Focus() | Attempts to set focus to this element |
+| Focus(engage) | Attempts to set focus to this element indicating if control should be engaged or not |
+| GetKeyboard() | Gets keyboard input manager |
+| GetMouse() | Public methods in UIElement Gets mouse input manager |
+| GetTouchCaptured(touchDevice) | Gets element captured by the specified touch device |
+| GetUIParent() | Gets the logical or visual parent for this element |
+| GetUIView() | Finds the View where this element is connected to traversing visual or logical ancestors |
+| InvalidateArrange() | Invalidates the arrange state (layout) for the element. After the invalidation, the element will have its layout updated, which will occur asynchronously unless subsequently forced by UpdateLayout |
+| InvalidateMeasure() | Invalidates the measurement state (layout) for the element |
+| InvalidateVisual() | Invalidates the rendering of the element, and forces a complete new layout pass. OnRender is called after the layout cycle is completed |
+| IsArrangeValid() | Indicates if arrange is valid |
+| IsMeasureValid() | Indicates if measured size is valid |
+| Measure(availableSize) | Updates the DesiredSize of a UIElement. Parent elements call this method from their own MeasureCore implementations to form a recursive layout update. Calling this method constitutes the first pass of a layout update in the layout system |
+| MoveFocus(request) | Request to move the focus from this element to another element. Returns true if focus is moved successfully, returns false if there is no next element |
+| PredictFocus(direction) | When overridden in a derived class, returns the element that would receive focus for a specified focus traversal direction, without actually moving focus to that element |
+| RaiseEvent(e) | Raises a specific routed event. The RoutedEvent to be raised is identified within the RoutedEventArgs instance that is provided (as the RoutedEvent property of that event data) |
+| ReleaseAllTouchCaptures() | Releases all captured touch devices from this element |
+| ReleaseMouseCapture() | Releases the mouse capture, if this element held the capture |
+| ReleaseTouchCapture(touchDevice) | Attempts to release the specified touch device from this element |
+| RemoveHandler(ev, handler) | Removes a handler from the specified routed event |
+| TranslatePoint(point, relativeTo) | Translates a point relative to this element to coordinates of the specified element |
+| UpdateLayout() | Ensures that all visual child elements of this element are properly updated for layout |
+
+### From [Visual](https://www.noesisengine.com/docs/Gui.Core._Visual.html)
+
+| Method | Description |
+|--------|-------------|
+| EnsureRenderId(updater) | Ensures that a render node exists for this visual |
+| FindCommonVisualAncestor(visual) | Finds the common ancestor of two visuals objects If visual is the same object as this, the common ancestor will be the parent |
+| GetRenderTreeId() | Gets RenderTree's identifier |
+| IsAncestorOf(visual) | Determines whether the visual object is an ancestor of the descendant visual object This object is not considered to be an ancestor of visual if they are the same |
+| IsConnectedToView() | Indicates if this visual has been connected to a View |
+| IsDescendantOf(visual) | Determines whether the visual object is a descendant of the ancestor visual object This object is not considered to be a descendant of visual if they are the same |
+| IsInRenderTree() | Indicates if a render node has been created in the RenderTree for this visual |
+| IsInvalidated() | Indicates if this visual is invalidated and should send updates to the render tree |
+| PointFromScreen(point) | Converts a Point in screen coordinates into a Point that represents the current coordinate system of the Visual |
+| PointToScreen(point) | Converts a Point that represents the current coordinate system of the Visual into a Point in screen coordinates |
+| SubtreeDrawingCommandsChanged() | Occurs when subtree render commands have changed |
+| TransformToAncestor(ancestor) | Returns a transform that can be used to transform coordinates from the Visual to the specified ancestor of the visual object |
+| TransformToDescendant(descendant) | Returns a transform that can be used to transform coordinates from the Visual to the specified visual object descendant |
+| TransformToVisual(visual) | Returns a transform that can be used to transform coordinates from the Visual to the specified visual object |
+| UpdateRender(updater) | Pushes all the layout updates into the UI render thread queue to update render nodes |
+
+### From [DependencyObject](https://www.noesisengine.com/docs/Gui.DependencySystem._DependencyObject.html)
+
+| Method | Description |
+|--------|-------------|
+| ClearAnimation(dp) | Clears the animation value of a property |
+| ClearLocalValue(dp) | Clears the local value of a property The property to be cleared is specified by a DependencyProperty identifier |
+| CoerceValue(dp) | Coerces and validates the effective property value |
+| DependencyPropertyChanged() | Returns the PropertyChanged event |
+| Destroyed() | Destroyed delegate is raised when object is going to be destroyed |
+| GetBaseValue(dp) | Returns the base value without animation nor coerce (this never returns Expression like GetLocalValue) |
+| GetExpression(dp) | Gets the expression, if any, used to evaluate the specified property value |
+| GetLocalValue(dp) | Returns the local value of a dependency property, if it exists |
+| GetValue(dp) | Returns the current effective value of a dependency property on this instance of a DependencyObject |
+| GetValueObject(dp) | Returns the current effective value of a dependency property on this instance of a DependencyObject as a boxed value |
+| GetValueProvider(dp) | Gets the provider that returns the effective value for the specified dependency property |
+| HasAnimatedProperties() | Returns true if there is any animated property |
+| InvalidateProperty(dp, priority) | Re-evaluates the effective value for the specified dependency property if necessary If null is passed, a full re-evaluation could be needed |
+| IsCached(dp, provider) | Returns if the value is stored in the cache. If true, the priority is returned in the provider field |
+| IsSealed() | Gets a value that indicates whether this instance is currently sealed (read-only) |
+| SetAnimation(dp, value) | Sets the animated value of a property |
+| SetCurrentValue(dp, value) | Sets the current value of a dependency property. The current value is set on the coerce field, without modifying source or animated value |
+| SetCurrentValueObject(dp, value) | Sets the current value of a dependency property using a boxed value |
+| SetExpression(dp, expression) | Sets the expression to be evaluated dynamically to obtain the value of the property |
+| SetValue(dp, value) | Sets the local value of a dependency property |
+| SetValueObject(dp, value) | Sets the local value (boxed) of a dependency property |
+
+### From [DispatcherObject](https://www.noesisengine.com/docs/Gui.DependencySystem._DispatcherObject.html)
+
+| Method | Description |
+|--------|-------------|
+| CheckAccess() | Determines whether the calling thread has access to this DispatcherObject |
+| VerifyAccess() | Enforces that the calling thread has access to this DispatcherObject |
+
+## Events
+
+### From [FrameworkElement](https://www.noesisengine.com/docs/Gui.Core._FrameworkElement.html)
+
+| Event | Description |
+|-------|-------------|
+| ContextMenuClosing | Occurs just before any context menu on the element is closed |
+| ContextMenuOpening | Occurs when any context menu on the element is opened |
+| DataContextChanged | Occurs when the data context for this element changes |
+| Initialized | Occurs when this element is initialized |
+| Loaded | Occurs when the element is laid out, rendered, and ready for interaction |
+| Reloaded | Occurs when this element xaml gets reloaded as a result of a hot-reload operation |
+| RequestBringIntoView | Occurs when BringIntoView is called on this element |
+| SizeChanged | Occurs when either ActualHeight or ActualWidth properties change value on this element |
+| ToolTipClosing | Occurs just before any tooltip on the element is closed |
+| ToolTipOpening | Occurs when any tooltip on the element is opened |
+| Unloaded | Occurs when the element is removed from within an element tree of loaded elements |
+
+### From [UIElement](https://www.noesisengine.com/docs/Gui.Core._UIElement.html)
+
+| Event | Description |
+|-------|-------------|
+| DoubleTapped | Occurs when a DoubleTap interaction occurs on this element |
+| DragEnter | Occurs when mouse enters the target of a dragging operation |
+| DragLeave | Occurs when mouse leaves the target of a dragging operation |
+| DragOver | Occurs when mouse is moved over the target of a dragging operation |
+| Drop | Notifies target object of a dragging operation that data is being dropped |
+| FocusableChanged | Occurs when the value of the Focusable property changes |
+| GiveFeedback | Notifies source object of a dragging operation to provide feedback to the user |
+| GotFocus | Occurs when this element gets logical focus |
+| GotKeyboardFocus | Occurs when the keyboard is focused on this element |
+| GotMouseCapture | Occurs when this element captures the mouse |
+| GotTouchCapture | Occurs when a touch is captured to this element |
+| Holding | Occurs when a Hold interaction occurs on this element |
+| IsEnabledChanged | Occurs when the value of the IsEnabled property on this element changes |
+| IsHitTestVisibleChanged | Occurs when the value of the IsHitTestVisible dependency property changes on this element |
+| IsKeyboardFocusWithinChanged | Occurs when the value of the IsKeyboardFocusWithinChanged property changes on this element |
+| IsKeyboardFocusedChanged | Occurs when the value of the IsKeyboardFocused property changes on this element |
+| IsMouseCaptureWithinChanged | Occurs when the value of the IsMouseCaptureWithinProperty changes on this element |
+| IsMouseCapturedChanged | Occurs when the value of the IsMouseCaptured property changes on this element |
+| IsMouseDirectlyOverChanged | Occurs when the value of the IsMouseDirectlyOver property changes on this element |
+| IsVisibleChanged | Occurs when the value of the IsVisible property changes on this element |
+| KeyDown | Occurs when a key is pressed while focus is on this element |
+| KeyUp | Occurs when a key is released while focus is on this element |
+| LayoutUpdated | Occurs when the layout of any elements associated with the current View changes |
+| LostFocus | Occurs when this element loses logical focus |
+| LostKeyboardFocus | Occurs when the keyboard is no longer focused on this element |
+| LostMouseCapture | Occurs when this element loses mouse capture |
+| LostTouchCapture | Occurs when this element loses a touch capture |
+| ManipulationCompleted | Occurs when a manipulation and inertia on the UIElement object is complete |
+| ManipulationDelta | Occurs when the input device changes position during a manipulation |
+| ManipulationInertiaStarting | Occurs when the input device loses contact with the UIElement during a manipulation and inertia begins |
+| ManipulationStarted | Occurs when an input device begins a manipulation on the UIElement object |
+| ManipulationStarting | Occurs when the manipulation processor is first created |
+| MouseDown | Occurs when any mouse button is pressed while the pointer is over this element |
+| MouseEnter | Occurs when the mouse pointer enters the bounds of this element |
+| MouseLeave | Occurs when the mouse pointer leaves the bounds of this element |
+| MouseLeftButtonDown | Occurs when the left mouse button is pressed while the mouse pointer is over this element |
+| MouseLeftButtonUp | Occurs when the left mouse button is released while the mouse pointer is over this element |
+| MouseMove | Occurs when the mouse pointer moves while over this element |
+| MouseRightButtonDown | Occurs when the right mouse button is pressed while the mouse pointer is over this element |
+| MouseRightButtonUp | Occurs when the right mouse button is released while the mouse pointer is over this element |
+| MouseUp | Occurs when any mouse button is released over this element |
+| MouseWheel | Occurs when the user rotates the mouse wheel while the mouse pointer is over this element |
+| PreviewDragEnter | Occurs when mouse enters the target of a dragging operation |
+| PreviewDragLeave | Occurs when mouse leaves the target of a dragging operation |
+| PreviewDragOver | Occurs when mouse is moved over the target of a dragging operation |
+| PreviewDrop | Notifies target object of a dragging operation that data is being dropped |
+| PreviewGiveFeedback | Notifies source object of a dragging operation to provide feedback to the user |
+| PreviewGotKeyboardFocus | Occurs when the keyboard is focused on this element |
+| PreviewKeyDown | Occurs when a key is pressed while focus is on this element |
+| PreviewKeyUp | Occurs when a key is released while focus is on this element |
+| PreviewLostKeyboardFocus | Occurs when the keyboard is no longer focused on this element |
+| PreviewMouseDown | Occurs when any mouse button is pressed while the pointer is over this element |
+| PreviewMouseLeftButtonDown | Occurs when the left mouse button is pressed while the mouse pointer is over this element |
+| PreviewMouseLeftButtonUp | Occurs when the left mouse button is released while the mouse pointer is over this element |
+| PreviewMouseMove | Occurs when the mouse pointer moves while the mouse pointer is over this element |
+| PreviewMouseRightButtonDown | Occurs when the right mouse button is pressed while the mouse pointer is over this element |
+| PreviewMouseRightButtonUp | Occurs when the right mouse button is released while the mouse pointer is over this element |
+| PreviewMouseUp | Occurs when any mouse button is released while the mouse pointer is over this element |
+| PreviewMouseWheel | Occurs when the user rotates the mouse wheel while the mouse pointer is over this element |
+| PreviewQueryContinueDrag | Notifies source object of a dragging operation |
+| PreviewTextInput | Occurs when this element gets text in a device-independent manner |
+| PreviewTouchDown | Occurs when a finger touches the screen while the finger is over this element |
+| PreviewTouchMove | Occurs when a finger moves on the screen while the finger is over this element |
+| PreviewTouchUp | Occurs when a finger is raised off of the screen while the finger is over this element |
+| QueryContinueDrag | Notifies source object of a dragging operation |
+| QueryCursor | Occurs when the cursor is requested to display |
+| RightTapped | Occurs when a DoubleTap interaction occurs on this element |
+| Tapped | Occurs when a Tap interaction occurs on this element |
+| TextInput | Occurs when this element gets text in a device-independent manner |
+| TouchDown | Occurs when a finger touches the screen while the finger is over this element |
+| TouchEnter | Occurs when a touch moves from outside to inside the bounds of this element |
+| TouchLeave | Occurs when a touch moves from inside to outside the bounds of this element |
+| TouchMove | Occurs when a finger moves on the screen while the finger is over this element |
+| TouchUp | Occurs when a finger is raised off of the screen while the finger is over this element |

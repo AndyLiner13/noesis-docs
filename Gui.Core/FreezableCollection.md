@@ -1,0 +1,108 @@
+# FreezableCollection Class
+
+## namespace Noesis | MSDN
+
+Represents a collection of DependencyObject, Freezable, or Animatable objects. FreezableCollection is itself an Animatable type.
+
+This class is provided to enable the creation of custom collection types that fully support data binding, change notification, property invalidation, and animation of its contents.
+
+# Inheritance Hierarchy
+
+ • DispatcherObject • DependencyObject • Freezable • Animatable • BaseFreezableCollection • FreezableCollection • AttachableCollection • BooleanKeyFrameCollection • ColorKeyFrameCollection • DoubleKeyFrameCollection • ...
+
+# Properties
+
+## From Freezable
+
+| Property | Description |
+|----------|-------------|
+| CanFreeze | Gets a value that indicates whether the object can be made unmodifiable. |
+| IsFrozen | Gets a value that indicates whether the object is currently modifiable. |
+
+## From DispatcherObject
+
+| Property | Description |
+|----------|-------------|
+| ThreadId | Gets the thread this DispatcherObject is associated with. Returns NoThreadId when this object is not attached to any thread. |
+
+# Attached Properties
+
+FreezableCollection has no attached properties
+
+# Methods
+
+## From BaseFreezableCollection
+
+| Method | Description |
+|--------|-------------|
+| AddComponent(item) | Adds an item to the collection. Returns The position into which the new element was inserted, or -1 to indicate that the item was not inserted into the collection |
+| Clear() | Removes all items from the collection |
+| CollectionChanged() | Occurs when the collection changes |
+| Count() | Gets the number of items in the collection |
+| GetComponent(index) | Gets the item at the specified index |
+| IndexOfComponent(item) | Determines the index of a specific item in the collection. Returns -1 if not found |
+| InsertComponent(index, item) | Inserts an item to the collection at the specified index |
+| PropertyChanged() | Occurs when a property value changes |
+| RemoveAt(index) | Removes the item at the specified index |
+| SetComponent(index, item) | Sets the item at the specified index |
+
+## From Freezable
+
+| Method | Description |
+|--------|-------------|
+| Clone() | Creates a modifiable clone of the Freezable, making deep copies of the object's values. When copying the object's dependency properties, this method copies expressions (which might no longer resolve) but not animations or their current values. The cloned Freezable::IsFrozen property is false even if the source's IsFrozen property is true. |
+| CloneCurrentValue() | Creates a modifiable clone (deep copy) of the Freezable using its current values. The cloned object's IsFrozen property is false even if the source's IsFrozen property is true. |
+| Freeze() | Makes the current object unmodifiable and sets its IsFrozen property to true. |
+| GetAsFrozen() | Creates a frozen copy of the Freezable, using base (non-animated) property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. Throws if the Freezable cannot be frozen because it contains expressions or animated properties. |
+| GetCurrentValueAsFrozen() | Creates a frozen copy of the Freezable using current property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. |
+
+## From DependencyObject
+
+| Method | Description |
+|--------|-------------|
+| ClearAnimation(dp) | Clears the animation value of a property |
+| ClearLocalValue(dp) | Clears the local value of a property The property to be cleared is specified by a DependencyProperty identifier |
+| CoerceValue(dp) | Coerces and validates the effective property value |
+| DependencyPropertyChanged() | Returns the PropertyChanged event |
+| Destroyed() | Destroyed delegate is raised when object is going to be destroyed |
+| GetBaseValue(dp) | Returns the base value without animation nor coerce (this never returns Expression like GetLocalValue) |
+| GetExpression(dp) | Gets the expression, if any, used to evaluate the specified property value |
+| GetLocalValue(dp) | Returns the local value of a dependency property, if it exists |
+| GetValue(dp) | Returns the current effective value of a dependency property on this instance of a DependencyObject |
+| GetValueObject(dp) | Returns the current effective value of a dependency property on this instance of a DependencyObject as a boxed value |
+| GetValueProvider(dp) | Gets the provider that returns the effective value for the specified dependency property |
+| HasAnimatedProperties() | Returns true if there is any animated property |
+| InvalidateProperty(dp, priority) | Re-evaluates the effective value for the specified dependency property if necessary If null is passed, a full re-evaluation could be needed |
+| IsCached(dp, provider) | Returns if the value is stored in the cache. If true, the priority is returned in the provider field |
+| IsSealed() | Gets a value that indicates whether this instance is currently sealed (read-only) |
+| SetAnimation(dp, value) | Sets the animated value of a property |
+| SetCurrentValue(dp, value) | Sets the current value of a dependency property. The current value is set on the coerce field, without modifying source or animated value |
+| SetCurrentValueObject(dp, value) | Sets the current value of a dependency property using a boxed value |
+| SetExpression(dp, expression) | Sets the expression to be evaluated dynamically to obtain the value of the property |
+| SetValue(dp, value) | Sets the local value of a dependency property |
+| SetValueObject(dp, value) | Sets the local value (boxed) of a dependency property |
+
+## From DispatcherObject
+
+| Method | Description |
+|--------|-------------|
+| CheckAccess() | Determines whether the calling thread has access to this DispatcherObject |
+| VerifyAccess() | Enforces that the calling thread has access to this DispatcherObject |
+
+## Own Methods
+
+| Method | Description |
+|--------|-------------|
+| Add(item) | Adds an item to the collection. Returns The position into which the new element was inserted, or -1 to indicate that the item was not inserted into the collection |
+| Clone() | Creates a modifiable clone of this FreezableCollection and its contents, making deep copies |
+| CloneCurrentValue() | Creates a modifiable copy of this FreezableCollection and its contents, making deep copies of this object's current values |
+| Contains(item) | Determines whether the collection contains a specific value |
+| Get(index) | Gets the element at the specified index |
+| IndexOf(item) | Determines the index of a specific item in the collection. Returns -1 if not found |
+| Insert(index, item) | Inserts an item to the collection at the specified index |
+| Remove(item) | Removes the first occurrence of a specific object from the collection. Returns true if item was removed, false to indicate that the item was not found in the collection |
+| Set(index, item) | Sets the element at the specified index |
+
+# Events
+
+FreezableCollection has no events
