@@ -1,12 +1,12 @@
+Source: https://www.noesisengine.com/docs/Gui.Core.TextTutorial.html
+
 # Text Tutorial
 
-![github](https://www.noesisengine.com/docs/github.png)
+![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Text)
 
-[Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Text)
+Read-only text in XAML is mainly displayed using [TextBlock](/Gui.Core/_TextBlock.md) elements. A *TextBlock* defines the content property *Text* where the user can specify any string. *FontFamily*, *FontSize*, *FontStyle*, *FontWeight*, *FontStretch*, *Foreground* and *Background* control how text displays within the element.
 
-Read-only text in XAML is mainly displayed using [TextBlock](https://www.noesisengine.com/docs/Gui.Core._TextBlock.html) elements. A TextBlock defines the content property Text where the user can specify any string. FontFamily, FontSize, FontStyle, FontWeight, FontStretch, Foreground and Background control how text displays within the element.
-
-```xml
+```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       HorizontalAlignment="Center" VerticalAlignment="Center">
 
@@ -17,9 +17,9 @@ Read-only text in XAML is mainly displayed using [TextBlock](https://www.noesise
 
 # Inlines
 
-[Inlines](https://www.noesisengine.com/docs/Gui.Core._Inline.html) can also be used to modify the aspect of specific blocks.
+[Inlines](/Gui.Core/_Inline.md) can also be used to modify the aspect of specific blocks.
 
-```xml
+```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       Background="White"
@@ -68,13 +68,13 @@ Read-only text in XAML is mainly displayed using [TextBlock](https://www.noesise
 </Grid>
 ```
 
-![TextTutorialImg1.jpg](https://www.noesisengine.com/docs/TextTutorialImg1.jpg)
+![TextTutorialImg1.jpg](/TextTutorialImg1/jpg.md)
 
 # Font Family
 
-The default font is taken from the active theme. This can be overridden by using the FontFamily property. FontFamily includes an [URI](https://www.noesisengine.com/docs/Gui.Providers._Uri.html) to the directory where the font is located plus the family name separated by a '#' character.
+The default font is taken from the active theme. This can be overridden by using the *FontFamily* property. *FontFamily* includes an [URI](/Gui.Providers/_Uri.md) to the directory where the font is located plus the family name separated by a '*#*' character.
 
-```xml
+```
 <Grid
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
@@ -89,20 +89,20 @@ The default font is taken from the active theme. This can be overridden by using
 </Grid>
 ```
 
-![TextTutorialImg2.jpg](https://www.noesisengine.com/docs/TextTutorialImg2.jpg)
+![TextTutorialImg2.jpg](/TextTutorialImg2/jpg.md)
 
-Note that if you don't use the '#' separator or don't provide a directory, the font is searched globally in the system folder.
+Note that if you don't use the '*#*' separator or don't provide a directory, the font is searched globally in the system folder.
 
-```xml
+```
 <StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
   <TextBlock FontFamily="Arial">This is a system font</TextBlock>
   <TextBlock FontFamily="#Arial">This is also a system font</TextBlock>
 </StackPanel>
 ```
 
-Thanks to property value inheritance, the FontFamily property enables child elements in a tree of elements to obtain the value from parent elements.
+Thanks to property value inheritance, the *FontFamily* property enables child elements in a tree of elements to obtain the value from parent elements.
 
-```xml
+```
 <Grid
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
@@ -118,13 +118,13 @@ Thanks to property value inheritance, the FontFamily property enables child elem
 
 # Style properties
 
-TextBlock defines three properties that describe the style, weight and stretch of the text:
+*TextBlock* defines three properties that describe the *style*, *weight* and *stretch* of the text:
 
-- FontStyle: Represents the style of a font face as normal, italic, or oblique.
-- FontWeight: Represents the density of a typeface, in terms of the lightness or heaviness of the strokes.
-- FontStretch: Represents the degree to which a font has been stretched compared to a font's normal aspect ratio.
+- **FontStyle**: Represents the style of a font face as normal, italic, or oblique.
+- **FontWeight**: Represents the density of a typeface, in terms of the lightness or heaviness of the strokes.
+- **FontStretch**: Represents the degree to which a font has been stretched compared to a font's normal aspect ratio.
 
-```xml
+```
 <Grid
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -160,11 +160,11 @@ TextBlock defines three properties that describe the style, weight and stretch o
     </StackPanel>
     <StackPanel Grid.Row="1" Grid.Column="0" Margin="10,20,0,10">
       <TextBlock Text="Condensed Thin" FontWeight="Thin" FontStretch="Condensed"/>
-      <TextBlock Text="Light Condensed" FontWeight="Light" FontStretch="Condensed"/>
-      <TextBlock Text="Regular Condensed" FontWeight="Normal" FontStretch="Condensed"/>
-      <TextBlock Text="Medium Condensed" FontWeight="Medium" FontStretch="Condensed"/>
-      <TextBlock Text="Bold Condensed" FontWeight="Bold" FontStretch="Condensed"/>
-      <TextBlock Text="Black Condensed" FontWeight="Black" FontStretch="Condensed"/>
+      <TextBlock Text="Condensed Light" FontWeight="Light" FontStretch="Condensed"/>
+      <TextBlock Text="Condensed Regular" FontWeight="Normal" FontStretch="Condensed"/>
+      <TextBlock Text="Condensed Medium" FontWeight="Medium" FontStretch="Condensed"/>
+      <TextBlock Text="Condensed Bold" FontWeight="Bold" FontStretch="Condensed"/>
+      <TextBlock Text="Condensed Black" FontWeight="Black" FontStretch="Condensed"/>
     </StackPanel>
     <StackPanel Grid.Row="1" Grid.Column="1" Margin="30,20,10,10">
       <TextBlock Text="Condensed Thin Italic" FontWeight="Thin" FontStyle="Italic" FontStretch="Condensed"/>
@@ -172,19 +172,19 @@ TextBlock defines three properties that describe the style, weight and stretch o
       <TextBlock Text="Condensed Regular Italic" FontWeight="Normal" FontStyle="Italic" FontStretch="Condensed"/>
       <TextBlock Text="Condensed Medium Italic" FontWeight="Medium" FontStyle="Italic" FontStretch="Condensed"/>
       <TextBlock Text="Condensed Bold Italic" FontWeight="Bold" FontStyle="Italic" FontStretch="Condensed"/>
-      <TextBlock Text="Condensed Black Italic" FontWeight="Black" FontStretch="Condensed"/>
+      <TextBlock Text="Condensed Black Italic" FontWeight="Black" FontStyle="Italic" FontStretch="Condensed"/>
     </StackPanel>
   </Grid>
 </Grid>
 ```
 
-![TextTutorialImg3.jpg](https://www.noesisengine.com/docs/TextTutorialImg3.jpg)
+![TextTutorialImg3.jpg](/TextTutorialImg3/jpg.md)
 
 # Layout properties
 
-As any other UI element in Noesis, a TextBlock can be positioned relative to the parent container using the HorizontalAlignment and VerticalAlignment properties from [FrameworkElement](https://www.noesisengine.com/docs/Gui.Core._FrameworkElement.html). The layout process uses these properties to assign a rectangle to the TextBox where the text will be displayed. How text is aligned inside that rectangle can be specified using the TextAlignment property, which accepts the Left (default), Center, Justify and Right values.
+As any other UI element in Noesis, a *TextBlock* can be positioned relative to the parent container using the *HorizontalAlignment* and *VerticalAlignment* properties from [FrameworkElement](/Gui.Core/_FrameworkElement.md). The layout process uses these properties to assign a rectangle to the *TextBox* where the text will be displayed. How text is aligned inside that rectangle can be specified using the *TextAlignment* property, which accepts the *Left* (default), *Center*, *Justify* and *Right* values.
 
-```xml
+```
 <Grid
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -197,23 +197,19 @@ As any other UI element in Noesis, a TextBlock can be positioned relative to the
     <StackPanel Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
       <StackPanel Width="370">
         <TextBlock Margin="0,5" Background="WhiteSmoke" Padding="10" TextWrapping="Wrap" TextAlignment="Left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua
         </TextBlock>
         <TextBlock Margin="0,5" Background="WhiteSmoke" Padding="10" TextWrapping="Wrap" TextAlignment="Justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua
         </TextBlock>
         <TextBlock Margin="0,5" Background="WhiteSmoke" Padding="10" TextWrapping="Wrap" TextAlignment="Center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua
         </TextBlock>
         <TextBlock Margin="0,5" Background="WhiteSmoke" Padding="10" TextWrapping="Wrap" TextAlignment="Right">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua
         </TextBlock>
       </StackPanel>
@@ -222,16 +218,17 @@ eiusmod tempor
 </Grid>
 ```
 
-![TextTutorialImg4.jpg](https://www.noesisengine.com/docs/TextTutorialImg4.jpg)
+![TextTutorialImg4.jpg](/TextTutorialImg4/jpg.md)
 
-In addition to text alignment, user can specify how text behaves when it reaches the edge of the containing box. This can be done through the TextWrapping property which can be set to NoWrap (default), Wrap and WrapWithOverflow. When text overflows the content area the property TextTrimming defines the text trimming behavior. Valid values are: None (default), CharacterEllipsis and WordEllipsis.
+In addition to text alignment, user can specify how text behaves when it reaches the edge of the containing box. This can be done through the *TextWrapping* property which can be set to *NoWrap* (default), *Wrap* and *WrapWithOverflow*. When text overflows the content area the property *TextTrimming* defines the text trimming behavior. Valid values are: *None* (default), *CharacterEllipsis* and *WordEllipsis*.
 
-```xml
+```
 <Grid
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
   Background="White" UseLayoutRounding="True"
   TextElement.Foreground="Black">
+
   <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
     <Grid.RowDefinitions>
       <RowDefinition/>
@@ -444,18 +441,18 @@ In addition to text alignment, user can specify how text behaves when it reaches
 </Grid>
 ```
 
-![TextTutorialImg5.png](https://www.noesisengine.com/docs/TextTutorialImg5.png)
+![TextTutorialImg5.png](/TextTutorialImg5/png.md)
 
 # Color properties
 
-TextBlock defines the following properties to set the color of the text and its background:
+*TextBlock* defines the following properties to set the color of the text and its background:
 
-- The Foreground property is used to specify the color of the text.
-- The Background property is used to specify the color that fills the arrangement rectangle of the TextBlock.
+- The **Foreground** property is used to specify the color of the text.
+- The **Background** property is used to specify the color that fills the arrangement rectangle of the *TextBlock*.
 
-We also provide extensions to add stroking capabilities to TextBlock elements. These extensions are defined under the namespace NoesisGUIExtensions that should be included in the root element of the XAML file. Attached properties Text.Stroke and Text.StrokeThickness can be used to specify the color of the stroke and stroke thickness respectively (see highlighted lines in the following example).
+We also provide extensions to add stroking capabilities to *TextBlock* elements. These extensions are defined under the namespace *NoesisGUIExtensions* that should be included in the root element of the XAML file. Attached properties *Text.Stroke* and *Text.StrokeThickness* can be used to specify the color of the stroke and stroke thickness respectively (see highlighted lines in the following example).
 
-```xml
+```
 <Grid
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -470,11 +467,11 @@ We also provide extensions to add stroking capabilities to TextBlock elements. T
 </Grid>
 ```
 
-![TextTutorialImg6.jpg](https://www.noesisengine.com/docs/TextTutorialImg6.jpg)
+![TextTutorialImg6.jpg](/TextTutorialImg6/jpg.md)
 
 Note that you can also use gradients for both foreground and background properties.
 
-```xml
+```
 <Grid
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -591,7 +588,7 @@ Note that you can also use gradients for both foreground and background properti
 </Grid>
 ```
 
-![TextTutorialImg7.jpg](https://www.noesisengine.com/docs/TextTutorialImg7.jpg)
+![TextTutorialImg7.jpg](/TextTutorialImg7/jpg.md)
 
 # Variable Fonts
 
@@ -599,9 +596,9 @@ Note that you can also use gradients for both foreground and background properti
 
 Parametric axes in variable fonts are specific dimensions along which a font's attributes can be adjusted. These axes allow for fine-tuned customization of the font's appearance, enabling a vast range of typographic expressions from a single font file.
 
-The standard axes for Weight, Width, and Italic are automatically translated to the properties FontWeight, FontStretch, and FontStyle, respectively.
+The standard axes for *Weight*, *Width*, and *Italic* are automatically translated to the properties *FontWeight*, *FontStretch*, and *FontStyle*, respectively.
 
-```xml
+```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
   <StackPanel>
@@ -613,9 +610,9 @@ The standard axes for Weight, Width, and Italic are automatically translated to 
 </Grid>
 ```
 
-Variable fonts contain predefined named instances, such as 'Recursive Light' These instances represent fixed positions on the axes, defined by the type designer, and can be set in the FontFamily property.
+Variable fonts contain predefined named instances, such as '*Recursive Light*' These instances represent fixed positions on the axes, defined by the type designer, and can be set in the *FontFamily* property.
 
-```xml
+```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
   <StackPanel>
@@ -627,9 +624,9 @@ Variable fonts contain predefined named instances, such as 'Recursive Light' The
 </Grid>
 ```
 
-Individual axes can also be set in the FontFamily property by specifying the name of the axis followed by a colon and its value, such as 'wght:700'.
+Individual axes can also be set in the *FontFamily* property by specifying the name of the axis followed by a colon and its value, such as '*wght:700*'.
 
-```xml
+```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
   <StackPanel>
@@ -640,28 +637,3 @@ Individual axes can also be set in the FontFamily property by specifying the nam
 
 </Grid>
 ```
-
-## Additional Links
-
-- [HOME](https://www.noesisengine.com/) - NoesisGUI
-- [FEATURES](https://www.noesisengine.com/noesisgui) - NoesisGUI Features
-- [STUDIO](https://www.noesisengine.com/studio) - NoesisGUI Studio
-- [PRICING](https://www.noesisengine.com/licensing.php) - NoesisGUI Pricing
-- [DEVELOPER](https://www.noesisengine.com/forums) - NoesisGUI Developer Resources
-- [CONTACT](https://www.noesisengine.com/contact.php) - Noesis Contact
-- [FORUMS](https://www.noesisengine.com/forums) - NoesisGUI Forums
-- [SAMPLES](https://www.noesisengine.com/developers/samples.php) - NoesisGUI Samples
-- [XAMLTOY](https://www.noesisengine.com/xamltoy) - NoesisGUI XamlToy
-- [DOWNLOADS](https://www.noesisengine.com/developers/downloads.php) - NoesisGUI Downloads
-- [DOCUMENTATION](https://www.noesisengine.com/docs/Gui.Core.Index.html) - NoesisGUI Documentation
-- [BUGTRACKER](https://www.noesisengine.com/bugs/my_view_page.php) - NoesisGUI Bug Tracker
-- [ROADMAP](https://www.noesisengine.com/bugs/roadmap_page.php) - roadmap
-
-[NoesisGUI GitHub](https://github.com/Noesis)  
-[NoesisGUI Linkedin](https://www.linkedin.com/company/noesis-technologies-sl)  
-[NoesisGUI Twitter](https://twitter.com/noesisengine)  
-[NoesisGUI Youtube](https://www.youtube.com/user/NoesisTechnologies)
-
-© 2013 Noesis Technologies  
-[Privacy](https://www.noesisengine.com/legal/privacy.php)  
-[Terms & Conditions](https://www.noesisengine.com/legal/terms-of-use.php)

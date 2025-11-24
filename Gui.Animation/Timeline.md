@@ -1,116 +1,45 @@
-# Timeline Class
+Source: https://www.noesisengine.com/docs/Gui.Animation.Timeline.html
 
-## namespace [Noesis](https://www.noesisengine.com/docs/Gui.Core._ClassHierarchy.html#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.media.animation.timeline.aspx)
+# Timeline hierarchy
 
-Defines a segment of time.
+![Timeline.png](/Timeline/png.md)
 
-A timeline represents a segment of time. It provides properties that enable you to specify the length of that segment, when it should start, how many times it will repeat, how fast time progresses in that segment, and more.
+# Timeline
 
-## Inheritance Hierarchy
+<http://msdn.microsoft.com/en-us/library/system.windows.media.animation.timeline.aspx>
 
-- [DispatcherObject](https://www.noesisengine.com/docs/Gui.DependencySystem._DispatcherObject.html)
-- [DependencyObject](https://www.noesisengine.com/docs/Gui.DependencySystem._DependencyObject.html)
-- [Freezable](https://www.noesisengine.com/docs/Gui.DependencySystem._Freezable.html)
-- [Animatable](https://www.noesisengine.com/docs/Gui.Core._Animatable.html)
-- Timeline
-  - [AnimationTimeline](https://www.noesisengine.com/docs/Gui.Animation._AnimationTimeline.html)
-  - [TimelineGroup](https://www.noesisengine.com/docs/Gui.Animation._TimelineGroup.html)
+This is the base class for animation objects. It describes the majority of the properties that controls the direction, speed and duration of a single animation. It is important to understand the implication of these properties.
 
-## Properties
+| Methods | | --- | --- | --- |
+| Name | Sup | Comments |
+| CreateClock | Yes | Dependency Properties | | | --- | --- | --- | --- |
+| Name | Att | Sup | Comments |
+| AccelerationRatioProperty | No | Yes | AutoReverseProperty | No | Yes | BeginTimeProperty | No | Yes | DecelerationRatioProperty | No | Yes | DesiredFrameRateProperty | Yes | No | DurationProperty | No | Yes | FillBehaviorProperty | No | Yes | NameProperty | No | No | RepeatBehaviorProperty | No | Yes | SpeedRatioProperty | No | Yes | Events | | --- | --- | --- |
+| Name | Sup | Comments |
+| Completed | No | CurrentGlobalSpeedInvalidated | No | CurrentStateInvalidated | No | CurrentTimeInvalidated | No | RemoveRequested | No ## Members
 
-### From [Freezable](https://www.noesisengine.com/docs/Gui.DependencySystem._Freezable.html)
+- **Duration**: is the time duration of one iteration of the animation. Generally, it is expressed in the TimeSpan form (for example, "0:1:2.4", where 0 is days, 1 hours, 2 minutes, 3 seconds and 4 milliseconds). The duration can also be Forever, Automatic (the duration it's defined by the timeline children if any, or by the returning value of NaturalDuration) or even null, telling that the animation will never start.
+- **SpeedRatio**: indicates the relative speed of the the clock time related to its parent time (or real time, if it has no parent). For example, a speed of "2" makes the clock runs twice as fast, so an animation with a duration of 10 seconds, will consume in 5 real seconds.
+- **BeginTime**: it's a TimeSpan indicating some time that must consume before the animation starts. The BeginTime is not affected by the local speedratio of the timeline.
+- **Autoreverse**: when true, the animation plays forward and when it's completed it plays backward, taking the same amount of time to complete. The BeginTime is ignored when running backwards, so a Timeline with a begintime of 1 second, a duration of 10 seconds and a speedratio 2, will take 11 seconds to complete (1 + 5 + 5).
+- **RepeatBehavior**: tells how many times the animation has to be executed, or during how many time. If its repeating times, for example an animation of 5 seconds with autoreverse and a repeact behavior of 1.5x will last 15s (5 forward, 5 backward and 5 forward). The same can be obtained if a timespan of 15 seconds is passed as RepeatBehavior.
+- **Acceleration/DecelerationRatio**: modifies slightly the linear interpolation of time to have an effect of *spring* in the start and end of the iteration time. More control on the animation can be done using one of the Easing functions that will be commented later.
+- **FillBehavior**: normally, when an animation ends, the final value is maintained in the target property (HoldEnd). The animated value can be removed at the end of the animation passing a Stop value here.
 
-| Property | Description |
-|----------|-------------|
-| CanFreeze | Gets a value that indicates whether the object can be made unmodifiable. |
-| IsFrozen | Gets a value that indicates whether the object is currently modifiable. |
+So in practice, the formula to calculate the total duration of a timeline should be (in case that RepeatBehavior sets the number of repetitions)
 
-### From [DispatcherObject](https://www.noesisengine.com/docs/Gui.DependencySystem._DispatcherObject.html)
+![Formula1.png](/Formula1/png.md)
 
-| Property | Description |
-|----------|-------------|
-| ThreadId | Gets the thread this DispatcherObject is associated with. Returns NoThreadId when this object is not attached to any thread. |
+or (in case that RepeatBehavior sets the repetition time)
 
-### Own Properties
-
-| Property | Description |
-|----------|-------------|
-| AccelerationRatio | Gets or sets a value specifying the percentage of the timeline's Duration spent accelerating the passage of time from zero to its maximum rate |
-| AutoReverse | Gets or sets a value that indicates whether the timeline plays in reverse after it completes a forward iteration |
-| BeginTime | Gets or sets the time at which this Timeline should begin. A timeline's own SpeedRatio setting does not affect its BeginTime. For example, a timeline with a BeginTime of 5 seconds, a SpeedRatio of 2, and a parent timeline with a SpeedRatio of 1 starts after 5 seconds, not 2.5. |
-| DecelerationRatio | Gets or sets a value specifying the percentage of the timeline's Duration spent decelerating the passage of time from its maximum rate to zero |
-| Duration | Gets or sets the length of time for which this timeline plays, not counting repetitions |
-| FillBehavior | Gets or sets a value that specifies how the animation behaves after it reaches the end of its active period |
-| Name | Gets or sets the name of this Timeline |
-| RepeatBehavior | Gets or sets the repeating behavior of this timeline |
-| SpeedRatio | Gets or sets the rate, relative to its parent, at which time progresses for this Timeline |
-
-## Attached Properties
-
-| Attached Property | Description |
-|----------|-------------|
-| DesiredFrameRate | Gets or sets the desired frame rate for this timeline and its child timelines |
+![Formula2.png](/Formula2/png.md)
 
 ## Methods
 
-### From [Freezable](https://www.noesisengine.com/docs/Gui.DependencySystem._Freezable.html)
+- **CreateClock**: Creates a new clock to control the timeline. This method call internally AllocateClock, which is reimplemented in the inheritors of Timeline to create the adecuate clock
 
-| Method | Description |
-|--------|-------------|
-| Clone() | Creates a modifiable clone of the Freezable, making deep copies of the object's values. When copying the object's dependency properties, this method copies expressions (which might no longer resolve) but not animations or their current values. The cloned Freezable::IsFrozen property is false even if the source's IsFrozen property is true. |
-| CloneCurrentValue() | Creates a modifiable clone (deep copy) of the Freezable using its current values. The cloned object's IsFrozen property is false even if the source's IsFrozen property is true. |
-| Freeze() | Makes the current object unmodifiable and sets its IsFrozen property to true. |
-| GetAsFrozen() | Creates a frozen copy of the Freezable, using base (non-animated) property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. Throws if the Freezable cannot be frozen because it contains expressions or animated properties. |
-| GetCurrentValueAsFrozen() | Creates a frozen copy of the Freezable using current property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. |
+For more detail about the classes deriving from AnimationTimeline, see [Single Timelines](/Gui.Animation/SingleTimelines.md)
 
-### From [DependencyObject](https://www.noesisengine.com/docs/Gui.DependencySystem._DependencyObject.html)
+For deriving classes from TimelineGroup, see [Group Timelines](/Gui.Animation/Clocks.md)
 
-| Method | Description |
-|--------|-------------|
-| ClearAnimation(dp) | Clears the animation value of a property |
-| ClearLocalValue(dp) | Clears the local value of a property The property to be cleared is specified by a DependencyProperty identifier |
-| CoerceValue(dp) | Coerces and validates the effective property value |
-| DependencyPropertyChanged() | Returns the PropertyChanged event |
-| Destroyed() | Destroyed delegate is raised when object is going to be destroyed |
-| GetBaseValue(dp) | Returns the base value without animation nor coerce (this never returns Expression like GetLocalValue) |
-| GetExpression(dp) | Gets the expression, if any, used to evaluate the specified property value |
-| GetLocalValue(dp) | Returns the local value of a dependency property, if it exists |
-| GetValue(dp) | Returns the current effective value of a dependency property on this instance of a DependencyObject |
-| GetValueObject(dp) | Returns the current effective value of a dependency property on this instance of a DependencyObject as a boxed value |
-| GetValueProvider(dp) | Gets the provider that returns the effective value for the specified dependency property |
-| HasAnimatedProperties() | Returns true if there is any animated property |
-| InvalidateProperty(dp, priority) | Re-evaluates the effective value for the specified dependency property if necessary If null is passed, a full re-evaluation could be needed |
-| IsCached(dp, provider) | Returns if the value is stored in the cache. If true, the priority is returned in the provider field |
-| IsSealed() | Gets a value that indicates whether this instance is currently sealed (read-only) |
-| SetAnimation(dp, value) | Sets the animated value of a property |
-| SetCurrentValue(dp, value) | Sets the current value of a dependency property. The current value is set on the coerce field, without modifying source or animated value |
-| SetCurrentValueObject(dp, value) | Sets the current value of a dependency property using a boxed value |
-| SetExpression(dp, expression) | Sets the expression to be evaluated dynamically to obtain the value of the property |
-| SetValue(dp, value) | Sets the local value of a dependency property |
-| SetValueObject(dp, value) | Sets the local value (boxed) of a dependency property |
-
-### From [DispatcherObject](https://www.noesisengine.com/docs/Gui.DependencySystem._DispatcherObject.html)
-
-| Method | Description |
-|--------|-------------|
-| CheckAccess() | Determines whether the calling thread has access to this DispatcherObject |
-| VerifyAccess() | Enforces that the calling thread has access to this DispatcherObject |
-
-### Own Methods
-
-| Method | Description |
-|--------|-------------|
-| CalculateEffectiveDurations() | Computes the effective durations of the timeline |
-| CreateClock(timeManager, hasControllableRoot) | Creates a new Clock from this Timeline and specifies whether the new Clock is controllable. If this Timeline has children, a tree of clocks is created with this Timeline as the root. |
-| GetEffectiveDuration() | Calculated as TotalDuration / SpeedRatio + BeginTime |
-| GetIterationDuration() | Gets duration of a complete pass (with the reverse, if applicable) |
-| GetNaturalDuration(clock) | Gets the duration of the timeline when duration is set to automatic |
-| GetSinglePassDuration() | Gets duration of a single pass (without the reverse) |
-| GetTotalDuration() | Gets total duration of the animation (with repetitions and autoreverse, but without BeginTime nor SpeedRatio) |
-| IsTotalDurationAbsolute() | Indicates that the total duration is not affected by SpeedRatio |
-
-## Events
-
-| Event | Description |
-|-------|-------------|
-| Completed | Occurs when the Storyboard object has completed playing |
+The MediaTimeline is not implemented yet.
