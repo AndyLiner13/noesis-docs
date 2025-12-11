@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core.CommandsTutorial.html
 
 # Commands
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/Commands)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/Commands)
 
-*Commands* allow you to define actions in one place and then refer to them from all your user interface controls like [MenuItems](/Gui.Core/_MenuItem.md), [ToolBars](/Gui.Core/_ToolBar.md) or [Buttons](/Gui.Core/_Button.md). Examples of commands are the *Copy*, *Cut*, and *Paste* operations found on many applications. Applications often expose these actions through many mechanisms simultaneously: MenuItems in a *Menu*, MenuItems on a *ContextMenu*, Buttons on a *ToolBar*, *Keyboard Shortcuts* and so on.
+*Commands* allow you to define actions in one place and then refer to them from all your user interface controls like [MenuItems](_MenuItem.md), [ToolBars](_ToolBar.md) or [Buttons](_Button.md). Examples of commands are the *Copy*, *Cut*, and *Paste* operations found on many applications. Applications often expose these actions through many mechanisms simultaneously: MenuItems in a *Menu*, MenuItems on a *ContextMenu*, Buttons on a *ToolBar*, *Keyboard Shortcuts* and so on.
 
 *Commands* have several purposes. The first purpose is to *separate* the semantics and the object that invokes a command from the logic that executes the command. This allows for multiple and disparate sources to *invoke* the same command logic, and it allows the command logic to be customized for different targets. For example, the editing operations *Copy*, *Cut*, and *Paste*, which are found in many applications, can be invoked by using different user actions if they are implemented by using commands. An application might allow a user to cut selected objects or text by either clicking a button, choosing an item in a menu, or using a key combination, such as *CTRL+X*. By using commands, you can *bind* each type of user action to the same logic.
 
@@ -12,17 +12,17 @@ Command is also one of the important components of any *MVVM* (Model-View-ViewMo
 
 # Command bindings
 
-Commands don't actually do anything by themselves. At the root, they consist of the *ICommand* interface, which only defines an event and two methods: *Execute()* and *CanExecute()*. The first one is for performing the actual action, while the second one is for determining whether the action is currently available. To perform the actual action of the command, you need a link between the command and your code and this is where the [CommandBinding](/Gui.Core/_CommandBinding.md) comes into play.
+Commands don't actually do anything by themselves. At the root, they consist of the *ICommand* interface, which only defines an event and two methods: *Execute()* and *CanExecute()*. The first one is for performing the actual action, while the second one is for determining whether the action is currently available. To perform the actual action of the command, you need a link between the command and your code and this is where the [CommandBinding](_CommandBinding.md) comes into play.
 
-A *CommandBinding* is usually defined on a [Window](/App.ApplicationLauncher/_Window.md) or [UserControl](/Gui.Core/_UserControl.md), and holds a reference to the *Command* that it handles, as well as the actual event handlers for dealing with the *Execute()* and *CanExecute()* events of the *Command*.
+A *CommandBinding* is usually defined on a [Window](../App.ApplicationLauncher/_Window.md) or [UserControl](_UserControl.md), and holds a reference to the *Command* that it handles, as well as the actual event handlers for dealing with the *Execute()* and *CanExecute()* events of the *Command*.
 
 The semantics of a command can be consistent across applications and classes, but the logic of the action is specific to the particular object acted upon. For example, the key combination *CTRL+X* invokes the *Cut* command in text classes, image classes, and Web browsers, but the actual logic for performing the *Cut* operation is defined by the application that performs the cut. A *RoutedCommand* enables clients to implement the logic. A text object may cut the selected text into the clipboard, while an image object may cut the selected image. When an application handles the *Executed* event, it has access to the target of the command and can take *appropriate* action depending on the target's type.
 
 # Built-In Commands
 
-Controls such as [Button](/Gui.Core/_Button.md), [CheckBox](/Gui.Core/_CheckBox.md), and [MenuItem](/Gui.Core/_MenuItem.md) have logic to interact with any command on your behalf. They expose a simple *Command* property. When set, these controls automatically call the command's *Execute* method (when *CanExecute* returns true) whenever their *Click* event is raised. In addition, they automatically keep their value for *IsEnabled* synchronized with the value of *CanExecute* by leveraging the *CanExecuteChanged* event. By supporting all this via a simple property assignment, all of this logic is available from XAML.
+Controls such as [Button](_Button.md), [CheckBox](_CheckBox.md), and [MenuItem](_MenuItem.md) have logic to interact with any command on your behalf. They expose a simple *Command* property. When set, these controls automatically call the command's *Execute* method (when *CanExecute* returns true) whenever their *Click* event is raised. In addition, they automatically keep their value for *IsEnabled* synchronized with the value of *CanExecute* by leveraging the *CanExecuteChanged* event. By supporting all this via a simple property assignment, all of this logic is available from XAML.
 
-[ApplicationCommands](/Gui.Core/_ApplicationCommands.md) provides a set of built-in commands ready to be used.
+[ApplicationCommands](_ApplicationCommands.md) provides a set of built-in commands ready to be used.
 
 ```
 <Grid
@@ -48,11 +48,11 @@ Controls such as [Button](/Gui.Core/_Button.md), [CheckBox](/Gui.Core/_CheckBox.
 
 # Custom Commands
 
-The easiest way to create custom commands is implementing the *ICommand* interface. For example, the implementation of a *Command* that invokes a [Delegate](/Gui.Core/CppArchitectureGuide.md#delegates) is as follows:
+The easiest way to create custom commands is implementing the *ICommand* interface. For example, the implementation of a *Command* that invokes a [Delegate](CppArchitectureGuide.md#delegates) is as follows:
 
 NOTE
 
-Please, refer to our [Extending NoesisGUI Tutorial](/Gui.Core/ExtendingTutorial.md) for more information about extending noesisGUI.
+Please, refer to our [Extending NoesisGUI Tutorial](ExtendingTutorial.md) for more information about extending noesisGUI.
 
 C++
 
@@ -145,7 +145,7 @@ public class DelegateCommand: ICommand
 
 NOTE
 
-In this sample DelegateCommand is not allocated in the heap to reduce allocations as explained in the [C++ Architecture Guide](/Gui.Core/CppArchitectureGuide.md#reference-counting). This is one of those scenarios where it is safe to do so and reference counting is not needed.
+In this sample DelegateCommand is not allocated in the heap to reduce allocations as explained in the [C++ Architecture Guide](CppArchitectureGuide.md#reference-counting). This is one of those scenarios where it is safe to do so and reference counting is not needed.
 
 C++
 
@@ -253,7 +253,7 @@ public class ViewModel : NotifyPropertyChangedBase
 
 The following XAML shows how you might use the previous *ViewModel*. It is set as the *DataContext* of the root element. The button inside the panel gets the command assigned from the *ViewModel*. Whenever the button is pressed the command is fired.
 
-![CommandsTutorialImg1.jpg](/CommandsTutorialImg1/jpg.md)
+![CommandsTutorialImg1.jpg](https://www.noesisengine.com/docs/CommandsTutorialImg1.jpg)
 
 ```
 <Grid

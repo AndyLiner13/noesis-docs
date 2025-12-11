@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._BooleanToVisibilityConverter
 
 # BooleanToVisibilityConverter Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.controls.booleantovisibilityconverter)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.controls.booleantovisibilityconverter)
 
 Represents the converter that converts *Boolean* values to and from *Visibility* enumeration values.
 
@@ -29,7 +29,7 @@ The *Convert* method returns *Visibility.Visible* when true is passed in or *Vis
 
 # Inheritance Hierarchy
 
-• [BaseValueConverter](/Gui.Core/_BaseValueConverter.md)
+• [BaseValueConverter](_BaseValueConverter.md)
 
 • *BooleanToVisibilityConverter*
 
@@ -43,7 +43,7 @@ BooleanToVisibilityConverter has no attached properties
 
 # Methods
 
-## From [BaseValueConverter](/Gui.Core/_BaseValueConverter.md)
+## From [BaseValueConverter](_BaseValueConverter.md)
 
 | Name | Description |
 | --- | --- |

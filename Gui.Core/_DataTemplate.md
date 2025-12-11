@@ -2,28 +2,28 @@ Source: https://www.noesisengine.com/docs/Gui.Core._DataTemplate.html
 
 # DataTemplate Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx)
 
 Describes the visual structure of a data object.
 
 # Inheritance Hierarchy
 
-• [FrameworkTemplate](/Gui.Core/_FrameworkTemplate.md)
+• [FrameworkTemplate](_FrameworkTemplate.md)
 
 • *DataTemplate*
 
-• [HierarchicalDataTemplate](/Gui.Core/_HierarchicalDataTemplate.md)
+• [HierarchicalDataTemplate](_HierarchicalDataTemplate.md)
 
 # Properties
 
 | Name | Description |
 | --- | --- |
-| ○ *DataType* | Gets or sets the type for which this [DataTemplate](/Gui.Core/_DataTemplate.md) is intended |
+| ○ *DataType* | Gets or sets the type for which this [DataTemplate](_DataTemplate.md) is intended |
 | ○ *Triggers* | Gets a collection of triggers that apply property values or perform actions based on one or more conditions. |
 
 ● Dependency Property   ○ Reflection Property
 
-## From [FrameworkTemplate](/Gui.Core/_FrameworkTemplate.md)
+## From [FrameworkTemplate](_FrameworkTemplate.md)
 
 | Name | Description |
 | --- | --- |
@@ -38,7 +38,7 @@ DataTemplate has no attached properties
 
 # Methods
 
-## From [FrameworkTemplate](/Gui.Core/_FrameworkTemplate.md)
+## From [FrameworkTemplate](_FrameworkTemplate.md)
 
 | Name | Description |
 | --- | --- |

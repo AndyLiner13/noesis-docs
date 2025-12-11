@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/App.ApplicationLauncher._Application.h
 
 # Application Class
 
-## namespace [NoesisApp](/Gui.Core/_ClassHierarchy.md#noesisapp-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.application.aspx)
+## namespace [NoesisApp](../Gui.Core/_ClassHierarchy.md#noesisapp-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.application.aspx)
 
 Encapsulates a NoesisGUI application.
 
@@ -36,7 +36,7 @@ Application has no attached properties
 |  *Exit()* | Occurs just before an application shuts down |
 |  *Init(display, arguments)* | Initializes the application with on the given display and command line arguments |
 |  *Shutdown(exitCode)* | Shuts down an application that returns the specified exit code to the operating system |
-|  *StartUp()* | Occurs when the [Application](/App.ApplicationLauncher/_Application.md) is initialized |
+|  *StartUp()* | Occurs when the [Application](_Application.md) is initialized |
 |  *Tick(time)* | Ticks application |
 
 # Events

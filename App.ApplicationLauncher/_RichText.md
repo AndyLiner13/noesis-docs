@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/App.ApplicationLauncher._RichText.html
 
 # RichText Class
 
-## namespace [NoesisApp](/Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
+## namespace [NoesisApp](../Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
 
-Adds a *Text* attached property for [TextBlock](/Gui.Core/_TextBlock.md) which formats [BBCode](https://www.bbcode.org/reference.php) into Inlines.
+Adds a *Text* attached property for [TextBlock](../Gui.Core/_TextBlock.md) which formats [BBCode](https://www.bbcode.org/reference.php) into Inlines.
 
 ```
 <Grid
@@ -19,29 +19,29 @@ Adds a *Text* attached property for [TextBlock](/Gui.Core/_TextBlock.md) which f
 NOTE
 
 In Unreal, this class is implemented using Unreal-style markup syntax. More information is
-available in this [Localization Tutorial](/Gui.Core/LocalizationTutorial.md#unreal-engine)
+available in this [Localization Tutorial](../Gui.Core/LocalizationTutorial.md#unreal-engine)
 
-Default supported BBCode tags, with their [Inline](/Gui.Core/_Inline.md) output:
+Default supported BBCode tags, with their [Inline](../Gui.Core/_Inline.md) output:
 
-- *b*: [Bold](/Gui.Core/_Bold.md),
+- *b*: [Bold](../Gui.Core/_Bold.md),
   "[b]bold.[/b]"
-- *i*: [Italic](/Gui.Core/_Italic.md),
+- *i*: [Italic](../Gui.Core/_Italic.md),
   "[i]italic.[/i]"
-- *u*: [Underline](/Gui.Core/_Underline.md),
+- *u*: [Underline](../Gui.Core/_Underline.md),
   "[u]underline.[/u]"
-- *size*: [Span](/Gui.Core/_Span.md) with FontSize set to the parameter value,
+- *size*: [Span](../Gui.Core/_Span.md) with FontSize set to the parameter value,
   "[size=60]size 60 text.[/size]"
-- *font*: [Span](/Gui.Core/_Span.md) with [FontFamily](/Gui.Core/_FontFamily.md) set to the parameter value,
+- *font*: [Span](../Gui.Core/_Span.md) with [FontFamily](../Gui.Core/_FontFamily.md) set to the parameter value,
   "[font='#PT Root UI']PT Root UI font.[/]"
-- *color*: [Span](/Gui.Core/_Span.md) with Foreground set to the parameter value (a color name, or ARBG hex),
+- *color*: [Span](../Gui.Core/_Span.md) with Foreground set to the parameter value (a color name, or ARBG hex),
   "[color=Red]red.[/color][color=#FF0000FF]blue.[/color]"
-- *url*: [Hyperlink](/Gui.Core/_Hyperlink.md) with NavigateUri set to the parameter value,
+- *url*: [Hyperlink](../Gui.Core/_Hyperlink.md) with NavigateUri set to the parameter value,
   "[url='https://www.noesisengine.com/']NoesisEngine.com[/url]"
-- *br*: A [LineBreak](/Gui.Core/_LineBreak.md),
+- *br*: A [LineBreak](../Gui.Core/_LineBreak.md),
   "Line one.[br/]Line two."
-- *img*: [Image](/Gui.Core/_Image.md) contained in an [InlineUIContainer](/Gui.Core/_InlineUIContainer.md),
+- *img*: [Image](../Gui.Core/_Image.md) contained in an [InlineUIContainer](../Gui.Core/_InlineUIContainer.md),
   "[img height=80]disk.png[/img]"
-- *style*: [Span](/Gui.Core/_Span.md) with the [Style](/Gui.Core/_Style.md) property set to the resource key provided by the parameter value,
+- *style*: [Span](../Gui.Core/_Span.md) with the [Style](../Gui.Core/_Style.md) property set to the resource key provided by the parameter value,
   "[style='Header1']Styled text.[/style]"
 
 > ```
@@ -58,7 +58,7 @@ Default supported BBCode tags, with their [Inline](/Gui.Core/_Inline.md) output:
 > </Grid>
 > ```
 
-- *bind*: [Run](/Gui.Core/_Run.md) containing a [Binding](/Gui.Core/_Binding.md) with the [Path](/Gui.Core/_Path.md) property set to the tag contents. This tag
+- *bind*: [Run](../Gui.Core/_Run.md) containing a [Binding](../Gui.Core/_Binding.md) with the [Path](../Gui.Core/_Path.md) property set to the tag contents. This tag
   has an optional "format" parameter which can be used to modify the StringFormat property
   of the Binding,
   "[bind format='{0:0}']Path[/bind]"
@@ -88,7 +88,7 @@ RichText has no properties
 
 | Name | Description |
 | --- | --- |
-| ● *Text* | Gets or sets the value of an element's [RichText](/App.ApplicationLauncher/_RichText.md) Text property |
+| ● *Text* | Gets or sets the value of an element's [RichText](_RichText.md) Text property |
 
 # Methods
 

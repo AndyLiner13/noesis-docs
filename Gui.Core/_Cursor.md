@@ -2,11 +2,11 @@ Source: https://www.noesisengine.com/docs/Gui.Core._Cursor.html
 
 # Cursor Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.cursor)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.cursor)
 
 Represents the image used for the mouse pointer.
 
-The [Cursors](/Gui.Core/_Cursors.md) class contains a set of default cursors. Custom cursors can be created from specified .ani or .cur files.
+The [Cursors](_Cursors.md) class contains a set of default cursors. Custom cursors can be created from specified .ani or .cur files.
 
 ```
 <StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">

@@ -2,13 +2,13 @@ Source: https://www.noesisengine.com/docs/Gui.Core.CustomRenderTutorial.html
 
 # Custom Rendering Tutorial
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/CustomRender)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/CustomRender)
 
 Most of the controls in NoesisGUI are composed of multiple elements internally. It is the preferred method to create controls by combining existing elements, but it might be overkill in some cases. Large number of elements in a visual tree can cause the main element to become very heavy and consume more memory, thereby causing performance issues.
 
-There is a solution to this problem and it involves letting the element take control of the rendering of its content. You simply override the *OnRender* method and draw into its [DrawingContext](/Gui.Core/_DrawingContext.md) parameter. It is a memory efficient way of building a composite element. It also simplifies the visual tree of the element and makes it lighter.
+There is a solution to this problem and it involves letting the element take control of the rendering of its content. You simply override the *OnRender* method and draw into its [DrawingContext](_DrawingContext.md) parameter. It is a memory efficient way of building a composite element. It also simplifies the visual tree of the element and makes it lighter.
 
-[DrawingContext](/Gui.Core/_DrawingContext.md) is a lightweight class which can be used to render rectangles, lines, text or any arbitrary geometric shapes.
+[DrawingContext](_DrawingContext.md) is a lightweight class which can be used to render rectangles, lines, text or any arbitrary geometric shapes.
 
 # Arkanoid example
 
@@ -27,9 +27,9 @@ In our collection of examples you can find an implementation of the popular [Ark
 </Window>
 ```
 
-![CustomRenderTutorialImg1.png](/CustomRenderTutorialImg1/png.md)
+![CustomRenderTutorialImg1.png](https://www.noesisengine.com/docs/CustomRenderTutorialImg1.png)
 
-*Game* is a [FrameworkElement](/Gui.Core/_FrameworkElement.md) derived class that overrides its *OnRender* method. *OnRender* receives an object of type [DrawingContext](/Gui.Core/_DrawingContext.md) as an argument which contains useful methods to draw text and shapes. In this example we use *DrawRectangle* to render each block of the game.
+*Game* is a [FrameworkElement](_FrameworkElement.md) derived class that overrides its *OnRender* method. *OnRender* receives an object of type [DrawingContext](_DrawingContext.md) as an argument which contains useful methods to draw text and shapes. In this example we use *DrawRectangle* to render each block of the game.
 
 C++
 
@@ -47,4 +47,4 @@ void Game::OnRender(DrawingContext* context) override
 
 NOTE
 
-Although the API exposed by [DrawingContext](/Gui.Core/_DrawingContext.md) seems to be immediate it is still retained as the render commands are stored internally and later used by the render thread. The content is not being drawn immediately to the screen.
+Although the API exposed by [DrawingContext](_DrawingContext.md) seems to be immediate it is still retained as the render commands are stored internally and later used by the render thread. The content is not being drawn immediately to the screen.

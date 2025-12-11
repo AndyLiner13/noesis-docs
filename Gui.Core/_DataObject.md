@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._DataObject.html
 
 # DataObject Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://docs.microsoft.com/en-us/dotnet/api/system.windows.dataobject)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://docs.microsoft.com/en-us/dotnet/api/system.windows.dataobject)
 
 Defines a format-independent mechanism for transferring data.
 
@@ -22,10 +22,10 @@ DataObject has no attached properties
 
 | Name | Description |
 | --- | --- |
-|  *AddCopyingHandler(element, handler)* | Adds a [DataObject](/Gui.Core/_DataObject.md).Copying event handler to a specified element. |
-|  *AddPastingHandler(element, handler)* | Adds a [DataObject](/Gui.Core/_DataObject.md).Pasting event handler to a specified element. |
-|  *RemoveCopyingHandler(element, handler)* | Removes a [DataObject](/Gui.Core/_DataObject.md).Copying event handler from a specified element. |
-|  *RemovePastingHandler(element, handler)* | Removes a [DataObject](/Gui.Core/_DataObject.md).Pasting event handler from a specified element. |
+|  *AddCopyingHandler(element, handler)* | Adds a [DataObject](_DataObject.md).Copying event handler to a specified element. |
+|  *AddPastingHandler(element, handler)* | Adds a [DataObject](_DataObject.md).Pasting event handler to a specified element. |
+|  *RemoveCopyingHandler(element, handler)* | Removes a [DataObject](_DataObject.md).Copying event handler from a specified element. |
+|  *RemovePastingHandler(element, handler)* | Removes a [DataObject](_DataObject.md).Pasting event handler from a specified element. |
 
 # Events
 

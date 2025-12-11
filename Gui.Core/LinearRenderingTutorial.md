@@ -30,7 +30,7 @@ Using linear rendering has significant implications for the final output. By acc
 
 In linear mode, opacity values are no longer perceived in a linear manner. This means that setting opacity to 50% no longer results in an output that is half as bright as when opacity is set to 100%. In linear space, the values are perceived linearly in terms of emitted light intensity (before gamma conversion). For example:
 
-![LinearRenderingTutorialImg0.png](/LinearRenderingTutorialImg0/png.md)
+![LinearRenderingTutorialImg0.png](https://www.noesisengine.com/docs/LinearRenderingTutorialImg0.png)
 
 [RUN ▶](https://www.noesisengine.com/xamltoy/5beb5353f136b7564f7ab15d0c5f99e0)
 
@@ -66,7 +66,7 @@ In linear mode, opacity values are no longer perceived in a linear manner. This 
 
 This has important implications for alpha blending. In the following example, a few coloured rectangles are mixed together using opacity. The image on the left mimics more closely how light would behave in real life while the non-linear one on the right exhibits some weird hue and brightness shifts.
 
-![LinearRenderingTutorialImg1.png](/LinearRenderingTutorialImg1/png.md)
+![LinearRenderingTutorialImg1.png](https://www.noesisengine.com/docs/LinearRenderingTutorialImg1.png)
 
 [RUN ▶](https://www.noesisengine.com/xamltoy/af45aead41a28905d1c54b51e2e96a47)
 
@@ -97,7 +97,7 @@ This has important implications for alpha blending. In the following example, a 
 
 In Noesis, to prevent significant changes in the output when linear mode is enabled, gradients are still interpolated in sRGB space instead of linear space. To enable linear interpolation, the property *ColorInterpolationMode* must be set to *ScRgbLinearInterpolation*. In the following XAML, for each gradient-pair, the top gradient is a linear interpolation between two colors in linear space, then the result is converted to sRGB. The bottom gradients are the results of interpolating between the exact same colors but directly in sRGB space.
 
-![LinearRenderingTutorialImg2.png](/LinearRenderingTutorialImg2/png.md)
+![LinearRenderingTutorialImg2.png](https://www.noesisengine.com/docs/LinearRenderingTutorialImg2.png)
 
 [RUN ▶](https://www.noesisengine.com/xamltoy/7763efa2d3333f9653679a3f019302db)
 

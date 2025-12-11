@@ -30,11 +30,11 @@ In NoesisGUI we incoporated the CharacterSpacing property defined by UWP text el
 </Grid>
 ```
 
-![ExtensionsTutorialImg0.png](/ExtensionsTutorialImg0/png.md)
+![ExtensionsTutorialImg0.png](https://www.noesisengine.com/docs/ExtensionsTutorialImg0.png)
 
 ## Stroke
 
-In NoesisGUI text can be stroked by using the attached properties *Text.Stroke* and *Text.StrokeThickness*. The first defines the [Brush](/Gui.Core/_Brush.md) to fill the stroke, and the latter specifies the width in pixels of the stroke. These properties are inherited down the UI tree.
+In NoesisGUI text can be stroked by using the attached properties *Text.Stroke* and *Text.StrokeThickness*. The first defines the [Brush](_Brush.md) to fill the stroke, and the latter specifies the width in pixels of the stroke. These properties are inherited down the UI tree.
 
 ```
 <Grid
@@ -47,11 +47,11 @@ In NoesisGUI text can be stroked by using the attached properties *Text.Stroke* 
 </Grid>
 ```
 
-![ExtensionsTutorialImg1.png](/ExtensionsTutorialImg1/png.md)
+![ExtensionsTutorialImg1.png](https://www.noesisengine.com/docs/ExtensionsTutorialImg1.png)
 
 ## Placeholder
 
-Some controls like [TextBox](/Gui.Core/_TextBox.md), [PasswordBox](/Gui.Core/_PasswordBox.md) and [ComboBox](/Gui.Core/_ComboBox.md) can show a placeholder text as a hint of their use. Using *Text.Placeholder* attached property in a control template adds placeholder functionality to the control.
+Some controls like [TextBox](_TextBox.md), [PasswordBox](_PasswordBox.md) and [ComboBox](_ComboBox.md) can show a placeholder text as a hint of their use. Using *Text.Placeholder* attached property in a control template adds placeholder functionality to the control.
 
 ```
 <ControlTemplate x:Key="Template.TextBox" TargetType="TextBox">
@@ -85,11 +85,11 @@ Some controls like [TextBox](/Gui.Core/_TextBox.md), [PasswordBox](/Gui.Core/_Pa
 </Grid>
 ```
 
-![ExtensionsTutorialImg2.png](/ExtensionsTutorialImg2/png.md)
+![ExtensionsTutorialImg2.png](https://www.noesisengine.com/docs/ExtensionsTutorialImg2.png)
 
 ## ShowLastCharacterDuration
 
-Specifies the duration in milliseconds that the last character typed in a [PasswordBox](/Gui.Core/_PasswordBox.md) remains visible before it is converted into the corresponding *PasswordChar*.
+Specifies the duration in milliseconds that the last character typed in a [PasswordBox](_PasswordBox.md) remains visible before it is converted into the corresponding *PasswordChar*.
 
 ```
 <Grid
@@ -104,11 +104,11 @@ Specifies the duration in milliseconds that the last character typed in a [Passw
 </Grid>
 ```
 
-![ExtensionsTutorialImg6.png](/ExtensionsTutorialImg6/png.md)
+![ExtensionsTutorialImg6.png](https://www.noesisengine.com/docs/ExtensionsTutorialImg6.png)
 
 ## RichText
 
-This extension adds a new attached property, [RichText.Text](/App.ApplicationLauncher/_RichText.md). It implements a very convenient way to fill the *Inlines* of a [TextBlock](/Gui.Core/_TextBlock.md) from a *DataContext*.
+This extension adds a new attached property, [RichText.Text](../App.ApplicationLauncher/_RichText.md). It implements a very convenient way to fill the *Inlines* of a [TextBlock](_TextBlock.md) from a *DataContext*.
 
 ```
 <Grid
@@ -121,7 +121,7 @@ This extension adds a new attached property, [RichText.Text](/App.ApplicationLau
 
 ## LocExtension
 
-For localization purposes, this extension implements a new markup extension, [Loc](/App.ApplicationLauncher/_LocExtension.md), to localize text and other elements like images. It provides a value for any XAML property attribute by looking up a reference in a [ResourceDictionary](/Gui.Core/_ResourceDictionary.md). It can be used in combination with [RichText.Text](/App.ApplicationLauncher/_RichText.md) .
+For localization purposes, this extension implements a new markup extension, [Loc](../App.ApplicationLauncher/_LocExtension.md), to localize text and other elements like images. It provides a value for any XAML property attribute by looking up a reference in a [ResourceDictionary](_ResourceDictionary.md). It can be used in combination with [RichText.Text](../App.ApplicationLauncher/_RichText.md) .
 
 Language\_en-gb.xaml
 
@@ -151,7 +151,7 @@ Language\_en-gb.xaml
 
 ## PPAA
 
-When using Per-Primitive Antialiasing ([PPAA](/Gui.Core/AntialiasingTutorial.md#per-primitive-antialiasing)) sometimes it is useful to disable it on a specific element or group of elements. This can be done by setting attached property *Element.PPAAMode* to *Disabled*. This way you can avoid the minor overlappings on contiguous elements produced by the extruded geometry that PPAA generates. It can also be used to improve performance on elements where *PPAA* is not necessary, like aligned rectangles. This property is inherited down the UI tree.
+When using Per-Primitive Antialiasing ([PPAA](AntialiasingTutorial.md#per-primitive-antialiasing)) sometimes it is useful to disable it on a specific element or group of elements. This can be done by setting attached property *Element.PPAAMode* to *Disabled*. This way you can avoid the minor overlappings on contiguous elements produced by the extruded geometry that PPAA generates. It can also be used to improve performance on elements where *PPAA* is not necessary, like aligned rectangles. This property is inherited down the UI tree.
 
 ```
 <Grid
@@ -181,7 +181,7 @@ When using Per-Primitive Antialiasing ([PPAA](/Gui.Core/AntialiasingTutorial.md#
 </Grid>
 ```
 
-![ExtensionsTutorialImg3.png](/ExtensionsTutorialImg3/png.md)
+![ExtensionsTutorialImg3.png](https://www.noesisengine.com/docs/ExtensionsTutorialImg3.png)
 
 In other situations is desirable to modify the extrusion parameters of PPAA to get a better antialiasing. This can be done by setting *Element.PPAAIn* and *Element.PPAAOut* properties on the selected elements. These properties are inherited down the UI tree.
 
@@ -217,11 +217,11 @@ The *Element.BlendingMode* extension allows UI element contents to mix with the 
 </Grid>
 ```
 
-![ExtensionsTutorialImg5.png](/ExtensionsTutorialImg5/png.md)
+![ExtensionsTutorialImg5.png](https://www.noesisengine.com/docs/ExtensionsTutorialImg5.png)
 
 ## Transform3D
 
-NoesisGUI provides [3-D transformations](/Gui.Core/Transform3DTutorial.md) to UI elements trough the attached property *Element.Transform3D*. Two types of 3-D transform objects are available: [CompositeTransform3D](/Gui.Core/_CompositeTransform3D.md) and [MatrixTransform3D](/Gui.Core/_MatrixTransform3D.md).
+NoesisGUI provides [3-D transformations](Transform3DTutorial.md) to UI elements trough the attached property *Element.Transform3D*. Two types of 3-D transform objects are available: [CompositeTransform3D](_CompositeTransform3D.md) and [MatrixTransform3D](_MatrixTransform3D.md).
 
 ```
 <Grid
@@ -242,13 +242,13 @@ NoesisGUI provides [3-D transformations](/Gui.Core/Transform3DTutorial.md) to UI
 </Grid>
 ```
 
-![ExtensionsTutorialImg4.png](/ExtensionsTutorialImg4/png.md)
+![ExtensionsTutorialImg4.png](https://www.noesisengine.com/docs/ExtensionsTutorialImg4.png)
 
 ## Focus Engagement
 
-To ensure that applications are usable and accessible through [Gamepads](/Gui.Core/SDKGuide.md#gamepad) it is necessary to handle focus on some controls in a particular way, otherwise focus could get 'trapped' within a control. [Focus engagement](https://docs.microsoft.com/en-us/windows/uwp/design/input/gamepad-and-remote-interactions#focus-engagement) tries to resolve this situation.
+To ensure that applications are usable and accessible through [Gamepads](SDKGuide.md#gamepad) it is necessary to handle focus on some controls in a particular way, otherwise focus could get 'trapped' within a control. [Focus engagement](https://docs.microsoft.com/en-us/windows/uwp/design/input/gamepad-and-remote-interactions#focus-engagement) tries to resolve this situation.
 
-The attached property *Element.IsFocusEngagementEnabled* can be set on a control to enable focus engagement. By default focus engagement is enabled on the following controls: [Slider](/Gui.Core/_Slider.md), [TextBox](/Gui.Core/_TextBox.md), [PasswordBox](/Gui.Core/_PasswordBox.md), and [ComboBox](/Gui.Core/_ComboBox.md). This means that when one of those controls receives focus, user has to press 'Accept' button to activate it and interact with it, and press 'Cancel' button to exit from focus engagement. Attached property *Element.IsFocusEngaged* indicates if the control has focus engaged or not, and can be used to show a visual cue in its template to help users identify that state.
+The attached property *Element.IsFocusEngagementEnabled* can be set on a control to enable focus engagement. By default focus engagement is enabled on the following controls: [Slider](_Slider.md), [TextBox](_TextBox.md), [PasswordBox](_PasswordBox.md), and [ComboBox](_ComboBox.md). This means that when one of those controls receives focus, user has to press 'Accept' button to activate it and interact with it, and press 'Cancel' button to exit from focus engagement. Attached property *Element.IsFocusEngaged* indicates if the control has focus engaged or not, and can be used to show a visual cue in its template to help users identify that state.
 
 ```
 <ControlTemplate x:Key="TextBoxTemplate" TargetType="TextBox">
@@ -273,7 +273,7 @@ If your app supports proper focus navigation for keyboard, this will translate w
 
 However, there may be some extra work required to support every scenario. Because XY focus navigation limits the user to moving up, down, left, and right, you may end up with scenarios where parts of the UI are inaccessible.
 
-![ExtensionsTutorialImg9.png](/ExtensionsTutorialImg9/png.md)
+![ExtensionsTutorialImg9.png](https://www.noesisengine.com/docs/ExtensionsTutorialImg9.png)
 
 In that case you can override the default behavior to move the focus on a specific logical item by using the *XYFocus* extension properties:
 
@@ -298,7 +298,7 @@ In that case you can override the default behavior to move the focus on a specif
 
 ## Gesture Events
 
-The following [Gesture events](/Gui.Core/TouchTutorial.md#gesture-events) are taken from UWP:
+The following [Gesture events](TouchTutorial.md#gesture-events) are taken from UWP:
 
 - [Tapped](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.tapped)
 - [DoubleTapped](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.doubletapped)
@@ -318,7 +318,7 @@ The following [Gesture events](/Gui.Core/TouchTutorial.md#gesture-events) are ta
 
 ## Trimming
 
-Creating [Vector Animations](https://www.noesisengine.com/xamltoy/6acdc882e5c540f15a7857a884e06a42) usually requires to render only part of a path. This can be achieved sometimes with clipping, but not always. Path trimming is a feature that allows to specify which section of a path will be displayed. NoesisGUI defines attached properties [Path.TrimStart](https://docs.microsoft.com/es-mx/uwp/api/windows.ui.composition.compositiongeometry.trimstart?view=winrt-18362), [Path.TrimEnd](https://docs.microsoft.com/es-mx/uwp/api/windows.ui.composition.compositiongeometry.trimend?view=winrt-18362) and [Path.TrimOffset](https://docs.microsoft.com/es-mx/uwp/api/windows.ui.composition.compositiongeometry.trimoffset?view=winrt-18362) that can be set on any [Shape](/Gui.Core/_Shape.md) element for that purpose.
+Creating [Vector Animations](https://www.noesisengine.com/xamltoy/6acdc882e5c540f15a7857a884e06a42) usually requires to render only part of a path. This can be achieved sometimes with clipping, but not always. Path trimming is a feature that allows to specify which section of a path will be displayed. NoesisGUI defines attached properties [Path.TrimStart](https://docs.microsoft.com/es-mx/uwp/api/windows.ui.composition.compositiongeometry.trimstart?view=winrt-18362), [Path.TrimEnd](https://docs.microsoft.com/es-mx/uwp/api/windows.ui.composition.compositiongeometry.trimend?view=winrt-18362) and [Path.TrimOffset](https://docs.microsoft.com/es-mx/uwp/api/windows.ui.composition.compositiongeometry.trimoffset?view=winrt-18362) that can be set on any [Shape](_Shape.md) element for that purpose.
 
 ```
 <Grid
@@ -351,7 +351,7 @@ Creating [Vector Animations](https://www.noesisengine.com/xamltoy/6acdc882e5c540
 
 ## Shader Brush
 
-[Shader Brushes](/Gui.Core/ShadersTutorial.md#shader-brushes) provides functionality that allows [ImageBrush](/Gui.Core/_ImageBrush.md) to be extended by using pixel shaders.
+[Shader Brushes](ShadersTutorial.md#shader-brushes) provides functionality that allows [ImageBrush](_ImageBrush.md) to be extended by using pixel shaders.
 
 ```
 <Grid
@@ -371,11 +371,11 @@ Creating [Vector Animations](https://www.noesisengine.com/xamltoy/6acdc882e5c540
 </Grid>
 ```
 
-![ShadersTutorialImg2.jpg](/ShadersTutorialImg2/jpg.md)
+![ShadersTutorialImg2.jpg](https://www.noesisengine.com/docs/ShadersTutorialImg2.jpg)
 
 ## BoxShadow
 
-The [BoxShadow](/App.Shaders/_BoxShadow.md) primitive is part of the Brush Extensions suite and is designed for high-performance rendering of blurred, rounded rectangles. Internally, it uses a BrushShader to simulate both inner and outer shadows, providing visually rich shadow effects without relying on traditional effect like [DropShadowEffect](/Gui.Core/_DropShadowEffect.md).
+The [BoxShadow](../App.Shaders/_BoxShadow.md) primitive is part of the Brush Extensions suite and is designed for high-performance rendering of blurred, rounded rectangles. Internally, it uses a BrushShader to simulate both inner and outer shadows, providing visually rich shadow effects without relying on traditional effect like [DropShadowEffect](_DropShadowEffect.md).
 
 By eliminating offscreen rendering, this primitive offers a significantly more efficient alternative to standard shadow techniques.
 
@@ -392,13 +392,13 @@ By eliminating offscreen rendering, this primitive offers a significantly more e
 </Grid>
 ```
 
-![ExtensionsTutorialImg10.png](/ExtensionsTutorialImg10/png.md)
+![ExtensionsTutorialImg10.png](https://www.noesisengine.com/docs/ExtensionsTutorialImg10.png)
 
 # Interactivity Extensions
 
 ## Styles
 
-[Behaviors](/App.Interactivity/Behaviors.md) architecture allows UI designers to add functionality to the interface using only XAML. NoesisGUI implements almost all behaviors and triggers provided by Blend, but they cannot be specified within [Styles](/App.Interactivity/Behaviors.md#styles) because default [Interaction](/App.Interactivity/_Interaction.md) *Behaviors* and *Triggers* are read-only properties in WPF. To address that limitation we extended this architecture with a couple of attached properties, [StyleInteraction](/App.Interactivity/_StyleInteraction.md) *Behaviors* and *Triggers*, that can be set in a style [Setter](/Gui.Core/_Setter.md).
+[Behaviors](../App.Interactivity/Behaviors.md) architecture allows UI designers to add functionality to the interface using only XAML. NoesisGUI implements almost all behaviors and triggers provided by Blend, but they cannot be specified within [Styles](../App.Interactivity/Behaviors.md#styles) because default [Interaction](../App.Interactivity/_Interaction.md) *Behaviors* and *Triggers* are read-only properties in WPF. To address that limitation we extended this architecture with a couple of attached properties, [StyleInteraction](../App.Interactivity/_StyleInteraction.md) *Behaviors* and *Triggers*, that can be set in a style [Setter](_Setter.md).
 
 ```
 <Grid
@@ -436,7 +436,7 @@ By eliminating offscreen rendering, this primitive offers a significantly more e
 
 ## Triggers
 
-To allow users to perform actions in response to gamepad input NoesisGUI provides [GamepadTrigger](/App.Interactivity/_GamepadTrigger.md) .
+To allow users to perform actions in response to gamepad input NoesisGUI provides [GamepadTrigger](../App.Interactivity/_GamepadTrigger.md) .
 
 ```
 <UserControl
@@ -453,7 +453,7 @@ To allow users to perform actions in response to gamepad input NoesisGUI provide
 
 ## Behaviors
 
-When an application requires to sort a collection of items it can use NoesisGUI custom [CollectionSortBehavior](/App.Interactivity/_CollectionSortBehavior.md). If it needs to filter a collection of items then it can use the [CollectionFilterBehavior](/App.Interactivity/_CollectionFilterBehavior.md). Those behaviors can be combined by chaining the output collection of one to the *ItemsSource* input collection of the other behavior.
+When an application requires to sort a collection of items it can use NoesisGUI custom [CollectionSortBehavior](../App.Interactivity/_CollectionSortBehavior.md). If it needs to filter a collection of items then it can use the [CollectionFilterBehavior](../App.Interactivity/_CollectionFilterBehavior.md). Those behaviors can be combined by chaining the output collection of one to the *ItemsSource* input collection of the other behavior.
 
 ```
 <StackPanel
@@ -474,7 +474,7 @@ When an application requires to sort a collection of items it can use NoesisGUI 
 </StackPanel>
 ```
 
-NoesisGUI defines a custom [LineDecorationBehavior](/App.Interactivity/_LineDecorationBehavior.md) that can be attached to any TextBlock to render extra line decorations. The behavior defines a Progress property that can be used to adjust the length of the rendered line.
+NoesisGUI defines a custom [LineDecorationBehavior](../App.Interactivity/_LineDecorationBehavior.md) that can be attached to any TextBlock to render extra line decorations. The behavior defines a Progress property that can be used to adjust the length of the rendered line.
 
 ```
 <Grid
@@ -495,9 +495,9 @@ NoesisGUI defines a custom [LineDecorationBehavior](/App.Interactivity/_LineDeco
 </Grid>
 ```
 
-![ExtensionsTutorialImg7.png](/ExtensionsTutorialImg7/png.md)
+![ExtensionsTutorialImg7.png](https://www.noesisengine.com/docs/ExtensionsTutorialImg7.png)
 
-In case the application requires to blur the background of a panel it can use the [BackgroundEffectBehavior](/App.Interactivity/_BackgroundEffectBehavior.md). This behavior can be attached to Panels, Borders and Shapes to render the elements beneath as background with any effect applied.
+In case the application requires to blur the background of a panel it can use the [BackgroundEffectBehavior](../App.Interactivity/_BackgroundEffectBehavior.md). This behavior can be attached to Panels, Borders and Shapes to render the elements beneath as background with any effect applied.
 
 ```
 <Grid
@@ -516,11 +516,11 @@ In case the application requires to blur the background of a panel it can use th
 </Grid>
 ```
 
-![ExtensionsTutorialImg8.png](/ExtensionsTutorialImg8/png.md)
+![ExtensionsTutorialImg8.png](https://www.noesisengine.com/docs/ExtensionsTutorialImg8.png)
 
 ## Trigger Actions
 
-When a panel gets loaded, sometimes it is necessary to set the keyboard focus on a specific control. NoesisGUI includes the [SetFocusAction](/App.Interactivity/_SetFocusAction.md) to set the focus on the targeted element in response to any interactivity trigger.
+When a panel gets loaded, sometimes it is necessary to set the keyboard focus on a specific control. NoesisGUI includes the [SetFocusAction](../App.Interactivity/_SetFocusAction.md) to set the focus on the targeted element in response to any interactivity trigger.
 
 ```
 <Grid
@@ -537,7 +537,7 @@ When a panel gets loaded, sometimes it is necessary to set the keyboard focus on
 </Grid>
 ```
 
-The focus can be moved in a direction instead of a specific named element. To do that NoesisGUI defines the [MoveFocusAction](/App.Interactivity/_MoveFocusAction.md).
+The focus can be moved in a direction instead of a specific named element. To do that NoesisGUI defines the [MoveFocusAction](../App.Interactivity/_MoveFocusAction.md).
 
 ```
 <Grid
@@ -553,7 +553,7 @@ The focus can be moved in a direction instead of a specific named element. To do
 </Grid>
 ```
 
-There are situations that need selecting an item in a list when it gets hovered or any other event happens. This can be done using the [SelectAction](/App.Interactivity/_SelectAction.md), which sets the *Selector.IsSelected* property to true when the action gets execeuted.
+There are situations that need selecting an item in a list when it gets hovered or any other event happens. This can be done using the [SelectAction](../App.Interactivity/_SelectAction.md), which sets the *Selector.IsSelected* property to true when the action gets execeuted.
 
 ```
 <Grid
@@ -578,7 +578,7 @@ There are situations that need selecting an item in a list when it gets hovered 
 </Grid>
 ```
 
-When a [TextBox](/Gui.Core/_TextBox.md) or [PasswordBox](/Gui.Core/_PasswordBox.md) gets focus, the default behavior is to just position the caret where mouse was clicked, but sometimes it is preferable to select the whole text. To avoid creating a custom control for just that, NoesisGUI offers the [SelectAllAction](/App.Interactivity/_SelectAllAction.md).
+When a [TextBox](_TextBox.md) or [PasswordBox](_PasswordBox.md) gets focus, the default behavior is to just position the caret where mouse was clicked, but sometimes it is preferable to select the whole text. To avoid creating a custom control for just that, NoesisGUI offers the [SelectAllAction](../App.Interactivity/_SelectAllAction.md).
 
 ```
 <Grid
@@ -599,7 +599,7 @@ When a [TextBox](/Gui.Core/_TextBox.md) or [PasswordBox](/Gui.Core/_PasswordBox.
 
 ## Xaml Dependencies
 
-In Unity only the assets that are referenced from objects included in the scene are added to the game executable and are then available to load. [NoesisXaml](/Gui.Core/Unity3DTutorial.md#xaml-assets) asset automatically detects which resources are being used (like resource dictionaries, fonts or images) but there are situations where the application requires other resources to be loaded at runtime (from code for example). For that purpose, *Xaml.Dependencies* attached property is exposed to explicitly add dependencies.
+In Unity only the assets that are referenced from objects included in the scene are added to the game executable and are then available to load. [NoesisXaml](Unity3DTutorial.md#xaml-assets) asset automatically detects which resources are being used (like resource dictionaries, fonts or images) but there are situations where the application requires other resources to be loaded at runtime (from code for example). For that purpose, *Xaml.Dependencies* attached property is exposed to explicitly add dependencies.
 
 ```
 <UserControl

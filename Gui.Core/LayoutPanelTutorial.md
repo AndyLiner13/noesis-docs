@@ -2,13 +2,13 @@ Source: https://www.noesisengine.com/docs/Gui.Core.LayoutPanelTutorial.html
 
 # Layout and Panels Tutorial
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Panels)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Panels)
 
 This tutorial is dedicated to show how GUI elements get positioned and sized in relation to their container. Layout is a critical component of an application's usability on a wide range of devices. Also we will discover the variety of containers available to use in NoesisGUI.
 
 # Element Positioning
 
-The [FrameworkElement](/Gui.Core/_FrameworkElement.md) class exposes several properties that are used to precisely position child elements. This topic discusses four of the most important properties: *HorizontalAlignment*, *Margin*, *Padding*, and *VerticalAlignment*. The effects of these properties are important to understand, because they provide the basis for controlling the position of elements in NoesisGUI.
+The [FrameworkElement](_FrameworkElement.md) class exposes several properties that are used to precisely position child elements. This topic discusses four of the most important properties: *HorizontalAlignment*, *Margin*, *Padding*, and *VerticalAlignment*. The effects of these properties are important to understand, because they provide the basis for controlling the position of elements in NoesisGUI.
 
 ## Alignment
 
@@ -43,7 +43,7 @@ The *HorizontalAlignment* property declares the horizontal alignment characteris
 </StackPanel>
 ```
 
-![LayoutPanelTutorialImg1.png](/LayoutPanelTutorialImg1/png.md)
+![LayoutPanelTutorialImg1.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg1.png)
 
 ### VerticalAlignment
 
@@ -74,7 +74,7 @@ The *VerticalAlignment* property describes the vertical alignment characteristic
 </StackPanel>
 ```
 
-![LayoutPanelTutorialImg2.png](/LayoutPanelTutorialImg2/png.md)
+![LayoutPanelTutorialImg2.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg2.png)
 
 ## Margin
 
@@ -92,7 +92,7 @@ The *VerticalAlignment* property describes the vertical alignment characteristic
 </StackPanel>
 ```
 
-![LayoutPanelTutorialImg3.png](/LayoutPanelTutorialImg3/png.md)
+![LayoutPanelTutorialImg3.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg3.png)
 
 ## Padding
 
@@ -110,7 +110,7 @@ A padding is the space between control's border and the content within it. With 
 </StackPanel>
 ```
 
-![LayoutPanelTutorialImg4.png](/LayoutPanelTutorialImg4/png.md)
+![LayoutPanelTutorialImg4.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg4.png)
 
 # Containers
 
@@ -120,7 +120,7 @@ In NoesisGUI interfaces are built combining containers and controls that form a 
 
 ### ContentControl
 
-Controls that hold a single child **Content**. The content can be a string, an object or even another UIElement. Examples: [Button](/Gui.Core/_Button.md), [Label](/Gui.Core/_Label.md) and [ToolTip](/Gui.Core/_ToolTip.md).
+Controls that hold a single child **Content**. The content can be a string, an object or even another UIElement. Examples: [Button](_Button.md), [Label](_Label.md) and [ToolTip](_ToolTip.md).
 
 ```
 <StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -139,11 +139,11 @@ Controls that hold a single child **Content**. The content can be a string, an o
 </StackPanel>
 ```
 
-![LayoutPanelTutorialImg5.png](/LayoutPanelTutorialImg5/png.md)
+![LayoutPanelTutorialImg5.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg5.png)
 
 ### HeaderedContentControl
 
-A *HeaderedContentControl* is basically the same as a *ContentControl* but with a **Header** part which renders a header for the content. Examples: [GroupBox](/Gui.Core/_GroupBox.md), [Expander](/Gui.Core/_Expander.md) and [TabItem](/Gui.Core/_TabItem.md).
+A *HeaderedContentControl* is basically the same as a *ContentControl* but with a **Header** part which renders a header for the content. Examples: [GroupBox](_GroupBox.md), [Expander](_Expander.md) and [TabItem](_TabItem.md).
 
 ```
 <StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -168,13 +168,13 @@ A *HeaderedContentControl* is basically the same as a *ContentControl* but with 
 </StackPanel>
 ```
 
-![LayoutPanelTutorialImg6.png](/LayoutPanelTutorialImg6/png.md)
+![LayoutPanelTutorialImg6.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg6.png)
 
 ## Items Containers
 
 ### ItemsControl
 
-Controls that hold multiple **Items**. Examples: [ListBox](/Gui.Core/_ListBox.md), [ListView](/Gui.Controls/_ListView.md) and [TreeView](/Gui.Core/_TreeView.md).
+Controls that hold multiple **Items**. Examples: [ListBox](_ListBox.md), [ListView](../Gui.Controls/_ListView.md) and [TreeView](_TreeView.md).
 
 ```
 <StackPanel
@@ -250,11 +250,11 @@ Controls that hold multiple **Items**. Examples: [ListBox](/Gui.Core/_ListBox.md
 </StackPanel>
 ```
 
-![LayoutPanelTutorialImg7.png](/LayoutPanelTutorialImg7/png.md)
+![LayoutPanelTutorialImg7.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg7.png)
 
 ### HeaderedItemsControl
 
-Containers which can hold many arbitrary elements as content with a specific **Header**. Examples: [MenuItem](/Gui.Core/_MenuItem.md), [ToolBar](/Gui.Core/_ToolBar.md) and [TreeViewItem](/Gui.Core/_TreeViewItem.md).
+Containers which can hold many arbitrary elements as content with a specific **Header**. Examples: [MenuItem](_MenuItem.md), [ToolBar](_ToolBar.md) and [TreeViewItem](_TreeViewItem.md).
 
 ```
 <StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -406,11 +406,11 @@ Containers which can hold many arbitrary elements as content with a specific **H
 </StackPanel>
 ```
 
-![LayoutPanelTutorialImg8.png](/LayoutPanelTutorialImg8/png.md)
+![LayoutPanelTutorialImg8.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg8.png)
 
 ## Decorators
 
-*Decorators* apply effects onto or around a single **Child** element. Examples: [Border](/Gui.Core/_Border.md), [BulletDecorator](/Gui.Core/_BulletDecorator.md) and [Viewbox](/Gui.Core/_Viewbox.md).
+*Decorators* apply effects onto or around a single **Child** element. Examples: [Border](_Border.md), [BulletDecorator](_BulletDecorator.md) and [Viewbox](_Viewbox.md).
 
 ```
 <StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -436,11 +436,11 @@ Containers which can hold many arbitrary elements as content with a specific **H
 </StackPanel>
 ```
 
-![LayoutPanelTutorialImg9.png](/LayoutPanelTutorialImg9/png.md)
+![LayoutPanelTutorialImg9.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg9.png)
 
 ### Viewbox
 
-[Viewbox](/Gui.Core/_Viewbox.md) provides an easy mechanism to scale arbitrary content within a given space. By default, *Viewbox* stretches in both dimensions to fill the shape given to it (like most controls). But it also has a *Stretch* property to control how its single child gets scaled within its bounds. A second property of *Viewbox*, *StretchDirection*, controls whether you only want to use it to shrink content or enlarge content (as opposed to doing either).
+[Viewbox](_Viewbox.md) provides an easy mechanism to scale arbitrary content within a given space. By default, *Viewbox* stretches in both dimensions to fill the shape given to it (like most controls). But it also has a *Stretch* property to control how its single child gets scaled within its bounds. A second property of *Viewbox*, *StretchDirection*, controls whether you only want to use it to shrink content or enlarge content (as opposed to doing either).
 
 NOTE
 
@@ -490,7 +490,7 @@ Viewbox is the ideal container to make your application Resolution Independent
 </Page>
 ```
 
-![LayoutPanelTutorialImg15.png](/LayoutPanelTutorialImg15/png.md)
+![LayoutPanelTutorialImg15.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg15.png)
 
 ## Panels
 
@@ -498,7 +498,7 @@ NoesisGUI contains six main built-in panels who are, in increasing order of comp
 
 ### Canvas
 
-[Canvas](/Gui.Core/_Canvas.md) is a special layout panel that distributes elements with absolute position, that is, using x and y coordinates. When used within a canvas, an element is not restricted to anything, it can overlaps other controls. The rendering order is determined by how the elements are declared in the XAML. This sequence can be altered by using the **Panel.ZIndex** property.
+[Canvas](_Canvas.md) is a special layout panel that distributes elements with absolute position, that is, using x and y coordinates. When used within a canvas, an element is not restricted to anything, it can overlaps other controls. The rendering order is determined by how the elements are declared in the XAML. This sequence can be altered by using the **Panel.ZIndex** property.
 
 Canvases do not enforce any restriction to their elements. So the *width* and *height* of individual elements must be specified. You can use the attached properties **Canvas.Left** or **Canvas.Right** and **Canvas.Top** or **Canvas.Bottom** to specify the distance to the chosen side of the parent.
 
@@ -596,11 +596,11 @@ Canvases do not enforce any restriction to their elements. So the *width* and *h
 </Grid>
 ```
 
-![LayoutPanelTutorialImg10.png](/LayoutPanelTutorialImg10/png.md)
+![LayoutPanelTutorialImg10.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg10.png)
 
 ### StackPanel
 
-[StackPanel](/Gui.Core/_StackPanel.md) is a container where child elements are arranged in a single line that is oriented horizontally or vertically. The orientation is defined by the property **Orientation** which can take two valid values:
+[StackPanel](_StackPanel.md) is a container where child elements are arranged in a single line that is oriented horizontally or vertically. The orientation is defined by the property **Orientation** which can take two valid values:
 
 - *Vertical*: This is the default orientation. Child items are placed vertically one after another from top to bottom.
 - *Horizontal*: Here the items are placed from left to right one after another.
@@ -673,11 +673,11 @@ Canvases do not enforce any restriction to their elements. So the *width* and *h
 </Grid>
 ```
 
-![LayoutPanelTutorialImg11.png](/LayoutPanelTutorialImg11/png.md)
+![LayoutPanelTutorialImg11.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg11.png)
 
 ### UniformGrid
 
-[UniformGrid](/Gui.Core/_UniformGrid.md) control provides a similar layout to that given by the [Grid](/Gui.Core/_Grid.md) layout control. Its child controls are organized into a tabular structure of rows and columns. Unlike the *Grid* control, you don't have fine-grained control of the layout. The column widths and row heights cannot be modified. These sizes are set automatically to ensure that all columns are the same width and all rows are of an equal height. In addition, where the *Grid* control permits you to specify a cell position for each child, the *UniformGrid* does not.
+[UniformGrid](_UniformGrid.md) control provides a similar layout to that given by the [Grid](_Grid.md) layout control. Its child controls are organized into a tabular structure of rows and columns. Unlike the *Grid* control, you don't have fine-grained control of the layout. The column widths and row heights cannot be modified. These sizes are set automatically to ensure that all columns are the same width and all rows are of an equal height. In addition, where the *Grid* control permits you to specify a cell position for each child, the *UniformGrid* does not.
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -694,11 +694,11 @@ Canvases do not enforce any restriction to their elements. So the *width* and *h
 </Grid>
 ```
 
-![LayoutPanelTutorialImg110.png](/LayoutPanelTutorialImg110/png.md)
+![LayoutPanelTutorialImg110.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg110.png)
 
 ### WrapPanel
 
-[WrapPanel](/Gui.Core/_WrapPanel.md) is almost similar to *StackPanel*, but it produces a new line when it reaches the edge of the panel. So if you resize the *WrapPanel*, the content will be automatically wrapped to the new line. Thus *WrapPanel* has additional flexibility to wrap elements when space matters.
+[WrapPanel](_WrapPanel.md) is almost similar to *StackPanel*, but it produces a new line when it reaches the edge of the panel. So if you resize the *WrapPanel*, the content will be automatically wrapped to the new line. Thus *WrapPanel* has additional flexibility to wrap elements when space matters.
 
 Another difference is that *WrapPanel* determines the size based on the size of the content rather than considering it infinity as *StackPanel* does. You can also specify the size of the layout partition that is reserved by the *WrapPanel* for each child element by using the properties **ItemWidth** and **ItemHeight**. These properties take precedence over element's own width and height.
 
@@ -810,11 +810,11 @@ Another difference is that *WrapPanel* determines the size based on the size of 
 </Grid>
 ```
 
-![LayoutPanelTutorialImg12.png](/LayoutPanelTutorialImg12/png.md)
+![LayoutPanelTutorialImg12.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg12.png)
 
 ### DockPanel
 
-[DockPanel](/Gui.Core/_DockPanel.md) is the most widely used control to determine the layout of an application. It uses the attached property **DockPanel.Dock** to determine the position of each contained element. Valid values are *Top*, *Bottom*, *Left* and *Right*.
+[DockPanel](_DockPanel.md) is the most widely used control to determine the layout of an application. It uses the attached property **DockPanel.Dock** to determine the position of each contained element. Valid values are *Top*, *Bottom*, *Left* and *Right*.
 
 If the height or the width of the contained element is not specified it will take the whole available area.
 
@@ -915,7 +915,7 @@ If the height or the width of the contained element is not specified it will tak
 </Grid>
 ```
 
-![LayoutPanelTutorialImg13.png](/LayoutPanelTutorialImg13/png.md)
+![LayoutPanelTutorialImg13.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg13.png)
 
 As shown, the *Dock* property needs to be explicitly mentioned on each individual element. The sequence of declarations also plays a vital role. If you set the dock of two elements in a row to *"Top"* it means that those elements will appear vertically stacked.
 
@@ -923,7 +923,7 @@ A property called **LastChildFill** makes the remaining space to be filled with 
 
 ### Grid
 
-[Grid](/Gui.Core/_Grid.md) is one of the most powerful panels. It can be used to form a table that fills the available space. You can use the properties **RowDefinitions** and **ColumnDefinitions** to define the rows and columns of the Grid. To size a cell the properties **Height** and **Width** of **RowDefinition** and **ColumnDefinition** respectively are used. Valid values are:
+[Grid](_Grid.md) is one of the most powerful panels. It can be used to form a table that fills the available space. You can use the properties **RowDefinitions** and **ColumnDefinitions** to define the rows and columns of the Grid. To size a cell the properties **Height** and **Width** of **RowDefinition** and **ColumnDefinition** respectively are used. Valid values are:
 
 - *Auto*: The size is determined by the element you place within the table cell.
 - *Star*: When you use star, it means the measurement will be done using a ratio. "2\*" means double of "1\*". So if you want to make two columns in 2:1 ratio you set the width to "2\*" and "1\*" respectively. The default value is a "1\*".
@@ -1197,4 +1197,4 @@ To place elements inside the table cells the attached properties **Grid.Row** an
 </Grid>
 ```
 
-![LayoutPanelTutorialImg14.png](/LayoutPanelTutorialImg14/png.md)
+![LayoutPanelTutorialImg14.png](https://www.noesisengine.com/docs/LayoutPanelTutorialImg14.png)

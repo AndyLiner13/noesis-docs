@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/Gui.DependencySystem._ISealable.html
 
 # ISealable Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace)
+## namespace [Noesis](../Gui.Core/_ClassHierarchy.md#noesis-namespace)
 
-This interface is shared across [Freezable](/Gui.DependencySystem/_Freezable.md), [Style](/Gui.Core/_Style.md) and Template. A sealed object is free-threaded.
+This interface is shared across [Freezable](_Freezable.md), [Style](../Gui.Core/_Style.md) and Template. A sealed object is free-threaded.
 
 # Inheritance Hierarchy
 

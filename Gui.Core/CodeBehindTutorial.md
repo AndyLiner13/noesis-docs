@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core.CodeBehindTutorial.html
 
 # Code-Behind and XAML in Noesis
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/ApplicationTutorial)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/ApplicationTutorial)
 
-Code-behind is a term used to describe the code that is joined with markup-defined objects. The code-behind class is where you can put code for the implementation of event handlers and other application logic. It is common to find [Window](/App.ApplicationLauncher/_Window.md) and [UserControl](/Gui.Core/UserControlTutorial.md) implementations using code-behind.
+Code-behind is a term used to describe the code that is joined with markup-defined objects. The code-behind class is where you can put code for the implementation of event handlers and other application logic. It is common to find [Window](../App.ApplicationLauncher/_Window.md) and [UserControl](UserControlTutorial.md) implementations using code-behind.
 
 The XAML language includes language-level features that make it possible to associate code files with markup files, from the markup file side. Specifically, the XAML language defines the *x:Class* directive.
 
@@ -12,7 +12,7 @@ The XAML language includes language-level features that make it possible to asso
 
 *x:Class* is optional in the sense that it is entirely valid to have a XAML page that has no code-behind. However, if your XAML declares event-handling attribute values or instantiates custom elements where the defining classes are in the code-behind class, you have to provide the *x:Class* directive.
 
-*x:Class* can only be specified on the root element of a XAML. The value of the *x:Class* directive must be a string that specifies the fully qualified name of a class. There is more information about registering classes in our [Extending Tutorial](/Gui.Core/ExtendingTutorial.md).
+*x:Class* can only be specified on the root element of a XAML. The value of the *x:Class* directive must be a string that specifies the fully qualified name of a class. There is more information about registering classes in our [Extending Tutorial](ExtendingTutorial.md).
 
 ```
 <Window
@@ -90,7 +90,7 @@ In comparison with WPF, InitializeComponent() is not implemented automatically i
 </Window>
 ```
 
-As an alternative to manual invocations using *FindName()* from the code-behind, [FrameworkElement](/Gui.Core/_FrameworkElement.md) exposes the virtual function *ConnectField* that is invoked for each named element in the tree. In C++ the macro **NS\_CONNECT\_FIELD** is provided as a helper to easily implement *ConnectField*.
+As an alternative to manual invocations using *FindName()* from the code-behind, [FrameworkElement](_FrameworkElement.md) exposes the virtual function *ConnectField* that is invoked for each named element in the tree. In C++ the macro **NS\_CONNECT\_FIELD** is provided as a helper to easily implement *ConnectField*.
 
 C++
 
@@ -127,7 +127,7 @@ namespace Sample
 
 # Event Subscription
 
-As explained in the [Events Tutorial](/Gui.Core/EventsTutorial.md#code-behind-subscription), you can assign an event handler to an element in XAML using markup.
+As explained in the [Events Tutorial](EventsTutorial.md#code-behind-subscription), you can assign an event handler to an element in XAML using markup.
 
 ```
 <Window

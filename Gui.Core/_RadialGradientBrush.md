@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._RadialGradientBrush.html
 
 # RadialGradientBrush Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.media.radialgradientbrush.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.media.radialgradientbrush.aspx)
 
 Paints an area with a radial gradient.
 
@@ -10,17 +10,17 @@ A focal point defines the beginning of the gradient, and a circle defines the en
 
 # Inheritance Hierarchy
 
-• [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+• [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
-• [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+• [DependencyObject](../Gui.DependencySystem/_DependencyObject.md)
 
-• [Freezable](/Gui.DependencySystem/_Freezable.md)
+• [Freezable](../Gui.DependencySystem/_Freezable.md)
 
-• [Animatable](/Gui.Core/_Animatable.md)
+• [Animatable](_Animatable.md)
 
-• [Brush](/Gui.Core/_Brush.md)
+• [Brush](_Brush.md)
 
-• [GradientBrush](/Gui.Core/_GradientBrush.md)
+• [GradientBrush](_GradientBrush.md)
 
 • *RadialGradientBrush*
 
@@ -35,7 +35,7 @@ A focal point defines the beginning of the gradient, and a circle defines the en
 
 ● Dependency Property   ○ Reflection Property
 
-## From [GradientBrush](/Gui.Core/_GradientBrush.md)
+## From [GradientBrush](_GradientBrush.md)
 
 | Name | Description |
 | --- | --- |
@@ -46,7 +46,7 @@ A focal point defines the beginning of the gradient, and a circle defines the en
 
 ● Dependency Property   ○ Reflection Property
 
-## From [Brush](/Gui.Core/_Brush.md)
+## From [Brush](_Brush.md)
 
 | Name | Description |
 | --- | --- |
@@ -56,7 +56,7 @@ A focal point defines the beginning of the gradient, and a circle defines the en
 
 ● Dependency Property   ○ Reflection Property
 
-## From [Freezable](/Gui.DependencySystem/_Freezable.md)
+## From [Freezable](../Gui.DependencySystem/_Freezable.md)
 
 | Name | Description |
 | --- | --- |
@@ -65,11 +65,11 @@ A focal point defines the beginning of the gradient, and a circle defines the en
 
 ● Dependency Property   ○ Reflection Property
 
-## From [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+## From [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
 | Name | Description |
 | --- | --- |
-| ○ *ThreadId* | Gets the thread this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
+| ○ *ThreadId* | Gets the thread this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
 
 ● Dependency Property   ○ Reflection Property
 
@@ -79,43 +79,43 @@ RadialGradientBrush has no attached properties
 
 # Methods
 
-## From [GradientBrush](/Gui.Core/_GradientBrush.md)
+## From [GradientBrush](_GradientBrush.md)
 
 | Name | Description |
 | --- | --- |
-|  *Clone()* | Hides [Freezable](/Gui.DependencySystem/_Freezable.md) methods for convenience |
+|  *Clone()* | Hides [Freezable](../Gui.DependencySystem/_Freezable.md) methods for convenience |
 
-## From [Brush](/Gui.Core/_Brush.md)
+## From [Brush](_Brush.md)
 
 | Name | Description |
 | --- | --- |
 |  *IsTransparent()* | Indicates if this brush is transparent |
-|  *TryParse(str, brush)* | Use this method to convert a Color string into a [SolidColorBrush](/Gui.Core/_SolidColorBrush.md) |
+|  *TryParse(str, brush)* | Use this method to convert a Color string into a [SolidColorBrush](_SolidColorBrush.md) |
 
-## From [Freezable](/Gui.DependencySystem/_Freezable.md)
+## From [Freezable](../Gui.DependencySystem/_Freezable.md)
 
 | Name | Description |
 | --- | --- |
-|  *Clone()* | Creates a modifiable clone of the [Freezable](/Gui.DependencySystem/_Freezable.md), making deep copies of the object's values. When copying the object's dependency properties, this method copies expressions (which might no longer resolve) but not animations or their current values. The cloned Freezable::IsFrozen property is false even if the source's IsFrozen property is true. |
-|  *CloneCurrentValue()* | Creates a modifiable clone (deep copy) of the [Freezable](/Gui.DependencySystem/_Freezable.md) using its current values. The cloned object's IsFrozen property is false even if the source's IsFrozen property is true. |
+|  *Clone()* | Creates a modifiable clone of the [Freezable](../Gui.DependencySystem/_Freezable.md), making deep copies of the object's values. When copying the object's dependency properties, this method copies expressions (which might no longer resolve) but not animations or their current values. The cloned Freezable::IsFrozen property is false even if the source's IsFrozen property is true. |
+|  *CloneCurrentValue()* | Creates a modifiable clone (deep copy) of the [Freezable](../Gui.DependencySystem/_Freezable.md) using its current values. The cloned object's IsFrozen property is false even if the source's IsFrozen property is true. |
 |  *Freeze()* | Makes the current object unmodifiable and sets its IsFrozen property to true. |
-|  *GetAsFrozen()* | Creates a frozen copy of the [Freezable](/Gui.DependencySystem/_Freezable.md), using base (non-animated) property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. Throws if the [Freezable](/Gui.DependencySystem/_Freezable.md) cannot be frozen because it contains expressions or animated properties. |
-|  *GetCurrentValueAsFrozen()* | Creates a frozen copy of the [Freezable](/Gui.DependencySystem/_Freezable.md) using current property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. |
+|  *GetAsFrozen()* | Creates a frozen copy of the [Freezable](../Gui.DependencySystem/_Freezable.md), using base (non-animated) property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. Throws if the [Freezable](../Gui.DependencySystem/_Freezable.md) cannot be frozen because it contains expressions or animated properties. |
+|  *GetCurrentValueAsFrozen()* | Creates a frozen copy of the [Freezable](../Gui.DependencySystem/_Freezable.md) using current property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. |
 
-## From [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+## From [DependencyObject](../Gui.DependencySystem/_DependencyObject.md)
 
 | Name | Description |
 | --- | --- |
 |  *ClearAnimation(dp)* | Clears the animation value of a property |
-|  *ClearLocalValue(dp)* | Clears the local value of a property The property to be cleared is specified by a [DependencyProperty](/Gui.DependencySystem/_DependencyProperty.md) identifier |
+|  *ClearLocalValue(dp)* | Clears the local value of a property The property to be cleared is specified by a [DependencyProperty](../Gui.DependencySystem/_DependencyProperty.md) identifier |
 |  *CoerceValue(dp)* | Coerces and validates the effective property value |
 |  *DependencyPropertyChanged()* | Returns the PropertyChanged event |
 |  *Destroyed()* | Destroyed delegate is raised when object is going to be destroyed |
-|  *GetBaseValue(dp)* | Returns the base value without animation nor coerce (this never returns [Expression](/Gui.DependencySystem/_Expression.md) like GetLocalValue) |
+|  *GetBaseValue(dp)* | Returns the base value without animation nor coerce (this never returns [Expression](../Gui.DependencySystem/_Expression.md) like GetLocalValue) |
 |  *GetExpression(dp)* | Gets the expression, if any, used to evaluate the specified property value |
 |  *GetLocalValue(dp)* | Returns the local value of a dependency property, if it exists |
-|  *GetValue(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) |
-|  *GetValueObject(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) as a boxed value |
+|  *GetValue(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](../Gui.DependencySystem/_DependencyObject.md) |
+|  *GetValueObject(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](../Gui.DependencySystem/_DependencyObject.md) as a boxed value |
 |  *GetValueProvider(dp)* | Gets the provider that returns the effective value for the specified dependency property |
 |  *HasAnimatedProperties()* | Returns true if there is any animated property |
 |  *InvalidateProperty(dp, priority)* | Re-evaluates the effective value for the specified dependency property if necessary If null is passed, a full re-evaluation could be needed |
@@ -128,12 +128,12 @@ RadialGradientBrush has no attached properties
 |  *SetValue(dp, value)* | Sets the local value of a dependency property |
 |  *SetValueObject(dp, value)* | Sets the local value (boxed) of a dependency property |
 
-## From [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+## From [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
 | Name | Description |
 | --- | --- |
-|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
-|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
+|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) |
+|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) |
 
 # Events
 

@@ -2,11 +2,11 @@ Source: https://www.noesisengine.com/docs/Gui.Core.DragDrop.html
 
 # Drag-and-Drop Overview
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/Inventory)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/Inventory)
 
 This tutorial provides an overview of drag-and-drop support in NoesisGUI. Drag-and-drop commonly refers to a method of data transfer that involves using a mouse (or some other pointing device) to select one or more objects, dragging these objects over some desired drop target in the user interface, and dropping them.
 
-> ![DragDropImg1.png](/DragDropImg1/png.md)
+> ![DragDropImg1.png](https://www.noesisengine.com/docs/DragDropImg1.png)
 
 # Drag-and-Drop Support
 
@@ -16,7 +16,7 @@ The type and number of objects that can be manipulated with drag-and-drop is com
 
 The particular actions performed during a drag-and-drop operation are application specific, and often determined by context. For example, dragging a selection of files from one folder to another on the same storage device moves the files by default, whereas dragging files from another device to a local folder copies the files by default.
 
-In NoesisGUI, any [UIElement](/Gui.Core/_UIElement.md) can participate in drag-and-drop. The events and methods required for drag-and-drop operations are defined in the [DragDrop](/Gui.Core/_DragDrop.md) class. The *UIElement* classes contain aliases for the *DragDrop* attached events so that the events appear in the class members list when a *UIElement* is inherited as a base element. Event handlers that are associated to these events are connected to the underlying *DragDrop* attached event and receive the same event data instance. For more information, see the [UIElement](/Gui.Core/_UIElement.md) *Drop* event.
+In NoesisGUI, any [UIElement](_UIElement.md) can participate in drag-and-drop. The events and methods required for drag-and-drop operations are defined in the [DragDrop](_DragDrop.md) class. The *UIElement* classes contain aliases for the *DragDrop* attached events so that the events appear in the class members list when a *UIElement* is inherited as a base element. Event handlers that are associated to these events are connected to the underlying *DragDrop* attached event and receive the same event data instance. For more information, see the [UIElement](_UIElement.md) *Drop* event.
 
 # Data Transfer
 
@@ -28,7 +28,7 @@ A drag-and-drop operation is analogous to a copy-and-paste operation that is use
 
 In a copy-and-paste operation, the system clipboard is used to temporarily store the transferred data; in a drag-and-drop operation, an object is used to store the data.
 
-The drag source initiates a drag-and-drop operation by calling the static [DragDrop](/Gui.Core/_DragDrop.md) *DoDragDrop* method and passing the transferred data to it. The drop target should know how to obtain the desired information from the data object received in the event.
+The drag source initiates a drag-and-drop operation by calling the static [DragDrop](_DragDrop.md) *DoDragDrop* method and passing the transferred data to it. The drop target should know how to obtain the desired information from the data object received in the event.
 
 The source and target of a drag-and-drop operation are UI elements; however, the data that is actually being transferred typically does not have a visual representation. You can write code to provide a visual representation of the data that is dragged, such as occurs when dragging files in Windows Explorer. By default, feedback is provided to the user by changing the cursor to represent the effect that the drag-and-drop operation will have on the data, such as whether the data will be moved or copied.
 
@@ -44,7 +44,7 @@ For example, the drop target might specify that the effect of dropping data on i
 
 # Drag-and-Drop Events
 
-Drag-and-drop operations support an event driven model. Both the drag source and the drop target use a standard set of events to handle drag-and-drop operations. The following tables summarize the standard drag-and-drop events. These are *attached events* on the [DragDrop](/Gui.Core/_DragDrop.md) class.
+Drag-and-drop operations support an event driven model. Both the drag source and the drop target use a standard set of events to handle drag-and-drop operations. The following tables summarize the standard drag-and-drop events. These are *attached events* on the [DragDrop](_DragDrop.md) class.
 
 ## Drag Source Events
 
@@ -76,7 +76,7 @@ A UI element can be a drag source, a drop target, or both. To implement basic dr
 
 To implement basic drag-and-drop, you will complete the following tasks:
 
-- Identify the element that will be a drag source. A drag source can be any *UIElement*. We recommend using a [behavior](/App.Interactivity/Behaviors.md) for this purpose.
+- Identify the element that will be a drag source. A drag source can be any *UIElement*. We recommend using a [behavior](../App.Interactivity/Behaviors.md) for this purpose.
 
   ```
   class DragItemBehavior final: public NoesisApp::BehaviorT<Noesis::ContentControl> { };
@@ -131,7 +131,7 @@ To implement basic drag-and-drop, you will complete the following tasks:
     }
   }
   ```
-- Identify the element that will be a drop target. A drop target can be any *UIElement*. Here we can also use a [behavior](/App.Interactivity/Behaviors.md).
+- Identify the element that will be a drop target. A drop target can be any *UIElement*. Here we can also use a [behavior](../App.Interactivity/Behaviors.md).
 
   ```
   class DropItemBehavior final: public NoesisApp::BehaviorT<Noesis::ContentControl> { };

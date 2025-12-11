@@ -2,11 +2,11 @@ Source: https://www.noesisengine.com/docs/Gui.Animation._TimeSpan.html
 
 # TimeSpan Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.timespan(v=vs.110).aspx)
+## namespace [Noesis](../Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.timespan(v=vs.110).aspx)
 
 Represents a time interval.
 
-The interval is expressed in days, hours, minutes, seconds and milliseconds, or in ticks (100-nanosecond units). [TimeSpan](/Gui.Animation/_TimeSpan.md) is generally used from XAML files, parsing with the following signature: [ws][-]{ d | [d.]hh:mm[:ss[.ff]] }[ws]
+The interval is expressed in days, hours, minutes, seconds and milliseconds, or in ticks (100-nanosecond units). [TimeSpan](_TimeSpan.md) is generally used from XAML files, parsing with the following signature: [ws][-]{ d | [d.]hh:mm[:ss[.ff]] }[ws]
 
 ```
 ws: optional white space
@@ -39,12 +39,12 @@ ff: optional fractional seconds, consisting of 1 to 7 decimal digits
 | ○ *Milliseconds* | Get the milliseconds component of the time interval |
 | ○ *Minutes* | Get the minutes component of the time interval |
 | ○ *Seconds* | Get the seconds component of the time interval |
-| ○ *Ticks* | Get total [TimeSpan](/Gui.Animation/_TimeSpan.md) value in Ticks |
-| ○ *TotalDays* | Get total [TimeSpan](/Gui.Animation/_TimeSpan.md) value in days |
-| ○ *TotalHours* | Get total [TimeSpan](/Gui.Animation/_TimeSpan.md) value in hours |
-| ○ *TotalMilliseconds* | Get total [TimeSpan](/Gui.Animation/_TimeSpan.md) value in milliseconds |
-| ○ *TotalMinutes* | Get total [TimeSpan](/Gui.Animation/_TimeSpan.md) value in minutes |
-| ○ *TotalSeconds* | Get total [TimeSpan](/Gui.Animation/_TimeSpan.md) value in seconds |
+| ○ *Ticks* | Get total [TimeSpan](_TimeSpan.md) value in Ticks |
+| ○ *TotalDays* | Get total [TimeSpan](_TimeSpan.md) value in days |
+| ○ *TotalHours* | Get total [TimeSpan](_TimeSpan.md) value in hours |
+| ○ *TotalMilliseconds* | Get total [TimeSpan](_TimeSpan.md) value in milliseconds |
+| ○ *TotalMinutes* | Get total [TimeSpan](_TimeSpan.md) value in minutes |
+| ○ *TotalSeconds* | Get total [TimeSpan](_TimeSpan.md) value in seconds |
 
 ● Dependency Property   ○ Reflection Property
 
@@ -56,9 +56,9 @@ TimeSpan has no attached properties
 
 | Name | Description |
 | --- | --- |
-|  *GetTimeInSeconds()* | Get total [TimeSpan](/Gui.Animation/_TimeSpan.md) value in seconds |
-|  *ToString()* | Returns a string representation of the [TimeSpan](/Gui.Animation/_TimeSpan.md) instance |
-|  *TryParse(str, result)* | Tries to parse a [TimeSpan](/Gui.Animation/_TimeSpan.md) from a string |
+|  *GetTimeInSeconds()* | Get total [TimeSpan](_TimeSpan.md) value in seconds |
+|  *ToString()* | Returns a string representation of the [TimeSpan](_TimeSpan.md) instance |
+|  *TryParse(str, result)* | Tries to parse a [TimeSpan](_TimeSpan.md) from a string |
 |  *Zero()* | Gets Zero Timespan |
 
 # Events

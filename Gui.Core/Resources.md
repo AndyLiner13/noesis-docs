@@ -6,7 +6,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Resources.html
 
 This overview explains how to use resources as a simple way to reuse commonly defined objects and values. It focuses on how to use resources in XAML. You can also create and access resources by using code, or interchangeably between code and XAML.
 
-Every [FrameworkElement](/Gui.Core/_FrameworkElement.md) has a Resources property, which is the property that contains the resources (as a [ResourceDictionary](/Gui.Core/_ResourceDictionary.md)) that an element defines. You can define resources on any element. However, resources are most often defined on the root element of the XAML tree.
+Every [FrameworkElement](_FrameworkElement.md) has a Resources property, which is the property that contains the resources (as a [ResourceDictionary](_ResourceDictionary.md)) that an element defines. You can define resources on any element. However, resources are most often defined on the root element of the XAML tree.
 
 Each resource in a resource dictionary must have a unique key. When you define resources in markup, you assign the unique key through the *x:Key* directive. Typically, the key is a string; however, you can also set it to object types by using the appropriate markup extensions. Nonstring keys for resources are usally employed for styles.
 
@@ -26,11 +26,11 @@ After you define a resource, you can reference the resource to be used for a pro
 </Grid>
 ```
 
-When you define a resource on the root element, all the elements in the logical tree can access it, and you can reuse the same resource for setting the value of any property that accepts the type that the resource represents. In the previous example, the same *RedBrush* resource sets two different properties: the *Background* of a [Button](/Gui.Core/_Button.md), and the *Fill* of a [Rectangle](/Gui.Core/_Rectangle.md).
+When you define a resource on the root element, all the elements in the logical tree can access it, and you can reuse the same resource for setting the value of any property that accepts the type that the resource represents. In the previous example, the same *RedBrush* resource sets two different properties: the *Background* of a [Button](_Button.md), and the *Fill* of a [Rectangle](_Rectangle.md).
 
 # Static and Dynamic Resources
 
-A resource can be referenced as either a static resource or a dynamic resource. This is done by using either the [StaticResource](/Gui.Core/_StaticResourceExtension.md) Markup Extension or the [DynamicResource](/Gui.Core/_DynamicResourceExtension.md) Markup Extension. A markup extension is a feature of XAML whereby you can specify an object reference by having the markup extension process the attribute string and return the object to a XAML loader. For more information about markup extension behavior, see [Markup Extensions](/Gui.Core/MarkupExtensions.md).
+A resource can be referenced as either a static resource or a dynamic resource. This is done by using either the [StaticResource](_StaticResourceExtension.md) Markup Extension or the [DynamicResource](_DynamicResourceExtension.md) Markup Extension. A markup extension is a feature of XAML whereby you can specify an object reference by having the markup extension process the attribute string and return the object to a XAML loader. For more information about markup extension behavior, see [Markup Extensions](MarkupExtensions.md).
 
 When you use a markup extension, you typically provide one or more parameters in string form that are processed by that particular markup extension, rather than being evaluated in the context of the property being set. The StaticResource Markup Extension processes a key by looking up the value for that key in all available resource dictionaries. This happens during loading, which is the point in time when the loading process needs to assign the property value that takes the static resource reference. The DynamicResource Markup Extension instead processes a key by creating an expression, and that expression remains unevaluated until the application is actually run, at which time the expression is evaluated and provides a value.
 
@@ -100,7 +100,7 @@ Because the property being set must be a DependencyProperty or Freezable propert
 
 Earlier, it was stated that all items in a ResourceDictionary must have a key. However, that does not mean that all resources must have an explicit x:Key. Several object types support an implicit key when defined as a resource, where the key value is tied to the value of another property. This is known as an implicit key, whereas an x:Key attribute is an explicit key. You can overwrite any implicit key by specifying an explicit key.
 
-One very important scenario for resources is when you define a Style. In fact, a Style is almost always defined as an entry in a resource dictionary, because styles are inherently intended for reuse. For more information about styles, see [Styling and Templating](/Gui.Core/Styles.md).
+One very important scenario for resources is when you define a Style. In fact, a Style is almost always defined as an entry in a resource dictionary, because styles are inherently intended for reuse. For more information about styles, see [Styling and Templating](Styles.md).
 
 Styles for controls can be both created with and referenced with an implicit key. The theme styles that define the default appearance of a control rely on this implicit key. The implicit key from the standpoint of requesting it is the Type of the control itself. The implicit key from the standpoint of defining the resource is the *TargetType* of the style. Therefore, if you are creating themes for custom controls, creating styles that interact with existing theme styles, you do not need to specify an x:Key Directive for that Style. And if you want to use the themed styles, you do not need to specify any style at all. For instance, the following style definition works, even though the Style resource does not appear to have a key:
 

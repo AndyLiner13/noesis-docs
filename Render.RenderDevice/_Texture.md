@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Render.RenderDevice._Texture.html
 
 # Texture Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace)
+## namespace [Noesis](../Gui.Core/_ClassHierarchy.md#noesis-namespace)
 
 Base class for 2D textures
 

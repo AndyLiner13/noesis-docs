@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core.TextTutorial.html
 
 # Text Tutorial
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Text)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Text)
 
-Read-only text in XAML is mainly displayed using [TextBlock](/Gui.Core/_TextBlock.md) elements. A *TextBlock* defines the content property *Text* where the user can specify any string. *FontFamily*, *FontSize*, *FontStyle*, *FontWeight*, *FontStretch*, *Foreground* and *Background* control how text displays within the element.
+Read-only text in XAML is mainly displayed using [TextBlock](_TextBlock.md) elements. A *TextBlock* defines the content property *Text* where the user can specify any string. *FontFamily*, *FontSize*, *FontStyle*, *FontWeight*, *FontStretch*, *Foreground* and *Background* control how text displays within the element.
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -17,7 +17,7 @@ Read-only text in XAML is mainly displayed using [TextBlock](/Gui.Core/_TextBloc
 
 # Inlines
 
-[Inlines](/Gui.Core/_Inline.md) can also be used to modify the aspect of specific blocks.
+[Inlines](_Inline.md) can also be used to modify the aspect of specific blocks.
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -68,11 +68,11 @@ Read-only text in XAML is mainly displayed using [TextBlock](/Gui.Core/_TextBloc
 </Grid>
 ```
 
-![TextTutorialImg1.jpg](/TextTutorialImg1/jpg.md)
+![TextTutorialImg1.jpg](https://www.noesisengine.com/docs/TextTutorialImg1.jpg)
 
 # Font Family
 
-The default font is taken from the active theme. This can be overridden by using the *FontFamily* property. *FontFamily* includes an [URI](/Gui.Providers/_Uri.md) to the directory where the font is located plus the family name separated by a '*#*' character.
+The default font is taken from the active theme. This can be overridden by using the *FontFamily* property. *FontFamily* includes an [URI](../Gui.Providers/_Uri.md) to the directory where the font is located plus the family name separated by a '*#*' character.
 
 ```
 <Grid
@@ -89,7 +89,7 @@ The default font is taken from the active theme. This can be overridden by using
 </Grid>
 ```
 
-![TextTutorialImg2.jpg](/TextTutorialImg2/jpg.md)
+![TextTutorialImg2.jpg](https://www.noesisengine.com/docs/TextTutorialImg2.jpg)
 
 Note that if you don't use the '*#*' separator or don't provide a directory, the font is searched globally in the system folder.
 
@@ -178,11 +178,11 @@ Thanks to property value inheritance, the *FontFamily* property enables child el
 </Grid>
 ```
 
-![TextTutorialImg3.jpg](/TextTutorialImg3/jpg.md)
+![TextTutorialImg3.jpg](https://www.noesisengine.com/docs/TextTutorialImg3.jpg)
 
 # Layout properties
 
-As any other UI element in Noesis, a *TextBlock* can be positioned relative to the parent container using the *HorizontalAlignment* and *VerticalAlignment* properties from [FrameworkElement](/Gui.Core/_FrameworkElement.md). The layout process uses these properties to assign a rectangle to the *TextBox* where the text will be displayed. How text is aligned inside that rectangle can be specified using the *TextAlignment* property, which accepts the *Left* (default), *Center*, *Justify* and *Right* values.
+As any other UI element in Noesis, a *TextBlock* can be positioned relative to the parent container using the *HorizontalAlignment* and *VerticalAlignment* properties from [FrameworkElement](_FrameworkElement.md). The layout process uses these properties to assign a rectangle to the *TextBox* where the text will be displayed. How text is aligned inside that rectangle can be specified using the *TextAlignment* property, which accepts the *Left* (default), *Center*, *Justify* and *Right* values.
 
 ```
 <Grid
@@ -218,7 +218,7 @@ As any other UI element in Noesis, a *TextBlock* can be positioned relative to t
 </Grid>
 ```
 
-![TextTutorialImg4.jpg](/TextTutorialImg4/jpg.md)
+![TextTutorialImg4.jpg](https://www.noesisengine.com/docs/TextTutorialImg4.jpg)
 
 In addition to text alignment, user can specify how text behaves when it reaches the edge of the containing box. This can be done through the *TextWrapping* property which can be set to *NoWrap* (default), *Wrap* and *WrapWithOverflow*. When text overflows the content area the property *TextTrimming* defines the text trimming behavior. Valid values are: *None* (default), *CharacterEllipsis* and *WordEllipsis*.
 
@@ -441,7 +441,7 @@ In addition to text alignment, user can specify how text behaves when it reaches
 </Grid>
 ```
 
-![TextTutorialImg5.png](/TextTutorialImg5/png.md)
+![TextTutorialImg5.png](https://www.noesisengine.com/docs/TextTutorialImg5.png)
 
 # Color properties
 
@@ -467,7 +467,7 @@ We also provide extensions to add stroking capabilities to *TextBlock* elements.
 </Grid>
 ```
 
-![TextTutorialImg6.jpg](/TextTutorialImg6/jpg.md)
+![TextTutorialImg6.jpg](https://www.noesisengine.com/docs/TextTutorialImg6.jpg)
 
 Note that you can also use gradients for both foreground and background properties.
 
@@ -588,7 +588,7 @@ Note that you can also use gradients for both foreground and background properti
 </Grid>
 ```
 
-![TextTutorialImg7.jpg](/TextTutorialImg7/jpg.md)
+![TextTutorialImg7.jpg](https://www.noesisengine.com/docs/TextTutorialImg7.jpg)
 
 # Variable Fonts
 

@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._Keyboard.html
 
 # Keyboard Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.input.keyboard.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.input.keyboard.aspx)
 
 Represents the keyboard device.
 
@@ -27,12 +27,12 @@ Keyboard has no attached properties
 |  *GetFocused()* | Gets the element that has keyboard focus |
 |  *GetKeyStates(key)* | Gets the set of key states for the specified key |
 |  *GetModifiers()* | Gets the set of ModifierKeys that are currently pressed |
-|  *IsActive()* | Indicates if [Keyboard](/Gui.Core/_Keyboard.md) is active |
+|  *IsActive()* | Indicates if [Keyboard](_Keyboard.md) is active |
 |  *IsFocusable(element)* | Indicates if the specified element is focusable |
 |  *IsKeyDown(key)* | Determines whether the specified key is pressed |
 |  *IsKeyToggled(key)* | Determines whether the specified key is toggled |
 |  *IsKeyUp(key)* | Determines whether the specified key is released |
-|  *IsProcessingKeyEvent()* | Indicates if a [Keyboard](/Gui.Core/_Keyboard.md) input event is being processed |
+|  *IsProcessingKeyEvent()* | Indicates if a [Keyboard](_Keyboard.md) input event is being processed |
 |  *ResetState()* | Resets keyboard state |
 
 # Events

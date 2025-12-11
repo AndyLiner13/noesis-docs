@@ -2,13 +2,13 @@ Source: https://www.noesisengine.com/docs/Gui.Core._ControlTemplate.html
 
 # ControlTemplate Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.controls.controltemplate.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.controls.controltemplate.aspx)
 
-Specifies the visual structure and behavioral aspects of a [Control](/Gui.Core/_Control.md) that can be shared across multiple instances of the control.
+Specifies the visual structure and behavioral aspects of a [Control](_Control.md) that can be shared across multiple instances of the control.
 
 # Inheritance Hierarchy
 
-• [FrameworkTemplate](/Gui.Core/_FrameworkTemplate.md)
+• [FrameworkTemplate](_FrameworkTemplate.md)
 
 • *ControlTemplate*
 
@@ -17,11 +17,11 @@ Specifies the visual structure and behavioral aspects of a [Control](/Gui.Core/_
 | Name | Description |
 | --- | --- |
 | ○ *TargetType* | Gets or sets the type for which this template is intended |
-| ○ *Triggers* | Gets a collection of [TriggerBase](/App.Interactivity/_TriggerBase.md) objects that apply property changes or perform actions based on specified conditions |
+| ○ *Triggers* | Gets a collection of [TriggerBase](../App.Interactivity/_TriggerBase.md) objects that apply property changes or perform actions based on specified conditions |
 
 ● Dependency Property   ○ Reflection Property
 
-## From [FrameworkTemplate](/Gui.Core/_FrameworkTemplate.md)
+## From [FrameworkTemplate](_FrameworkTemplate.md)
 
 | Name | Description |
 | --- | --- |
@@ -36,7 +36,7 @@ ControlTemplate has no attached properties
 
 # Methods
 
-## From [FrameworkTemplate](/Gui.Core/_FrameworkTemplate.md)
+## From [FrameworkTemplate](_FrameworkTemplate.md)
 
 | Name | Description |
 | --- | --- |

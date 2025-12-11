@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Providers._Uri.html
 
 # Uri Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://docs.microsoft.com/en-us/dotnet/api/system.uri)
+## namespace [Noesis](../Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://docs.microsoft.com/en-us/dotnet/api/system.uri)
 
 Provides a representation of a uniform resource identifier and easy access to parts of the URI.
 
@@ -58,16 +58,16 @@ Uri has no attached properties
 
 | Name | Description |
 | --- | --- |
-|  *File(path)* | [Uri](/Gui.Providers/_Uri.md) creation from file scheme ('<file:///path>') |
-|  *FullPath()* | Gets path part of the [Uri](/Gui.Providers/_Uri.md) including the assembly |
-|  *GetAssembly(assembly)* | Gets assembly part of the [Uri](/Gui.Providers/_Uri.md) |
-|  *GetPath(path)* | Gets path part of the [Uri](/Gui.Providers/_Uri.md) with the assembly removed |
-|  *GetScheme(scheme)* | Gets scheme part of the [Uri](/Gui.Providers/_Uri.md) |
-|  *IsAbsolute()* | Indicates if this [Uri](/Gui.Providers/_Uri.md) is absolute |
-|  *IsValid()* | Indicates if this [Uri](/Gui.Providers/_Uri.md) is valid |
-|  *Pack(assembly, path)* | [Uri](/Gui.Providers/_Uri.md) creation from pack scheme ('pack://application:,,,/assembly;component/path') |
-|  *Str()* | Gets the original string that was passed to this [Uri](/Gui.Providers/_Uri.md) constructor normalized |
-|  *ToString()* | Generates a string representation of the [Uri](/Gui.Providers/_Uri.md) |
+|  *File(path)* | [Uri](_Uri.md) creation from file scheme ('<file:///path>') |
+|  *FullPath()* | Gets path part of the [Uri](_Uri.md) including the assembly |
+|  *GetAssembly(assembly)* | Gets assembly part of the [Uri](_Uri.md) |
+|  *GetPath(path)* | Gets path part of the [Uri](_Uri.md) with the assembly removed |
+|  *GetScheme(scheme)* | Gets scheme part of the [Uri](_Uri.md) |
+|  *IsAbsolute()* | Indicates if this [Uri](_Uri.md) is absolute |
+|  *IsValid()* | Indicates if this [Uri](_Uri.md) is valid |
+|  *Pack(assembly, path)* | [Uri](_Uri.md) creation from pack scheme ('pack://application:,,,/assembly;component/path') |
+|  *Str()* | Gets the original string that was passed to this [Uri](_Uri.md) constructor normalized |
+|  *ToString()* | Generates a string representation of the [Uri](_Uri.md) |
 
 # Events
 

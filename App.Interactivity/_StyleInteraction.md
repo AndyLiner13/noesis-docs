@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/App.Interactivity._StyleInteraction.ht
 
 # StyleInteraction Class
 
-## namespace [NoesisApp](/Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
+## namespace [NoesisApp](../Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
 
-Allows setting a collection of *Interactivity* behaviors and triggers in a [Style](/Gui.Core/_Style.md), so they are applied to all instances of the styled control.
+Allows setting a collection of *Interactivity* behaviors and triggers in a [Style](../Gui.Core/_Style.md), so they are applied to all instances of the styled control.
 
 ```
 <Grid

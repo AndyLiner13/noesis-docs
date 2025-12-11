@@ -2,17 +2,17 @@ Source: https://www.noesisengine.com/docs/App.ApplicationLauncher._LocExtension.
 
 # LocExtension Class
 
-## namespace [NoesisApp](/Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
+## namespace [NoesisApp](../Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
 
-Implements a markup extension that supports references to a localization [ResourceDictionary](/Gui.Core/_ResourceDictionary.md).
+Implements a markup extension that supports references to a localization [ResourceDictionary](../Gui.Core/_ResourceDictionary.md).
 
-Provides a value for any XAML property attribute by looking up a reference in the [ResourceDictionary](/Gui.Core/_ResourceDictionary.md) defined by the Source attached property. Values will be re-evaluated when the Source attached property changes.
+Provides a value for any XAML property attribute by looking up a reference in the [ResourceDictionary](../Gui.Core/_ResourceDictionary.md) defined by the Source attached property. Values will be re-evaluated when the Source attached property changes.
 
-If used with a string or object property, and the provided resource key is not found, the [LocExtension](/App.ApplicationLauncher/_LocExtension.md) will return a string in the format "<Loc !%s>" where %s is replaced with the key.
+If used with a string or object property, and the provided resource key is not found, the [LocExtension](_LocExtension.md) will return a string in the format "<Loc !%s>" where %s is replaced with the key.
 
 A Converter can also be specified, with an optional ConverterParameter.
 
-This example shows the full setup for a [LocExtension](/App.ApplicationLauncher/_LocExtension.md). It utilizes the [RichText](/App.ApplicationLauncher/_RichText.md) attached property to support BBCode markup in the localized strings. The Loc.Source property references the "Language\_en-gb.xaml" [ResourceDictionary](/Gui.Core/_ResourceDictionary.md) below.
+This example shows the full setup for a [LocExtension](_LocExtension.md). It utilizes the [RichText](_RichText.md) attached property to support BBCode markup in the localized strings. The Loc.Source property references the "Language\_en-gb.xaml" [ResourceDictionary](../Gui.Core/_ResourceDictionary.md) below.
 
 ```
 <StackPanel
@@ -25,7 +25,7 @@ This example shows the full setup for a [LocExtension](/App.ApplicationLauncher/
 </StackPanel>
 ```
 
-This is the contents of a "Language\_en-gb.xaml" localized [ResourceDictionary](/Gui.Core/_ResourceDictionary.md):
+This is the contents of a "Language\_en-gb.xaml" localized [ResourceDictionary](../Gui.Core/_ResourceDictionary.md):
 
 Language\_en-gb.xaml
 
@@ -42,7 +42,7 @@ Language\_en-gb.xaml
 
 # Inheritance Hierarchy
 
-• [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+• [MarkupExtension](../Gui.Core/_MarkupExtension.md)
 
 • *LocExtension*
 
@@ -65,7 +65,7 @@ Language\_en-gb.xaml
 
 # Methods
 
-## From [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+## From [MarkupExtension](../Gui.Core/_MarkupExtension.md)
 
 | Name | Description |
 | --- | --- |

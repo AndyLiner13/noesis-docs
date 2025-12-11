@@ -6,7 +6,7 @@ The aim of this tutorial is to get you started with the *NoesisGUI C# SDK* and i
 
 # NuGet Repository
 
-Noesis binaries are distributed as [NuGet](https://www.nuget.org/profiles/NoesisTechnologies) packages in the official repository. Packages are subdivided into two big categories: *Noesis*, the *Core* library; and *NoesisApp*, the [Application Framework](/Gui.Core/ApplicationTutorial.md) used by our samples. Source code for the *Application Framework* is also available at [GitHub](https://github.com/Noesis/Managed).
+Noesis binaries are distributed as [NuGet](https://www.nuget.org/profiles/NoesisTechnologies) packages in the official repository. Packages are subdivided into two big categories: *Noesis*, the *Core* library; and *NoesisApp*, the [Application Framework](ApplicationTutorial.md) used by our samples. Source code for the *Application Framework* is also available at [GitHub](https://github.com/Noesis/Managed).
 
 - Noesis
 
@@ -22,7 +22,7 @@ Noesis binaries are distributed as [NuGet](https://www.nuget.org/profiles/Noesis
 
 # Building Samples
 
-The Visual Studio 2017 root solution 'Samples.sln' contains all the examples for the supported platforms. Provided samples in the SDK comes with full source available in the '*/Src*' folder. Each sample also contains a [Blend](/Gui.Core/BlendTutorial.md) project inside its '*Projects*' folder. For example, the *Blend* project for the *Menu3D* sample is located at '*NoesisSDK/Src/Samples/Menu3D/Projects/blend/Menu3D-blend.csproj*'.
+The Visual Studio 2017 root solution 'Samples.sln' contains all the examples for the supported platforms. Provided samples in the SDK comes with full source available in the '*/Src*' folder. Each sample also contains a [Blend](BlendTutorial.md) project inside its '*Projects*' folder. For example, the *Blend* project for the *Menu3D* sample is located at '*NoesisSDK/Src/Samples/Menu3D/Projects/blend/Menu3D-blend.csproj*'.
 
 NOTE
 

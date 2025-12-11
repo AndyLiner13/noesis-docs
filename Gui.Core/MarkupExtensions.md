@@ -126,4 +126,4 @@ Internally, the DynamicResourceExtension creates a DynamicResourceExpression, wh
 | Name | Sup | Comments |
 | ResourceKey | Yes # Binding and TemplateBinding
 
-The other usual markup extension is Binding and TemplateBinding, which are explained [here](/Gui.Core/Binding.md)
+The other usual markup extension is Binding and TemplateBinding, which are explained [here](Binding.md)

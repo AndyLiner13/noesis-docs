@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._Collection.html
 
 # Collection Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace)
 
 Represents a generic collection of objects that can be individually accessed by index.
 

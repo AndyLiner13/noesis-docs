@@ -2,11 +2,11 @@ Source: https://www.noesisengine.com/docs/App.MediaElement._MediaPlayer.html
 
 # MediaPlayer Class
 
-## namespace [NoesisApp](/Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
+## namespace [NoesisApp](../Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
 
-Abstract class for the implementation of audio/video in a [MediaElement](/App.MediaElement/_MediaElement.md).
+Abstract class for the implementation of audio/video in a [MediaElement](_MediaElement.md).
 
-Each platform must provide an implementation for this class and pass it to [MediaElement](/App.MediaElement/_MediaElement.md) by calling *MediaElement::SetCreateMediaPlayerCallback*.
+Each platform must provide an implementation for this class and pass it to [MediaElement](_MediaElement.md) by calling *MediaElement::SetCreateMediaPlayerCallback*.
 
 # Inheritance Hierarchy
 

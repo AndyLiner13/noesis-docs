@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._MarkupExtension.html
 
 # MarkupExtension Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.markup.markupextension.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.markup.markupextension.aspx)
 
 Provides a base class for XAML markup extension implementations.
 
@@ -17,23 +17,23 @@ Markup extensions return objects in a more sophisticated way than type converter
 
 • *MarkupExtension*
 
-• [BaseBinding](/Gui.Core/_BaseBinding.md)
+• [BaseBinding](_BaseBinding.md)
 
-• [DynamicResourceExtension](/Gui.Core/_DynamicResourceExtension.md)
+• [DynamicResourceExtension](_DynamicResourceExtension.md)
 
-• [LocExtension](/App.ApplicationLauncher/_LocExtension.md)
+• [LocExtension](../App.ApplicationLauncher/_LocExtension.md)
 
-• [NullExtension](/Gui.Core/_NullExtension.md)
+• [NullExtension](_NullExtension.md)
 
-• [RelativeSource](/Gui.Core/_RelativeSource.md)
+• [RelativeSource](_RelativeSource.md)
 
-• [StaticExtension](/Gui.Core/_StaticExtension.md)
+• [StaticExtension](_StaticExtension.md)
 
-• [StaticResourceExtension](/Gui.Core/_StaticResourceExtension.md)
+• [StaticResourceExtension](_StaticResourceExtension.md)
 
-• [TemplateBindingExtension](/Gui.Core/_TemplateBindingExtension.md)
+• [TemplateBindingExtension](_TemplateBindingExtension.md)
 
-• [TypeExtension](/Gui.Core/_TypeExtension.md)
+• [TypeExtension](_TypeExtension.md)
 
 # Properties
 

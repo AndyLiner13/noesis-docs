@@ -2,19 +2,19 @@ Source: https://www.noesisengine.com/docs/Gui.Core._ItemsPanelTemplate.html
 
 # ItemsPanelTemplate Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.controls.itemspaneltemplate.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.controls.itemspaneltemplate.aspx)
 
-Specifies the panel that the [ItemsPresenter](/Gui.Core/_ItemsPresenter.md) creates for the layout of the items of an [ItemsControl](/Gui.Core/_ItemsControl.md).
+Specifies the panel that the [ItemsPresenter](_ItemsPresenter.md) creates for the layout of the items of an [ItemsControl](_ItemsControl.md).
 
 # Inheritance Hierarchy
 
-• [FrameworkTemplate](/Gui.Core/_FrameworkTemplate.md)
+• [FrameworkTemplate](_FrameworkTemplate.md)
 
 • *ItemsPanelTemplate*
 
 # Properties
 
-## From [FrameworkTemplate](/Gui.Core/_FrameworkTemplate.md)
+## From [FrameworkTemplate](_FrameworkTemplate.md)
 
 | Name | Description |
 | --- | --- |
@@ -29,7 +29,7 @@ ItemsPanelTemplate has no attached properties
 
 # Methods
 
-## From [FrameworkTemplate](/Gui.Core/_FrameworkTemplate.md)
+## From [FrameworkTemplate](_FrameworkTemplate.md)
 
 | Name | Description |
 | --- | --- |

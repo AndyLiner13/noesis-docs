@@ -59,7 +59,7 @@ Applying a style example:
 </StackPanel>
 ```
 
-![StyledButton.png](/StyledButton/png.md)
+![StyledButton.png](https://www.noesisengine.com/docs/StyledButton.png)
 
 # Templates
 
@@ -118,7 +118,7 @@ Applying the template:
 <Button Template="{StaticResource ButtonTemplate}"/>
 ```
 
-![TemplatedButton.png](/TemplatedButton/png.md)
+![TemplatedButton.png](https://www.noesisengine.com/docs/TemplatedButton.png)
 
 # Themes
 

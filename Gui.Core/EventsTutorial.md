@@ -2,11 +2,11 @@ Source: https://www.noesisengine.com/docs/Gui.Core.EventsTutorial.html
 
 # Events in NoesisGUI
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/ApplicationTutorial)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/ApplicationTutorial)
 
 NoesisGUI is an event driven framework where all controls expose events you can subscribe to, which means that your application will be notified when they occur and you may react to them.
 
-There are many types of events, but some of the most commonly used are there to respond to the user's interaction. On most controls you will find events like *KeyDown*, *KeyUp*, *MouseDown*, *MouseUp*, *TouchDown*, *TouchUp*. For example, in the [events section](/Gui.Core/_UIElement.md#events) of the [UIElement](/Gui.Core/_UIElement.md) documentation you can find a list of all the events exposed. Similar documentation is available for the rest of classes.
+There are many types of events, but some of the most commonly used are there to respond to the user's interaction. On most controls you will find events like *KeyDown*, *KeyUp*, *MouseDown*, *MouseUp*, *TouchDown*, *TouchUp*. For example, in the [events section](_UIElement.md#events) of the [UIElement](_UIElement.md) documentation you can find a list of all the events exposed. Similar documentation is available for the rest of classes.
 
 # Subscription
 
@@ -106,9 +106,9 @@ The alternative to direct subscription is using a *code-behind* class and connec
 
 Note
 
-Read the [Extending Noesis](/Gui.Core/ExtendingTutorial.md) tutorial to know more about implementing code-behind classes
+Read the [Extending Noesis](ExtendingTutorial.md) tutorial to know more about implementing code-behind classes
 
-[FrameworkElement](/Gui.Core/_FrameworkElement.md) exposes the virtual function *ConnectEvent* that is invoked for each hooked event when the XAML is loaded. You need to override that function accordingly. In C++ the macro **NS\_CONNECT\_EVENT** is provided as a helper to easily implement *ConnectEvent*. You must use it for each event you want to connect to.
+[FrameworkElement](_FrameworkElement.md) exposes the virtual function *ConnectEvent* that is invoked for each hooked event when the XAML is loaded. You need to override that function accordingly. In C++ the macro **NS\_CONNECT\_EVENT** is provided as a helper to easily implement *ConnectEvent*. You must use it for each event you want to connect to.
 
 C++
 
@@ -233,7 +233,7 @@ protected override bool ConnectEvent(object source, string eventName, string han
 }
 ```
 
-Note that sometimes using *FindName* is not a valid option and using code-behind member functions is the only way to connect to events. For example when using a [DataTemplate](/Gui.Core/_DataTemplate.md) the named elements in the visual tree cannot be accessed using *FindName* because the data template is replicated for each item.
+Note that sometimes using *FindName* is not a valid option and using code-behind member functions is the only way to connect to events. For example when using a [DataTemplate](_DataTemplate.md) the named elements in the visual tree cannot be accessed using *FindName* because the data template is replicated for each item.
 
 ```
 <Grid x:Class="MyGrid"
@@ -253,7 +253,7 @@ Note that sometimes using *FindName* is not a valid option and using code-behind
 
 ## Commands
 
-For a pure MVVM approach to event subscription we recommend using a combination of [EventTrigger](/Gui.Core/_EventTrigger.md) and [InvokeCommandAction](/App.Interactivity/_InvokeCommandAction.md). *Triggers* and *Actions* are part of the [Interactivity](/App.Interactivity/Behaviors.md) package.
+For a pure MVVM approach to event subscription we recommend using a combination of [EventTrigger](_EventTrigger.md) and [InvokeCommandAction](../App.Interactivity/_InvokeCommandAction.md). *Triggers* and *Actions* are part of the [Interactivity](../App.Interactivity/Behaviors.md) package.
 
 ```
 <Grid
@@ -269,7 +269,7 @@ For a pure MVVM approach to event subscription we recommend using a combination 
 </Grid>
 ```
 
-Several elements, like [Button](/Gui.Core/_Button.md) or [MenuItem](/Gui.Core/_MenuItem.md), already provide support for commands without using [Interactivity](/App.Interactivity/Behaviors.md).
+Several elements, like [Button](_Button.md) or [MenuItem](_MenuItem.md), already provide support for commands without using [Interactivity](../App.Interactivity/Behaviors.md).
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -279,9 +279,9 @@ Several elements, like [Button](/Gui.Core/_Button.md) or [MenuItem](/Gui.Core/_M
 
 # Lifetime Events
 
-Any Noesis framework-level element deriving from [FrameworkElement](/Gui.Core/_FrameworkElement.md) class will undergo *Initialized*, *Loaded*, *Reloaded* and *Unloaded*. Understanding when these events happen is very important to properly initialize any control class. Here is some background on how these events work.
+Any Noesis framework-level element deriving from [FrameworkElement](_FrameworkElement.md) class will undergo *Initialized*, *Loaded*, *Reloaded* and *Unloaded*. Understanding when these events happen is very important to properly initialize any control class. Here is some background on how these events work.
 
-![EventsTutorialImg1.png](/EventsTutorialImg1/png.md)
+![EventsTutorialImg1.png](https://www.noesisengine.com/docs/EventsTutorialImg1.png)
 
 C++
 
@@ -366,7 +366,7 @@ If you're not sure which event to use, 'Initialized' or 'Loaded', use the 'Loade
 
 ## Reloaded
 
-When a [FrameworkElement](/Gui.Core/_FrameworkElement.md) derived object is [Hot-Reloaded](/Gui.Core/HotReloadTutorial.md), the event *Reloaded* is fired. Hot-Reloading happens when your application is running and XAMLs are modified without restarting. In most scenarios, handling the *Reloaded* event is not necessary but sometimes it is useful to know when this is happening to react accordingly and avoid breaking parts of the UI.
+When a [FrameworkElement](_FrameworkElement.md) derived object is [Hot-Reloaded](HotReloadTutorial.md), the event *Reloaded* is fired. Hot-Reloading happens when your application is running and XAMLs are modified without restarting. In most scenarios, handling the *Reloaded* event is not necessary but sometimes it is useful to know when this is happening to react accordingly and avoid breaking parts of the UI.
 
 ## Unloaded
 
@@ -435,7 +435,7 @@ public partial class MainWindow : Window
 
 # Routed events
 
-Routed events propagate through an element tree and invoke event handlers on multiple listeners in the tree. Several Noesis events are routed events, such as [BaseButton.Click](/Gui.Core/_BaseButton.md#events). This section discusses basic routed event concepts and offers guidance on when and how to respond to routed events.
+Routed events propagate through an element tree and invoke event handlers on multiple listeners in the tree. Several Noesis events are routed events, such as [BaseButton.Click](_BaseButton.md#events). This section discusses basic routed event concepts and offers guidance on when and how to respond to routed events.
 
 Noesis applications typically contain many elements, which were either declared in XAML or instantiated in code. An application's elements exists within its element tree. Depending on how a routed event is defined, when the event is raised on a source element it:
 
@@ -455,13 +455,13 @@ Consider the following partial element tree:
 </Border>
 ```
 
-Each of the three buttons is a potential *Click* event source. When one of the buttons is clicked, it raises the *Click* event that bubbles up from the button to the root element. The [Button](/Gui.Core/_Button.md) and [Border](/Gui.Core/_Border.md) elements don't have event handlers attached, but the [StackPanel](/Gui.Core/_StackPanel.md) does. Possibly other elements higher up in the tree that aren't shown also have *Click* event handlers attached. When the *Click* event reaches the [StackPanel](/Gui.Core/_StackPanel.md) element, the Noesis event system invokes the *YesNoCancelButton\_Click* handler that's attached to it. The following image illustrates the event route for the *Click* event.
+Each of the three buttons is a potential *Click* event source. When one of the buttons is clicked, it raises the *Click* event that bubbles up from the button to the root element. The [Button](_Button.md) and [Border](_Border.md) elements don't have event handlers attached, but the [StackPanel](_StackPanel.md) does. Possibly other elements higher up in the tree that aren't shown also have *Click* event handlers attached. When the *Click* event reaches the [StackPanel](_StackPanel.md) element, the Noesis event system invokes the *YesNoCancelButton\_Click* handler that's attached to it. The following image illustrates the event route for the *Click* event.
 
-![EventsTutorialImg3.png](/EventsTutorialImg3/png.md)
+![EventsTutorialImg3.png](https://www.noesisengine.com/docs/EventsTutorialImg3.png)
 
 ## Implementation
 
-A routed event is backed by an instance of the [RoutedEvent](/Gui.Core/_RoutedEvent.md) class, and processed by the Noesis event system. The [RoutedEvent](/Gui.Core/_RoutedEvent.md) instance is typically stored as a public static member of the class that registered it. That class is referred to as the event "owner" class. Typically, a routed event implements an identically named event "wrapper". The event wrapper implements '+=' and '-=' operators to add or remove event handlers. This wrapper calls the routed event *AddHandler* and *RemoveHandler* methods.
+A routed event is backed by an instance of the [RoutedEvent](_RoutedEvent.md) class, and processed by the Noesis event system. The [RoutedEvent](_RoutedEvent.md) instance is typically stored as a public static member of the class that registered it. That class is referred to as the event "owner" class. Typically, a routed event implements an identically named event "wrapper". The event wrapper implements '+=' and '-=' operators to add or remove event handlers. This wrapper calls the routed event *AddHandler* and *RemoveHandler* methods.
 
 The following example registers the *DownloadCompleted* routed event with the *bubbling* strategy and implements an event wrapper. It also exposes a virtual function, *OnDownloadCompleted*, that raises the event and allows inheritors to handle the event and cancel it. The event is raised by calling *UIElement.RaiseEvent*.
 
@@ -543,7 +543,7 @@ Routed events use one of three routing strategies:
 
 ## Input Events
 
-By convention, routed events that follow a tunneling route have a name that's prefixed with *"Preview"*. The *Preview* prefix signifies that the preview event completes before the paired bubbling event starts. Input events often come in pairs, with one being a preview event and the other a bubbling routed event. For example, *PreviewKeyDown* and *KeyDown*. The event pairs share the same instance of event data, which for *PreviewKeyDown* and *KeyDown* is of type *KeyEventArgs*. Occasionally, input events only have a bubbling version, or only a direct routed version. Our [API documentation](/Gui.Core/_ClassHierarchy.md) clarifies the routing strategy for each event. For example, the [list of events](/Gui.Core/_Button.md#events) corresponding to [Button](/Gui.Core/_Button.md).
+By convention, routed events that follow a tunneling route have a name that's prefixed with *"Preview"*. The *Preview* prefix signifies that the preview event completes before the paired bubbling event starts. Input events often come in pairs, with one being a preview event and the other a bubbling routed event. For example, *PreviewKeyDown* and *KeyDown*. The event pairs share the same instance of event data, which for *PreviewKeyDown* and *KeyDown* is of type *KeyEventArgs*. Occasionally, input events only have a bubbling version, or only a direct routed version. Our [API documentation](_ClassHierarchy.md) clarifies the routing strategy for each event. For example, the [list of events](_Button.md#events) corresponding to [Button](_Button.md).
 
 Input events that come in pairs are implemented so that a single user action from an input device, such as a mouse button press, will raise the preview and bubbling routed events in sequence. First, the preview event is raised and completes its route. On completion of the preview event, the bubbling event is raised and completes its route. The *RaiseEvent* method call in the implementing class that raises the bubbling event reuses the event data from the preview event for the bubbling event.
 
@@ -551,7 +551,7 @@ A preview input event that's marked as handled won't invoke any normally registe
 
 To illustrate how input event processing works, consider the following input event example. In the following tree illustration, *leaf element #2* is the source of both the *PreviewMouseDown* and *MouseDown* paired events:
 
-![EventsTutorialImg2.png](/EventsTutorialImg2/png.md)
+![EventsTutorialImg2.png](https://www.noesisengine.com/docs/EventsTutorialImg2.png)
 
 ## Handled Events
 

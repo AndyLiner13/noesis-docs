@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._StaticExtension.html
 
 # StaticExtension Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.markup.staticextension.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.markup.staticextension.aspx)
 
 Implements a markup extension that returns static field and property references.
 
@@ -16,7 +16,7 @@ You typically use static references to obtain static values from types, includin
 
 # Inheritance Hierarchy
 
-• [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+• [MarkupExtension](_MarkupExtension.md)
 
 • *StaticExtension*
 
@@ -34,7 +34,7 @@ StaticExtension has no attached properties
 
 # Methods
 
-## From [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+## From [MarkupExtension](_MarkupExtension.md)
 
 | Name | Description |
 | --- | --- |

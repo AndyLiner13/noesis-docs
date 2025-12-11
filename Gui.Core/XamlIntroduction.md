@@ -8,7 +8,7 @@ This tutorial describes the features of the XAML language and demonstrates how y
 
 XAML is a declarative markup language that you can use to create application UI such as controls, shapes, text, and other content presented on the screen. If you're familiar with web programming, you can think of XAML as similar to HTML. Like HTML, XAML is made up of elements and attributes. But XAML is XML-based and therefore must follow XML rules.
 
-XAML directly represents the instantiation of objects. The following example shows how you might create a [button](/Gui.Core/_Button.md) as part of a UI:
+XAML directly represents the instantiation of objects. The following example shows how you might create a [button](_Button.md) as part of a UI:
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -42,7 +42,7 @@ Grid grid = new Grid();
 grid.Children.Add(button);
 ```
 
-One aspect of using a declarative language like XAML is having some separation between the markup that makes up the UI and the code that makes the application do something. For example, a designer on your team could design a UI and then hand off the XAML to the developer to add the procedural code. Even if the designer and the developer are the same person (as they often are), you can keep your visuals in XAML files (*.xaml*) and your procedural UI code in [code-behind](/Gui.Core/CodeBehindTutorial.md) files (*.cs* and *.cpp*).
+One aspect of using a declarative language like XAML is having some separation between the markup that makes up the UI and the code that makes the application do something. For example, a designer on your team could design a UI and then hand off the XAML to the developer to add the procedural code. Even if the designer and the developer are the same person (as they often are), you can keep your visuals in XAML files (*.xaml*) and your procedural UI code in [code-behind](CodeBehindTutorial.md) files (*.cs* and *.cpp*).
 
 # XAML Syntax in Brief
 
@@ -58,13 +58,13 @@ An object element typically declares an instance of a type. Object element synta
 </Grid>
 ```
 
-This specifies two object elements: *<Grid>* (with content, and a closing tag later), and *<Button .../>* (the self-closing form, with several attributes). The object elements [Grid](/Gui.Core/_Grid.md) and [Button](/Gui.Core/_Button.md) each map to the name of a class that is defined by noesisGUI. When you specify an object element tag, you create an instruction for XAML processing to create a new instance. Each instance is created by calling the default constructor of the underlying type when parsing and loading the XAML.
+This specifies two object elements: *<Grid>* (with content, and a closing tag later), and *<Button .../>* (the self-closing form, with several attributes). The object elements [Grid](_Grid.md) and [Button](_Button.md) each map to the name of a class that is defined by noesisGUI. When you specify an object element tag, you create an instruction for XAML processing to create a new instance. Each instance is created by calling the default constructor of the underlying type when parsing and loading the XAML.
 
 ## Attribute Syntax (Properties)
 
 Properties of an object can often be expressed as attributes of the object element. An attribute syntax names the property that is being set in attribute syntax, followed by the assignment operator (*=*). The value of an attribute is always specified as a string that is contained within quotation marks.
 
-Attribute syntax is the most streamlined property setting syntax and is the most intuitive syntax to use for developers who have used markup languages in the past. In the next example, we create a red [Rectangle](/Gui.Core/_Rectangle.md). We set the *Fill* attribute to a predefined color name, which the XAML parser converts into a [SolidColorBrush](/Gui.Core/_SolidColorBrush.md) appropriate for the *Fill* property.
+Attribute syntax is the most streamlined property setting syntax and is the most intuitive syntax to use for developers who have used markup languages in the past. In the next example, we create a red [Rectangle](_Rectangle.md). We set the *Fill* attribute to a predefined color name, which the XAML parser converts into a [SolidColorBrush](_SolidColorBrush.md) appropriate for the *Fill* property.
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -78,7 +78,7 @@ For some properties of an object element, attribute syntax is not possible, beca
 
 The syntax for the property element start tag is *<typeName.propertyName>*. Generally, the content of that tag is an object element of the type that the property takes as its value . After specifying content, you must close the property element with an end tag. The syntax for the end tag is *</typeName.propertyName>*.
 
-If an attribute syntax is possible, using the attribute syntax is typically more convenient and enables a more compact markup, but that is often just a matter of style, not a technical limitation. The following example shows the same properties being set as in the previous attribute syntax example, but this time by using property element syntax for all properties of the [Button](/Gui.Core/_Button.md).
+If an attribute syntax is possible, using the attribute syntax is typically more convenient and enables a more compact markup, but that is often just a matter of style, not a technical limitation. The following example shows the same properties being set as in the previous attribute syntax example, but this time by using property element syntax for all properties of the [Button](_Button.md).
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -112,7 +112,7 @@ The next example creates a Rectangle, but instead of a simple red fill, it uses 
 
 The XAML language includes some optimizations that produce more human-readable markup. One such optimization is that if a particular property takes a collection type, then items that you declare in markup as child elements within that property's value become part of the collection. In this case a collection of child object elements is the value being set to the collection property.
 
-The following example shows a [Grid](/Gui.Core/_Grid.md) container that contains one element, a [Rectangle](/Gui.Core/_Rectangle.md).
+The following example shows a [Grid](_Grid.md) container that contains one element, a [Rectangle](_Rectangle.md).
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -124,7 +124,7 @@ The following example shows a [Grid](/Gui.Core/_Grid.md) container that contains
 
 XAML specifies a language feature whereby a class can designate exactly one of its properties to be the XAML content property. Child elements of that object element are used to set the value of that content property. In other words, for the content property uniquely, you can omit a property element when setting that property in XAML markup and produce a more visible parent/child metaphor in the markup.
 
-For example, [Border](/Gui.Core/_Border.md) specifies a content property of *Child*. The following two *Border* elements are treated identically. The first one takes advantage of the content property syntax and omits the *Border.Child* property element. The second one shows *Border.Child* explicitly.
+For example, [Border](_Border.md) specifies a content property of *Child*. The following two *Border* elements are treated identically. The first one takes advantage of the content property syntax and omits the *Border.Child* property element. The second one shows *Border.Child* explicitly.
 
 ```
 <Border>
@@ -138,7 +138,7 @@ For example, [Border](/Gui.Core/_Border.md) specifies a content property of *Chi
 </Border>
 ```
 
-If the property that is declared as the XAML content property is the *Object* type, or is type *String*, then the XAML content syntax supports what's basically inner text in the XML document model: a string between the opening and closing object tags. For example, the *Text* property in a [TextBlock](/Gui.Core/_TextBlock.md) is used to set *Text*, but the string "Text" never appears in the markup. Here's an example usage:
+If the property that is declared as the XAML content property is the *Object* type, or is type *String*, then the XAML content syntax supports what's basically inner text in the XML document model: a string between the opening and closing object tags. For example, the *Text* property in a [TextBlock](_TextBlock.md) is used to set *Text*, but the string "Text" never appears in the markup. Here's an example usage:
 
 ```
 <TextBlock>Hello!</TextBlock>
@@ -146,7 +146,7 @@ If the property that is declared as the XAML content property is the *Object* ty
 
 ## Attribute Syntax (Events)
 
-Attribute syntax can also be used for members that are events rather than properties. In this case, the attribute's name is the name of the event. What you're supplying here is the function name for an event handler function. That function must be defined in the [code-behind](/Gui.Core/CodeBehindTutorial.md) for the XAML page. For example, the following markup assigns a handler for the *Click* event to a [Button](/Gui.Core/_Button.md) created in markup:
+Attribute syntax can also be used for members that are events rather than properties. In this case, the attribute's name is the name of the event. What you're supplying here is the function name for an event handler function. That function must be defined in the [code-behind](CodeBehindTutorial.md) for the XAML page. For example, the following markup assigns a handler for the *Click* event to a [Button](_Button.md) created in markup:
 
 ```
 <Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -160,7 +160,7 @@ Attribute syntax can also be used for members that are events rather than proper
 
 Markup extensions are a XAML language concept. When used to provide the value of an attribute syntax, curly braces (*{* and *}*) indicate a markup extension usage. This usage directs the XAML processing to escape from the general treatment of attribute values as either a literal string or a string-convertible value.
 
-The most common markup extensions used in noesisGUI are [Binding](/Gui.Core/_Binding.md), used for data binding expressions, and the resource references *StaticResource* and *DynamicResource*. By using markup extensions, you can use attribute syntax to provide values for properties even if that property does not support an attribute syntax in general. Markup extensions often use intermediate expression types to enable features such as deferring values or referencing other objects that are only present at run time.
+The most common markup extensions used in noesisGUI are [Binding](_Binding.md), used for data binding expressions, and the resource references *StaticResource* and *DynamicResource*. By using markup extensions, you can use attribute syntax to provide values for properties even if that property does not support an attribute syntax in general. Markup extensions often use intermediate expression types to enable features such as deferring values or referencing other objects that are only present at run time.
 
 For example, the following markup sets the value of the *Style* property using attribute syntax. The *Style* property takes an instance of the *Style* class, which by default could not be instantiated by an attribute syntax string. But in this case, the attribute references a particular markup extension, *StaticResource*. When that markup extension is processed, it returns a reference to a style that was previously instantiated as a keyed resource in a resource dictionary.
 
@@ -218,7 +218,7 @@ Note that the **xmlns** attributes are only strictly necessary on the root eleme
 
 The following is a listing of the most common *x:* prefix programming constructs you will use:
 
-- **x:Key**: Sets a unique key for each resource in a [ResourceDictionary](/Gui.Core/_ResourceDictionary.md), *x:Key* will probably account for 90% of the *x:* usages you will see in a typical markup.
+- **x:Key**: Sets a unique key for each resource in a [ResourceDictionary](_ResourceDictionary.md), *x:Key* will probably account for 90% of the *x:* usages you will see in a typical markup.
 - **x:Name**: Add this attribute on any XAML object element where you want to be able to reference the created runtime instance as part of your code-behind logic.
 - **x:Class**: Specifies the namespace and class name for the class that provides code-behind for a XAML page. You must have such a class to support code-behind, and therefore you almost always see *x:* mapped, even if there are no resources.
 - **x:Type**: Constructs a Type reference based on a type name. This is used to specify attributes that take *Type*, such as *Style::TargetType*, although frequently the property has native string-to-Type conversion in such a way that the *x:Type* markup extension usage is optional.

@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._Binding.html
 
 # Binding Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.data.binding.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.data.binding.aspx)
 
 Provides high-level access to the definition of a binding, which connects the properties of binding target objects and any data source.
 
@@ -14,9 +14,9 @@ Example:
 
 # Inheritance Hierarchy
 
-• [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+• [MarkupExtension](_MarkupExtension.md)
 
-• [BaseBinding](/Gui.Core/_BaseBinding.md)
+• [BaseBinding](_BaseBinding.md)
 
 • *Binding*
 
@@ -36,7 +36,7 @@ Example:
 
 ● Dependency Property   ○ Reflection Property
 
-## From [BaseBinding](/Gui.Core/_BaseBinding.md)
+## From [BaseBinding](_BaseBinding.md)
 
 | Name | Description |
 | --- | --- |
@@ -55,10 +55,10 @@ Binding has no attached properties
 
 | Name | Description |
 | --- | --- |
-|  *GetSourceObject(target, targetProperty)* | Find data from the appropriate source: Source, ElementName, [RelativeSource](/Gui.Core/_RelativeSource.md) or DataContext |
+|  *GetSourceObject(target, targetProperty)* | Find data from the appropriate source: Source, ElementName, [RelativeSource](_RelativeSource.md) or DataContext |
 |  *ProvideValue(provider)* | Can return 0 when the source object is not resolvable (doesn't throw exception) |
 
-## From [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+## From [MarkupExtension](_MarkupExtension.md)
 
 | Name | Description |
 | --- | --- |

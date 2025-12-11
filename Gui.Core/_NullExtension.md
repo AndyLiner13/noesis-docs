@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._NullExtension.html
 
 # NullExtension Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.markup.nullextension.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.markup.nullextension.aspx)
 
 Implements a XAML markup extension in order to return a null object.
 
@@ -14,7 +14,7 @@ In XAML, null and empty string are generally not equivalent. You use the {x:Null
 
 # Inheritance Hierarchy
 
-• [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+• [MarkupExtension](_MarkupExtension.md)
 
 • *NullExtension*
 
@@ -28,7 +28,7 @@ NullExtension has no attached properties
 
 # Methods
 
-## From [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+## From [MarkupExtension](_MarkupExtension.md)
 
 | Name | Description |
 | --- | --- |

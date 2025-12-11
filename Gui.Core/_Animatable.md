@@ -2,69 +2,69 @@ Source: https://www.noesisengine.com/docs/Gui.Core._Animatable.html
 
 # Animatable Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.media.animation.animatable.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.media.animation.animatable.aspx)
 
 Abstract class that provides animation support.
 
 # Inheritance Hierarchy
 
-• [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+• [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
-• [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+• [DependencyObject](../Gui.DependencySystem/_DependencyObject.md)
 
-• [Freezable](/Gui.DependencySystem/_Freezable.md)
+• [Freezable](../Gui.DependencySystem/_Freezable.md)
 
 • *Animatable*
 
-• [AttachableObject](/App.Interactivity/_AttachableObject.md)
+• [AttachableObject](../App.Interactivity/_AttachableObject.md)
 
-• [BaseFreezableCollection](/Gui.Core/_BaseFreezableCollection.md)
+• [BaseFreezableCollection](_BaseFreezableCollection.md)
 
-• [BaseView](/Gui.Controls/_BaseView.md)
+• [BaseView](../Gui.Controls/_BaseView.md)
 
-• [Brush](/Gui.Core/_Brush.md)
+• [Brush](_Brush.md)
 
-• [BrushShader](/Gui.Core/_BrushShader.md)
+• [BrushShader](_BrushShader.md)
 
-• [ComparisonCondition](/App.Interactivity/_ComparisonCondition.md)
+• [ComparisonCondition](../App.Interactivity/_ComparisonCondition.md)
 
-• [ConditionalExpression](/App.Interactivity/_ConditionalExpression.md)
+• [ConditionalExpression](../App.Interactivity/_ConditionalExpression.md)
 
-• [DashStyle](/Gui.Core/_DashStyle.md)
+• [DashStyle](_DashStyle.md)
 
-• [EasingFunctionBase](/Gui.Animation/_EasingFunctionBase.md)
+• [EasingFunctionBase](../Gui.Animation/_EasingFunctionBase.md)
 
-• [Effect](/Gui.Core/_Effect.md)
+• [Effect](_Effect.md)
 
-• [Geometry](/Gui.Core/_Geometry.md)
+• [Geometry](_Geometry.md)
 
-• [GradientStop](/Gui.Core/_GradientStop.md)
+• [GradientStop](_GradientStop.md)
 
-• [GridViewColumn](/Gui.Controls/_GridViewColumn.md)
+• [GridViewColumn](../Gui.Controls/_GridViewColumn.md)
 
-• [ImageSource](/Gui.Core/_ImageSource.md)
+• [ImageSource](_ImageSource.md)
 
-• [MeshData](/Gui.Core/_MeshData.md)
+• [MeshData](_MeshData.md)
 
-• [PathFigure](/Gui.Core/_PathFigure.md)
+• [PathFigure](_PathFigure.md)
 
-• [PathSegment](/Gui.Core/_PathSegment.md)
+• [PathSegment](_PathSegment.md)
 
-• [Pen](/Gui.Core/_Pen.md)
+• [Pen](_Pen.md)
 
-• [RiveInput](/App.RiveBase/_RiveInput.md)
+• [RiveInput](../App.RiveBase/_RiveInput.md)
 
-• [RiveRun](/App.RiveBase/_RiveRun.md)
+• [RiveRun](../App.RiveBase/_RiveRun.md)
 
-• [Timeline](/Gui.Animation/_Timeline.md)
+• [Timeline](../Gui.Animation/_Timeline.md)
 
-• [Transform](/Gui.Core/_Transform.md)
+• [Transform](_Transform.md)
 
-• [Transform3D](/Gui.Core/_Transform3D.md)
+• [Transform3D](_Transform3D.md)
 
 # Properties
 
-## From [Freezable](/Gui.DependencySystem/_Freezable.md)
+## From [Freezable](../Gui.DependencySystem/_Freezable.md)
 
 | Name | Description |
 | --- | --- |
@@ -73,11 +73,11 @@ Abstract class that provides animation support.
 
 ● Dependency Property   ○ Reflection Property
 
-## From [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+## From [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
 | Name | Description |
 | --- | --- |
-| ○ *ThreadId* | Gets the thread this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
+| ○ *ThreadId* | Gets the thread this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
 
 ● Dependency Property   ○ Reflection Property
 
@@ -87,30 +87,30 @@ Animatable has no attached properties
 
 # Methods
 
-## From [Freezable](/Gui.DependencySystem/_Freezable.md)
+## From [Freezable](../Gui.DependencySystem/_Freezable.md)
 
 | Name | Description |
 | --- | --- |
-|  *Clone()* | Creates a modifiable clone of the [Freezable](/Gui.DependencySystem/_Freezable.md), making deep copies of the object's values. When copying the object's dependency properties, this method copies expressions (which might no longer resolve) but not animations or their current values. The cloned Freezable::IsFrozen property is false even if the source's IsFrozen property is true. |
-|  *CloneCurrentValue()* | Creates a modifiable clone (deep copy) of the [Freezable](/Gui.DependencySystem/_Freezable.md) using its current values. The cloned object's IsFrozen property is false even if the source's IsFrozen property is true. |
+|  *Clone()* | Creates a modifiable clone of the [Freezable](../Gui.DependencySystem/_Freezable.md), making deep copies of the object's values. When copying the object's dependency properties, this method copies expressions (which might no longer resolve) but not animations or their current values. The cloned Freezable::IsFrozen property is false even if the source's IsFrozen property is true. |
+|  *CloneCurrentValue()* | Creates a modifiable clone (deep copy) of the [Freezable](../Gui.DependencySystem/_Freezable.md) using its current values. The cloned object's IsFrozen property is false even if the source's IsFrozen property is true. |
 |  *Freeze()* | Makes the current object unmodifiable and sets its IsFrozen property to true. |
-|  *GetAsFrozen()* | Creates a frozen copy of the [Freezable](/Gui.DependencySystem/_Freezable.md), using base (non-animated) property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. Throws if the [Freezable](/Gui.DependencySystem/_Freezable.md) cannot be frozen because it contains expressions or animated properties. |
-|  *GetCurrentValueAsFrozen()* | Creates a frozen copy of the [Freezable](/Gui.DependencySystem/_Freezable.md) using current property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. |
+|  *GetAsFrozen()* | Creates a frozen copy of the [Freezable](../Gui.DependencySystem/_Freezable.md), using base (non-animated) property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. Throws if the [Freezable](../Gui.DependencySystem/_Freezable.md) cannot be frozen because it contains expressions or animated properties. |
+|  *GetCurrentValueAsFrozen()* | Creates a frozen copy of the [Freezable](../Gui.DependencySystem/_Freezable.md) using current property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. |
 
-## From [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+## From [DependencyObject](../Gui.DependencySystem/_DependencyObject.md)
 
 | Name | Description |
 | --- | --- |
 |  *ClearAnimation(dp)* | Clears the animation value of a property |
-|  *ClearLocalValue(dp)* | Clears the local value of a property The property to be cleared is specified by a [DependencyProperty](/Gui.DependencySystem/_DependencyProperty.md) identifier |
+|  *ClearLocalValue(dp)* | Clears the local value of a property The property to be cleared is specified by a [DependencyProperty](../Gui.DependencySystem/_DependencyProperty.md) identifier |
 |  *CoerceValue(dp)* | Coerces and validates the effective property value |
 |  *DependencyPropertyChanged()* | Returns the PropertyChanged event |
 |  *Destroyed()* | Destroyed delegate is raised when object is going to be destroyed |
-|  *GetBaseValue(dp)* | Returns the base value without animation nor coerce (this never returns [Expression](/Gui.DependencySystem/_Expression.md) like GetLocalValue) |
+|  *GetBaseValue(dp)* | Returns the base value without animation nor coerce (this never returns [Expression](../Gui.DependencySystem/_Expression.md) like GetLocalValue) |
 |  *GetExpression(dp)* | Gets the expression, if any, used to evaluate the specified property value |
 |  *GetLocalValue(dp)* | Returns the local value of a dependency property, if it exists |
-|  *GetValue(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) |
-|  *GetValueObject(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) as a boxed value |
+|  *GetValue(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](../Gui.DependencySystem/_DependencyObject.md) |
+|  *GetValueObject(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](../Gui.DependencySystem/_DependencyObject.md) as a boxed value |
 |  *GetValueProvider(dp)* | Gets the provider that returns the effective value for the specified dependency property |
 |  *HasAnimatedProperties()* | Returns true if there is any animated property |
 |  *InvalidateProperty(dp, priority)* | Re-evaluates the effective value for the specified dependency property if necessary If null is passed, a full re-evaluation could be needed |
@@ -123,12 +123,12 @@ Animatable has no attached properties
 |  *SetValue(dp, value)* | Sets the local value of a dependency property |
 |  *SetValueObject(dp, value)* | Sets the local value (boxed) of a dependency property |
 
-## From [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+## From [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
 | Name | Description |
 | --- | --- |
-|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
-|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
+|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) |
+|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) |
 
 # Events
 

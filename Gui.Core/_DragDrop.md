@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._DragDrop.html
 
 # DragDrop Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.dragdrop.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.dragdrop.aspx)
 
 Provides helper methods and fields for initiating drag-and-drop operations.
 

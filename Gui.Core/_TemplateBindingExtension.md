@@ -2,13 +2,13 @@ Source: https://www.noesisengine.com/docs/Gui.Core._TemplateBindingExtension.htm
 
 # TemplateBindingExtension Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.templatebindingextension.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.templatebindingextension.aspx)
 
 Implements a markup extension that supports the binding between the value of a property in a template and the value of some other exposed property on the templated control.
 
-Using a TemplateBinding is equivalent to using a [Binding](/Gui.Core/_Binding.md) with the Source property set to *RelativeSource.TemplatedParent*.
+Using a TemplateBinding is equivalent to using a [Binding](_Binding.md) with the Source property set to *RelativeSource.TemplatedParent*.
 
-The method ProvideValue returns a [TemplateBindingExpression](/Gui.Core/_TemplateBindingExpression.md).
+The method ProvideValue returns a [TemplateBindingExpression](_TemplateBindingExpression.md).
 
 Example:
 
@@ -20,7 +20,7 @@ Example:
 
 # Inheritance Hierarchy
 
-• [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+• [MarkupExtension](_MarkupExtension.md)
 
 • *TemplateBindingExtension*
 
@@ -38,7 +38,7 @@ TemplateBindingExtension has no attached properties
 
 # Methods
 
-## From [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+## From [MarkupExtension](_MarkupExtension.md)
 
 | Name | Description |
 | --- | --- |

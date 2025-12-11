@@ -54,13 +54,13 @@ In xaml, you add content to elements using properties. For example, you add item
 </DockPanel>
 ```
 
-Note that the property element tags are not explicitly needed because the XAML reader infers the property elements when it creates the objects that create the executable's runtime object representation of the application. For more information about how XAML syntax maps to the created logical tree, and inferred syntax elements, see [XAML Concepts](/Gui.Core/XamlIntroduction.md).
+Note that the property element tags are not explicitly needed because the XAML reader infers the property elements when it creates the objects that create the executable's runtime object representation of the application. For more information about how XAML syntax maps to the created logical tree, and inferred syntax elements, see [XAML Concepts](XamlIntroduction.md).
 
 # The Purpose of the Logical Tree
 
 The logical tree exists so that content models can readily iterate over their possible child objects, and so that content models can be extensible. Also, the logical tree provides a framework for certain notifications, such as when all objects in the logical tree are loaded.
 
-In addition, resource references are resolved by looking upwards through the logical tree for Resources collections on the initial requesting object and then parent objects. The logical tree is used for resource lookup when both the logical tree and the visual tree are present. For more information on resources, see [Resources](/Gui.Core/Resources.md).
+In addition, resource references are resolved by looking upwards through the logical tree for Resources collections on the initial requesting object and then parent objects. The logical tree is used for resource lookup when both the logical tree and the visual tree are present. For more information on resources, see [Resources](Resources.md).
 
 # Overriding the Logical Tree
 
@@ -124,8 +124,8 @@ Often, an element's logical parent is the same as its visual parent. This is the
 
 Next image shows the logical tree produced by the previous xaml.
 
-![600px-WPFUnleashed3-2.jpg](/600px-WPFUnleashed3-2/jpg.md)
+![600px-WPFUnleashed3-2.jpg](https://www.noesisengine.com/docs/600px-WPFUnleashed3-2.jpg)
 
 The visual tree is basically an expansion of the logical tree, in which nodes are broken down into their core visual components. That visual representation depends on current UI theme and control styles. The following image shows a possible visual tree for the previous xaml.
 
-![600px-WPFUnleashed3-3.jpg](/600px-WPFUnleashed3-3/jpg.md)
+![600px-WPFUnleashed3-3.jpg](https://www.noesisengine.com/docs/600px-WPFUnleashed3-3.jpg)

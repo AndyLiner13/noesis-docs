@@ -2,15 +2,15 @@ Source: https://www.noesisengine.com/docs/Gui.Core._TextBlock.html
 
 # TextBlock Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.controls.textblock.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.controls.textblock.aspx)
 
 Provides a lightweight control for displaying small amounts of text content.
 
-A [TextBlock](/Gui.Core/_TextBlock.md) can contain a string in its *Text* property or *Inline* flow content elements, such as [Bold](/Gui.Core/_Bold.md), [Hyperlink](/Gui.Core/_Hyperlink.md), and [InlineUIContainer](/Gui.Core/_InlineUIContainer.md), in its *Inlines* property.
+A [TextBlock](_TextBlock.md) can contain a string in its *Text* property or *Inline* flow content elements, such as [Bold](_Bold.md), [Hyperlink](_Hyperlink.md), and [InlineUIContainer](_InlineUIContainer.md), in its *Inlines* property.
 
-[TextBlock](/Gui.Core/_TextBlock.md) is designed to be lightweight, and is geared specifically at integrating small portions of flow content into a user interface (UI). [TextBlock](/Gui.Core/_TextBlock.md) is optimized for single-line display, and provides good performance for displaying up to a few lines of content.
+[TextBlock](_TextBlock.md) is designed to be lightweight, and is geared specifically at integrating small portions of flow content into a user interface (UI). [TextBlock](_TextBlock.md) is optimized for single-line display, and provides good performance for displaying up to a few lines of content.
 
-Horizontally aligning text within a [TextBlock](/Gui.Core/_TextBlock.md) is done with the *TextAlignment* property. Aligning the [TextBlock](/Gui.Core/_TextBlock.md) within the layout of the page is done with the *HorizontalAlignment* and *VerticalAlignment* properties.
+Horizontally aligning text within a [TextBlock](_TextBlock.md) is done with the *TextAlignment* property. Aligning the [TextBlock](_TextBlock.md) within the layout of the page is done with the *HorizontalAlignment* and *VerticalAlignment* properties.
 
 ```
 <Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -31,15 +31,15 @@ Horizontally aligning text within a [TextBlock](/Gui.Core/_TextBlock.md) is done
 
 # Inheritance Hierarchy
 
-• [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+• [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
-• [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+• [DependencyObject](../Gui.DependencySystem/_DependencyObject.md)
 
-• [Visual](/Gui.Core/_Visual.md)
+• [Visual](_Visual.md)
 
-• [UIElement](/Gui.Core/_UIElement.md)
+• [UIElement](_UIElement.md)
 
-• [FrameworkElement](/Gui.Core/_FrameworkElement.md)
+• [FrameworkElement](_FrameworkElement.md)
 
 • *TextBlock*
 
@@ -47,32 +47,32 @@ Horizontally aligning text within a [TextBlock](/Gui.Core/_TextBlock.md) is done
 
 | Name | Description |
 | --- | --- |
-| ● *Background* | Gets or sets the [Brush](/Gui.Core/_Brush.md) used to fill the background of content area. |
+| ● *Background* | Gets or sets the [Brush](_Brush.md) used to fill the background of content area. |
 | ● *CharacterSpacing* | Gets or sets the uniform spacing between characters, in units of 1/1000 of an em. |
 | ○ *FirstInlineIsFromText* | Indicates if first inline is generated from Text property |
-| ● *FontFamily* | Gets or sets the preferred top-level font family for the [TextBlock](/Gui.Core/_TextBlock.md). |
-| ● *FontSize* | Gets or sets the top-level font size for the [TextBlock](/Gui.Core/_TextBlock.md). |
-| ● *FontStretch* | Gets or sets the top-level font stretch for the [TextBlock](/Gui.Core/_TextBlock.md). |
-| ● *FontStyle* | Gets or sets the top-level font style for the [TextBlock](/Gui.Core/_TextBlock.md). |
-| ● *FontWeight* | Gets or sets the top-level font weight for the [TextBlock](/Gui.Core/_TextBlock.md). |
-| ● *Foreground* | Gets or sets the [Brush](/Gui.Core/_Brush.md) to apply to the text contents of the [TextBlock](/Gui.Core/_TextBlock.md). |
-| ○ *FormattedText* | Returns the object used to layout and render text for this [TextBlock](/Gui.Core/_TextBlock.md) |
-| ○ *Inlines* | Gets an InlineCollection containing the top-level [Inline](/Gui.Core/_Inline.md) elements that comprise the contents of the [TextBlock](/Gui.Core/_TextBlock.md) |
+| ● *FontFamily* | Gets or sets the preferred top-level font family for the [TextBlock](_TextBlock.md). |
+| ● *FontSize* | Gets or sets the top-level font size for the [TextBlock](_TextBlock.md). |
+| ● *FontStretch* | Gets or sets the top-level font stretch for the [TextBlock](_TextBlock.md). |
+| ● *FontStyle* | Gets or sets the top-level font style for the [TextBlock](_TextBlock.md). |
+| ● *FontWeight* | Gets or sets the top-level font weight for the [TextBlock](_TextBlock.md). |
+| ● *Foreground* | Gets or sets the [Brush](_Brush.md) to apply to the text contents of the [TextBlock](_TextBlock.md). |
+| ○ *FormattedText* | Returns the object used to layout and render text for this [TextBlock](_TextBlock.md) |
+| ○ *Inlines* | Gets an InlineCollection containing the top-level [Inline](_Inline.md) elements that comprise the contents of the [TextBlock](_TextBlock.md) |
 | ● *LineHeight* | Gets or sets the height of each line of content |
 | ● *LineStackingStrategy* | Gets or sets the mechanism by which a line box is determined for each line of text |
 | ● *Padding* | Gets or sets the padding inside a control |
-| ● *Stroke* | Gets or sets the [Brush](/Gui.Core/_Brush.md) used to stroke the text |
+| ● *Stroke* | Gets or sets the [Brush](_Brush.md) used to stroke the text |
 | ● *StrokeThickness* | Gets or sets the width (in pixels) of the text stroke |
 | ● *Text* | Gets or sets text string |
 | ● *TextAlignment* | Gets or sets text alignment |
 | ● *TextDecorations* | Gets or sets the text decoration to apply to the text |
 | ● *TextTrimming* | Gets or sets the text trimming behavior to employ when content overflows the content area |
 | ● *TextWrapping* | Gets or sets text wrapping |
-| ○ *Typography* | Gets the currently effective typography variations for the text contents of this [TextBlock](/Gui.Core/_TextBlock.md) |
+| ○ *Typography* | Gets the currently effective typography variations for the text contents of this [TextBlock](_TextBlock.md) |
 
 ● Dependency Property   ○ Reflection Property
 
-## From [FrameworkElement](/Gui.Core/_FrameworkElement.md)
+## From [FrameworkElement](_FrameworkElement.md)
 
 | Name | Description |
 | --- | --- |
@@ -85,7 +85,7 @@ Horizontally aligning text within a [TextBlock](/Gui.Core/_TextBlock.md) is done
 | ● *DefaultStyleKey* | Gets or sets the key to use to reference the style for this control, when theme styles are used or defined |
 | ● *FlowDirection* | Gets or sets the direction that text and other UI elements flow within any parent element that controls their layout |
 | ● *FocusVisualStyle* | Gets or sets a property that enables customization of appearance, effects, or other style characteristics that will apply to this element when it captures keyboard focus |
-| ● *ForceCursor* | Gets or sets a value that indicates whether this [FrameworkElement](/Gui.Core/_FrameworkElement.md) should force the UI to render the cursor as declared by this element's [Cursor](/Gui.Core/_Cursor.md) property. |
+| ● *ForceCursor* | Gets or sets a value that indicates whether this [FrameworkElement](_FrameworkElement.md) should force the UI to render the cursor as declared by this element's [Cursor](_Cursor.md) property. |
 | ● *Height* | Gets or sets the suggested height of the element. |
 | ● *HorizontalAlignment* | Gets or sets the horizontal alignment characteristics applied to this element when it is composed within a parent element, such as a panel or items control |
 | ● *InputScope* | Gets or sets the context for input used by this element. The input scope, which modifies how input from alternative input methods is interpreted |
@@ -113,18 +113,18 @@ Horizontally aligning text within a [TextBlock](/Gui.Core/_TextBlock.md) is done
 
 ● Dependency Property   ○ Reflection Property
 
-## From [UIElement](/Gui.Core/_UIElement.md)
+## From [UIElement](_UIElement.md)
 
 | Name | Description |
 | --- | --- |
 | ● *AllowDrop* | Gets or sets a value indicating whether this element can be used as the target of a drag-and-drop operation |
 | ● *Clip* | Gets or sets the geometry used to define the outline of the contents of an element |
 | ● *ClipToBounds* | Gets or sets a value indicating whether to clip the content of this element (or content coming from the child elements of this element) to fit into the size of the containing element |
-| ○ *CommandBindings* | Gets a collection of [CommandBinding](/Gui.Core/_CommandBinding.md) objects associated with this element |
+| ○ *CommandBindings* | Gets a collection of [CommandBinding](_CommandBinding.md) objects associated with this element |
 | ○ *DesiredSize* | Gets control's desired size (calculated after *Measure* process) |
 | ● *Effect* | Gets or sets the bitmap effect to apply to the element |
 | ● *Focusable* | Gets or sets a value that indicates whether the element can receive focus |
-| ○ *InputBindings* | Gets a collection of [InputBinding](/Gui.Core/_InputBinding.md) objects associated with this element |
+| ○ *InputBindings* | Gets a collection of [InputBinding](_InputBinding.md) objects associated with this element |
 | ● *IsDoubleTapEnabled* | Gets or sets a value that determines whether this element can originate *DoubleTapped* events |
 | ● *IsEnabled* | Gets or sets a value indicating whether this element is enabled in the user interface |
 | ● *IsFocused* | Indicates whether this element has the focus |
@@ -141,7 +141,7 @@ Horizontally aligning text within a [TextBlock](/Gui.Core/_TextBlock.md) is done
 | ● *IsTapEnabled* | Gets or sets a value that determines whether this element can originate *Tapped* events |
 | ● *IsVisible* | Indicates whether this element is visible in the user interface |
 | ● *Opacity* | Gets or sets the opacity factor applied to the entire element when it is rendered |
-| ● *OpacityMask* | Gets or sets an opacity mask, as a [Brush](/Gui.Core/_Brush.md) implementation that is applied to any alpha-channel masking for the rendered content of this element |
+| ● *OpacityMask* | Gets or sets an opacity mask, as a [Brush](_Brush.md) implementation that is applied to any alpha-channel masking for the rendered content of this element |
 | ○ *RenderSize* | Gets calculated (during *Arrange*) render size |
 | ● *RenderTransform* | Gets or sets transform information that affects the rendering position of this element |
 | ● *RenderTransformOrigin* | Gets or sets the center point of any possible render transform declared by *RenderTransform*, relative to the bounds of the element |
@@ -150,7 +150,7 @@ Horizontally aligning text within a [TextBlock](/Gui.Core/_TextBlock.md) is done
 
 ● Dependency Property   ○ Reflection Property
 
-## From [Visual](/Gui.Core/_Visual.md)
+## From [Visual](_Visual.md)
 
 | Name | Description |
 | --- | --- |
@@ -158,11 +158,11 @@ Horizontally aligning text within a [TextBlock](/Gui.Core/_TextBlock.md) is done
 
 ● Dependency Property   ○ Reflection Property
 
-## From [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+## From [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
 | Name | Description |
 | --- | --- |
-| ○ *ThreadId* | Gets the thread this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
+| ○ *ThreadId* | Gets the thread this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
 
 ● Dependency Property   ○ Reflection Property
 
@@ -174,14 +174,14 @@ TextBlock has no attached properties
 
 | Name | Description |
 | --- | --- |
-|  *HasInlines()* | Indicates if this [TextBlock](/Gui.Core/_TextBlock.md) contains any inlines (avoids creating Inlines if not needed) |
+|  *HasInlines()* | Indicates if this [TextBlock](_TextBlock.md) contains any inlines (avoids creating Inlines if not needed) |
 
-## From [FrameworkElement](/Gui.Core/_FrameworkElement.md)
+## From [FrameworkElement](_FrameworkElement.md)
 
 | Name | Description |
 | --- | --- |
 |  *AncestorChanged()* | Notifies when an ancestor has changed its parent |
-|  *AncestorNameScopeChanged()* | Notifies when a [NameScope](/Gui.Core/_NameScope.md) in an ancestor has changed any of its items |
+|  *AncestorNameScopeChanged()* | Notifies when a [NameScope](_NameScope.md) in an ancestor has changed any of its items |
 |  *AncestorResourcesChanged()* | Notifies when a change occurred in the resources dictionary of this element or an ancestor |
 |  *ApplyTemplate()* | Template management Called on every Measure. Returns true if Visuals were added to the tree |
 |  *BringIntoView()* | Attempts to bring this element into view, within any scrollable regions it is contained within. |
@@ -190,12 +190,12 @@ TextBlock has no attached properties
 |  *Clone(parent, templatedParent, template\_)* | Returns a clone of this element. Used when applying a template |
 |  *ConnectEvent(source, event, handler)* | Attaches specified event to code-behind content. Return false when code-behind does not define the specified event handler |
 |  *ConnectField(object, name)* | Attached specified named object to code-behind field |
-|  *FindName(name)* | Provides accessors that simplifies access to the [NameScope](/Gui.Core/_NameScope.md) registration methods |
+|  *FindName(name)* | Provides accessors that simplifies access to the [NameScope](_NameScope.md) registration methods |
 |  *FindResource(key)* | Finds a resource looking in the logical parent chain |
 |  *GetBindingExpression(dp)* | Returns a binding expression if the target property has an active binding; otherwise, returns null |
 |  *GetFrameworkTemplate()* | Gets applied template on this element |
 |  *GetParentOrTemplatedParent()* | Gets the logical parent or the templated parent when logical parent is not available |
-|  *GetStateGroupsRoot()* | Gets root for [VisualState](/Gui.Animation/_VisualState.md) management |
+|  *GetStateGroupsRoot()* | Gets root for [VisualState](../Gui.Animation/_VisualState.md) management |
 |  *GetTemplateChild(name)* | Looks for a named element in the applied template |
 |  *GetTemplateRoot()* | Gets the root element of the applied template |
 |  *GetTimeManager()* | Gets the TimeManager that controls current element |
@@ -204,18 +204,18 @@ TextBlock has no attached properties
 |  *SetBinding(dp, path)* | Attaches a binding to this element, based on the provided source property name as a path qualification to the data source |
 |  *SetResourceReference(dp, name)* | Sets up a resource reference in the target property to search for a resource with the specified name |
 
-## From [UIElement](/Gui.Core/_UIElement.md)
+## From [UIElement](_UIElement.md)
 
 | Name | Description |
 | --- | --- |
 |  *AddHandler(ev, handler)* | Adds a handler to the specified routed event |
-|  *Arrange(finalRect)* | Positions child elements and determines a size for a [UIElement](/Gui.Core/_UIElement.md). Parent elements call this method from their *ArrangeCore* implementation to form a recursive layout update. This method constitutes the second pass of a layout update |
+|  *Arrange(finalRect)* | Positions child elements and determines a size for a [UIElement](_UIElement.md). Parent elements call this method from their *ArrangeCore* implementation to form a recursive layout update. This method constitutes the second pass of a layout update |
 |  *CaptureMouse()* | Attempts to force capture of the mouse to this element |
 |  *CaptureTouch(touchDevice)* | Attempts to force capture of a touch to this element |
 |  *Focus()* | Attempts to set focus to this element |
 |  *Focus(engage)* | Attempts to set focus to this element indicating if control should be engaged or not |
 |  *GetKeyboard()* | Gets keyboard input manager |
-|  *GetMouse()* | Public methods in [UIElement](/Gui.Core/_UIElement.md) Gets mouse input manager |
+|  *GetMouse()* | Public methods in [UIElement](_UIElement.md) Gets mouse input manager |
 |  *GetTouchCaptured(touchDevice)* | Gets element captured by the specified touch device |
 |  *GetUIParent()* | Gets the logical or visual parent for this element |
 |  *GetUIView()* | Finds the View where this element is connected to traversing visual or logical ancestors |
@@ -224,10 +224,10 @@ TextBlock has no attached properties
 |  *InvalidateVisual()* | Invalidates the rendering of the element, and forces a complete new layout pass. *OnRender* is called after the layout cycle is completed |
 |  *IsArrangeValid()* | Indicates if arrange is valid |
 |  *IsMeasureValid()* | Indicates if measured size is valid |
-|  *Measure(availableSize)* | Updates the *DesiredSize* of a [UIElement](/Gui.Core/_UIElement.md). Parent elements call this method from their own *MeasureCore* implementations to form a recursive layout update. Calling this method constitutes the first pass of a layout update in the layout system |
+|  *Measure(availableSize)* | Updates the *DesiredSize* of a [UIElement](_UIElement.md). Parent elements call this method from their own *MeasureCore* implementations to form a recursive layout update. Calling this method constitutes the first pass of a layout update in the layout system |
 |  *MoveFocus(request)* | Request to move the focus from this element to another element. Returns true if focus is moved successfully, returns false if there is no next element |
 |  *PredictFocus(direction)* | When overridden in a derived class, returns the element that would receive focus for a specified focus traversal direction, without actually moving focus to that element |
-|  *RaiseEvent(e)* | Raises a specific routed event. The [RoutedEvent](/Gui.Core/_RoutedEvent.md) to be raised is identified within the RoutedEventArgs instance that is provided (as the [RoutedEvent](/Gui.Core/_RoutedEvent.md) property of that event data) |
+|  *RaiseEvent(e)* | Raises a specific routed event. The [RoutedEvent](_RoutedEvent.md) to be raised is identified within the RoutedEventArgs instance that is provided (as the [RoutedEvent](_RoutedEvent.md) property of that event data) |
 |  *ReleaseAllTouchCaptures()* | Releases all captured touch devices from this element |
 |  *ReleaseMouseCapture()* | Releases the mouse capture, if this element held the capture |
 |  *ReleaseTouchCapture(touchDevice)* | Attempts to release the specified touch device from this element |
@@ -235,7 +235,7 @@ TextBlock has no attached properties
 |  *TranslatePoint(point, relativeTo)* | Translates a point relative to this element to coordinates of the specified element |
 |  *UpdateLayout()* | Ensures that all visual child elements of this element are properly updated for layout |
 
-## From [Visual](/Gui.Core/_Visual.md)
+## From [Visual](_Visual.md)
 
 | Name | Description |
 | --- | --- |
@@ -247,28 +247,28 @@ TextBlock has no attached properties
 |  *IsDescendantOf(visual)* | Determines whether the visual object is a descendant of the ancestor visual object This object is not considered to be a descendant of *visual* if they are the same |
 |  *IsInRenderTree()* | Indicates if a render node has been created in the RenderTree for this visual |
 |  *IsInvalidated()* | Indicates if this visual is invalidated and should send updates to the render tree |
-|  *PointFromScreen(point)* | Converts a Point in screen coordinates into a Point that represents the current coordinate system of the [Visual](/Gui.Core/_Visual.md) |
-|  *PointToScreen(point)* | Converts a Point that represents the current coordinate system of the [Visual](/Gui.Core/_Visual.md) into a Point in screen coordinates |
+|  *PointFromScreen(point)* | Converts a Point in screen coordinates into a Point that represents the current coordinate system of the [Visual](_Visual.md) |
+|  *PointToScreen(point)* | Converts a Point that represents the current coordinate system of the [Visual](_Visual.md) into a Point in screen coordinates |
 |  *SubtreeDrawingCommandsChanged()* | Occurs when subtree render commands have changed |
-|  *TransformToAncestor(ancestor)* | Returns a transform that can be used to transform coordinates from the [Visual](/Gui.Core/_Visual.md) to the specified ancestor of the visual object |
-|  *TransformToDescendant(descendant)* | Returns a transform that can be used to transform coordinates from the [Visual](/Gui.Core/_Visual.md) to the specified visual object descendant |
-|  *TransformToVisual(visual)* | Returns a transform that can be used to transform coordinates from the [Visual](/Gui.Core/_Visual.md) to the specified visual object |
+|  *TransformToAncestor(ancestor)* | Returns a transform that can be used to transform coordinates from the [Visual](_Visual.md) to the specified ancestor of the visual object |
+|  *TransformToDescendant(descendant)* | Returns a transform that can be used to transform coordinates from the [Visual](_Visual.md) to the specified visual object descendant |
+|  *TransformToVisual(visual)* | Returns a transform that can be used to transform coordinates from the [Visual](_Visual.md) to the specified visual object |
 |  *UpdateRender(updater)* | Pushes all the layout updates into the UI render thread queue to update render nodes |
 
-## From [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+## From [DependencyObject](../Gui.DependencySystem/_DependencyObject.md)
 
 | Name | Description |
 | --- | --- |
 |  *ClearAnimation(dp)* | Clears the animation value of a property |
-|  *ClearLocalValue(dp)* | Clears the local value of a property The property to be cleared is specified by a [DependencyProperty](/Gui.DependencySystem/_DependencyProperty.md) identifier |
+|  *ClearLocalValue(dp)* | Clears the local value of a property The property to be cleared is specified by a [DependencyProperty](../Gui.DependencySystem/_DependencyProperty.md) identifier |
 |  *CoerceValue(dp)* | Coerces and validates the effective property value |
 |  *DependencyPropertyChanged()* | Returns the PropertyChanged event |
 |  *Destroyed()* | Destroyed delegate is raised when object is going to be destroyed |
-|  *GetBaseValue(dp)* | Returns the base value without animation nor coerce (this never returns [Expression](/Gui.DependencySystem/_Expression.md) like GetLocalValue) |
+|  *GetBaseValue(dp)* | Returns the base value without animation nor coerce (this never returns [Expression](../Gui.DependencySystem/_Expression.md) like GetLocalValue) |
 |  *GetExpression(dp)* | Gets the expression, if any, used to evaluate the specified property value |
 |  *GetLocalValue(dp)* | Returns the local value of a dependency property, if it exists |
-|  *GetValue(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) |
-|  *GetValueObject(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) as a boxed value |
+|  *GetValue(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](../Gui.DependencySystem/_DependencyObject.md) |
+|  *GetValueObject(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](../Gui.DependencySystem/_DependencyObject.md) as a boxed value |
 |  *GetValueProvider(dp)* | Gets the provider that returns the effective value for the specified dependency property |
 |  *HasAnimatedProperties()* | Returns true if there is any animated property |
 |  *InvalidateProperty(dp, priority)* | Re-evaluates the effective value for the specified dependency property if necessary If null is passed, a full re-evaluation could be needed |
@@ -281,16 +281,16 @@ TextBlock has no attached properties
 |  *SetValue(dp, value)* | Sets the local value of a dependency property |
 |  *SetValueObject(dp, value)* | Sets the local value (boxed) of a dependency property |
 
-## From [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+## From [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
 | Name | Description |
 | --- | --- |
-|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
-|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
+|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) |
+|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) |
 
 # Events
 
-## From [FrameworkElement](/Gui.Core/_FrameworkElement.md)
+## From [FrameworkElement](_FrameworkElement.md)
 
 | Name | Description |
 | --- | --- |
@@ -308,7 +308,7 @@ TextBlock has no attached properties
 
 ▸ Routed Event    Non-routed Event   ◆ Delegate Event
 
-## From [UIElement](/Gui.Core/_UIElement.md)
+## From [UIElement](_UIElement.md)
 
 | Name | Description |
 | --- | --- |
@@ -339,10 +339,10 @@ TextBlock has no attached properties
 | ▸ *LostKeyboardFocus* | Occurs when the keyboard is no longer focused on this element |
 | ▸ *LostMouseCapture* | Occurs when this element loses mouse capture |
 | ▸ *LostTouchCapture* | Occurs when this element loses a touch capture |
-| ▸ *ManipulationCompleted* | Occurs when a manipulation and inertia on the [UIElement](/Gui.Core/_UIElement.md) object is complete |
+| ▸ *ManipulationCompleted* | Occurs when a manipulation and inertia on the [UIElement](_UIElement.md) object is complete |
 | ▸ *ManipulationDelta* | Occurs when the input device changes position during a manipulation |
-| ▸ *ManipulationInertiaStarting* | Occurs when the input device loses contact with the [UIElement](/Gui.Core/_UIElement.md) during a manipulation and inertia begins |
-| ▸ *ManipulationStarted* | Occurs when an input device begins a manipulation on the [UIElement](/Gui.Core/_UIElement.md) object |
+| ▸ *ManipulationInertiaStarting* | Occurs when the input device loses contact with the [UIElement](_UIElement.md) during a manipulation and inertia begins |
+| ▸ *ManipulationStarted* | Occurs when an input device begins a manipulation on the [UIElement](_UIElement.md) object |
 | ▸ *ManipulationStarting* | Occurs when the manipulation processor is first created |
 | ▸ *MouseDown* | Occurs when any mouse button is pressed while the pointer is over this element |
 | ▸ *MouseEnter* | Occurs when the mouse pointer enters the bounds of this element |

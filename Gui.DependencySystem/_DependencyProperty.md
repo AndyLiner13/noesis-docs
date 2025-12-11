@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.DependencySystem._DependencyProper
 
 # DependencyProperty Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace)
+## namespace [Noesis](../Gui.Core/_ClassHierarchy.md#noesis-namespace)
 
 Represents a dependency property that is registered in the property system. Dependency properties provide support for value expressions, property invalidation and dependent-value coercion, default values, inheritance, data binding, animation, property change notification, and styling.
 

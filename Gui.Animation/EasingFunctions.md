@@ -24,4 +24,4 @@ Each of these has it's own properties to control the values, buy all can have an
 
 The following image is taken from the WPF documentation (<http://msdn.microsoft.com/en-us/library/ee308751.aspx>)
 
-![EasingFunctions.png](/EasingFunctions/png.md)
+![EasingFunctions.png](https://www.noesisengine.com/docs/EasingFunctions.png)

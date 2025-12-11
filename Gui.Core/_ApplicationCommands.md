@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._ApplicationCommands.html
 
 # ApplicationCommands Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.input.applicationcommands.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.input.applicationcommands.aspx)
 
 Provides a standard set of application related commands.
 
@@ -16,7 +16,7 @@ Provides a standard set of application related commands.
 | --- | --- |
 | ○ *CancelPrintCommand* | Gets the value that represents the Cancel Print command. |
 | ○ *CloseCommand* | Gets the value that represents the Close command. |
-| ○ *ContextMenuCommand* | Gets the value that represents the Context [Menu](/Gui.Core/_Menu.md) command. |
+| ○ *ContextMenuCommand* | Gets the value that represents the Context [Menu](_Menu.md) command. |
 | ○ *CopyCommand* | Gets the value that represents the Copy command. |
 | ○ *CorrectionListCommand* | Gets the value that represents the Correction List command. |
 | ○ *CutCommand* | Gets the value that represents the Cut command. |

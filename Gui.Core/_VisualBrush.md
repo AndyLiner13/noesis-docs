@@ -2,25 +2,25 @@ Source: https://www.noesisengine.com/docs/Gui.Core._VisualBrush.html
 
 # VisualBrush Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.media.visualbrush.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.media.visualbrush.aspx)
 
-Paints an area with a [Visual](/Gui.Core/_Visual.md).
+Paints an area with a [Visual](_Visual.md).
 
-Current [VisualBrush](/Gui.Core/_VisualBrush.md) implementation only works when the referred [Visual](/Gui.Core/_Visual.md) is contained within the logical tree.
+Current [VisualBrush](_VisualBrush.md) implementation only works when the referred [Visual](_Visual.md) is contained within the logical tree.
 
 # Inheritance Hierarchy
 
-• [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+• [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
-• [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+• [DependencyObject](../Gui.DependencySystem/_DependencyObject.md)
 
-• [Freezable](/Gui.DependencySystem/_Freezable.md)
+• [Freezable](../Gui.DependencySystem/_Freezable.md)
 
-• [Animatable](/Gui.Core/_Animatable.md)
+• [Animatable](_Animatable.md)
 
-• [Brush](/Gui.Core/_Brush.md)
+• [Brush](_Brush.md)
 
-• [TileBrush](/Gui.Core/_TileBrush.md)
+• [TileBrush](_TileBrush.md)
 
 • *VisualBrush*
 
@@ -32,22 +32,22 @@ Current [VisualBrush](/Gui.Core/_VisualBrush.md) implementation only works when 
 
 ● Dependency Property   ○ Reflection Property
 
-## From [TileBrush](/Gui.Core/_TileBrush.md)
+## From [TileBrush](_TileBrush.md)
 
 | Name | Description |
 | --- | --- |
-| ● *AlignmentX* | Gets or sets the horizontal alignment of content in the [TileBrush](/Gui.Core/_TileBrush.md) base tile |
-| ● *AlignmentY* | Gets or sets the vertical alignment of content in the [TileBrush](/Gui.Core/_TileBrush.md) base tile |
-| ● *Stretch* | Gets or sets a value that specifies how the content of this [TileBrush](/Gui.Core/_TileBrush.md) stretches to fit its tiles |
-| ● *TileMode* | Gets or sets a value that specifies how a [TileBrush](/Gui.Core/_TileBrush.md) fills the area that you are painting if the base tile is smaller than the output area |
-| ● *Viewbox* | Gets or sets the position and dimensions of the content in a [TileBrush](/Gui.Core/_TileBrush.md) tile |
-| ● *ViewboxUnits* | Gets or sets a value that specifies whether the [Viewbox](/Gui.Core/_Viewbox.md) value is relative to the bounding box of the [TileBrush](/Gui.Core/_TileBrush.md) contents or whether the value is absolute |
-| ● *Viewport* | Gets or sets the position and dimensions of the base tile for a [TileBrush](/Gui.Core/_TileBrush.md) |
-| ● *ViewportUnits* | Gets or sets a *BrushMappingMode* enumeration that specifies whether the value of the *Viewport*, which indicates the size and position of the [TileBrush](/Gui.Core/_TileBrush.md) base tile, is relative to the size of the output area |
+| ● *AlignmentX* | Gets or sets the horizontal alignment of content in the [TileBrush](_TileBrush.md) base tile |
+| ● *AlignmentY* | Gets or sets the vertical alignment of content in the [TileBrush](_TileBrush.md) base tile |
+| ● *Stretch* | Gets or sets a value that specifies how the content of this [TileBrush](_TileBrush.md) stretches to fit its tiles |
+| ● *TileMode* | Gets or sets a value that specifies how a [TileBrush](_TileBrush.md) fills the area that you are painting if the base tile is smaller than the output area |
+| ● *Viewbox* | Gets or sets the position and dimensions of the content in a [TileBrush](_TileBrush.md) tile |
+| ● *ViewboxUnits* | Gets or sets a value that specifies whether the [Viewbox](_Viewbox.md) value is relative to the bounding box of the [TileBrush](_TileBrush.md) contents or whether the value is absolute |
+| ● *Viewport* | Gets or sets the position and dimensions of the base tile for a [TileBrush](_TileBrush.md) |
+| ● *ViewportUnits* | Gets or sets a *BrushMappingMode* enumeration that specifies whether the value of the *Viewport*, which indicates the size and position of the [TileBrush](_TileBrush.md) base tile, is relative to the size of the output area |
 
 ● Dependency Property   ○ Reflection Property
 
-## From [Brush](/Gui.Core/_Brush.md)
+## From [Brush](_Brush.md)
 
 | Name | Description |
 | --- | --- |
@@ -57,7 +57,7 @@ Current [VisualBrush](/Gui.Core/_VisualBrush.md) implementation only works when 
 
 ● Dependency Property   ○ Reflection Property
 
-## From [Freezable](/Gui.DependencySystem/_Freezable.md)
+## From [Freezable](../Gui.DependencySystem/_Freezable.md)
 
 | Name | Description |
 | --- | --- |
@@ -66,11 +66,11 @@ Current [VisualBrush](/Gui.Core/_VisualBrush.md) implementation only works when 
 
 ● Dependency Property   ○ Reflection Property
 
-## From [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+## From [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
 | Name | Description |
 | --- | --- |
-| ○ *ThreadId* | Gets the thread this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
+| ○ *ThreadId* | Gets the thread this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
 
 ● Dependency Property   ○ Reflection Property
 
@@ -80,37 +80,37 @@ VisualBrush has no attached properties
 
 # Methods
 
-## From [Brush](/Gui.Core/_Brush.md)
+## From [Brush](_Brush.md)
 
 | Name | Description |
 | --- | --- |
 |  *IsTransparent()* | Indicates if this brush is transparent |
-|  *TryParse(str, brush)* | Use this method to convert a Color string into a [SolidColorBrush](/Gui.Core/_SolidColorBrush.md) |
+|  *TryParse(str, brush)* | Use this method to convert a Color string into a [SolidColorBrush](_SolidColorBrush.md) |
 
-## From [Freezable](/Gui.DependencySystem/_Freezable.md)
+## From [Freezable](../Gui.DependencySystem/_Freezable.md)
 
 | Name | Description |
 | --- | --- |
-|  *Clone()* | Creates a modifiable clone of the [Freezable](/Gui.DependencySystem/_Freezable.md), making deep copies of the object's values. When copying the object's dependency properties, this method copies expressions (which might no longer resolve) but not animations or their current values. The cloned Freezable::IsFrozen property is false even if the source's IsFrozen property is true. |
-|  *CloneCurrentValue()* | Creates a modifiable clone (deep copy) of the [Freezable](/Gui.DependencySystem/_Freezable.md) using its current values. The cloned object's IsFrozen property is false even if the source's IsFrozen property is true. |
+|  *Clone()* | Creates a modifiable clone of the [Freezable](../Gui.DependencySystem/_Freezable.md), making deep copies of the object's values. When copying the object's dependency properties, this method copies expressions (which might no longer resolve) but not animations or their current values. The cloned Freezable::IsFrozen property is false even if the source's IsFrozen property is true. |
+|  *CloneCurrentValue()* | Creates a modifiable clone (deep copy) of the [Freezable](../Gui.DependencySystem/_Freezable.md) using its current values. The cloned object's IsFrozen property is false even if the source's IsFrozen property is true. |
 |  *Freeze()* | Makes the current object unmodifiable and sets its IsFrozen property to true. |
-|  *GetAsFrozen()* | Creates a frozen copy of the [Freezable](/Gui.DependencySystem/_Freezable.md), using base (non-animated) property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. Throws if the [Freezable](/Gui.DependencySystem/_Freezable.md) cannot be frozen because it contains expressions or animated properties. |
-|  *GetCurrentValueAsFrozen()* | Creates a frozen copy of the [Freezable](/Gui.DependencySystem/_Freezable.md) using current property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. |
+|  *GetAsFrozen()* | Creates a frozen copy of the [Freezable](../Gui.DependencySystem/_Freezable.md), using base (non-animated) property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. Throws if the [Freezable](../Gui.DependencySystem/_Freezable.md) cannot be frozen because it contains expressions or animated properties. |
+|  *GetCurrentValueAsFrozen()* | Creates a frozen copy of the [Freezable](../Gui.DependencySystem/_Freezable.md) using current property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. |
 
-## From [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+## From [DependencyObject](../Gui.DependencySystem/_DependencyObject.md)
 
 | Name | Description |
 | --- | --- |
 |  *ClearAnimation(dp)* | Clears the animation value of a property |
-|  *ClearLocalValue(dp)* | Clears the local value of a property The property to be cleared is specified by a [DependencyProperty](/Gui.DependencySystem/_DependencyProperty.md) identifier |
+|  *ClearLocalValue(dp)* | Clears the local value of a property The property to be cleared is specified by a [DependencyProperty](../Gui.DependencySystem/_DependencyProperty.md) identifier |
 |  *CoerceValue(dp)* | Coerces and validates the effective property value |
 |  *DependencyPropertyChanged()* | Returns the PropertyChanged event |
 |  *Destroyed()* | Destroyed delegate is raised when object is going to be destroyed |
-|  *GetBaseValue(dp)* | Returns the base value without animation nor coerce (this never returns [Expression](/Gui.DependencySystem/_Expression.md) like GetLocalValue) |
+|  *GetBaseValue(dp)* | Returns the base value without animation nor coerce (this never returns [Expression](../Gui.DependencySystem/_Expression.md) like GetLocalValue) |
 |  *GetExpression(dp)* | Gets the expression, if any, used to evaluate the specified property value |
 |  *GetLocalValue(dp)* | Returns the local value of a dependency property, if it exists |
-|  *GetValue(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) |
-|  *GetValueObject(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) as a boxed value |
+|  *GetValue(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](../Gui.DependencySystem/_DependencyObject.md) |
+|  *GetValueObject(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](../Gui.DependencySystem/_DependencyObject.md) as a boxed value |
 |  *GetValueProvider(dp)* | Gets the provider that returns the effective value for the specified dependency property |
 |  *HasAnimatedProperties()* | Returns true if there is any animated property |
 |  *InvalidateProperty(dp, priority)* | Re-evaluates the effective value for the specified dependency property if necessary If null is passed, a full re-evaluation could be needed |
@@ -123,12 +123,12 @@ VisualBrush has no attached properties
 |  *SetValue(dp, value)* | Sets the local value of a dependency property |
 |  *SetValueObject(dp, value)* | Sets the local value (boxed) of a dependency property |
 
-## From [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+## From [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
 | Name | Description |
 | --- | --- |
-|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
-|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
+|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) |
+|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) |
 
 # Events
 

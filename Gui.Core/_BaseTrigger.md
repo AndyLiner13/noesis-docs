@@ -2,44 +2,44 @@ Source: https://www.noesisengine.com/docs/Gui.Core._BaseTrigger.html
 
 # BaseTrigger Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.triggerbase.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.triggerbase.aspx)
 
-Represents the base class for specifying a conditional value within a [Style](/Gui.Core/_Style.md) object.
+Represents the base class for specifying a conditional value within a [Style](_Style.md) object.
 
-The styling and templating model allows you to specify triggers within your [Style](/Gui.Core/_Style.md), [ControlTemplate](/Gui.Core/_ControlTemplate.md), and [DataTemplate](/Gui.Core/_DataTemplate.md). Essentially, [TriggerBase](/App.Interactivity/_TriggerBase.md) is the base class for objects that allow you to apply changes when certain conditions (such as when a certain property value becomes true, or when an event occurs) are satisfied.
+The styling and templating model allows you to specify triggers within your [Style](_Style.md), [ControlTemplate](_ControlTemplate.md), and [DataTemplate](_DataTemplate.md). Essentially, [TriggerBase](../App.Interactivity/_TriggerBase.md) is the base class for objects that allow you to apply changes when certain conditions (such as when a certain property value becomes true, or when an event occurs) are satisfied.
 
 # Inheritance Hierarchy
 
-• [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+• [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
-• [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+• [DependencyObject](../Gui.DependencySystem/_DependencyObject.md)
 
 • *BaseTrigger*
 
-• [DataTrigger](/Gui.Core/_DataTrigger.md)
+• [DataTrigger](_DataTrigger.md)
 
-• [EventTrigger](/Gui.Core/_EventTrigger.md)
+• [EventTrigger](_EventTrigger.md)
 
-• [MultiDataTrigger](/Gui.Core/_MultiDataTrigger.md)
+• [MultiDataTrigger](_MultiDataTrigger.md)
 
-• [MultiTrigger](/Gui.Core/_MultiTrigger.md)
+• [MultiTrigger](_MultiTrigger.md)
 
-• [Trigger](/Gui.Core/_Trigger.md)
+• [Trigger](_Trigger.md)
 
 # Properties
 
 | Name | Description |
 | --- | --- |
-| ○ *EnterActions* | Gets a collection of [TriggerAction](/App.Interactivity/_TriggerAction.md) objects to apply when the trigger object becomes active. This property does not apply to the [EventTrigger](/App.Interactivity/_EventTrigger.md) class |
-| ○ *ExitActions* | Gets a collection of [TriggerAction](/App.Interactivity/_TriggerAction.md) objects to apply when the trigger object becomes inactive. This property does not apply to the [EventTrigger](/App.Interactivity/_EventTrigger.md) class |
+| ○ *EnterActions* | Gets a collection of [TriggerAction](../App.Interactivity/_TriggerAction.md) objects to apply when the trigger object becomes active. This property does not apply to the [EventTrigger](../App.Interactivity/_EventTrigger.md) class |
+| ○ *ExitActions* | Gets a collection of [TriggerAction](../App.Interactivity/_TriggerAction.md) objects to apply when the trigger object becomes inactive. This property does not apply to the [EventTrigger](../App.Interactivity/_EventTrigger.md) class |
 
 ● Dependency Property   ○ Reflection Property
 
-## From [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+## From [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
 | Name | Description |
 | --- | --- |
-| ○ *ThreadId* | Gets the thread this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
+| ○ *ThreadId* | Gets the thread this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
 
 ● Dependency Property   ○ Reflection Property
 
@@ -49,20 +49,20 @@ BaseTrigger has no attached properties
 
 # Methods
 
-## From [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+## From [DependencyObject](../Gui.DependencySystem/_DependencyObject.md)
 
 | Name | Description |
 | --- | --- |
 |  *ClearAnimation(dp)* | Clears the animation value of a property |
-|  *ClearLocalValue(dp)* | Clears the local value of a property The property to be cleared is specified by a [DependencyProperty](/Gui.DependencySystem/_DependencyProperty.md) identifier |
+|  *ClearLocalValue(dp)* | Clears the local value of a property The property to be cleared is specified by a [DependencyProperty](../Gui.DependencySystem/_DependencyProperty.md) identifier |
 |  *CoerceValue(dp)* | Coerces and validates the effective property value |
 |  *DependencyPropertyChanged()* | Returns the PropertyChanged event |
 |  *Destroyed()* | Destroyed delegate is raised when object is going to be destroyed |
-|  *GetBaseValue(dp)* | Returns the base value without animation nor coerce (this never returns [Expression](/Gui.DependencySystem/_Expression.md) like GetLocalValue) |
+|  *GetBaseValue(dp)* | Returns the base value without animation nor coerce (this never returns [Expression](../Gui.DependencySystem/_Expression.md) like GetLocalValue) |
 |  *GetExpression(dp)* | Gets the expression, if any, used to evaluate the specified property value |
 |  *GetLocalValue(dp)* | Returns the local value of a dependency property, if it exists |
-|  *GetValue(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) |
-|  *GetValueObject(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) as a boxed value |
+|  *GetValue(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](../Gui.DependencySystem/_DependencyObject.md) |
+|  *GetValueObject(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](../Gui.DependencySystem/_DependencyObject.md) as a boxed value |
 |  *GetValueProvider(dp)* | Gets the provider that returns the effective value for the specified dependency property |
 |  *HasAnimatedProperties()* | Returns true if there is any animated property |
 |  *InvalidateProperty(dp, priority)* | Re-evaluates the effective value for the specified dependency property if necessary If null is passed, a full re-evaluation could be needed |
@@ -75,12 +75,12 @@ BaseTrigger has no attached properties
 |  *SetValue(dp, value)* | Sets the local value of a dependency property |
 |  *SetValueObject(dp, value)* | Sets the local value (boxed) of a dependency property |
 
-## From [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+## From [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
 | Name | Description |
 | --- | --- |
-|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
-|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
+|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) |
+|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) |
 
 # Events
 

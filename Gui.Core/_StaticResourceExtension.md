@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._StaticResourceExtension.html
 
 # StaticResourceExtension Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.staticresourceextension.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.staticresourceextension.aspx)
 
 Implements a markup extension that supports static resource references made from XAML.
 
@@ -14,7 +14,7 @@ Provides a value for any XAML property attribute by looking up a reference to an
 
 # Inheritance Hierarchy
 
-• [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+• [MarkupExtension](_MarkupExtension.md)
 
 • *StaticResourceExtension*
 
@@ -32,7 +32,7 @@ StaticResourceExtension has no attached properties
 
 # Methods
 
-## From [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+## From [MarkupExtension](_MarkupExtension.md)
 
 | Name | Description |
 | --- | --- |

@@ -8,16 +8,16 @@ In NoesisGUI, UI elements are not limited to flat, two-dimensional layouts. You 
 
 In NoesisGUI, 3D effects are achieved using the *Transform3D* property. This property applies a 3D transformation matrix to a XAML element, allowing two-dimensional UI elements to appear in three-dimensional space relative to the viewer. *Transform3D* behaves like *RenderTransform*, but operates in three dimensions instead of just two.
 
-There are two subclasses of [Transform3D](/Gui.Core/_Transform3D.md) that can be assigned to the *Transform3D* property:
+There are two subclasses of [Transform3D](_Transform3D.md) that can be assigned to the *Transform3D* property:
 
-- [CompositeTransform3D](/Gui.Core/_CompositeTransform3D.md)
-- [MatrixTransform3D](/Gui.Core/_MatrixTransform3D.md)
+- [CompositeTransform3D](_CompositeTransform3D.md)
+- [MatrixTransform3D](_MatrixTransform3D.md)
 
-Both represent a group of affine 3D transforms that can be used to position elements in 3D space. *CompositeTransform3D* provides 3D scale, rotation, and translation transforms, while *MatrixTransform3D* exposes the full transformation matrix. *MatrixTransform3D* is especially convenient for [binding](/Gui.Core/DataBindingTutorial.md) transformations to properties of the *Model*.
+Both represent a group of affine 3D transforms that can be used to position elements in 3D space. *CompositeTransform3D* provides 3D scale, rotation, and translation transforms, while *MatrixTransform3D* exposes the full transformation matrix. *MatrixTransform3D* is especially convenient for [binding](DataBindingTutorial.md) transformations to properties of the *Model*.
 
 NOTE
 
-Although these properties are not part of WPF, NoesisGUI implements them as an [extension](/Gui.Core/ExtensionsTutorial.md#transform3d) in the 'noesis' namespace.
+Although these properties are not part of WPF, NoesisGUI implements them as an [extension](ExtensionsTutorial.md#transform3d) in the 'noesis' namespace.
 
 Here is an example of *CompositeTransform3D* to achieve a 3D effect in the UI:
 
@@ -45,7 +45,7 @@ Here is an example of *CompositeTransform3D* to achieve a 3D effect in the UI:
 </Grid>
 ```
 
-![Transform3DTutorialImg1.png](/Transform3DTutorialImg1/png.md)
+![Transform3DTutorialImg1.png](https://www.noesisengine.com/docs/Transform3DTutorialImg1.png)
 
 NOTE
 

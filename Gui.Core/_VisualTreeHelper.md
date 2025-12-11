@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._VisualTreeHelper.html
 
 # VisualTreeHelper Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/System.Windows.Media.VisualTreeHelper.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/System.Windows.Media.VisualTreeHelper.aspx)
 
 Provides utility methods that perform common tasks involving nodes in a visual tree.
 

@@ -23,7 +23,7 @@ The method for applying this key depends on the specific SDK and technology bein
 
 ## C++ SDK
 
-If NoesisGUI is being used without our [Application Framework](/Gui.Core/ApplicationTutorial.md), the license must be set before initialization. For example:
+If NoesisGUI is being used without our [Application Framework](ApplicationTutorial.md), the license must be set before initialization. For example:
 
 C++
 
@@ -46,7 +46,7 @@ Include/NoesisLicense.h
 
 ## C# SDK
 
-If NoesisGUI is being used without our [Application Framework](/Gui.Core/ApplicationTutorial.md), the license must be set before initialization. For example:
+If NoesisGUI is being used without our [Application Framework](ApplicationTutorial.md), the license must be set before initialization. For example:
 
 C#
 
@@ -72,7 +72,7 @@ To set the NoesisGUI license in Unity, follow these steps:
 - In the NoesisGUI settings window, locate the fields '*License Name*' and '*License Key*'.
 - Enter your license information into these fields.
 
-![LicensingImg1.png](/LicensingImg1/png.md)
+![LicensingImg1.png](https://www.noesisengine.com/docs/LicensingImg1.png)
 
 ## Unreal
 
@@ -83,4 +83,4 @@ To set the NoesisGUI license in Unreal Engine, follow these steps:
 - In the NoesisGUI settings window, locate the fields '*License Name*' and *License Key*'.
 - Enter your license information into these fields.
 
-![LicensingImg2.png](/LicensingImg2/png.md)
+![LicensingImg2.png](https://www.noesisengine.com/docs/LicensingImg2.png)

@@ -4,9 +4,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core.ImagesTutorial.html
 
 # Using Images
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Image)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Image)
 
-The [Image](/Gui.Core/_Image.md) control is used to insert an image whose location is specified in the *Source* attribute using an [URI](/Gui.Providers/_Uri.md):
+The [Image](_Image.md) control is used to insert an image whose location is specified in the *Source* attribute using an [URI](../Gui.Providers/_Uri.md):
 
 ```
 <Image Source="Images/melon1.png"/>
@@ -67,11 +67,11 @@ The following sample shows all the possible strecth modes of an *Image* control:
 </Grid>
 ```
 
-![ImagesTutorialImg1.jpg](/ImagesTutorialImg1/jpg.md)
+![ImagesTutorialImg1.jpg](https://www.noesisengine.com/docs/ImagesTutorialImg1.jpg)
 
 # ImageBrush
 
-[ImageBrush](/Gui.Core/_ImageBrush.md) uses an image to paint an area of a graphics object. It is normally applied to the *Background* property of a *Panel* or *Border* or to Fill a Shape. The *ImageSource* property is meant to hold the bitmap content.
+[ImageBrush](_ImageBrush.md) uses an image to paint an area of a graphics object. It is normally applied to the *Background* property of a *Panel* or *Border* or to Fill a Shape. The *ImageSource* property is meant to hold the bitmap content.
 
 ```
 <Grid
@@ -84,9 +84,9 @@ The following sample shows all the possible strecth modes of an *Image* control:
 </Grid>
 ```
 
-*ImageBrush* derives from [TileBrush](/Gui.Core/_TileBrush.md). When you paint an area by using a *TileBrush* you control three elements: *content*, *tiles* and the *output* area.
+*ImageBrush* derives from [TileBrush](_TileBrush.md). When you paint an area by using a *TileBrush* you control three elements: *content*, *tiles* and the *output* area.
 
-![ImagesTutorialImg6.jpg](/ImagesTutorialImg6/jpg.md)
+![ImagesTutorialImg6.jpg](https://www.noesisengine.com/docs/ImagesTutorialImg6.jpg)
 
 *TileBrush* defines some interesting properties that configure how tiles are placed in the output area.
 
@@ -160,7 +160,7 @@ This property specifies how the content stretches to fit its tiles. In the follo
 </Grid>
 ```
 
-![ImagesTutorialImg2.jpg](/ImagesTutorialImg2/jpg.md)
+![ImagesTutorialImg2.jpg](https://www.noesisengine.com/docs/ImagesTutorialImg2.jpg)
 
 ## Viewbox
 
@@ -258,7 +258,7 @@ The following example shows the effect of different *Stretch* modes on a *TileBr
 </Grid>
 ```
 
-![ImagesTutorialImg3.jpg](/ImagesTutorialImg3/jpg.md)
+![ImagesTutorialImg3.jpg](https://www.noesisengine.com/docs/ImagesTutorialImg3.jpg)
 
 ## Viewport
 
@@ -405,7 +405,7 @@ The following example shows the different tile modes:
 </Grid>
 ```
 
-![ImagesTutorialImg4.jpg](/ImagesTutorialImg4/jpg.md)
+![ImagesTutorialImg4.jpg](https://www.noesisengine.com/docs/ImagesTutorialImg4.jpg)
 
 # Resize quality
 
@@ -436,7 +436,7 @@ By default noesisGUI scales images using a high-quality re-sampling algorithm im
 </StackPanel>
 ```
 
-![ImagesTutorialImg41.jpg](/ImagesTutorialImg41/jpg.md)
+![ImagesTutorialImg41.jpg](https://www.noesisengine.com/docs/ImagesTutorialImg41.jpg)
 
 # Texture Atlas
 
@@ -810,13 +810,13 @@ The following example shows how to reference that dictionary to use sprites in y
 </Grid>
 ```
 
-![ImagesTutorialImg5.jpg](/ImagesTutorialImg5/jpg.md)
+![ImagesTutorialImg5.jpg](https://www.noesisengine.com/docs/ImagesTutorialImg5.jpg)
 
 # 9-Slice Scaling
 
 9-slice scaling is a nifty way that you can use to scale symbols without distorting them. This is especially useful when creating signs, speech bubbles, etc. The symbol is divided into 9 sections, and only the middle sections are stretched. The corners transform with the symbol but they aren't distorted.
 
-![ImagesTutorialImg7.jpg](/ImagesTutorialImg7/jpg.md)
+![ImagesTutorialImg7.jpg](https://www.noesisengine.com/docs/ImagesTutorialImg7.jpg)
 
 This technique, very common for flash designers, can be easily emulated by using a grid.
 
@@ -892,7 +892,7 @@ This technique, very common for flash designers, can be easily emulated by using
 
 # Runtime Images
 
-Sometimes you need to generate images that are not available at compile time. For example, when you are downloading an image from the internet or when your application supports user generated images. For these cases, the [TextureSource](/Gui.Core/_TextureSource.md) class is provided. A *TextureSource* is initialized passing a native texture handle. Once initialized it must be set to the corresponding *Image* or *ImageBrush*.
+Sometimes you need to generate images that are not available at compile time. For example, when you are downloading an image from the internet or when your application supports user generated images. For these cases, the [TextureSource](_TextureSource.md) class is provided. A *TextureSource* is initialized passing a native texture handle. Once initialized it must be set to the corresponding *Image* or *ImageBrush*.
 
 Note
 

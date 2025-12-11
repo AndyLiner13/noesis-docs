@@ -2,18 +2,18 @@ Source: https://www.noesisengine.com/docs/Gui.Core.DataBindingTutorial.html
 
 # Data Binding
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/DataBinding)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/DataBinding)
 
 NoesisGUI provides a simple and powerful way to auto-update data between the business model and the user interface. This mechanism is called *Data Binding*.
-The key to data binding is a [Binding](/Gui.Core/_Binding.md) object that "glues" two properties together and keeps a channel of communication open between them. You can set a *Binding* once, and then have it do all the synchronization work for the remainder of the application's lifetime.
+The key to data binding is a [Binding](_Binding.md) object that "glues" two properties together and keeps a channel of communication open between them. You can set a *Binding* once, and then have it do all the synchronization work for the remainder of the application's lifetime.
 
 In this tutorial we will explain the different ways you might want to use data binding.
 
 # Using *Binding* in XAML
 
-![DataBindingTutorialImg1.jpg](/DataBindingTutorialImg1/jpg.md)
+![DataBindingTutorialImg1.jpg](https://www.noesisengine.com/docs/DataBindingTutorialImg1.jpg)
 
-To use *Binding* in XAML, you directly set the target property to a *Binding* instance and then use the standard markup extension syntax to set its properties. The following example shows a simple binding between the text of a [TextBox](/Gui.Core/_TextBox.md) and a [Label](/Gui.Core/_Label.md) that reflects the typed value:
+To use *Binding* in XAML, you directly set the target property to a *Binding* instance and then use the standard markup extension syntax to set its properties. The following example shows a simple binding between the text of a [TextBox](_TextBox.md) and a [Label](_Label.md) that reflects the typed value:
 
 ```
 <StackPanel
@@ -93,7 +93,7 @@ There is a big caveat to using a plain property as a data-binding source, howeve
 There are a few important details you must pay attention to whenever you implement a data model in C++:
 
 - The base class *NotifyPropertyChangedBase* already implements the interface *INotifyPropertyChanged* for us
-- Expose properties using [reflection macros](/Gui.Core/CppArchitectureGuide.md#reflection) macros with getter and setter functions
+- Expose properties using [reflection macros](CppArchitectureGuide.md#reflection) macros with getter and setter functions
 - In each setter, check if the property changed event must be fired
 
 C++
@@ -414,7 +414,7 @@ Notice the '{}' just after the StringFormat attribute? What that is doing is esc
 
 # Binding Dependency Properties
 
-Dependency properties have plumbing for change notifications built in. This facility is the key to noesisGUI's ability to keep the target property and source property in sync. You don't need to use *INotifyPropertyChange* when you implement Dependency Properties. In fact, this should be the preferred method for creating bindable properties if you are deriving from [DependencyObject](/Gui.DependencySystem/_DependencyObject.md).
+Dependency properties have plumbing for change notifications built in. This facility is the key to noesisGUI's ability to keep the target property and source property in sync. You don't need to use *INotifyPropertyChange* when you implement Dependency Properties. In fact, this should be the preferred method for creating bindable properties if you are deriving from [DependencyObject](../Gui.DependencySystem/_DependencyObject.md).
 
 Dependency Properties are created imperatively in the code behind of the visual element, for example:
 
@@ -435,7 +435,7 @@ Dependency Properties are created imperatively in the code behind of the visual 
 
 As you can see we are setting the *Mode* property of the *Binding*. It can be set to one of the following values of the *BindingMode* enumeration:
 
-![DataBindingTutorialImg2.jpg](/DataBindingTutorialImg2/jpg.md)
+![DataBindingTutorialImg2.jpg](https://www.noesisengine.com/docs/DataBindingTutorialImg2.jpg)
 
 - **OneWay**: The target is updated whenever the source changes.
 - **TwoWay**: A change to either the target or source updates the other.
@@ -500,17 +500,17 @@ class View2: UserControl
 
 # Binding to a Collection
 
-So far we've only discussed binding to single objects, however, binding to a data collection is a common scenario. For example, a common scenario is to use an [ItemsControl](/Gui.Core/_ItemsControl.md) such as a [ListBox](/Gui.Core/_ListBox.md), [ListView](/Gui.Controls/_ListView.md), or [TreeView](/Gui.Core/_TreeView.md) to display a data collection.
+So far we've only discussed binding to single objects, however, binding to a data collection is a common scenario. For example, a common scenario is to use an [ItemsControl](_ItemsControl.md) such as a [ListBox](_ListBox.md), [ListView](../Gui.Controls/_ListView.md), or [TreeView](_TreeView.md) to display a data collection.
 
 It would make sense to create a *Binding* with *ListBox.Items* as the target property, but, unfortunately, *Items* is not a dependency property. But *ListBox* (and all other *ItemsControl*) have an *ItemsSource* dependency property that exist specifically for this data-binding scenario.
 
-![DataBindingTutorialImg3.jpg](/DataBindingTutorialImg3/jpg.md)
+![DataBindingTutorialImg3.jpg](https://www.noesisengine.com/docs/DataBindingTutorialImg3.jpg)
 
 ```
 <ListBox ItemsSource="{Binding Source={StaticResource items}}" />
 ```
 
-For the target property to stay updated with changes to the source collection, the source collection must implement an interface called *INotifyCollectionChanged*. Fortunately, NoesisGUI already has a built-in class that does this work for you. It is called [ObservableCollection](/Gui.Core/_ObservableCollection.md).
+For the target property to stay updated with changes to the source collection, the source collection must implement an interface called *INotifyCollectionChanged*. Fortunately, NoesisGUI already has a built-in class that does this work for you. It is called [ObservableCollection](_ObservableCollection.md).
 
 ```
 <Grid
@@ -546,7 +546,7 @@ For the target property to stay updated with changes to the source collection, t
 </Grid>
 ```
 
-Note that we are using the *ItemTemplate* property to control how each item is rendered. This property is set to an instance of a [DataTemplate](/Gui.Core/_DataTemplate.md). *DataTemplate* derives from [FrameworkTemplate](/Gui.Core/_FrameworkTemplate.md). Therefore, it has a *VisualTree* content property that can be set to an arbitrary tree of *FrameworkElements*.
+Note that we are using the *ItemTemplate* property to control how each item is rendered. This property is set to an instance of a [DataTemplate](_DataTemplate.md). *DataTemplate* derives from [FrameworkTemplate](_FrameworkTemplate.md). Therefore, it has a *VisualTree* content property that can be set to an arbitrary tree of *FrameworkElements*.
 
 NOTE
 
@@ -554,7 +554,7 @@ For very simple cases you can use the **DisplayMemberPath** property present on 
 
 When you apply a data template, it is implicitly given an appropriate data context. When applied as an *ItemTemplate*, the data context is implicitly the current item in *ItemsSource*.
 
-![DataBindingTutorialImg6.jpg](/DataBindingTutorialImg6/jpg.md)
+![DataBindingTutorialImg6.jpg](https://www.noesisengine.com/docs/DataBindingTutorialImg6.jpg)
 
 C++
 
@@ -639,11 +639,11 @@ public class DataModel3
 }
 ```
 
-A special subclasss of *DataTemplate* exists for working with **hierarchical** data. This class is called [HierarchicalDataTemplate](/Gui.Core/_HierarchicalDataTemplate.md). It not only enables you to change the presentation of such data, but enables you to directly bind a hierarchy of objects to an element that intrinsically understands hierarchies, such as a *TreeView* or *Menu* control.
+A special subclasss of *DataTemplate* exists for working with **hierarchical** data. This class is called [HierarchicalDataTemplate](_HierarchicalDataTemplate.md). It not only enables you to change the presentation of such data, but enables you to directly bind a hierarchy of objects to an element that intrinsically understands hierarchies, such as a *TreeView* or *Menu* control.
 
 The idea is to use *HierarchicalDataTemplate* for every data type in the hierarchy but then use a simple *DataTemplate* for any leaf nodes. Each data template gives you the option to customize the rendering of the data type, but *HierarchicalDataTemplate* also enables you to specify its children in the hierarchy by setting its *ItemsSource* property.
 
-![DataBindingTutorialImg7.jpg](/DataBindingTutorialImg7/jpg.md)
+![DataBindingTutorialImg7.jpg](https://www.noesisengine.com/docs/DataBindingTutorialImg7.jpg)
 
 ```
 <Grid
@@ -675,9 +675,9 @@ Whereas data templates can customize they way certain target values are rendered
 
 Value converters are often used to reconcile a source and target that are different data types. For example, you could change the background or foreground color of an element on the value of some non-*Brush* data source. Or, you could use it to simply enhance the information being displayed without the need for separate elements, such as adding an "item(s)" suffix to a raw count.
 
-![DataBindingTutorialImg4.jpg](/DataBindingTutorialImg4/jpg.md)
+![DataBindingTutorialImg4.jpg](https://www.noesisengine.com/docs/DataBindingTutorialImg4.jpg)
 
-For example, the following XAML toggles the visibility of an element based on the *IsChecked* property of a [CheckBox](/Gui.Core/_CheckBox.md) using a converter named [BooleanToVisibilityConverter](/Gui.Core/_BooleanToVisibilityConverter.md).
+For example, the following XAML toggles the visibility of an element based on the *IsChecked* property of a [CheckBox](_CheckBox.md) using a converter named [BooleanToVisibilityConverter](_BooleanToVisibilityConverter.md).
 
 ```
 <Grid
@@ -698,19 +698,19 @@ For example, the following XAML toggles the visibility of an element based on th
 </Grid>
 ```
 
-You can create your own converters by inheriting from *BaseValueConverter*. An example is shown in the [Extending Tutorial](/Gui.Core/ExtendingTutorial.md).
+You can create your own converters by inheriting from *BaseValueConverter*. An example is shown in the [Extending Tutorial](ExtendingTutorial.md).
 
 # Solar System Example
 
-![DataBindingTutorialImg5.jpg](/DataBindingTutorialImg5/jpg.md)
+![DataBindingTutorialImg5.jpg](https://www.noesisengine.com/docs/DataBindingTutorialImg5.jpg)
 
-This [example](https://github.com/Noesis/Tutorials/tree/master/Samples/DataBinding) summarizes all the concepts presented at this tutorial. It basically consists of a [ListBox](/Gui.Core/_ListBox.md) bound to an [ObservableCollection](/Gui.Core/_ObservableCollection.md) of *SolarSystemObject* items.
+This [example](https://github.com/Noesis/Tutorials/tree/master/Samples/DataBinding) summarizes all the concepts presented at this tutorial. It basically consists of a [ListBox](_ListBox.md) bound to an [ObservableCollection](_ObservableCollection.md) of *SolarSystemObject* items.
 
 ```
 <ListBox ItemsSource="{Binding Source={StaticResource solarSystem}, Path=SolarSystemObjects}" />
 ```
 
-The look of each planet is defined by a [DataTemplate](/Gui.Core/_DataTemplate.md) that uses data binding and a converter to generate the final look.
+The look of each planet is defined by a [DataTemplate](_DataTemplate.md) that uses data binding and a converter to generate the final look.
 
 NOTE
 

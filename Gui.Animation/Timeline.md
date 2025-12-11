@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Animation.Timeline.html
 
 # Timeline hierarchy
 
-![Timeline.png](/Timeline/png.md)
+![Timeline.png](https://www.noesisengine.com/docs/Timeline.png)
 
 # Timeline
 
@@ -28,18 +28,18 @@ This is the base class for animation objects. It describes the majority of the p
 
 So in practice, the formula to calculate the total duration of a timeline should be (in case that RepeatBehavior sets the number of repetitions)
 
-![Formula1.png](/Formula1/png.md)
+![Formula1.png](https://www.noesisengine.com/docs/Formula1.png)
 
 or (in case that RepeatBehavior sets the repetition time)
 
-![Formula2.png](/Formula2/png.md)
+![Formula2.png](https://www.noesisengine.com/docs/Formula2.png)
 
 ## Methods
 
 - **CreateClock**: Creates a new clock to control the timeline. This method call internally AllocateClock, which is reimplemented in the inheritors of Timeline to create the adecuate clock
 
-For more detail about the classes deriving from AnimationTimeline, see [Single Timelines](/Gui.Animation/SingleTimelines.md)
+For more detail about the classes deriving from AnimationTimeline, see [Single Timelines](SingleTimelines.md)
 
-For deriving classes from TimelineGroup, see [Group Timelines](/Gui.Animation/Clocks.md)
+For deriving classes from TimelineGroup, see [Group Timelines](Clocks.md)
 
 The MediaTimeline is not implemented yet.

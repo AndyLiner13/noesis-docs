@@ -2,11 +2,11 @@ Source: https://www.noesisengine.com/docs/Gui.Core._ResourceDictionary.html
 
 # ResourceDictionary Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.resourcedictionary.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.resourcedictionary.aspx)
 
 Provides a hash table implementation that contains resources used by the UI.
 
-ResourceDictionaries are implicitly created when using the *Resources* property of tree elements. But a resource dictionary can also be declared as a single XAML file for later runtime load or for merging it into the [Application](/App.ApplicationLauncher/_Application.md) or a [FrameworkElement](/Gui.Core/_FrameworkElement.md).
+ResourceDictionaries are implicitly created when using the *Resources* property of tree elements. But a resource dictionary can also be declared as a single XAML file for later runtime load or for merging it into the [Application](../App.ApplicationLauncher/_Application.md) or a [FrameworkElement](_FrameworkElement.md).
 
 ```
 <ResourceDictionary
@@ -22,7 +22,7 @@ ResourceDictionaries are implicitly created when using the *Resources* property 
 
 # Inheritance Hierarchy
 
-• [BaseDictionary](/Gui.Core/_BaseDictionary.md)
+• [BaseDictionary](_BaseDictionary.md)
 
 • *ResourceDictionary*
 
@@ -54,7 +54,7 @@ ResourceDictionary has no attached properties
 |  *Remove(key)* | Removes the element with the specified key from the dictionary |
 |  *Set(key, value)* | Sets the element with the specified key |
 
-## From [BaseDictionary](/Gui.Core/_BaseDictionary.md)
+## From [BaseDictionary](_BaseDictionary.md)
 
 | Name | Description |
 | --- | --- |

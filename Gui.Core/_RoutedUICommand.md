@@ -2,13 +2,13 @@ Source: https://www.noesisengine.com/docs/Gui.Core._RoutedUICommand.html
 
 # RoutedUICommand Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.input.routeduicommand.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.input.routeduicommand.aspx)
 
 A command that is routed through the element tree and contains a text property.
 
 The following built-in commands are available in the *ApplicationCommands* class:
 
-- CancelPrint, Close, [ContextMenu](/Gui.Core/_ContextMenu.md), Copy, CorrectionList, Cut, Delete, Find, Help, New, Open,
+- CancelPrint, Close, [ContextMenu](_ContextMenu.md), Copy, CorrectionList, Cut, Delete, Find, Help, New, Open,
   Paste, Print, PrintPreview, Properties, Redo, Replace, Save, SaveAs, SelectAll, Stop, Undo
 
 The following built-in commands are available in the *ComponentCommands* class:
@@ -39,9 +39,9 @@ The following built-in commands are available in the *ComponentCommands* class:
 
 # Inheritance Hierarchy
 
-• [BaseCommand](/Gui.Core/_BaseCommand.md)
+• [BaseCommand](_BaseCommand.md)
 
-• [RoutedCommand](/Gui.Core/_RoutedCommand.md)
+• [RoutedCommand](_RoutedCommand.md)
 
 • *RoutedUICommand*
 
@@ -53,11 +53,11 @@ The following built-in commands are available in the *ComponentCommands* class:
 
 ● Dependency Property   ○ Reflection Property
 
-## From [RoutedCommand](/Gui.Core/_RoutedCommand.md)
+## From [RoutedCommand](_RoutedCommand.md)
 
 | Name | Description |
 | --- | --- |
-| ○ *InputGestures* | Gets the collection of [InputGesture](/Gui.Core/_InputGesture.md) objects that are associated with this command |
+| ○ *InputGestures* | Gets the collection of [InputGesture](_InputGesture.md) objects that are associated with this command |
 | ○ *Name* | Gets the name of the command as it is registered in the CommandManager |
 | ○ *OwnerType* | Gets the class type of the object that defines the command |
 
@@ -69,14 +69,14 @@ RoutedUICommand has no attached properties
 
 # Methods
 
-## From [RoutedCommand](/Gui.Core/_RoutedCommand.md)
+## From [RoutedCommand](_RoutedCommand.md)
 
 | Name | Description |
 | --- | --- |
-|  *CanExecute(param, target)* | Determines whether this [RoutedCommand](/Gui.Core/_RoutedCommand.md) can execute in its current state |
-|  *Execute(param, target)* | Executes the [RoutedCommand](/Gui.Core/_RoutedCommand.md) on the current command target |
+|  *CanExecute(param, target)* | Determines whether this [RoutedCommand](_RoutedCommand.md) can execute in its current state |
+|  *Execute(param, target)* | Executes the [RoutedCommand](_RoutedCommand.md) on the current command target |
 
-## From [BaseCommand](/Gui.Core/_BaseCommand.md)
+## From [BaseCommand](_BaseCommand.md)
 
 | Name | Description |
 | --- | --- |

@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core._ValueTargetProvider.html
 
 # ValueTargetProvider Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace)
 
-Provides useful information during [MarkupExtension](/Gui.Core/_MarkupExtension.md) *ProvideValue* calls.
+Provides useful information during [MarkupExtension](_MarkupExtension.md) *ProvideValue* calls.
 
 # Inheritance Hierarchy
 
@@ -14,8 +14,8 @@ Provides useful information during [MarkupExtension](/Gui.Core/_MarkupExtension.
 
 | Name | Description |
 | --- | --- |
-| ○ *TargetObject* | Gets target object where the [MarkupExtension](/Gui.Core/_MarkupExtension.md) is being applied |
-| ○ *TargetProperty* | Gets target property where the [MarkupExtension](/Gui.Core/_MarkupExtension.md) is being applied |
+| ○ *TargetObject* | Gets target object where the [MarkupExtension](_MarkupExtension.md) is being applied |
+| ○ *TargetProperty* | Gets target property where the [MarkupExtension](_MarkupExtension.md) is being applied |
 
 ● Dependency Property   ○ Reflection Property
 

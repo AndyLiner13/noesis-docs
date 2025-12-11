@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core._HierarchicalDataTemplate.htm
 
 # HierarchicalDataTemplate Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.hierarchicaldatatemplate.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.hierarchicaldatatemplate.aspx)
 
-Represents a [DataTemplate](/Gui.Core/_DataTemplate.md) that supports [HeaderedItemsControl](/Gui.Core/_HeaderedItemsControl.md), such as [TreeViewItem](/Gui.Core/_TreeViewItem.md) or [MenuItem](/Gui.Core/_MenuItem.md).
+Represents a [DataTemplate](_DataTemplate.md) that supports [HeaderedItemsControl](_HeaderedItemsControl.md), such as [TreeViewItem](_TreeViewItem.md) or [MenuItem](_MenuItem.md).
 
 ```
 <Grid
@@ -36,9 +36,9 @@ Represents a [DataTemplate](/Gui.Core/_DataTemplate.md) that supports [HeaderedI
 
 # Inheritance Hierarchy
 
-• [FrameworkTemplate](/Gui.Core/_FrameworkTemplate.md)
+• [FrameworkTemplate](_FrameworkTemplate.md)
 
-• [DataTemplate](/Gui.Core/_DataTemplate.md)
+• [DataTemplate](_DataTemplate.md)
 
 • *HierarchicalDataTemplate*
 
@@ -46,23 +46,23 @@ Represents a [DataTemplate](/Gui.Core/_DataTemplate.md) that supports [HeaderedI
 
 | Name | Description |
 | --- | --- |
-| ○ *ItemContainerStyle* | Gets or sets the [Style](/Gui.Core/_Style.md) that is applied to the item container for each child item |
-| ○ *ItemTemplate* | Gets or sets the [DataTemplate](/Gui.Core/_DataTemplate.md) to apply to the ItemTemplate property on a generated [HeaderedItemsControl](/Gui.Core/_HeaderedItemsControl.md) (such as a [MenuItem](/Gui.Core/_MenuItem.md) or a [TreeViewItem](/Gui.Core/_TreeViewItem.md)), to indicate how to display items from the next level in the data hierarchy |
-| ○ *ItemTemplateSelector* | Gets or sets the [DataTemplateSelector](/Gui.Core/_DataTemplateSelector.md) to apply to the ItemTemplateSelector property on a generated [HeaderedItemsControl](/Gui.Core/_HeaderedItemsControl.md) (such as a [MenuItem](/Gui.Core/_MenuItem.md) or a [TreeViewItem](/Gui.Core/_TreeViewItem.md)), to indicate how to select a template to display items from the next level in the data hierarchy |
+| ○ *ItemContainerStyle* | Gets or sets the [Style](_Style.md) that is applied to the item container for each child item |
+| ○ *ItemTemplate* | Gets or sets the [DataTemplate](_DataTemplate.md) to apply to the ItemTemplate property on a generated [HeaderedItemsControl](_HeaderedItemsControl.md) (such as a [MenuItem](_MenuItem.md) or a [TreeViewItem](_TreeViewItem.md)), to indicate how to display items from the next level in the data hierarchy |
+| ○ *ItemTemplateSelector* | Gets or sets the [DataTemplateSelector](_DataTemplateSelector.md) to apply to the ItemTemplateSelector property on a generated [HeaderedItemsControl](_HeaderedItemsControl.md) (such as a [MenuItem](_MenuItem.md) or a [TreeViewItem](_TreeViewItem.md)), to indicate how to select a template to display items from the next level in the data hierarchy |
 | ○ *ItemsSource* | Gets or sets the binding for this data template, which indicates where to find the collection that represents the next level in the data hierarchy |
 
 ● Dependency Property   ○ Reflection Property
 
-## From [DataTemplate](/Gui.Core/_DataTemplate.md)
+## From [DataTemplate](_DataTemplate.md)
 
 | Name | Description |
 | --- | --- |
-| ○ *DataType* | Gets or sets the type for which this [DataTemplate](/Gui.Core/_DataTemplate.md) is intended |
+| ○ *DataType* | Gets or sets the type for which this [DataTemplate](_DataTemplate.md) is intended |
 | ○ *Triggers* | Gets a collection of triggers that apply property values or perform actions based on one or more conditions. |
 
 ● Dependency Property   ○ Reflection Property
 
-## From [FrameworkTemplate](/Gui.Core/_FrameworkTemplate.md)
+## From [FrameworkTemplate](_FrameworkTemplate.md)
 
 | Name | Description |
 | --- | --- |
@@ -77,7 +77,7 @@ HierarchicalDataTemplate has no attached properties
 
 # Methods
 
-## From [FrameworkTemplate](/Gui.Core/_FrameworkTemplate.md)
+## From [FrameworkTemplate](_FrameworkTemplate.md)
 
 | Name | Description |
 | --- | --- |

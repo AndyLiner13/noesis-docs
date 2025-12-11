@@ -2,19 +2,19 @@ Source: https://www.noesisengine.com/docs/App.Interactivity._StringSortComparer.
 
 # StringSortComparer Class
 
-## namespace [NoesisApp](/Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
+## namespace [NoesisApp](../Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
 
 Compares the text representation of two items for sorting.
 
 # Inheritance Hierarchy
 
-• [SortComparer](/App.Interactivity/_SortComparer.md)
+• [SortComparer](_SortComparer.md)
 
 • *StringSortComparer*
 
 # Properties
 
-## From [SortComparer](/App.Interactivity/_SortComparer.md)
+## From [SortComparer](_SortComparer.md)
 
 | Name | Description |
 | --- | --- |
@@ -28,7 +28,7 @@ StringSortComparer has no attached properties
 
 # Methods
 
-## From [SortComparer](/App.Interactivity/_SortComparer.md)
+## From [SortComparer](_SortComparer.md)
 
 | Name | Description |
 | --- | --- |
@@ -38,7 +38,7 @@ StringSortComparer has no attached properties
 
 # Events
 
-## From [SortComparer](/App.Interactivity/_SortComparer.md)
+## From [SortComparer](_SortComparer.md)
 
 | Name | Description |
 | --- | --- |

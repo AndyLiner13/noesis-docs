@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Animation.Clocks.html
 
 # Clocks
 
-![Clock.png](/Clock/png.md)
+![Clock.png](https://www.noesisengine.com/docs/Clock.png)
 
 # Description
 

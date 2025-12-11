@@ -2,13 +2,13 @@ Source: https://www.noesisengine.com/docs/Gui.Core._Colors.html
 
 # Colors Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.media.colors.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.media.colors.aspx)
 
 Implements a set of predefined colors.
 
 These colors and their names are based on the UNIX X11 color values. The following image shows the color of each predefined brush, its name, and its hexadecimal value.
 
-![BrushTable.png](/BrushTable/png.md)
+![BrushTable.png](https://www.noesisengine.com/docs/BrushTable.png)
 
 # Inheritance Hierarchy
 

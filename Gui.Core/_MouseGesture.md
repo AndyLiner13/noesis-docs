@@ -2,13 +2,13 @@ Source: https://www.noesisengine.com/docs/Gui.Core._MouseGesture.html
 
 # MouseGesture Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.input.mousegesture.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.input.mousegesture.aspx)
 
 Defines a mouse input gesture that can be used to invoke a command.
 
 # Inheritance Hierarchy
 
-• [InputGesture](/Gui.Core/_InputGesture.md)
+• [InputGesture](_InputGesture.md)
 
 • *MouseGesture*
 
@@ -30,11 +30,11 @@ MouseGesture has no attached properties
 | --- | --- |
 |  *GetMouseAction()* | Gets the MouseAction associated with this gesture |
 
-## From [InputGesture](/Gui.Core/_InputGesture.md)
+## From [InputGesture](_InputGesture.md)
 
 | Name | Description |
 | --- | --- |
-|  *Matches(target, args)* | When overridden in a derived class, determines whether the specified [InputGesture](/Gui.Core/_InputGesture.md) matches the input specified |
+|  *Matches(target, args)* | When overridden in a derived class, determines whether the specified [InputGesture](_InputGesture.md) matches the input specified |
 
 # Events
 

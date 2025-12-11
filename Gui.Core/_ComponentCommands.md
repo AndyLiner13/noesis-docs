@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._ComponentCommands.html
 
 # ComponentCommands Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.input.componentcommands.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.input.componentcommands.aspx)
 
 Provides a standard set of component related commands.
 

@@ -2,23 +2,23 @@ Source: https://www.noesisengine.com/docs/Gui.DependencySystem._DispatcherObject
 
 # DispatcherObject Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.threading.dispatcherobject.aspx)
+## namespace [Noesis](../Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.threading.dispatcherobject.aspx)
 
 Represents an object with thread affinity.
 
-This object can be accessed only from the thread on which it was created. Subclasses of [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) that need to enforce thread safety can do so by calling *VerifyAccess* on all public methods. This guarantees the calling thread is the thread that the [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) was created on.
+This object can be accessed only from the thread on which it was created. Subclasses of [DispatcherObject](_DispatcherObject.md) that need to enforce thread safety can do so by calling *VerifyAccess* on all public methods. This guarantees the calling thread is the thread that the [DispatcherObject](_DispatcherObject.md) was created on.
 
 # Inheritance Hierarchy
 
 • *DispatcherObject*
 
-• [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+• [DependencyObject](_DependencyObject.md)
 
 # Properties
 
 | Name | Description |
 | --- | --- |
-| ○ *ThreadId* | Gets the thread this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
+| ○ *ThreadId* | Gets the thread this [DispatcherObject](_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
 
 ● Dependency Property   ○ Reflection Property
 
@@ -30,8 +30,8 @@ DispatcherObject has no attached properties
 
 | Name | Description |
 | --- | --- |
-|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
-|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
+|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](_DispatcherObject.md) |
+|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](_DispatcherObject.md) |
 
 # Events
 

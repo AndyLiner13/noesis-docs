@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core._ItemCollection.html
 
 # ItemCollection Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.controls.itemcollection.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.controls.itemcollection.aspx)
 
-Holds the list of items that constitute the content of an [ItemsControl](/Gui.Core/_ItemsControl.md).
+Holds the list of items that constitute the content of an [ItemsControl](_ItemsControl.md).
 
 # Inheritance Hierarchy
 
@@ -58,7 +58,7 @@ ItemCollection has no attached properties
 |  *RemoveAt(index)* | Removes the item at the specified index |
 |  *Set(index, item)* | Sets the item at the specified index |
 |  *SetComponent(index, item)* | Sets the item at the specified index |
-|  *SetView(view)* | To be called from [ItemsControl](/Gui.Core/_ItemsControl.md) when the ItemsSource is assigned with a [CollectionView](/Gui.Core/_CollectionView.md) |
+|  *SetView(view)* | To be called from [ItemsControl](_ItemsControl.md) when the ItemsSource is assigned with a [CollectionView](_CollectionView.md) |
 
 # Events
 

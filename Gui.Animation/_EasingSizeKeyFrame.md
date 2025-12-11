@@ -2,25 +2,25 @@ Source: https://www.noesisengine.com/docs/Gui.Animation._EasingSizeKeyFrame.html
 
 # EasingSizeKeyFrame Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.media.animation.easingsizekeyframe.aspx)
+## namespace [Noesis](../Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.media.animation.easingsizekeyframe.aspx)
 
-A class that enables you to associate easing functions with a [SizeAnimationUsingKeyFrames](/Gui.Animation/_SizeAnimationUsingKeyFrames.md) key frame animation.
+A class that enables you to associate easing functions with a [SizeAnimationUsingKeyFrames](_SizeAnimationUsingKeyFrames.md) key frame animation.
 
-For an example of using an object similar to this one, see [EasingDoubleKeyFrame](/Gui.Animation/_EasingDoubleKeyFrame.md).
+For an example of using an object similar to this one, see [EasingDoubleKeyFrame](_EasingDoubleKeyFrame.md).
 
-This class is used as part of a [SizeKeyFrameCollection](/Gui.Animation/_SizeKeyFrameCollection.md) in conjunction with a [SizeAnimationUsingKeyFrames](/Gui.Animation/_SizeAnimationUsingKeyFrames.md) to animate a Size property value along a set of key frames. This [SizeKeyFrame](/Gui.Animation/_SizeKeyFrame.md) interpolates between the Size value of the previous key frame and its own value linearly with an easing function to produce its output value.
+This class is used as part of a [SizeKeyFrameCollection](_SizeKeyFrameCollection.md) in conjunction with a [SizeAnimationUsingKeyFrames](_SizeAnimationUsingKeyFrames.md) to animate a Size property value along a set of key frames. This [SizeKeyFrame](_SizeKeyFrame.md) interpolates between the Size value of the previous key frame and its own value linearly with an easing function to produce its output value.
 
 # Inheritance Hierarchy
 
-• [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+• [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
-• [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+• [DependencyObject](../Gui.DependencySystem/_DependencyObject.md)
 
-• [Freezable](/Gui.DependencySystem/_Freezable.md)
+• [Freezable](../Gui.DependencySystem/_Freezable.md)
 
-• [BaseKeyFrame](/Gui.Animation/_BaseKeyFrame.md)
+• [BaseKeyFrame](_BaseKeyFrame.md)
 
-• [SizeKeyFrame](/Gui.Animation/_SizeKeyFrame.md)
+• [SizeKeyFrame](_SizeKeyFrame.md)
 
 • *EasingSizeKeyFrame*
 
@@ -32,7 +32,7 @@ This class is used as part of a [SizeKeyFrameCollection](/Gui.Animation/_SizeKey
 
 ● Dependency Property   ○ Reflection Property
 
-## From [SizeKeyFrame](/Gui.Animation/_SizeKeyFrame.md)
+## From [SizeKeyFrame](_SizeKeyFrame.md)
 
 | Name | Description |
 | --- | --- |
@@ -40,7 +40,7 @@ This class is used as part of a [SizeKeyFrameCollection](/Gui.Animation/_SizeKey
 
 ● Dependency Property   ○ Reflection Property
 
-## From [BaseKeyFrame](/Gui.Animation/_BaseKeyFrame.md)
+## From [BaseKeyFrame](_BaseKeyFrame.md)
 
 | Name | Description |
 | --- | --- |
@@ -48,7 +48,7 @@ This class is used as part of a [SizeKeyFrameCollection](/Gui.Animation/_SizeKey
 
 ● Dependency Property   ○ Reflection Property
 
-## From [Freezable](/Gui.DependencySystem/_Freezable.md)
+## From [Freezable](../Gui.DependencySystem/_Freezable.md)
 
 | Name | Description |
 | --- | --- |
@@ -57,11 +57,11 @@ This class is used as part of a [SizeKeyFrameCollection](/Gui.Animation/_SizeKey
 
 ● Dependency Property   ○ Reflection Property
 
-## From [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+## From [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
 | Name | Description |
 | --- | --- |
-| ○ *ThreadId* | Gets the thread this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
+| ○ *ThreadId* | Gets the thread this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
 
 ● Dependency Property   ○ Reflection Property
 
@@ -71,36 +71,36 @@ EasingSizeKeyFrame has no attached properties
 
 # Methods
 
-## From [SizeKeyFrame](/Gui.Animation/_SizeKeyFrame.md)
+## From [SizeKeyFrame](_SizeKeyFrame.md)
 
 | Name | Description |
 | --- | --- |
 |  *InterpolateValue(baseValue, keyFrameProgress)* | Returns the interpolated value of a specific key frame at the progress increment provided |
 
-## From [Freezable](/Gui.DependencySystem/_Freezable.md)
+## From [Freezable](../Gui.DependencySystem/_Freezable.md)
 
 | Name | Description |
 | --- | --- |
-|  *Clone()* | Creates a modifiable clone of the [Freezable](/Gui.DependencySystem/_Freezable.md), making deep copies of the object's values. When copying the object's dependency properties, this method copies expressions (which might no longer resolve) but not animations or their current values. The cloned Freezable::IsFrozen property is false even if the source's IsFrozen property is true. |
-|  *CloneCurrentValue()* | Creates a modifiable clone (deep copy) of the [Freezable](/Gui.DependencySystem/_Freezable.md) using its current values. The cloned object's IsFrozen property is false even if the source's IsFrozen property is true. |
+|  *Clone()* | Creates a modifiable clone of the [Freezable](../Gui.DependencySystem/_Freezable.md), making deep copies of the object's values. When copying the object's dependency properties, this method copies expressions (which might no longer resolve) but not animations or their current values. The cloned Freezable::IsFrozen property is false even if the source's IsFrozen property is true. |
+|  *CloneCurrentValue()* | Creates a modifiable clone (deep copy) of the [Freezable](../Gui.DependencySystem/_Freezable.md) using its current values. The cloned object's IsFrozen property is false even if the source's IsFrozen property is true. |
 |  *Freeze()* | Makes the current object unmodifiable and sets its IsFrozen property to true. |
-|  *GetAsFrozen()* | Creates a frozen copy of the [Freezable](/Gui.DependencySystem/_Freezable.md), using base (non-animated) property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. Throws if the [Freezable](/Gui.DependencySystem/_Freezable.md) cannot be frozen because it contains expressions or animated properties. |
-|  *GetCurrentValueAsFrozen()* | Creates a frozen copy of the [Freezable](/Gui.DependencySystem/_Freezable.md) using current property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. |
+|  *GetAsFrozen()* | Creates a frozen copy of the [Freezable](../Gui.DependencySystem/_Freezable.md), using base (non-animated) property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. Throws if the [Freezable](../Gui.DependencySystem/_Freezable.md) cannot be frozen because it contains expressions or animated properties. |
+|  *GetCurrentValueAsFrozen()* | Creates a frozen copy of the [Freezable](../Gui.DependencySystem/_Freezable.md) using current property values. Because the copy is frozen, any frozen sub-objects are copied by reference. The copy's IsFrozen property is set to true. |
 
-## From [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+## From [DependencyObject](../Gui.DependencySystem/_DependencyObject.md)
 
 | Name | Description |
 | --- | --- |
 |  *ClearAnimation(dp)* | Clears the animation value of a property |
-|  *ClearLocalValue(dp)* | Clears the local value of a property The property to be cleared is specified by a [DependencyProperty](/Gui.DependencySystem/_DependencyProperty.md) identifier |
+|  *ClearLocalValue(dp)* | Clears the local value of a property The property to be cleared is specified by a [DependencyProperty](../Gui.DependencySystem/_DependencyProperty.md) identifier |
 |  *CoerceValue(dp)* | Coerces and validates the effective property value |
 |  *DependencyPropertyChanged()* | Returns the PropertyChanged event |
 |  *Destroyed()* | Destroyed delegate is raised when object is going to be destroyed |
-|  *GetBaseValue(dp)* | Returns the base value without animation nor coerce (this never returns [Expression](/Gui.DependencySystem/_Expression.md) like GetLocalValue) |
+|  *GetBaseValue(dp)* | Returns the base value without animation nor coerce (this never returns [Expression](../Gui.DependencySystem/_Expression.md) like GetLocalValue) |
 |  *GetExpression(dp)* | Gets the expression, if any, used to evaluate the specified property value |
 |  *GetLocalValue(dp)* | Returns the local value of a dependency property, if it exists |
-|  *GetValue(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) |
-|  *GetValueObject(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) as a boxed value |
+|  *GetValue(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](../Gui.DependencySystem/_DependencyObject.md) |
+|  *GetValueObject(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](../Gui.DependencySystem/_DependencyObject.md) as a boxed value |
 |  *GetValueProvider(dp)* | Gets the provider that returns the effective value for the specified dependency property |
 |  *HasAnimatedProperties()* | Returns true if there is any animated property |
 |  *InvalidateProperty(dp, priority)* | Re-evaluates the effective value for the specified dependency property if necessary If null is passed, a full re-evaluation could be needed |
@@ -113,12 +113,12 @@ EasingSizeKeyFrame has no attached properties
 |  *SetValue(dp, value)* | Sets the local value of a dependency property |
 |  *SetValueObject(dp, value)* | Sets the local value (boxed) of a dependency property |
 
-## From [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+## From [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
 | Name | Description |
 | --- | --- |
-|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
-|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
+|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) |
+|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) |
 
 # Events
 

@@ -2,21 +2,21 @@ Source: https://www.noesisengine.com/docs/Gui.Core._UIPropertyMetadata.html
 
 # UIPropertyMetadata Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace)
 
 Provides property metadata for non-framework properties that do have rendering/user interface impact at the core level.
 
 # Inheritance Hierarchy
 
-• [PropertyMetadata](/Gui.DependencySystem/_PropertyMetadata.md)
+• [PropertyMetadata](../Gui.DependencySystem/_PropertyMetadata.md)
 
 • *UIPropertyMetadata*
 
-• [FrameworkPropertyMetadata](/Gui.Core/_FrameworkPropertyMetadata.md)
+• [FrameworkPropertyMetadata](_FrameworkPropertyMetadata.md)
 
 # Properties
 
-## From [PropertyMetadata](/Gui.DependencySystem/_PropertyMetadata.md)
+## From [PropertyMetadata](../Gui.DependencySystem/_PropertyMetadata.md)
 
 | Name | Description |
 | --- | --- |
@@ -32,7 +32,7 @@ UIPropertyMetadata has no attached properties
 
 # Methods
 
-## From [PropertyMetadata](/Gui.DependencySystem/_PropertyMetadata.md)
+## From [PropertyMetadata](../Gui.DependencySystem/_PropertyMetadata.md)
 
 | Name | Description |
 | --- | --- |

@@ -2,39 +2,39 @@ Source: https://www.noesisengine.com/docs/Gui.Animation._ControllableStoryboardA
 
 # ControllableStoryboardAction Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.media.animation.controllablestoryboardaction.aspx)
+## namespace [Noesis](../Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.media.animation.controllablestoryboardaction.aspx)
 
-Manipulates a [Storyboard](/Gui.Animation/_Storyboard.md) that has been applied by a [BeginStoryboard](/Gui.Animation/_BeginStoryboard.md) action.
+Manipulates a [Storyboard](_Storyboard.md) that has been applied by a [BeginStoryboard](_BeginStoryboard.md) action.
 
 # Inheritance Hierarchy
 
-• [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+• [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
-• [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+• [DependencyObject](../Gui.DependencySystem/_DependencyObject.md)
 
-• [TriggerAction](/Gui.Core/_TriggerAction.md)
+• [TriggerAction](../Gui.Core/_TriggerAction.md)
 
 • *ControllableStoryboardAction*
 
-• [PauseStoryboard](/Gui.Animation/_PauseStoryboard.md)
+• [PauseStoryboard](_PauseStoryboard.md)
 
-• [ResumeStoryboard](/Gui.Animation/_ResumeStoryboard.md)
+• [ResumeStoryboard](_ResumeStoryboard.md)
 
-• [StopStoryboard](/Gui.Animation/_StopStoryboard.md)
+• [StopStoryboard](_StopStoryboard.md)
 
 # Properties
 
 | Name | Description |
 | --- | --- |
-| ○ *BeginStoryboardName* | Gets or sets the *Name* of the [BeginStoryboard](/Gui.Animation/_BeginStoryboard.md) that began the [Storyboard](/Gui.Animation/_Storyboard.md) you want to interactively control |
+| ○ *BeginStoryboardName* | Gets or sets the *Name* of the [BeginStoryboard](_BeginStoryboard.md) that began the [Storyboard](_Storyboard.md) you want to interactively control |
 
 ● Dependency Property   ○ Reflection Property
 
-## From [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+## From [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
 | Name | Description |
 | --- | --- |
-| ○ *ThreadId* | Gets the thread this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
+| ○ *ThreadId* | Gets the thread this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) is associated with. Returns NoThreadId when this object is not attached to any thread. |
 
 ● Dependency Property   ○ Reflection Property
 
@@ -44,7 +44,7 @@ ControllableStoryboardAction has no attached properties
 
 # Methods
 
-## From [TriggerAction](/Gui.Core/_TriggerAction.md)
+## From [TriggerAction](../Gui.Core/_TriggerAction.md)
 
 | Name | Description |
 | --- | --- |
@@ -52,20 +52,20 @@ ControllableStoryboardAction has no attached properties
 |  *Seal()* | Seals the actions |
 |  *SealActions(actions)* | Seals all actions in the collection |
 
-## From [DependencyObject](/Gui.DependencySystem/_DependencyObject.md)
+## From [DependencyObject](../Gui.DependencySystem/_DependencyObject.md)
 
 | Name | Description |
 | --- | --- |
 |  *ClearAnimation(dp)* | Clears the animation value of a property |
-|  *ClearLocalValue(dp)* | Clears the local value of a property The property to be cleared is specified by a [DependencyProperty](/Gui.DependencySystem/_DependencyProperty.md) identifier |
+|  *ClearLocalValue(dp)* | Clears the local value of a property The property to be cleared is specified by a [DependencyProperty](../Gui.DependencySystem/_DependencyProperty.md) identifier |
 |  *CoerceValue(dp)* | Coerces and validates the effective property value |
 |  *DependencyPropertyChanged()* | Returns the PropertyChanged event |
 |  *Destroyed()* | Destroyed delegate is raised when object is going to be destroyed |
-|  *GetBaseValue(dp)* | Returns the base value without animation nor coerce (this never returns [Expression](/Gui.DependencySystem/_Expression.md) like GetLocalValue) |
+|  *GetBaseValue(dp)* | Returns the base value without animation nor coerce (this never returns [Expression](../Gui.DependencySystem/_Expression.md) like GetLocalValue) |
 |  *GetExpression(dp)* | Gets the expression, if any, used to evaluate the specified property value |
 |  *GetLocalValue(dp)* | Returns the local value of a dependency property, if it exists |
-|  *GetValue(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) |
-|  *GetValueObject(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) as a boxed value |
+|  *GetValue(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](../Gui.DependencySystem/_DependencyObject.md) |
+|  *GetValueObject(dp)* | Returns the current effective value of a dependency property on this instance of a [DependencyObject](../Gui.DependencySystem/_DependencyObject.md) as a boxed value |
 |  *GetValueProvider(dp)* | Gets the provider that returns the effective value for the specified dependency property |
 |  *HasAnimatedProperties()* | Returns true if there is any animated property |
 |  *InvalidateProperty(dp, priority)* | Re-evaluates the effective value for the specified dependency property if necessary If null is passed, a full re-evaluation could be needed |
@@ -78,12 +78,12 @@ ControllableStoryboardAction has no attached properties
 |  *SetValue(dp, value)* | Sets the local value of a dependency property |
 |  *SetValueObject(dp, value)* | Sets the local value (boxed) of a dependency property |
 
-## From [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md)
+## From [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md)
 
 | Name | Description |
 | --- | --- |
-|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
-|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](/Gui.DependencySystem/_DispatcherObject.md) |
+|  *CheckAccess()* | Determines whether the calling thread has access to this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) |
+|  *VerifyAccess()* | Enforces that the calling thread has access to this [DispatcherObject](../Gui.DependencySystem/_DispatcherObject.md) |
 
 # Events
 

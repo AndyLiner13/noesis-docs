@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._CollectionView.html
 
 # CollectionView Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.data.collectionview.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.data.collectionview.aspx)
 
 Represents a view for grouping, sorting, filtering, and navigating a data collection.
 

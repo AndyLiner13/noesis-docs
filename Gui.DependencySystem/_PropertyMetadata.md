@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.DependencySystem._PropertyMetadata
 
 # PropertyMetadata Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace)
+## namespace [Noesis](../Gui.Core/_ClassHierarchy.md#noesis-namespace)
 
 Defines certain behavior aspects of a dependency property as it is applied to a specific type, including conditions it was registered with.
 
@@ -10,7 +10,7 @@ Defines certain behavior aspects of a dependency property as it is applied to a 
 
 • *PropertyMetadata*
 
-• [UIPropertyMetadata](/Gui.Core/_UIPropertyMetadata.md)
+• [UIPropertyMetadata](../Gui.Core/_UIPropertyMetadata.md)
 
 # Properties
 

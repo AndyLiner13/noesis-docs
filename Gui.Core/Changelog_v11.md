@@ -220,7 +220,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Changelog_v11.html
 - Substitution of glyphs not found in the font file with the [replacement character](http://www.fileformat.info/info/unicode/char/0fffd/index.htm). (U+FFFD or a simple question mark).
 - UI Clipboard implemented using operating system clipboard.
 - Improved error messages when parsing SVG paths.
-- Improvements to [Class Hierarchy](/Gui.Core/_ClassHierarchy.md) documentation. Class methods added.
+- Improvements to [Class Hierarchy](_ClassHierarchy.md) documentation. Class methods added.
 - Unity Added support for PropertyChangedCallback when creating PropertyMetadata for dependency properties.
 - Unity Removed "using Noesis" from Unity samples. Now all class names are fully qualified to avoid name collisions with user classes.
 - Unity UserControls defined in samples moved to Assets/NoesisGUI/UserControls. This folder will contain any UserControl we develop.
@@ -260,7 +260,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Changelog_v11.html
 - Added support for FontFamily syntax "FontPath/FontFile.ext#FontFamily". This syntax is used by Blend when you add a font file (a .ttf for example) to the project and select it.
 - Exposed TextBox.CaretIndex property.
 - Improvements to documentation: new core documents (memory, reference counting, boxing, delegates) added to index.
-- New tutorial: [Optimizing NoesisGUI Performance](/Gui.Core/Optimizing.md).
+- New tutorial: [Optimizing NoesisGUI Performance](Optimizing.md).
 - Unity Added support for modifying scripts while in Play mode.
 - Unity Added support for creating a TextureSource from any type of UnityEngine.Texture objects (video, render texture, texture).
 - Unity BindingOperations exposed to Unity.
@@ -285,7 +285,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Changelog_v11.html
 - ScrollViewer: implemented PanningMode, PanningDeceleration and PanningRatio.
 - Implemented inertia in touch manipulations.
 - Implemented PasswordBox control.
-- New tutorial: [Touch and Manipulation](/Gui.Core/TouchTutorial.md)
+- New tutorial: [Touch and Manipulation](TouchTutorial.md)
 - SamplesGallery demo added to OSX SDK.
 - Added constructors for PropertyPath and Binding accepting a DependencyProperty as path.
 - Improved Image tutorial with a note about premultiplied alpha.
@@ -405,7 +405,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Changelog_v11.html
 
 # Version 1.0.3
 
-- New Tutorial: [First Steps with Blend in Unity](/Gui.Core/BlendTutorial.unity.md)
+- New Tutorial: [First Steps with Blend in Unity](BlendTutorial.unity.md)
 - Added StreamGeometry converter to allow things like this: <StreamGeometry>M0,0 L100,0</StreamGeometry>
 - Implemented callbacks for showing software keyboard on touch devices
 - Improved text rendering with transforms. Now text inside a Viewbox displays without blurriness
@@ -462,9 +462,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Changelog_v11.html
 # Version 1.0.0
 
 - All tutorials have been improved. Many examples were outdated. Now every sample that is mentioned in the documentation is included in the package Gui/Tutorials and can be viewed with XamlPlayer. Following the suggestions from beta testers we have explained those concepts that were not clear.
-- New tutorial: [Extending NoesisGUI](/Gui.Core/ExtendingTutorial.md).
-- New tutorial: [Commands](/Gui.Core/CommandsTutorial.md)
-- New tutorial: [Bindings](/Gui.Core/DataBindingTutorial.md)
+- New tutorial: [Extending NoesisGUI](ExtendingTutorial.md).
+- New tutorial: [Commands](CommandsTutorial.md)
+- New tutorial: [Bindings](DataBindingTutorial.md)
 - API for integration NoesisGUI within an application has been simplified.
 - Unity improvements:
   - Setting a SDK is not needed anymore.
@@ -483,7 +483,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Changelog_v11.html
 - New SDK platform: Mac OS X v10.5 or later. This SDK is yet experimental and not as complete as the Windows version.
 - Support for multisample added in GL. For now only the extensions APPLE\_framebuffer\_multisample, EXT\_framebuffer\_multisample and EXT\_multisampled\_render\_to\_texture are supported.
 - Opacity Groups (aka Render to Texture) have been heavily optimized. Now, you must indicate the resolution of off-screen surfaces when constructing a xaml renderer. By default, two extra textures of the same resolution are created.
-- Improvements to the [Integration Tutorial](/Gui.Core/SDKGuide.md). iOS integration described. Simplified interface for loading a xaml and setting up the renderer.
+- Improvements to the [Integration Tutorial](SDKGuide.md). iOS integration described. Simplified interface for loading a xaml and setting up the renderer.
 - Tessellation quality improved. Now the aspect of curves at medium quality is better.
 - Glyph atlases are now a single channel (A8) texture on mobile platforms.
 - Added default style support that is loaded by default with each xaml. Can be overridden by IUISystem::SetTheme().
@@ -491,7 +491,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Changelog_v11.html
 - Unity improvements:
   - New unity directory layout following the suggestions from the forum.
   - UserControls can be created now on Unity.
-  - [Unity3d Tutorial](/Gui.Core/Unity3DTutorial.md) updated with UserControl, Binding and Commands information.
+  - [Unity3d Tutorial](Unity3DTutorial.md) updated with UserControl, Binding and Commands information.
   - Primitives sample updated with a ListBox and a ColorPicker.
   - New LoadXaml function.
   - Extended classes are automatically registered now.
@@ -525,15 +525,15 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Changelog_v11.html
 - Many improvements in the integration layer between NoesisUI C++ API and Mono. Now, Noesis classes can be extended to create new controls. All samples upgraded with the new improvements.
 - Unity pipeline simplified. Now changes to assets are automatically detected. You can be editing a XAML, save the changes and the results are automatically shown on Unity.
 - New Unity sample: Primitives.
-- [Unity3d Tutorial](/Gui.Core/Unity3DTutorial.md) updated.
+- [Unity3d Tutorial](Unity3DTutorial.md) updated.
 - Android platform. This is the first release to include runtime support for Android. Both standalone and Unity environment are supported. Although this is still a preliminary work and many optimizations are pending, all the samples are working properly.
-- Improvements to the [Integration Tutorial](/Gui.Core/SDKGuide.md). Android integration described.
+- Improvements to the [Integration Tutorial](SDKGuide.md). Android integration described.
 - Functions in GUI receiving a BaseComponent\* that accept a boxed value, are now overloaded with a string parameter to make it easier to use in this case (90% of the time). The functions affected are:
   - IList: Set, Add, Insert
   - ContentControl: SetContent
   - ContentPresenter: SetContent
   - FrameworkElement: SetTag
-- Added more documentation to [Class Hierarchy](/Gui.Core/_ClassHierarchy.md) list. All main classes are now documented.
+- Added more documentation to [Class Hierarchy](_ClassHierarchy.md) list. All main classes are now documented.
 - OpenGL renderer optimized.
 - New tutorial: *OpenSceneGraph integration*.
 
@@ -551,15 +551,15 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Changelog_v11.html
 - New sample: CarHud
 - Implemented render to texture in Unity
 - UnityExporter console application deprecated. A new tool is implemented directly inside the editor of Unity3d
-- Improvements to [Unity3d Tutorial](/Gui.Core/Unity3DTutorial.md), describing all the things that are new
+- Improvements to [Unity3d Tutorial](Unity3DTutorial.md), describing all the things that are new
 - Several improvements to text rendering. Subpixel positioning implemented.
 - OpenGL RenderSystem implementation
-- Improvements to the [Integration Tutorial](/Gui.Core/SDKGuide.md). OpenGL integration described
+- Improvements to the [Integration Tutorial](SDKGuide.md). OpenGL integration described
 - XamlPlayer: Drag&Drop feature removed. It was confusing to the user where resources could be dragged from
 - XamlPlayer: new resource browser panel added to select the XAML to load
 - XamlPlayer: animations panel now shows a list of storyboards each one with its own play / pause / stop buttons.
 - XamlPlayer: wait for vsync when rendering. When the window is not active, it stops continuously rendering
-- Improvements to the [Class Hierarchy](/Gui.Core/_ClassHierarchy.md) documentation. All supported classes, with properties and events are summarized.
+- Improvements to the [Class Hierarchy](_ClassHierarchy.md) documentation. All supported classes, with properties and events are summarized.
 
 ## Bug fixes
 
@@ -575,7 +575,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Changelog_v11.html
 
 - New demo: TicTacToe.
 - New demo: SamplesGallery. Added as a scene to the unity package too.
-- New tutorial: [Layout & Panels](/Gui.Core/LayoutPanelTutorial.md).
+- New tutorial: [Layout & Panels](LayoutPanelTutorial.md).
 - New tutorial: *OGRE Tutorial*.
 - New samples: Brushes, Butterfly, Canvas, DockPanel, Grid, Palette, ProgressBar, StackPanel, StatusBar, ToolBar, Tiger, WrapPanel.
 - Improvements to the Unity runtime. Now it is smaller and faster. Errors are properly handled now.
@@ -593,8 +593,8 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Changelog_v11.html
 
 ## Features
 
-- New tutorial: [Unity3d Tutorial](/Gui.Core/Unity3DTutorial.md)
-- Improvements to the [Integration Tutorial](/Gui.Core/SDKGuide.md)
+- New tutorial: [Unity3d Tutorial](Unity3DTutorial.md)
+- Improvements to the [Integration Tutorial](SDKGuide.md)
 - Fonts with embedded bitmaps were not properly rendered.
 - New IStoryboard interface.
 - Implemented PauseStoryboard, ResumeStoryboard and StopStoryboard triggers actions.
@@ -617,7 +617,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Changelog_v11.html
 
 ## Features
 
-- New exporter for [TexturePacker](http://www.texturepacker.com/) inside *Gui/3rdParty/Content/TexturePacker*. With this plugin atlases that are compatible with NoesisGui can be generated. See the [Images Tutorial](/Gui.Core/ImagesTutorial.md).
+- New exporter for [TexturePacker](http://www.texturepacker.com/) inside *Gui/3rdParty/Content/TexturePacker*. With this plugin atlases that are compatible with NoesisGui can be generated. See the [Images Tutorial](ImagesTutorial.md).
 - Animations on sample *Time.xaml* are now not launched automatically, use the animation panel to launch them.
 - Support for Triggers in DataTemplates.
 - ListView control implemented with column reordering, and *ListView.xaml* sample added to Gui/Samples.
@@ -638,7 +638,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Changelog_v11.html
 - Added ImageSource.Width and ImageSource.Height properties.
 - ImageSource now uses image resolution to calculate its size (width and height) in device independent units.
 - All TileBrush tiling modes (None, Tile, FlipX, FlipY, FlipXY) correctly implemented.
-- New [tutorial](/Gui.Core/ImagesTutorial.md) for images added. Related examples added: ImageAtlas, ImageBrushStretch, ImageBrushTile and ImageBrushViewBox.
+- New [tutorial](ImagesTutorial.md) for images added. Related examples added: ImageAtlas, ImageBrushStretch, ImageBrushTile and ImageBrushViewBox.
 - Automatic atlases no longer generated. Now atlases must be created manually.
 - Image.Source and ImageBrush.ImageSource properties are now of ImageSource type. Added ImageSourceConverter to convert image paths into a valid ImageSource (TextureSource if a texture compiler is available, or BitmapSource otherwise).
 - XamlPlayer now shows and can launch animations found in the Resources property of the loaded XAML root.

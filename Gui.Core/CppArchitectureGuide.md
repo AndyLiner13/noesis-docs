@@ -31,7 +31,7 @@ using namespace Noesis;
 
 NOTE
 
-Noesis [Application Framework](/Gui.Core/ApplicationTutorial.md), a helper library not part of core is exposed in a different namespace, *NoesisApp*, and its headers are not included in *NoesisPCH.h*.
+Noesis [Application Framework](ApplicationTutorial.md), a helper library not part of core is exposed in a different namespace, *NoesisApp*, and its headers are not included in *NoesisPCH.h*.
 
 # Reference Counting
 
@@ -314,7 +314,7 @@ Reflection is the ability of a program to inspect in run-time the structure and 
 
 ## Classes
 
-Noesis provides a few macros to easily incorporate reflection information to *classes* and *structs*. This is normally used to expose reflection information from client code to Noesis, for example when using [Data Binding](/Gui.Core/DataBindingTutorial.md) connecting *Views* and *Models*.
+Noesis provides a few macros to easily incorporate reflection information to *classes* and *structs*. This is normally used to expose reflection information from client code to Noesis, for example when using [Data Binding](DataBindingTutorial.md) connecting *Views* and *Models*.
 
 There are two kind of macros, a declaration macro (*NS\_DECLARE\_REFLECTION*) that you normally use in headers:
 
@@ -466,7 +466,7 @@ Similar to classes, you can use just a single macro, NS\_IMPLEMENT\_INLINE\_REFL
 
 ## Factory
 
-In case you need to instantiate a class from a XAML, for example a converter or user control, it must be registered in the component factory before it can be used in XAML. Our application framework expose a virtual function for that purpose, *RegisterComponents*. Find more information about in the [Extending NoesisGUI](/Gui.Core/ExtendingTutorial.md) tutorial.
+In case you need to instantiate a class from a XAML, for example a converter or user control, it must be registered in the component factory before it can be used in XAML. Our application framework expose a virtual function for that purpose, *RegisterComponents*. Find more information about in the [Extending NoesisGUI](ExtendingTutorial.md) tutorial.
 
 ```
 class AppLauncher final: public ApplicationLauncher

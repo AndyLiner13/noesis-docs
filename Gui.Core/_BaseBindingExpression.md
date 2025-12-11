@@ -2,27 +2,27 @@ Source: https://www.noesisengine.com/docs/Gui.Core._BaseBindingExpression.html
 
 # BaseBindingExpression Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.data.bindingexpressionbase.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.data.bindingexpressionbase.aspx)
 
-Represents the base class for all [Binding](/Gui.Core/_Binding.md) Expressions.
+Represents the base class for all [Binding](_Binding.md) Expressions.
 
 # Inheritance Hierarchy
 
-• [Expression](/Gui.DependencySystem/_Expression.md)
+• [Expression](../Gui.DependencySystem/_Expression.md)
 
 • *BaseBindingExpression*
 
-• [BindingExpression](/Gui.Core/_BindingExpression.md)
+• [BindingExpression](_BindingExpression.md)
 
-• [MultiBindingExpression](/Gui.Core/_MultiBindingExpression.md)
+• [MultiBindingExpression](_MultiBindingExpression.md)
 
 # Properties
 
 | Name | Description |
 | --- | --- |
-| ○ *ParentBindingBase* | Gets the [BaseBinding](/Gui.Core/_BaseBinding.md) object from which this [BaseBindingExpression](/Gui.Core/_BaseBindingExpression.md) object is created |
-| ○ *Target* | Gets the element to which this [BindingExpression](/Gui.Core/_BindingExpression.md) is attached |
-| ○ *TargetProperty* | Gets the property to which this [BindingExpression](/Gui.Core/_BindingExpression.md) is attached |
+| ○ *ParentBindingBase* | Gets the [BaseBinding](_BaseBinding.md) object from which this [BaseBindingExpression](_BaseBindingExpression.md) object is created |
+| ○ *Target* | Gets the element to which this [BindingExpression](_BindingExpression.md) is attached |
+| ○ *TargetProperty* | Gets the property to which this [BindingExpression](_BindingExpression.md) is attached |
 
 ● Dependency Property   ○ Reflection Property
 
@@ -37,7 +37,7 @@ BaseBindingExpression has no attached properties
 |  *UpdateSource()* | Sends the current value back to the source. Does nothing when binding's Mode is not TwoWay or OneWayToSource |
 |  *UpdateTarget()* | Forces a data transfer from source to target |
 
-## From [Expression](/Gui.DependencySystem/_Expression.md)
+## From [Expression](../Gui.DependencySystem/_Expression.md)
 
 | Name | Description |
 | --- | --- |

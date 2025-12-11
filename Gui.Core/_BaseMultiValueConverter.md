@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._BaseMultiValueConverter.html
 
 # BaseMultiValueConverter Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace)
 
 Base class for value converters used in MultiBindings.
 

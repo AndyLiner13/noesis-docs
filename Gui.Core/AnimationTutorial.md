@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.AnimationTutorial.html
 
 # Animation Tutorial
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Animation)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Animation)
 
 Animation functionality makes it very straightforward to add dynamic effects to your applications or components. Animation might not be appropriate for every piece of software, but there are many situations that can benefit from its reasonable use to enhance the viewing experience of the user. When exposed via design tools like *Microsoft Expression Blend*, noesisGUI's animation support provides capabilities much like *Adobe Flash*. But because it's a core part with APIs that are fairly simple, you can easily create a wide range of animations without the help of such a tool.
 
@@ -12,7 +12,7 @@ On this tutorial we demonstrate how to create some simple animations to bring li
 
 We can start with a simple rectangle in the middle of the screen.
 
-![AnimationTutorialImg1.jpg](/AnimationTutorialImg1/jpg.md)
+![AnimationTutorialImg1.jpg](https://www.noesisengine.com/docs/AnimationTutorialImg1.jpg)
 
 ```
 <Canvas
@@ -23,9 +23,9 @@ We can start with a simple rectangle in the middle of the screen.
 </Canvas>
 ```
 
-Animations are specified in XAML using [Storyboard](/Gui.Animation/_Storyboard.md) objects. A *Storyboard* defines a timeline of property modifications that will be applied to interface elements over time. But, where should they be placed in order to be fired? An animation can begin in response to an event, for example, a button click. So, the next step should be to add a button to our example:
+Animations are specified in XAML using [Storyboard](../Gui.Animation/_Storyboard.md) objects. A *Storyboard* defines a timeline of property modifications that will be applied to interface elements over time. But, where should they be placed in order to be fired? An animation can begin in response to an event, for example, a button click. So, the next step should be to add a button to our example:
 
-![AnimationTutorialImg2.jpg](/AnimationTutorialImg2/jpg.md)
+![AnimationTutorialImg2.jpg](https://www.noesisengine.com/docs/AnimationTutorialImg2.jpg)
 
 ```
  <Canvas
@@ -53,7 +53,7 @@ Every control can define a set of actions that are executed in response to a rou
  </Canvas>
 ```
 
-The action that launches an animation is represented by the [BeginStoryboard](/Gui.Animation/_BeginStoryboard.md) class, and it defines a simple *Storyboard* property where the animation is specified.
+The action that launches an animation is represented by the [BeginStoryboard](../Gui.Animation/_BeginStoryboard.md) class, and it defines a simple *Storyboard* property where the animation is specified.
 
 ```
  <Canvas
@@ -75,7 +75,7 @@ The action that launches an animation is represented by the [BeginStoryboard](/G
  </Canvas>
 ```
 
-The first animation we could add can be moving the rectangle within the screen. We can do that by applying a [TranslateTransform](/Gui.Core/_TranslateTransform.md) to the *RenderTransform* property of the rectangle. But we need a way to refer to the rectangle from the animation timeline, and this is obviously done by setting the *Name* of the rectangle element. The example will look now like this:
+The first animation we could add can be moving the rectangle within the screen. We can do that by applying a [TranslateTransform](_TranslateTransform.md) to the *RenderTransform* property of the rectangle. But we need a way to refer to the rectangle from the animation timeline, and this is obviously done by setting the *Name* of the rectangle element. The example will look now like this:
 
 ```
 <Canvas
@@ -102,7 +102,7 @@ The first animation we could add can be moving the rectangle within the screen. 
 </Canvas>
 ```
 
-Now, when the user clicks the button, the green rectangle is displaced horizontally to the right by 50 pixels during one second. You can read [Animation](/Gui.Animation/Introduction.md) reference to obtain full information about the properties that are available to customize animations (begin time, auto reverse, repeat behavior, etc.).
+Now, when the user clicks the button, the green rectangle is displaced horizontally to the right by 50 pixels during one second. You can read [Animation](../Gui.Animation/Introduction.md) reference to obtain full information about the properties that are available to customize animations (begin time, auto reverse, repeat behavior, etc.).
 
 In case we want to animate more than one property of the same object or from different objects, we can benefit of the attached behavior of *TargetProperty* and *TargetName* properties. For example, to fade out the rectangle while it is being moved we could add the following:
 
@@ -135,17 +135,17 @@ In case we want to animate more than one property of the same object or from dif
 </Canvas>
 ```
 
-![AnimationTutorialImg3.jpg](/AnimationTutorialImg3/jpg.md)
+![AnimationTutorialImg3.jpg](https://www.noesisengine.com/docs/AnimationTutorialImg3.jpg)
 
 # Keyframe animations
 
-The normal animation classes only support linear interpolation from one value to another (or limited forms of nonlinear interpolation thanks to *AccelerationRatio* and *DecelerationRatio* properties). If you want to represent a more complicated animation, you can specify keyframes, which provide specific values at specific times. The use of keyframes requires a keyframe-enabled animation class. For example, [Double Animation](/Gui.Animation/_DoubleAnimation.md) has a companion class called [DoubleAnimationUsingKeyFrames](/Gui.Animation/_DoubleAnimationUsingKeyFrames.md), as do all the other animation classes.
+The normal animation classes only support linear interpolation from one value to another (or limited forms of nonlinear interpolation thanks to *AccelerationRatio* and *DecelerationRatio* properties). If you want to represent a more complicated animation, you can specify keyframes, which provide specific values at specific times. The use of keyframes requires a keyframe-enabled animation class. For example, [Double Animation](../Gui.Animation/_DoubleAnimation.md) has a companion class called [DoubleAnimationUsingKeyFrames](../Gui.Animation/_DoubleAnimationUsingKeyFrames.md), as do all the other animation classes.
 
 The keyframe animation classes have the same properties and events as their counterparts, except for the *From*, *To*, and *By* properties. Instead, they have a *KeyFrames* collection that can hold keyframe instances specific to the type being animated. There are three kinds of keyframes: *Linear*, *Spline* and *Discrete*.
 
 ## Linear Keyframes
 
-Linear interpolation is performed between [KeyFrame](/Gui.Animation/_LinearDoubleKeyFrame.md) values.
+Linear interpolation is performed between [KeyFrame](../Gui.Animation/_LinearDoubleKeyFrame.md) values.
 
 ```
 <Canvas
@@ -180,7 +180,7 @@ Linear interpolation is performed between [KeyFrame](/Gui.Animation/_LinearDoubl
 
 ## Spline Keyframes
 
-The spline keyframe classes have an additional *KeySpline* property that differentiates themselves from the linear classes. KeySpline can be set to an instance of a KeySpline object, which describes the desired motion as a cubic Bezier curve. [KeySpline](/Gui.Animation/_KeySpline.md) has two properties of type Point that represent the curve's control points.
+The spline keyframe classes have an additional *KeySpline* property that differentiates themselves from the linear classes. KeySpline can be set to an instance of a KeySpline object, which describes the desired motion as a cubic Bezier curve. [KeySpline](../Gui.Animation/_KeySpline.md) has two properties of type Point that represent the curve's control points.
 
 ```
 <Canvas
@@ -215,7 +215,7 @@ The spline keyframe classes have an additional *KeySpline* property that differe
 
 ## Discrete Keyframes
 
-A [discrete KeyFrame](/Gui.Animation/_DiscreteDoubleKeyFrame.md) simply indicates that no interpolation should be done from the previous keyframe.
+A [discrete KeyFrame](../Gui.Animation/_DiscreteDoubleKeyFrame.md) simply indicates that no interpolation should be done from the previous keyframe.
 
 ```
 <Canvas
@@ -256,7 +256,7 @@ Each keyframe instance can give a specific value and a time for that value to be
 
 Easing functions allow you to apply custom mathematical formulas to your animations. For example, you may want an object to realistically bounce or behave as though it were on a spring. You could use *KeyFrame* or even *From*/*To*/*By* animations to approximate these effects but it would take a significant amount of work and the animation would be less accurate than using a mathematical formula.
 
-Besides creating your own custom easing function by inheriting from [EasingFunctionBase](/Gui.Animation/_EasingFunctionBase.md), you can use one of several [easing functions](/Gui.Animation/EasingFunctions.md) provided by the animation system to create common effects.
+Besides creating your own custom easing function by inheriting from [EasingFunctionBase](../Gui.Animation/_EasingFunctionBase.md), you can use one of several [easing functions](../Gui.Animation/EasingFunctions.md) provided by the animation system to create common effects.
 
 ```
 <Canvas

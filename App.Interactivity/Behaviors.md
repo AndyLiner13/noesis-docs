@@ -10,17 +10,17 @@ Example of a behaviors are **drag&drop**, **input validation**, **pan and zoom**
 
 NOTE
 
-The implementation of Behaviors is part of the [Application Framework](/Gui.Core/ApplicationTutorial.md).
+The implementation of Behaviors is part of the [Application Framework](../Gui.Core/ApplicationTutorial.md).
 
 # Triggers and Actions
 
 To anyone with some WPF background, triggers and actions should sound familiar. Behaviors architecture introduces a similar model, and allows you to write your own triggers and actions - opening a whole new world of possibilities for what kinds of functionality you can create and reuse in your own applications.
 
-An [Action](/App.Interactivity/_TriggerAction.md) is an object that can be invoked to perform an operation. If you think that sounds pretty vague, you're right. The scope of an action is not constrained: if you can write the code to do something, you could write an action to do the same thing. That said, actions are best written to *perform operations* that are largely *atomic* in nature. That is, actions work best when they don't rely on external state that needs to be persisted between invocations of the action, and that don't have any dependencies on other actions existing or running in a particular order relative to their invocation.
+An [Action](_TriggerAction.md) is an object that can be invoked to perform an operation. If you think that sounds pretty vague, you're right. The scope of an action is not constrained: if you can write the code to do something, you could write an action to do the same thing. That said, actions are best written to *perform operations* that are largely *atomic* in nature. That is, actions work best when they don't rely on external state that needs to be persisted between invocations of the action, and that don't have any dependencies on other actions existing or running in a particular order relative to their invocation.
 
 For example: **change** a property, **call** a method, **open** a window, **navigate** to a page or set **focus**.
 
-Actions aren't particularly useful on their own: they provide functionality to do something, but no way to activate that functionality. In order to invoke an action, we need a [Trigger](/App.Interactivity/_TriggerBase.md). Triggers are objects that contain one or more actions and invoke those actions in response to some stimulus. One very common trigger is one that fires in response to an event (an [EventTrigger](/App.Interactivity/_EventTrigger.md)). Other examples might include a trigger that fires on a timer, or a trigger that fires when some data changes.
+Actions aren't particularly useful on their own: they provide functionality to do something, but no way to activate that functionality. In order to invoke an action, we need a [Trigger](_TriggerBase.md). Triggers are objects that contain one or more actions and invoke those actions in response to some stimulus. One very common trigger is one that fires in response to an event (an [EventTrigger](_EventTrigger.md)). Other examples might include a trigger that fires on a timer, or a trigger that fires when some data changes.
 
 NOTE
 
@@ -106,34 +106,34 @@ Extensions developed by [Noesis](https://www.nuget.org/packages/Noesis.GUI.Exten
 
 | Prefix | Name |
 | --- | --- |
-| i: | [EventTrigger](/App.Interactivity/_EventTrigger.md) |
-| ei: | [TimerTrigger](/App.Interactivity/_TimerTrigger.md) |
-| ei: | [KeyTrigger](/App.Interactivity/_KeyTrigger.md) |
-| ei: | [PropertyChangedTrigger](/App.Interactivity/_PropertyChangedTrigger.md) |
-| ei: | [DataTrigger](/App.Interactivity/_DataTrigger.md) |
-| ei: | [StoryboardCompletedTrigger](/App.Interactivity/_StoryboardCompletedTrigger.md) |
-| noesis: | [GamepadTrigger](/App.Interactivity/_GamepadTrigger.md) |
-| noesis: | [DataEventTrigger](/App.Interactivity/_DataEventTrigger.md) |
+| i: | [EventTrigger](_EventTrigger.md) |
+| ei: | [TimerTrigger](_TimerTrigger.md) |
+| ei: | [KeyTrigger](_KeyTrigger.md) |
+| ei: | [PropertyChangedTrigger](_PropertyChangedTrigger.md) |
+| ei: | [DataTrigger](_DataTrigger.md) |
+| ei: | [StoryboardCompletedTrigger](_StoryboardCompletedTrigger.md) |
+| noesis: | [GamepadTrigger](_GamepadTrigger.md) |
+| noesis: | [DataEventTrigger](_DataEventTrigger.md) |
 
 ## Supported Actions
 
 | Prefix | Name |
 | --- | --- |
-| i: | [InvokeCommandAction](/App.Interactivity/_InvokeCommandAction.md) |
-| ei: | [ChangePropertyAction](/App.Interactivity/_ChangePropertyAction.md) |
-| ei: | [GoToStateAction](/App.Interactivity/_GoToStateAction.md) |
-| ei: | [RemoveElementAction](/App.Interactivity/_RemoveElementAction.md) |
-| ei: | [ControlStoryboardAction](/App.Interactivity/_ControlStoryboardAction.md) |
-| ei: | [LaunchUriOrFileAction](/App.Interactivity/_LaunchUriOrFileAction.md) |
-| ei: | [PlaySoundAction](/App.Interactivity/_PlaySoundAction.md) |
-| noesis: | [SetFocusAction](/App.Interactivity/_SetFocusAction.md) |
-| noesis: | [MoveFocusAction](/App.Interactivity/_MoveFocusAction.md) |
-| noesis: | [SelectAction](/App.Interactivity/_SelectAction.md) |
-| noesis: | [SelectAllAction](/App.Interactivity/_SelectAllAction.md) |
+| i: | [InvokeCommandAction](_InvokeCommandAction.md) |
+| ei: | [ChangePropertyAction](_ChangePropertyAction.md) |
+| ei: | [GoToStateAction](_GoToStateAction.md) |
+| ei: | [RemoveElementAction](_RemoveElementAction.md) |
+| ei: | [ControlStoryboardAction](_ControlStoryboardAction.md) |
+| ei: | [LaunchUriOrFileAction](_LaunchUriOrFileAction.md) |
+| ei: | [PlaySoundAction](_PlaySoundAction.md) |
+| noesis: | [SetFocusAction](_SetFocusAction.md) |
+| noesis: | [MoveFocusAction](_MoveFocusAction.md) |
+| noesis: | [SelectAction](_SelectAction.md) |
+| noesis: | [SelectAllAction](_SelectAllAction.md) |
 
 # Behaviors
 
-Whereas the concepts of triggers and actions have been previously established in WPF, the concept of a [Behavior](/App.Interactivity/_Behavior.md) is a new one. At a glance, a behavior looks similar to an action: a self-contained unit of functionality. The main difference is that actions expect to be invoked, and when invoked, they will perform some operation. A behavior does not have the concept of invocation; instead, it acts more as an **add-on** to an object: optional functionality that can be attached to an object if desired. It may do certain things in response to stimulus from the environment, but there is no guarantee that the user can control what this stimulus is: it is up to the behavior author to determine what can and cannot be customized.
+Whereas the concepts of triggers and actions have been previously established in WPF, the concept of a [Behavior](_Behavior.md) is a new one. At a glance, a behavior looks similar to an action: a self-contained unit of functionality. The main difference is that actions expect to be invoked, and when invoked, they will perform some operation. A behavior does not have the concept of invocation; instead, it acts more as an **add-on** to an object: optional functionality that can be attached to an object if desired. It may do certain things in response to stimulus from the environment, but there is no guarantee that the user can control what this stimulus is: it is up to the behavior author to determine what can and cannot be customized.
 
 As an example, consider a behavior that allows the user to drag the object the behavior is attached to around with the mouse. The behavior needs to listen to the *mouse down*, *mouse move*, and *mouse up* events on the attached object. In response to the *mouse down*, behavior will record the mouse position, hook up the mouse move and mouse up handlers and capture the mouse input. On *mouse move*, it will update the position of the object as well as the mouse position. On *mouse up*, it will release mouse capture and unhook mouse move and mouse up handlers.
 
@@ -247,17 +247,17 @@ public class MouseDragElementBehavior: NoesisApp.Behavior<Noesis.FrameworkElemen
 
 | Prefix | Name |
 | --- | --- |
-| ei: | [ConditionBehavior](/App.Interactivity/_ConditionBehavior.md) |
-| ei: | [MouseDragElementBehavior](/App.Interactivity/_MouseDragElementBehavior.md) |
-| ei: | [TranslateZoomRotateBehavior](/App.Interactivity/_TranslateZoomRotateBehavior.md) |
-| noesis: | [CollectionFilterBehavior](/App.Interactivity/_CollectionFilterBehavior.md) |
-| noesis: | [CollectionSortBehavior](/App.Interactivity/_CollectionSortBehavior.md) |
-| noesis: | [BackgroundEffectBehavior](/App.Interactivity/_BackgroundEffectBehavior.md) |
-| noesis: | [LineDecorationBehavior](/App.Interactivity/_LineDecorationBehavior.md) |
+| ei: | [ConditionBehavior](_ConditionBehavior.md) |
+| ei: | [MouseDragElementBehavior](_MouseDragElementBehavior.md) |
+| ei: | [TranslateZoomRotateBehavior](_TranslateZoomRotateBehavior.md) |
+| noesis: | [CollectionFilterBehavior](_CollectionFilterBehavior.md) |
+| noesis: | [CollectionSortBehavior](_CollectionSortBehavior.md) |
+| noesis: | [BackgroundEffectBehavior](_BackgroundEffectBehavior.md) |
+| noesis: | [LineDecorationBehavior](_LineDecorationBehavior.md) |
 
 # Styles
 
-Sometimes it is useful to define actions and behaviors for a type of control. Instead of adding the corresponding interactivity attached property for each instance of that control we would prefer to define that once in a [Style](/Gui.Core/_Style.md) so it applies automatically to all of them.
+Sometimes it is useful to define actions and behaviors for a type of control. Instead of adding the corresponding interactivity attached property for each instance of that control we would prefer to define that once in a [Style](../Gui.Core/_Style.md) so it applies automatically to all of them.
 
 The problem we will find is that *Interaction.Behaviors* and *Interaction.Triggers* are private attached properties that cannot be directly set from XAML.
 

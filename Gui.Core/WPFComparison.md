@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.WPFComparison.html
 
 # Differences between NoesisGUI and WPF/UWP
 
-This guide is intended for users coming from XAML architectures like WPF, Silverlight, Xamarin or UWP. Being familiar with those architectures is definitely of great help to start being proficient with NoesisGUI. In the following sections we will analyze what is different in Noesis with respect to other XAML flavors and where you should put the focus if you are migrating projects to Noesis. If you are not familiar with XAML then you can probably skip this tutorial and continue reading the rest of [tutorials](/Gui.Core/Index.md#tutorials).
+This guide is intended for users coming from XAML architectures like WPF, Silverlight, Xamarin or UWP. Being familiar with those architectures is definitely of great help to start being proficient with NoesisGUI. In the following sections we will analyze what is different in Noesis with respect to other XAML flavors and where you should put the focus if you are migrating projects to Noesis. If you are not familiar with XAML then you can probably skip this tutorial and continue reading the rest of [tutorials](Index.md#tutorials).
 
 # Noesis is based on WPF
 
@@ -14,27 +14,27 @@ There are two conceptually different APIs in NoesisGUI, the *Framework* API and 
 
 ## Framework API
 
-This is the API exposing high-level objects like [Controls](/Gui.Core/ControlsTutorial.md) and [Panels](/Gui.Core/LayoutPanelTutorial.md). It also exposes the corresponding serialization document, the XAML format, a key piece in all the architecture. The *Framework* API tries to be as similar to WPF as possible. Each version we release gets closer and closer to WPF. In fact any kind of deviation from WPF is considered a bug and you are recommended to file a bug if you encounter such things in Noesis.
+This is the API exposing high-level objects like [Controls](ControlsTutorial.md) and [Panels](LayoutPanelTutorial.md). It also exposes the corresponding serialization document, the XAML format, a key piece in all the architecture. The *Framework* API tries to be as similar to WPF as possible. Each version we release gets closer and closer to WPF. In fact any kind of deviation from WPF is considered a bug and you are recommended to file a bug if you encounter such things in Noesis.
 
-If you are using the C# API, the interface is almost the same as in WPF. Being WPF based on C#, our C++ API is a bit different and was adjusted to feel more native. We needed to add key concepts like *Reflection*, *Delegates* and *Nullables*. These details are thoroughly described in the [C++ Architecture Guide](/Gui.Core/CppArchitectureGuide.md).
+If you are using the C# API, the interface is almost the same as in WPF. Being WPF based on C#, our C++ API is a bit different and was adjusted to feel more native. We needed to add key concepts like *Reflection*, *Delegates* and *Nullables*. These details are thoroughly described in the [C++ Architecture Guide](CppArchitectureGuide.md).
 
-Our [Class Hierarchy](/Gui.Core/_ClassHierarchy.md) index is language agnostic and exposes all the classes contained in the *Integration* API. If you want to know if something is implemented in Noesis or not , that's the place you should have a look first.
+Our [Class Hierarchy](_ClassHierarchy.md) index is language agnostic and exposes all the classes contained in the *Integration* API. If you want to know if something is implemented in Noesis or not , that's the place you should have a look first.
 
 ## Integration API
 
-Noesis Core library is a low-level operating system agnostic component that needs to be provided with information about how to render, how to load resources, how to open [URIs](/Gui.Providers/_Uri.md) and so on. These tasks correspond to the *Integration* API, exposed in the *IntegrationAPI.h* header under the *Noesis.GUI* namespace. If you are doing an integration of Noesis into your own engine, then you need to understand this API. It is described in great detail in the [Integration Tutorial](/Gui.Core/SDKGuide.md). If you are using Noesis in engines like Unity or Unreal then the integration is already done and you don't need to take care about.
+Noesis Core library is a low-level operating system agnostic component that needs to be provided with information about how to render, how to load resources, how to open [URIs](../Gui.Providers/_Uri.md) and so on. These tasks correspond to the *Integration* API, exposed in the *IntegrationAPI.h* header under the *Noesis.GUI* namespace. If you are doing an integration of Noesis into your own engine, then you need to understand this API. It is described in great detail in the [Integration Tutorial](SDKGuide.md). If you are using Noesis in engines like Unity or Unreal then the integration is already done and you don't need to take care about.
 
-We also offer an [Application Framework](/Gui.Core/ApplicationTutorial.md) that interacts with the integration API to offer an application model close to WPF with concepts like [Application](/App.ApplicationLauncher/_Application.md) (App.xaml) and [Window](/App.ApplicationLauncher/_Window.md) (Window.xaml). This framework is used by all our examples in the C++ and C# SDK.
+We also offer an [Application Framework](ApplicationTutorial.md) that interacts with the integration API to offer an application model close to WPF with concepts like [Application](../App.ApplicationLauncher/_Application.md) (App.xaml) and [Window](../App.ApplicationLauncher/_Window.md) (Window.xaml). This framework is used by all our examples in the C++ and C# SDK.
 
-The connection between the *Integration* API and the *Framework* API is performed by a *View*. A *View* encapsulates the interaction and rendering of a Visual Tree into a GPU surface. Views are threaded apartments and you can think about them as isolated WPF APIs. They are described with more detail in the [Rendering Architecture](/Gui.Core/RenderingTutorial.md) document.
+The connection between the *Integration* API and the *Framework* API is performed by a *View*. A *View* encapsulates the interaction and rendering of a Visual Tree into a GPU surface. Views are threaded apartments and you can think about them as isolated WPF APIs. They are described with more detail in the [Rendering Architecture](RenderingTutorial.md) document.
 
 # Noesis is not restricted to WPF
 
-Although based on WPF, NoesisGUI also implements concepts from other XAML flavors in form of [Noesis Extensions](/Gui.Core/ExtensionsTutorial.md). These extensions are implemented as part of the Core Library and also exposed as a [NuGet](https://www.nuget.org/packages/Noesis.GUI.Extensions) package to be used in your Blend projects. These Blend extensions are, in many cases, empty implementations just to avoid compile errors in your WPF projects. For example, with NoesisGUI you can render [text with stroke](/Gui.Core/TextTutorial.md#color-properties), the corresponding extension in WPF won't render that effect. The source code of these extensions is also available on [GitHub](https://github.com/Noesis/Managed/tree/master/Src/Noesis/Extensions). There you will find extensions like the 3D transformations of *Silverlight* and the gamepad support of *UWP*. This set of extensions will keep growing with each new version of NoesisGUI.
+Although based on WPF, NoesisGUI also implements concepts from other XAML flavors in form of [Noesis Extensions](ExtensionsTutorial.md). These extensions are implemented as part of the Core Library and also exposed as a [NuGet](https://www.nuget.org/packages/Noesis.GUI.Extensions) package to be used in your Blend projects. These Blend extensions are, in many cases, empty implementations just to avoid compile errors in your WPF projects. For example, with NoesisGUI you can render [text with stroke](TextTutorial.md#color-properties), the corresponding extension in WPF won't render that effect. The source code of these extensions is also available on [GitHub](https://github.com/Noesis/Managed/tree/master/Src/Noesis/Extensions). There you will find extensions like the 3D transformations of *Silverlight* and the gamepad support of *UWP*. This set of extensions will keep growing with each new version of NoesisGUI.
 
 # Code-Behind differences
 
-In WPF, Visual Studio automatically generates parts of the [Code-Behind](/Gui.Core/CodeBehindTutorial.md) and stores them in hidden *.g.cs* files. This is not automatically done, at least not for now, in NoesisGUI. You must manually connect events and find elements by name in the [Code-Behind](/Gui.Core/CodeBehindTutorial.md) as described in the [Events](/Gui.Core/EventsTutorial.md) tutorial.
+In WPF, Visual Studio automatically generates parts of the [Code-Behind](CodeBehindTutorial.md) and stores them in hidden *.g.cs* files. This is not automatically done, at least not for now, in NoesisGUI. You must manually connect events and find elements by name in the [Code-Behind](CodeBehindTutorial.md) as described in the [Events](EventsTutorial.md) tutorial.
 
 We recommend using preprocessor macros to handle these differences:
 
@@ -114,7 +114,7 @@ In contrast, the C# layer built on top of the C++ uses exception to notify about
 
 # Application Dictionary
 
-The Application Dictionary is the [ResourceDictionary](/Gui.Core/_ResourceDictionary.md) you find inside *App.xaml* in a WPF application.
+The Application Dictionary is the [ResourceDictionary](_ResourceDictionary.md) you find inside *App.xaml* in a WPF application.
 
 XAML
 
@@ -133,7 +133,7 @@ XAML
 </Application>
 ```
 
-An Application-Scope Resource Dictionary shared between all your XAMLs is one of the recommendations to optimize loading times and memory usage. The *Integration* API exposes *Noesis::GUI::SetApplicationResources* for this purpose. More information about how to set up a global style can be found in the [Styling Tutorial](/Gui.Core/StylingTutorial.md#global-style).
+An Application-Scope Resource Dictionary shared between all your XAMLs is one of the recommendations to optimize loading times and memory usage. The *Integration* API exposes *Noesis::GUI::SetApplicationResources* for this purpose. More information about how to set up a global style can be found in the [Styling Tutorial](StylingTutorial.md#global-style).
 
 # Themes
 

@@ -2,11 +2,11 @@ Source: https://www.noesisengine.com/docs/Gui.Core._Typography.html
 
 # Typography Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.documents.typography.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.documents.typography.aspx)
 
 Provides access to a rich set of OpenType typography properties.
 
-The [Typography](/Gui.Core/_Typography.md) object exposes the set of features that an OpenType font supports. All properties have an attached property usage in XAML so they can be used in all text element types.
+The [Typography](_Typography.md) object exposes the set of features that an OpenType font supports. All properties have an attached property usage in XAML so they can be used in all text element types.
 
 ```
 <Grid

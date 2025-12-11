@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._ObservableCollection.html
 
 # ObservableCollection Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace)
 
 Represents a dynamic data collection that provides notifications when items get added or removed.
 

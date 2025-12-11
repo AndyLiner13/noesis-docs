@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core._DataTemplateSelector.html
 
 # DataTemplateSelector Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx)
 
-Provides a way to choose a [DataTemplate](/Gui.Core/_DataTemplate.md) based on the data object and the data-bound element.
+Provides a way to choose a [DataTemplate](_DataTemplate.md) based on the data object and the data-bound element.
 
 # Inheritance Hierarchy
 
@@ -22,7 +22,7 @@ DataTemplateSelector has no attached properties
 
 | Name | Description |
 | --- | --- |
-|  *SelectTemplate(item, container)* | When overridden in a derived class, returns a [DataTemplate](/Gui.Core/_DataTemplate.md) based on custom logic |
+|  *SelectTemplate(item, container)* | When overridden in a derived class, returns a [DataTemplate](_DataTemplate.md) based on custom logic |
 
 # Events
 

@@ -2,13 +2,13 @@ Source: https://www.noesisengine.com/docs/App.Interactivity._StringFilterPredica
 
 # StringFilterPredicate Class
 
-## namespace [NoesisApp](/Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
+## namespace [NoesisApp](../Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
 
 Predicate that matches a filter string against item text representation.
 
 # Inheritance Hierarchy
 
-• [FilterPredicate](/App.Interactivity/_FilterPredicate.md)
+• [FilterPredicate](_FilterPredicate.md)
 
 • *StringFilterPredicate*
 
@@ -26,7 +26,7 @@ StringFilterPredicate has no attached properties
 
 # Methods
 
-## From [FilterPredicate](/App.Interactivity/_FilterPredicate.md)
+## From [FilterPredicate](_FilterPredicate.md)
 
 | Name | Description |
 | --- | --- |
@@ -36,7 +36,7 @@ StringFilterPredicate has no attached properties
 
 # Events
 
-## From [FilterPredicate](/App.Interactivity/_FilterPredicate.md)
+## From [FilterPredicate](_FilterPredicate.md)
 
 | Name | Description |
 | --- | --- |

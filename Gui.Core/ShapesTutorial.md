@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core.ShapesTutorial.html
 
 # Rendering shapes
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Shape)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Shape)
 
-In this tutorial we are going to learn how to use [Shapes](/Gui.Core/_Shape.md) and [Brushes](/Gui.Core/_Brush.md).
+In this tutorial we are going to learn how to use [Shapes](_Shape.md) and [Brushes](_Brush.md).
 
 *Shape* elements are used for drawing vector graphics. A Shape has a *Fill* property, for the background color, and a *Stroke* property, for the outline color. Both properties are of type *Brush*. With the *StrokeWidth* property you can control the thickness of the outline.
 
@@ -14,22 +14,22 @@ NOTE
 
 # Brushes
 
-*Stroke* and *Fill* properties need to be set to a valid [Brush](/Gui.Core/_Brush.md):
+*Stroke* and *Fill* properties need to be set to a valid [Brush](_Brush.md):
 
-- [Solid](/Gui.Core/_SolidColorBrush.md): to fill the target area with a single color. It has a simple *Color* property. Because of the type converter that converts string like "Blue" or "#FFFFFFFF" into *SolidColorBrushes*, they are indistinguishable from their underlying *Color* in XAML.
-- [Linear gradient](/Gui.Core/_LinearGradientBrush.md): to fill an area with a gradient defined by colors at specific points along an imaginary line segment, with linear interpolation between those points.
-- [Radial gradient](/Gui.Core/_RadialGradientBrush.md) works like *LinearGradientBrush*, except it has a single starting point with each *GradientStop* emanating from it in the shape of an ellipse.
-- [Image](/Gui.Core/_ImageBrush.md): An image brush paints an area with a bitmap. The *ImageSource* property is meant to hold the bitmap content. There is a [chapter](/Gui.Core/ImagesTutorial.md#imagebrush) dedicated to *ImageBrushes* in the [Images Tutorial](/Gui.Core/ImagesTutorial.md).
+- [Solid](_SolidColorBrush.md): to fill the target area with a single color. It has a simple *Color* property. Because of the type converter that converts string like "Blue" or "#FFFFFFFF" into *SolidColorBrushes*, they are indistinguishable from their underlying *Color* in XAML.
+- [Linear gradient](_LinearGradientBrush.md): to fill an area with a gradient defined by colors at specific points along an imaginary line segment, with linear interpolation between those points.
+- [Radial gradient](_RadialGradientBrush.md) works like *LinearGradientBrush*, except it has a single starting point with each *GradientStop* emanating from it in the shape of an ellipse.
+- [Image](_ImageBrush.md): An image brush paints an area with a bitmap. The *ImageSource* property is meant to hold the bitmap content. There is a [chapter](ImagesTutorial.md#imagebrush) dedicated to *ImageBrushes* in the [Images Tutorial](ImagesTutorial.md).
 
 # Shapes
 
 NoesisGUI supports four basic shapes: *Rectangle*, *Ellipse*, *Line* and *Path*.
 
-## [Rectangle](/Gui.Core/_Rectangle.md)
+## [Rectangle](_Rectangle.md)
 
 For rectangles or squares with or without rounded corners:
 
-![ShapesTutorialImg3.jpg](/ShapesTutorialImg3/jpg.md)
+![ShapesTutorialImg3.jpg](https://www.noesisengine.com/docs/ShapesTutorialImg3.jpg)
 
 ```
 <StackPanel
@@ -48,11 +48,11 @@ For rectangles or squares with or without rounded corners:
 </StackPanel>
 ```
 
-## [Ellipse](/Gui.Core/_Ellipse.md)
+## [Ellipse](_Ellipse.md)
 
 For drawing ovals or circles:
 
-![ShapesTutorialImg4.jpg](/ShapesTutorialImg4/jpg.md)
+![ShapesTutorialImg4.jpg](https://www.noesisengine.com/docs/ShapesTutorialImg4.jpg)
 
 ```
 <StackPanel
@@ -67,11 +67,11 @@ For drawing ovals or circles:
 </StackPanel>
 ```
 
-## [Line](/Gui.Core/_Line.md)
+## [Line](_Line.md)
 
 For segments connecting two points:
 
-![ShapesTutorialImg5.jpg](/ShapesTutorialImg5/jpg.md)
+![ShapesTutorialImg5.jpg](https://www.noesisengine.com/docs/ShapesTutorialImg5.jpg)
 
 ```
 <StackPanel
@@ -88,11 +88,11 @@ For segments connecting two points:
 </StackPanel>
 ```
 
-## [Path](/Gui.Core/_Path.md)
+## [Path](_Path.md)
 
 For complex shapes:
 
-![ShapesTutorialImg6.jpg](/ShapesTutorialImg6/jpg.md)
+![ShapesTutorialImg6.jpg](https://www.noesisengine.com/docs/ShapesTutorialImg6.jpg)
 
 ```
 <StackPanel
@@ -105,7 +105,7 @@ For complex shapes:
 </StackPanel>
 ```
 
-Shapes are typically placed inside a [Canvas](/Gui.Core/_Canvas.md) because it supports absolute positioning of its child objects. The following example illustrates some of the basic shapes:
+Shapes are typically placed inside a [Canvas](_Canvas.md) because it supports absolute positioning of its child objects. The following example illustrates some of the basic shapes:
 
 ```
 <Canvas
@@ -136,7 +136,7 @@ Shapes are typically placed inside a [Canvas](/Gui.Core/_Canvas.md) because it s
 </Canvas>
 ```
 
-![ShapesTutorialImg1.jpg](/ShapesTutorialImg1/jpg.md)
+![ShapesTutorialImg1.jpg](https://www.noesisengine.com/docs/ShapesTutorialImg1.jpg)
 
 Apart from the details already commented above there are a few interesting points in the previous example:
 
@@ -169,7 +169,7 @@ Paths are complex shapes used to draw figures expressed in a special *path marku
 </Canvas>
 ```
 
-![ShapesTutorialImg2.jpg](/ShapesTutorialImg2/jpg.md)
+![ShapesTutorialImg2.jpg](https://www.noesisengine.com/docs/ShapesTutorialImg2.jpg)
 
 NOTE
 

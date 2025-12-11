@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._FocusManager.html
 
 # FocusManager Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.input.focusmanager.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.input.focusmanager.aspx)
 
 Provides a set of static methods, attached properties, and events for determining and setting focus scopes and for setting the focused element within the scope.
 

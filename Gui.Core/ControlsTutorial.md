@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core.ControlsTutorial.html
 
 # Introducing Controls
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Controls)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Controls)
 
-NoesisGUI includes a standard set of [controls](/Gui.Core/_Control.md) that enables you to quickly assemble traditional user interfaces. They can be grouped into four main categories, which mostly coincide with their [inheritance hierarchy](/Gui.Core/_ClassHierarchy.md):
+NoesisGUI includes a standard set of [controls](_Control.md) that enables you to quickly assemble traditional user interfaces. They can be grouped into four main categories, which mostly coincide with their [inheritance hierarchy](_ClassHierarchy.md):
 
 Note
 
@@ -12,13 +12,13 @@ The images shown in this tutorial are taken using the default Theme embedded in 
 
 # Content Controls
 
-Content controls are simply controls that are constrained to contain a single item. Content controls all derive from [ContentControl](/Gui.Core/_ContentControl.md), which has a *Content* property that contains the single item. The built-in content controls come in three major varieties: *Buttons*, *Simple Containers* and *Containers with a header*.
+Content controls are simply controls that are constrained to contain a single item. Content controls all derive from [ContentControl](_ContentControl.md), which has a *Content* property that contains the single item. The built-in content controls come in three major varieties: *Buttons*, *Simple Containers* and *Containers with a header*.
 
 ## Buttons
 
-![ControlsTutorialImg1.jpg](/ControlsTutorialImg1/jpg.md)
+![ControlsTutorialImg1.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg1.jpg)
 
-*Buttons* are probably the most familiar and essential user interface element. A basic button is a content control that can be clicked, but not double-clicked. This behavior is actually captured by an abstract class called [BaseButton](/Gui.Core/_BaseButton.md), from which a few different control are derived.
+*Buttons* are probably the most familiar and essential user interface element. A basic button is a content control that can be clicked, but not double-clicked. This behavior is actually captured by an abstract class called [BaseButton](_BaseButton.md), from which a few different control are derived.
 
 The *BaseButton* class contains the *Click* event and contain the logic that defines what it means to be clicked. It also defines a boolean *IsPressed* property, in case you want to act upon the pressed state.
 
@@ -28,23 +28,23 @@ The most interesting feature of *BaseButton*, however, is it *ClickMode* propert
 
 ### Button
 
-The [Button](/Gui.Core/_Button.md) class only adds two simple concepts on top of what *BaseButton* already provides: being a *cancel button* or a *default button*. These two mechanisms are handy shortcuts for dialogs. If *Button.IsCancel* is set to *true* on a *Button* inside a dialog, the *Window* is automatically closed with a *DialogResult* of *false*. If *Button.IsDefault* is set to *true*, pressing *Enter* causes the *Button* to be clicked unless focus is explicitly taken away from it.
+The [Button](_Button.md) class only adds two simple concepts on top of what *BaseButton* already provides: being a *cancel button* or a *default button*. These two mechanisms are handy shortcuts for dialogs. If *Button.IsCancel* is set to *true* on a *Button* inside a dialog, the *Window* is automatically closed with a *DialogResult* of *false*. If *Button.IsDefault* is set to *true*, pressing *Enter* causes the *Button* to be clicked unless focus is explicitly taken away from it.
 
 ### RepeatButton
 
-The [RepeatButton](/Gui.Core/_RepeatButton.md) acts just like *Button* except that it continually raises the *Click* event as long as the button is being pressed. The behavior of *RepeatButton* might sound strange at first, but is useful for buttons that increment or decrement a value each time they are pressed. For example, the buttons at the ends of a scrollbar exhibit the repeat-press behavior when clicking them and holding the mouse button down. The default look of a *RepeatButton* is exactly the same as *Button*.
+The [RepeatButton](_RepeatButton.md) acts just like *Button* except that it continually raises the *Click* event as long as the button is being pressed. The behavior of *RepeatButton* might sound strange at first, but is useful for buttons that increment or decrement a value each time they are pressed. For example, the buttons at the ends of a scrollbar exhibit the repeat-press behavior when clicking them and holding the mouse button down. The default look of a *RepeatButton* is exactly the same as *Button*.
 
 ### ToggleButton
 
-[ToggleButton](/Gui.Core/_ToggleButton.md) is a "sticky" button that holds its state when it is clicked. Clicking it the first time sets its *IsChecked* property to *true*, and clicking it again sets *IsChecked* to *false*. *ToggleButton* also has an *IsThreeState* property that, it set to *true*, gives *IsChecked* three possible values: *true*, *false*, or *null*. In addition to the *IsChecked* property, *ToggleButton* defines a separate event for each value of *IsChecked*: *Checked* for *true*, *Unchecked* for *false*, and *Indeterminate* for *null*. The default appearance of *ToggleButton* is exactly the same as *Button* and *RepeatButton*.
+[ToggleButton](_ToggleButton.md) is a "sticky" button that holds its state when it is clicked. Clicking it the first time sets its *IsChecked* property to *true*, and clicking it again sets *IsChecked* to *false*. *ToggleButton* also has an *IsThreeState* property that, it set to *true*, gives *IsChecked* three possible values: *true*, *false*, or *null*. In addition to the *IsChecked* property, *ToggleButton* defines a separate event for each value of *IsChecked*: *Checked* for *true*, *Unchecked* for *false*, and *Indeterminate* for *null*. The default appearance of *ToggleButton* is exactly the same as *Button* and *RepeatButton*.
 
 ### CheckBox
 
-![ControlsTutorialImg2.jpg](/ControlsTutorialImg2/jpg.md)
+![ControlsTutorialImg2.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg2.jpg)
 
-[CheckBox](/Gui.Core/_CheckBox.md) is a familiar control. It is nothing more than a *ToggleButton* with a different appearance. *CheckBox* is a simple class deriving from *ToggleButton* that does little more than overriding its default style.
+[CheckBox](_CheckBox.md) is a familiar control. It is nothing more than a *ToggleButton* with a different appearance. *CheckBox* is a simple class deriving from *ToggleButton* that does little more than overriding its default style.
 
-![spacer.png](/spacer/png.md)
+![spacer.png](https://www.noesisengine.com/docs/spacer.png)
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -58,9 +58,9 @@ The [RepeatButton](/Gui.Core/_RepeatButton.md) acts just like *Button* except th
 
 ### RadioButton
 
-![ControlsTutorialImg3.jpg](/ControlsTutorialImg3/jpg.md)
+![ControlsTutorialImg3.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg3.jpg)
 
-[RadioButton](/Gui.Core/_RadioButton.md) is another control that derives from *ToggleButton*, but is unique because it has built-in support for mutual exclusion. When multiple *RadioButtons* are grouped together, only one can be checked at a time. Checking one *RadioButton* automatically unchecks all others in the same group.
+[RadioButton](_RadioButton.md) is another control that derives from *ToggleButton*, but is unique because it has built-in support for mutual exclusion. When multiple *RadioButtons* are grouped together, only one can be checked at a time. Checking one *RadioButton* automatically unchecks all others in the same group.
 
 By default, any *RadioButtons* that share the same direct logical parent are automatically grouped together.
 
@@ -92,7 +92,7 @@ NoesisGUI includes several built-in content controls that *don't* have a notion 
 
 ### Label
 
-[Label](/Gui.Core/_Label.md) is a classic control that can be used to hold some text. Being a content control, it can hold arbitrary content in its *Content* property, but *Label* is really only useful for text.
+[Label](_Label.md) is a classic control that can be used to hold some text. Being a content control, it can hold arbitrary content in its *Content* property, but *Label* is really only useful for text.
 
 Note
 
@@ -100,7 +100,7 @@ Access Keys feature though the *Target* property is yet not implemented in noesi
 
 ### ToolTip
 
-The [ToolTip](/Gui.Core/_ToolTip.md) control holds its content in a floating box that appears when you hover over an associated control and disappears when you move the mouse away. For example:
+The [ToolTip](_ToolTip.md) control holds its content in a floating box that appears when you hover over an associated control and disappears when you move the mouse away. For example:
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -114,15 +114,15 @@ The [ToolTip](/Gui.Core/_ToolTip.md) control holds its content in a floating box
 
 ## Containers with a header
 
-All the previous content controls either add very simple default visuals around the content or don't add any visuals at all. The following two controls are a little different because they add a customizable *header* to the main content. These controls derive from a subclass of *ContentControl* named [HeaderedContentControl](/Gui.Core/_HeaderedContentControl.md), which adds a *Header* property.
+All the previous content controls either add very simple default visuals around the content or don't add any visuals at all. The following two controls are a little different because they add a customizable *header* to the main content. These controls derive from a subclass of *ContentControl* named [HeaderedContentControl](_HeaderedContentControl.md), which adds a *Header* property.
 
 ### GroupBox
 
-![ControlsTutorialImg4.jpg](/ControlsTutorialImg4/jpg.md)
+![ControlsTutorialImg4.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg4.jpg)
 
-[GroupBox](/Gui.Core/_GroupBox.md) is a familiar control for organizing chunks of controls. It is typically used to contain multiple items, but because it is a content control, it can only directly contain a single item. Therefore, you typically need to set *GroupBox's* content to an intermediate control that can contain multiple children.
+[GroupBox](_GroupBox.md) is a familiar control for organizing chunks of controls. It is typically used to contain multiple items, but because it is a content control, it can only directly contain a single item. Therefore, you typically need to set *GroupBox's* content to an intermediate control that can contain multiple children.
 
-![spacer.png](/spacer/png.md)
+![spacer.png](https://www.noesisengine.com/docs/spacer.png)
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -138,11 +138,11 @@ All the previous content controls either add very simple default visuals around 
 
 ### Expander
 
-![ControlsTutorialImg5.jpg](/ControlsTutorialImg5/jpg.md)
+![ControlsTutorialImg5.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg5.jpg)
 
-[Expander](/Gui.Core/_Expander.md) is very much like *GroupBox*, but contains a button that enables you to expand and collapse the inner contents (by default, the *Expander* stars out collapsed). *Expander* defines an *IsExpanded* property and *Expanded*/*Collapsed* events. It also enables you to control which direction the expansion happens (*Up*, *Down*, *Left*, or *Right*) with an *ExpandDirection* property.
+[Expander](_Expander.md) is very much like *GroupBox*, but contains a button that enables you to expand and collapse the inner contents (by default, the *Expander* stars out collapsed). *Expander* defines an *IsExpanded* property and *Expanded*/*Collapsed* events. It also enables you to control which direction the expansion happens (*Up*, *Down*, *Left*, or *Right*) with an *ExpandDirection* property.
 
-![spacer.png](/spacer/png.md)
+![spacer.png](https://www.noesisengine.com/docs/spacer.png)
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -158,13 +158,13 @@ All the previous content controls either add very simple default visuals around 
 
 # Items Controls
 
-Another major category of noesisGUI controls are the *items controls*, which can contain an unbounded collection of items rather than just a single piece of content. All items controls derive from the abstract [ItemsControl](/Gui.Core/_ItemsControl.md) class, a direct subclass of [Control](/Gui.Core/_Control.md).
+Another major category of noesisGUI controls are the *items controls*, which can contain an unbounded collection of items rather than just a single piece of content. All items controls derive from the abstract [ItemsControl](_ItemsControl.md) class, a direct subclass of [Control](_Control.md).
 
 *ItemsControl* stores its content in an *Items* property. Each item can be an arbitrary object, which by default gets rendered just like it would inside a content control.
 
 ## Selectors
 
-[Selectors](/Gui.Core/_Selector.md) are items controls whose items can be indexed and, most important, selected. The abstract *Selector* class, which derives from *ItemsControl*, add a few properties to handle selection. For example, two similar properties for getting or setting the current selection are:
+[Selectors](_Selector.md) are items controls whose items can be indexed and, most important, selected. The abstract *Selector* class, which derives from *ItemsControl*, add a few properties to handle selection. For example, two similar properties for getting or setting the current selection are:
 
 - **SelectedIndex**: a zero-based integer that indicates what item is selected or -1 if nothing is selected. Items are numbered in the order they are added to the collection.
 - **SelectedItem**: the actual item instance that is currently selected.
@@ -180,9 +180,9 @@ NoesisGUI includes four *Selector*-derived controls: *ComboBox*, *ListBox*, *Lis
 
 ### ComboBox
 
-![ControlsTutorialImg6.jpg](/ControlsTutorialImg6/jpg.md)
+![ControlsTutorialImg6.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg6.jpg)
 
-The [ComboBox](/Gui.Core/_ComboBox.md) control enables user to select one item from a list. *ComboBox* is a popular control because it doesn't occupy much space. It displays only the current selection in a *selection box*, with the rest of the list shown on demand in a *drop-down*. The drop-down can be opened and closed by clicking the button.
+The [ComboBox](_ComboBox.md) control enables user to select one item from a list. *ComboBox* is a popular control because it doesn't occupy much space. It displays only the current selection in a *selection box*, with the rest of the list shown on demand in a *drop-down*. The drop-down can be opened and closed by clicking the button.
 
 *ComboBox* supports a mode in which the user can type arbitrary text into the selection box. If the text matches one of the existing items, that item automatically becomes selected. Otherwise, no item gets selected but the custom test gets stored in *ComboBox's* *Text* property so you can act on it appropriately. This mode can be controlled with two properties: *IsEditable* and *IsReadOnly*, which are both false by default. In addition, a *StaysOpenOnEdit* property can be set to *true* to keep the drop-down open if the user clicks on the selection box.
 
@@ -198,9 +198,9 @@ The [ComboBox](/Gui.Core/_ComboBox.md) control enables user to select one item f
 
 ### ListBox
 
-![ControlsTutorialImg7.jpg](/ControlsTutorialImg7/jpg.md)
+![ControlsTutorialImg7.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg7.jpg)
 
-The familiar [ListBox](/Gui.Core/_ListBox.md) control is similar to *ComboBox*, except that all items are displayed directly within the control's bounds (or you can scroll to view additional items if the don't all fit).
+The familiar [ListBox](_ListBox.md) control is similar to *ComboBox*, except that all items are displayed directly within the control's bounds (or you can scroll to view additional items if the don't all fit).
 
 Probably the most important feature of *ListBox* is that it can support multiple simultaneous selections. This is controlable via the *SelectionMode* property, which accepts three values:
 
@@ -225,13 +225,13 @@ Probably the most important feature of *ListBox* is that it can support multiple
 
 ### ListView
 
-![ControlsTutorialImg8.jpg](/ControlsTutorialImg8/jpg.md)
+![ControlsTutorialImg8.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg8.jpg)
 
-The [ListView](/Gui.Controls/_ListView.md) control, which derives from *ListBox*, looks and acts just like a *ListBox*, except that it uses the *Extended* *SelectionMode* by default. But *ListView* also adds a property called *View* that enables you to customize the view in a richer way than choosing a custom *ItemsPanel*.
+The [ListView](../Gui.Controls/_ListView.md) control, which derives from *ListBox*, looks and acts just like a *ListBox*, except that it uses the *Extended* *SelectionMode* by default. But *ListView* also adds a property called *View* that enables you to customize the view in a richer way than choosing a custom *ItemsPanel*.
 
-The *View* property is of type [BaseView](/Gui.Controls/_BaseView.md), an abstract class. NoesisGUI ships with one concrete subclass, and that class is called [GridView](/Gui.Controls/_GridView.md).
+The *View* property is of type [BaseView](../Gui.Controls/_BaseView.md), an abstract class. NoesisGUI ships with one concrete subclass, and that class is called [GridView](../Gui.Controls/_GridView.md).
 
-*GridView* has a *Columns* content property that holds a collection of [GridViewColumn](/Gui.Controls/_GridViewColumn.md) objects, as well as other properties to control the behavior of the column header.
+*GridView* has a *Columns* content property that holds a collection of [GridViewColumn](../Gui.Controls/_GridViewColumn.md) objects, as well as other properties to control the behavior of the column header.
 
 *ListView's* items are specified as a simple list as with *ListBox*, so the key to displaying different data in each column is the *DisplayMemberBinding* property of *GridViewColumn*. The idea is that *ListView* contains a complex object for each row, and the value for every column is a property or subproperty of each object.
 
@@ -241,7 +241,7 @@ What is nice about *GridView* is that it automatically support the following fea
 - Columns can be resized by dragging the column separator.
 - Columns can automatically resize to "just fit" their content by double-clicking their separators.
 
-![spacer.png](/spacer/png.md)
+![spacer.png](https://www.noesisengine.com/docs/spacer.png)
 
 ```
 <Grid
@@ -281,15 +281,15 @@ What is nice about *GridView* is that it automatically support the following fea
 
 ### TabControl
 
-![ControlsTutorialImg9.jpg](/ControlsTutorialImg9/jpg.md)
+![ControlsTutorialImg9.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg9.jpg)
 
-The final selector, [TabControl](/Gui.Core/_TabControl.md), is useful for switching between multiple pages of content. Tabs in *TabControl* are typically placed on the top, but with *TabControl's* *TabStripPlacement* property, you can also set their placement to *Left*, *Right* or *Bottom*.
+The final selector, [TabControl](_TabControl.md), is useful for switching between multiple pages of content. Tabs in *TabControl* are typically placed on the top, but with *TabControl's* *TabStripPlacement* property, you can also set their placement to *Left*, *Right* or *Bottom*.
 
 Unlike the other selectors, the first item is selected by default. However, you can programmatically unselect all tabs by setting *SelectedItem* to *null* (or *SelectedIndex* to -1).
 
 *TabControl* is pretty easy to use. Simply add items, and each item is placed on a separate tab. For example:
 
-![spacer.png](/spacer/png.md)
+![spacer.png](https://www.noesisengine.com/docs/spacer.png)
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -307,15 +307,15 @@ NoesisGUI has both of the familiar menu controls built-in: *Menu* and *ContextMe
 
 ### Menu
 
-![ControlsTutorialImg10.jpg](/ControlsTutorialImg10/jpg.md)
+![ControlsTutorialImg10.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg10.jpg)
 
-[Menu](/Gui.Core/_Menu.md) simply stacks its items horizontally. The only public API that *Menu* adds to its *ItemsControl* base class is the *IsMainMenu* property. When *true* (which it is by default) the *Menu* gets focus when the users presses the Alt or F10 key.
+[Menu](_Menu.md) simply stacks its items horizontally. The only public API that *Menu* adds to its *ItemsControl* base class is the *IsMainMenu* property. When *true* (which it is by default) the *Menu* gets focus when the users presses the Alt or F10 key.
 
-As with any other items control, *Menu's* items can be anything, but it's expected that you'll use [MenuItem](/Gui.Core/_MenuItem.md) and [Separator](/Gui.Core/_Separator.md) objects.
+As with any other items control, *Menu's* items can be anything, but it's expected that you'll use [MenuItem](_MenuItem.md) and [Separator](_Separator.md) objects.
 
-[Separator](/Gui.Core/_Separator.md) is a simple control that, when placed in a *MenuItem*, gets rendered as a horizontal line. *Separator* is also designed for two other items controls discussed later in this tutorial: *ToolBar* and *StatusBar*.
+[Separator](_Separator.md) is a simple control that, when placed in a *MenuItem*, gets rendered as a horizontal line. *Separator* is also designed for two other items controls discussed later in this tutorial: *ToolBar* and *StatusBar*.
 
-![spacer.png](/spacer/png.md)
+![spacer.png](https://www.noesisengine.com/docs/spacer.png)
 
 ```
 <Grid
@@ -370,13 +370,13 @@ As with any other items control, *Menu's* items can be anything, but it's expect
 
 ### Context Menu
 
-![ControlsTutorialImg11.jpg](/ControlsTutorialImg11/jpg.md)
+![ControlsTutorialImg11.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg11.jpg)
 
-[ContextMenu](/Gui.Core/_ContextMenu.md) works like just *Menu*; it's a simple container designed to hold *MenuItems* and *Separators*. You can't embed *ContextMenu* directly in an element tree, however. You must attach it to a control via an appropriate property, such as the *ContextMenu* property defined on [FrameworkElement](/Gui.Core/_FrameworkElement.md). When a user right-clicks on the control, the context menu is displayed.
+[ContextMenu](_ContextMenu.md) works like just *Menu*; it's a simple container designed to hold *MenuItems* and *Separators*. You can't embed *ContextMenu* directly in an element tree, however. You must attach it to a control via an appropriate property, such as the *ContextMenu* property defined on [FrameworkElement](_FrameworkElement.md). When a user right-clicks on the control, the context menu is displayed.
 
 *ContextMenu* defines many properties for customizing the placement of the menu. By default, the menu appears with its upper-left corner directly under the mouse pointer. But you can change its *Placement* to something other than *MousePoint* (such as *Absolute*), and/or set its *HorizontalOffset* and *VerticalOffset*, for example, to adjust this behavior.
 
-![spacer.png](/spacer/png.md)
+![spacer.png](https://www.noesisengine.com/docs/spacer.png)
 
 ```
 <Grid
@@ -418,17 +418,17 @@ The remaining items (*TreeView*, *ToolBar* and *StatusBar*) are neither selector
 
 ### TreeView
 
-[TreeView](/Gui.Core/_TreeView.md) is a popular control for displaying hierarchical data with nodes that can be expanded and collapsed.
+[TreeView](_TreeView.md) is a popular control for displaying hierarchical data with nodes that can be expanded and collapsed.
 
-![ControlsTutorialImg12.jpg](/ControlsTutorialImg12/jpg.md)
+![ControlsTutorialImg12.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg12.jpg)
 
-*TreeView*, like *Menu*, is a very simple control. It can contains any items, and stacks them vertically. But *TreeView* is pretty pointless unless you fill it with [TreeViewItems](/Gui.Core/_TreeViewItem.md).
+*TreeView*, like *Menu*, is a very simple control. It can contains any items, and stacks them vertically. But *TreeView* is pretty pointless unless you fill it with [TreeViewItems](_TreeViewItem.md).
 
 *TreeViewItem*, just like *MenuItem*, is a headered items control. *TreeViewItem's* *Header* property contains the current item, and its *Items* collection contains subitems (which, again, are expected to be *TreeViewItems*).
 
 *TreeViewItem* contains handy *IsExpanded* and *IsSelected* properties, as well as four events covering all four states from these properties: *Expanded*, *Collapsed*, *Selected*, and *Unselected*.
 
-![spacer.png](/spacer/png.md)
+![spacer.png](https://www.noesisengine.com/docs/spacer.png)
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -448,11 +448,11 @@ The remaining items (*TreeView*, *ToolBar* and *StatusBar*) are neither selector
 
 ### ToolBar
 
-![ControlsTutorialImg13.jpg](/ControlsTutorialImg13/jpg.md)
+![ControlsTutorialImg13.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg13.jpg)
 
-The [ToolBar](/Gui.Core/_ToolBar.md) control is typically used to group together many small buttons (or other controls) as an enhancement to a traditional menu system.
+The [ToolBar](_ToolBar.md) control is typically used to group together many small buttons (or other controls) as an enhancement to a traditional menu system.
 
-*ToolBars* can be placed anywhere in an element tree, but they are typically placed inside a [FrameworkElement](/Gui.Core/_FrameworkElement.md) called [ToolBarTray](/Gui.Core/_ToolBarTray.md). *ToolBarTray* has an *Orientation* property that can be set to *Vertical* to make all of its *ToolsBars* arrange its item vertically.
+*ToolBars* can be placed anywhere in an element tree, but they are typically placed inside a [FrameworkElement](_FrameworkElement.md) called [ToolBarTray](_ToolBarTray.md). *ToolBarTray* has an *Orientation* property that can be set to *Vertical* to make all of its *ToolsBars* arrange its item vertically.
 
 If a *ToolBar* contains more items that it can fit withing its bounds, the extra items move to an overflow area. This overflow area is a pop-up that can be accessed by clicking the little arrow at the end of the control. By default, the last item is the first to move to the overflow area, but you can control the overflow behavior of individuals items with *ToolBar's* *OverflowMode* attached property. With this you can mark an item to overflow *AsNeeded* (the default), *Always*, or *Never*.
 
@@ -486,11 +486,11 @@ If a *ToolBar* contains more items that it can fit withing its bounds, the extra
 
 ### StatusBar
 
-![ControlsTutorialImg14.jpg](/ControlsTutorialImg14/jpg.md)
+![ControlsTutorialImg14.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg14.jpg)
 
-[StatusBar](/Gui.Core/_StatusBar.md) behaves just like *Menu*; it just stacks its items horizontally. But it's typically used along the botton of a [Window](/App.ApplicationLauncher/_Window.md) to display status information.
+[StatusBar](_StatusBar.md) behaves just like *Menu*; it just stacks its items horizontally. But it's typically used along the botton of a [Window](../App.ApplicationLauncher/_Window.md) to display status information.
 
-By default, *StatusBar* gives *Separator* a control template that renders it as a vertical line, just like when it is within a *ToolBar*. Items in a *StatusBar* (other than *Separators*) are implicitly wrapped in a [StatusBarItem](/Gui.Core/_StatusBarItem.md), but you can also do this wrapping explicitly. This enables you to customize their positions with layout-related attached properties.
+By default, *StatusBar* gives *Separator* a control template that renders it as a vertical line, just like when it is within a *ToolBar*. Items in a *StatusBar* (other than *Separators*) are implicitly wrapped in a [StatusBarItem](_StatusBarItem.md), but you can also do this wrapping explicitly. This enables you to customize their positions with layout-related attached properties.
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -511,15 +511,15 @@ By default, *StatusBar* gives *Separator* a control template that renders it as 
 
 Range controls do not render arbitrary content like content controls or items controls. They simply store and display a numeric value that falls within a specified range.
 
-The core functionality of range controls come from an abstract class called [RangeBase](/Gui.Core/_RangeBase.md). This class defines properties of type *float* that store the current value and the endpoints of the range: *Value*, *Minimum*, and *Maximum*. It also defines a simple *ValueChanged* event.
+The core functionality of range controls come from an abstract class called [RangeBase](_RangeBase.md). This class defines properties of type *float* that store the current value and the endpoints of the range: *Value*, *Minimum*, and *Maximum*. It also defines a simple *ValueChanged* event.
 
 This section examines the two major built-in range controls, *ProgressBar* and *Slider*.
 
 ## ProgressBar
 
-![ControlsTutorialImg15.jpg](/ControlsTutorialImg15/jpg.md)
+![ControlsTutorialImg15.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg15.jpg)
 
-In an ideal world, we would never need to use a [ProgressBar](/Gui.Core/_ProgressBar.md) in our software. But when faced with long-running operations, showing users a *ProgressBar* helps them realize that progress is indeed being made. Therefore, using a *ProgressBar* in the right places can dramatically improve usability.
+In an ideal world, we would never need to use a [ProgressBar](_ProgressBar.md) in our software. But when faced with long-running operations, showing users a *ProgressBar* helps them realize that progress is indeed being made. Therefore, using a *ProgressBar* in the right places can dramatically improve usability.
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -534,9 +534,9 @@ In an ideal world, we would never need to use a [ProgressBar](/Gui.Core/_Progres
 
 ## Slider
 
-![ControlsTutorialImg16.jpg](/ControlsTutorialImg16/jpg.md)
+![ControlsTutorialImg16.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg16.jpg)
 
-[Slider](/Gui.Core/_Slider.md) is a bit more complicated than a *ProgressBar* because it enables users to change the current value by moving its *thumb* through any number of optional *ticks*. For example, you typically create a volume control by using a *Slider* control.
+[Slider](_Slider.md) is a bit more complicated than a *ProgressBar* because it enables users to change the current value by moving its *thumb* through any number of optional *ticks*. For example, you typically create a volume control by using a *Slider* control.
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -550,9 +550,9 @@ In an ideal world, we would never need to use a [ProgressBar](/Gui.Core/_Progres
 
 ## TextBox
 
-![ControlsTutorialImg17.jpg](/ControlsTutorialImg17/jpg.md)
+![ControlsTutorialImg17.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg17.jpg)
 
-The [TextBox](/Gui.Core/_TextBox.md) control enables users to type one or more lines of text into it. Unless the size of the *TextBox* is constrained by its surroundings (or given an explicit size), it grows as the text inside of it grows. But when the *TextBox's* width is contrained, you can make the text wrap to form additional lines by setting its *TextWrapping* property to *Wrap* or *WrapWithOverflow*. *Wrap* never allows a line to go beyond the control's bounds, forcing wrapping even if it's in the middle of a word. *WrapWithOverflow* only breaks a line if there's an opportunity, so long words could get cut off.
+The [TextBox](_TextBox.md) control enables users to type one or more lines of text into it. Unless the size of the *TextBox* is constrained by its surroundings (or given an explicit size), it grows as the text inside of it grows. But when the *TextBox's* width is contrained, you can make the text wrap to form additional lines by setting its *TextWrapping* property to *Wrap* or *WrapWithOverflow*. *Wrap* never allows a line to go beyond the control's bounds, forcing wrapping even if it's in the middle of a word. *WrapWithOverflow* only breaks a line if there's an opportunity, so long words could get cut off.
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
@@ -562,9 +562,9 @@ The [TextBox](/Gui.Core/_TextBox.md) control enables users to type one or more l
 
 ## PasswordBox
 
-![ControlsTutorialImg18.jpg](/ControlsTutorialImg18/jpg.md)
+![ControlsTutorialImg18.jpg](https://www.noesisengine.com/docs/ControlsTutorialImg18.jpg)
 
-[PasswordBox](/Gui.Core/_PasswordBox.md) is a simpler *Textbox* designed for the entry of a password. Rather than displaying the text typed in, the *PasswordBox* control allows you to hide the characters and limit the number of characters to be typed in the editable area.
+[PasswordBox](_PasswordBox.md) is a simpler *Textbox* designed for the entry of a password. Rather than displaying the text typed in, the *PasswordBox* control allows you to hide the characters and limit the number of characters to be typed in the editable area.
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">

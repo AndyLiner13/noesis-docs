@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._DynamicResourceExtension.htm
 
 # DynamicResourceExtension Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.dynamicresourceextension.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.dynamicresourceextension.aspx)
 
 Implements a markup extension that supports dynamic resource references made from XAML.
 
@@ -14,7 +14,7 @@ Dynamic resource references are necessary when referencing content that might ch
 
 # Inheritance Hierarchy
 
-• [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+• [MarkupExtension](_MarkupExtension.md)
 
 • *DynamicResourceExtension*
 
@@ -32,7 +32,7 @@ DynamicResourceExtension has no attached properties
 
 # Methods
 
-## From [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+## From [MarkupExtension](_MarkupExtension.md)
 
 | Name | Description |
 | --- | --- |

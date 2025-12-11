@@ -2,21 +2,21 @@ Source: https://www.noesisengine.com/docs/Gui.Core.UserControlTutorial.html
 
 # UserControl Tutorial
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/UserControl)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/UserControl)
 
 No modern presentation framework would be complete without the ability to create your own reusable controls. If no existing control has a programmatic interface that naturally represents your concept, go ahead and create a user control or custom control.
 
-[UserControls](/Gui.Core/_UserControl.md) can be seen as a composition of existing controls. They contain a logical tree defining its look and tend to have logic that directly interacts with these child elements.
+[UserControls](_UserControl.md) can be seen as a composition of existing controls. They contain a logical tree defining its look and tend to have logic that directly interacts with these child elements.
 
-In contrast [CustomControls](/Gui.Core/CustomControlTutorial.md) are needed when you want to create a totally new control or extend the functionality of an existing control. A custom control tends to get its look from a visual tree defined in a separate control template and generally has logic that works even if the user changes its visual tree completely.
+In contrast [CustomControls](CustomControlTutorial.md) are needed when you want to create a totally new control or extend the functionality of an existing control. A custom control tends to get its look from a visual tree defined in a separate control template and generally has logic that works even if the user changes its visual tree completely.
 
-In this tutorial we will focus on the development of a simple **user control** that implements the typical numeric spinner. The [next tutorial](/Gui.Core/CustomControlTutorial.md) will be dedicated to **custom controls**.
+In this tutorial we will focus on the development of a simple **user control** that implements the typical numeric spinner. The [next tutorial](CustomControlTutorial.md) will be dedicated to **custom controls**.
 
 # Interface Creation
 
-Let's create a very simple user control, a *NumericUpDown* control composed of two [RepeatButtons](/Gui.Core/_RepeatButton.md) to increment and decrement the value and a [TextBlock](/Gui.Core/_TextBlock.md) to display it.
+Let's create a very simple user control, a *NumericUpDown* control composed of two [RepeatButtons](_RepeatButton.md) to increment and decrement the value and a [TextBlock](_TextBlock.md) to display it.
 
-![UserControlTutorialImg1.jpg](/UserControlTutorialImg1/jpg.md)
+![UserControlTutorialImg1.jpg](https://www.noesisengine.com/docs/UserControlTutorialImg1.jpg)
 
 NumericUpDown.xaml
 
@@ -60,7 +60,7 @@ NumericUpDown.xaml
 </UserControl>
 ```
 
-This interface will correspond to a C++ class that implements the control's [code-behind](/Gui.Core/CodeBehindTutorial.md):
+This interface will correspond to a C++ class that implements the control's [code-behind](CodeBehindTutorial.md):
 
 NumericUpDown.xaml.cpp
 
@@ -83,11 +83,11 @@ private:
 };
 ```
 
-We are following the steps in the [tutorial](/Gui.Core/ExtendingTutorial.md) that describes how to extend NoesisGUI. The unique new detail here, apart from deriving from [UserControl](/Gui.Core/_UserControl.md), is the *GUI::LoadComponent* call that indicates the XAML file that will be loaded when this user control is created.
+We are following the steps in the [tutorial](ExtendingTutorial.md) that describes how to extend NoesisGUI. The unique new detail here, apart from deriving from [UserControl](_UserControl.md), is the *GUI::LoadComponent* call that indicates the XAML file that will be loaded when this user control is created.
 
 # Properties
 
-Now we define the properties that this control will expose. We talked about the numeric spinner value, so this could be our first property: *Value*. A [dependency property](/Gui.DependencySystem/_DependencyProperty.md) must be declared as a public static member with getter and setter accessors to facilitate the use of the control within the code:
+Now we define the properties that this control will expose. We talked about the numeric spinner value, so this could be our first property: *Value*. A [dependency property](../Gui.DependencySystem/_DependencyProperty.md) must be declared as a public static member with getter and setter accessors to facilitate the use of the control within the code:
 
 NumericUpDown.xaml.cpp
 
@@ -232,11 +232,11 @@ private:
 const DependencyProperty* NumericUpDown::ValueProperty;
 ```
 
-To connect [events](/Gui.Core/EventsTutorial.md) with code-behind functions we override the *ConnectEvent* virtual function. This function is called for each event referenced in the associated xaml, and provides the event source along with the name of function that is expected to be called.
+To connect [events](EventsTutorial.md) with code-behind functions we override the *ConnectEvent* virtual function. This function is called for each event referenced in the associated xaml, and provides the event source along with the name of function that is expected to be called.
 
 # Events
 
-Next step is exposing an event to notify users when the value of the numeric spinner changes. We call this event *ValueChanged* and implement it as a [routed event](/Gui.Core/EventsTutorial.md). Routed events must be declared with a public static member and with a virtual function that raises the event so inheritors can override the basic implementation:
+Next step is exposing an event to notify users when the value of the numeric spinner changes. We call this event *ValueChanged* and implement it as a [routed event](EventsTutorial.md). Routed events must be declared with a public static member and with a virtual function that raises the event so inheritors can override the basic implementation:
 
 NumericUpDown.xaml.cpp
 
@@ -329,7 +329,7 @@ The source code that accompanies this tutorial incorporates several improvements
 
 Now we can use our control in any other XAML file. For example as an editor for the values of an RGB color:
 
-![UserControlTutorialImg2.jpg](/UserControlTutorialImg2/jpg.md)
+![UserControlTutorialImg2.jpg](https://www.noesisengine.com/docs/UserControlTutorialImg2.jpg)
 
 ```
 <Grid

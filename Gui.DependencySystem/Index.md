@@ -8,9 +8,9 @@ One of the primary architectural philosophies used in building declarative inter
 
 In order to have more of the system driven by properties, a richer property system than what reflection provides was needed. A simple example of this richness is change notifications. In order to enable two way binding, you need both sides of the bind to support change notification. In order to have behavior tied to property values, you need to be notified when the property value changes.
 
-UI provides a richer property system, derived from the [DependencyObject](/Gui.DependencySystem/_DependencyObject.md) type. The property system is truly a "dependency" property system in that it tracks dependencies between property expressions and automatically revalidates property values when dependencies change. For example, if you have a [DependencyProperty](/Gui.DependencySystem/_DependencyProperty.md) that inherits (like FontSize), the system is automatically updated if the property changes on a parent of an element that inherits the value.
+UI provides a richer property system, derived from the [DependencyObject](_DependencyObject.md) type. The property system is truly a "dependency" property system in that it tracks dependencies between property expressions and automatically revalidates property values when dependencies change. For example, if you have a [DependencyProperty](_DependencyProperty.md) that inherits (like FontSize), the system is automatically updated if the property changes on a parent of an element that inherits the value.
 
-One of the most important concepts in the property system are property [Expressions](/Gui.DependencySystem/_Expression.md). Through expressions a property value can be calculated and updated in many different forms: a expression can assign a value from a ResourceDictionary, can be bound to another object property or data bound.
+One of the most important concepts in the property system are property [Expressions](_Expression.md). Through expressions a property value can be calculated and updated in many different forms: a expression can assign a value from a ResourceDictionary, can be bound to another object property or data bound.
 
 The property system also provides for sparse storage of property values. Because objects can have dozens (if not hundreds) of properties, and most of the values are in their default state (inherited, set by styles, etc.), not every instance of an object needs to have the full weight of every property defined on it.
 
@@ -183,7 +183,7 @@ Ptr<Tutorials::DelayedButton> btn = Noesis::MakePtr<Tutorials::DelayedButton>();
 btn->SetDelay(1.5f);
 ```
 
-As we see in the example, dependency properties can have extra information associated with a reflection type. This metadata is stored in a [PropertyMetadata](/Gui.DependencySystem/_PropertyMetadata.md) object.
+As we see in the example, dependency properties can have extra information associated with a reflection type. This metadata is stored in a [PropertyMetadata](_PropertyMetadata.md) object.
 
 # PropertyMetadata
 

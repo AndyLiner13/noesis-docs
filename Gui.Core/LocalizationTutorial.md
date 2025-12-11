@@ -2,16 +2,16 @@ Source: https://www.noesisengine.com/docs/Gui.Core.LocalizationTutorial.html
 
 # Localization Tutorial
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/Localization)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/Localization)
 
 NoesisGUI provides two features which allow you to easily localize text and resources in your XAML documents:
 
-- [LocExtension](/App.ApplicationLauncher/_LocExtension.md) allows you to retrieve resources from a locale ResourceDictionary.
-- [RichText](/App.ApplicationLauncher/_RichText.md) enables the use of [BBCode](https://www.bbcode.org/reference.php) and data binding in your strings.
+- [LocExtension](../App.ApplicationLauncher/_LocExtension.md) allows you to retrieve resources from a locale ResourceDictionary.
+- [RichText](../App.ApplicationLauncher/_RichText.md) enables the use of [BBCode](https://www.bbcode.org/reference.php) and data binding in your strings.
 
 # LocExtension
 
-[LocExtension](/App.ApplicationLauncher/_LocExtension.md) works in three parts:
+[LocExtension](../App.ApplicationLauncher/_LocExtension.md) works in three parts:
 
 - The Source attached property sets the Uri of a localized ResourceDictionary.
 - The LocExtension markup extension provides a value for any XAML property attribute by looking up a reference in the ResourceDictionary defined by the Source attached property.
@@ -51,7 +51,7 @@ And this is a XAML document which has the Loc.Source set to Language\_en-us.xaml
 </StackPanel>
 ```
 
-![LocalizationTutorialImg1.jpg](/LocalizationTutorialImg1/jpg.md)
+![LocalizationTutorialImg1.jpg](https://www.noesisengine.com/docs/LocalizationTutorialImg1.jpg)
 
 In the above example, the LocExtension is providing values from the Loc.Source ResourceDictionary *Language\_en-us.xaml* using the keys *Flag*, *TitleLabel*, and *DescLabel*. If we were to change Loc.Source to another ResourceDictionary, one localized to a different locale, these values would automatically update.
 
@@ -61,7 +61,7 @@ LocExtension can be used to localize any type of resource. This includes more co
 
 # RichText
 
-The [RichText](/App.ApplicationLauncher/_RichText.md) attached property formats [BBCode](https://www.bbcode.org/reference.php) markup into TextBlock Inlines.
+The [RichText](../App.ApplicationLauncher/_RichText.md) attached property formats [BBCode](https://www.bbcode.org/reference.php) markup into TextBlock Inlines.
 
 ```
 <Grid
@@ -72,7 +72,7 @@ The [RichText](/App.ApplicationLauncher/_RichText.md) attached property formats 
 </Grid>
 ```
 
-![LocalizationTutorialImg2.jpg](/LocalizationTutorialImg2/jpg.md)
+![LocalizationTutorialImg2.jpg](https://www.noesisengine.com/docs/LocalizationTutorialImg2.jpg)
 
 As well as allowing you to style your text, RichText supports binding to the DataContext using the *bind* tag. This is a powerful addition to your localization toolset:
 
@@ -90,7 +90,7 @@ As well as allowing you to style your text, RichText supports binding to the Dat
 </Grid>
 ```
 
-![LocalizationTutorialImg3.jpg](/LocalizationTutorialImg3/jpg.md)
+![LocalizationTutorialImg3.jpg](https://www.noesisengine.com/docs/LocalizationTutorialImg3.jpg)
 
 # Unreal Engine
 
@@ -144,13 +144,13 @@ This example uses the following runtime DataContext:
 </Grid>
 ```
 
-![LocalizationTutorialImg5.jpg](/LocalizationTutorialImg5/jpg.md)
+![LocalizationTutorialImg5.jpg](https://www.noesisengine.com/docs/LocalizationTutorialImg5.jpg)
 
 ## LocTableExtension
 
 NoesisGUI allows you to use Unreal's native localization system in your XAML documents using the LocTable markup extension.
 
-Equivalent to using LOCTABLE in C++ code, LocTableExtension provides access to a localized text with the given *Key* in a StringTable. The table *Id* can be specified as an attached property in any parent container and it will be inherited down the tree, or you can set it locally in the markup extension itself. When using this markup extension we recommend to include the *Source* text so [Microsoft Blend](/Gui.Core/BlendTutorial.md) can show it in the designer view.
+Equivalent to using LOCTABLE in C++ code, LocTableExtension provides access to a localized text with the given *Key* in a StringTable. The table *Id* can be specified as an attached property in any parent container and it will be inherited down the tree, or you can set it locally in the markup extension itself. When using this markup extension we recommend to include the *Source* text so [Microsoft Blend](BlendTutorial.md) can show it in the designer view.
 
 Unreal localization StringTable (en-us)
 
@@ -223,7 +223,7 @@ Unreal localization StringTable (en-us)
 </StackPanel>
 ```
 
-![LocalizationTutorialImg6.jpg](/LocalizationTutorialImg6/jpg.md)
+![LocalizationTutorialImg6.jpg](https://www.noesisengine.com/docs/LocalizationTutorialImg6.jpg)
 
 ## Bindings
 
@@ -237,12 +237,12 @@ If you need to show localized text in XAML that is dynamic or is formatted from 
 </Grid>
 ```
 
-![UnrealTutorialImg20.png](/UnrealTutorialImg20/png.md)
+![UnrealTutorialImg20.png](https://www.noesisengine.com/docs/UnrealTutorialImg20.png)
 
 # Localization Sample
 
-Our [Localization Sample](https://github.com/Noesis/Tutorials/tree/master/Samples/Localization) shows [LocExtension](/App.ApplicationLauncher/_LocExtension.md) and [RichText](/App.ApplicationLauncher/_RichText.md) in use.
+Our [Localization Sample](https://github.com/Noesis/Tutorials/tree/master/Samples/Localization) shows [LocExtension](../App.ApplicationLauncher/_LocExtension.md) and [RichText](../App.ApplicationLauncher/_RichText.md) in use.
 
 Each language's resources are stored in a localized ResourceDictionary. The Loc.Source attached property binds to the SelectedLanguage in the root DataContext. SelectedLanguage is changed using a ComboBox, which binds to the Languages collection as it's ItemsSource.
 
-> ![Changelog_v32_1.jpg](/Changelog_v32_1/jpg.md)
+> ![Changelog_v32_1.jpg](https://www.noesisengine.com/docs/Changelog_v32_1.jpg)

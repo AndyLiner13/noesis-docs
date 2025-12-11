@@ -2,13 +2,13 @@ Source: https://www.noesisengine.com/docs/Gui.Core._TemplateBindingExpression.ht
 
 # TemplateBindingExpression Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.templatebindingexpression.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.templatebindingexpression.aspx)
 
-Describes a run-time instance of a [TemplateBindingExtension](/Gui.Core/_TemplateBindingExtension.md).
+Describes a run-time instance of a [TemplateBindingExtension](_TemplateBindingExtension.md).
 
 # Inheritance Hierarchy
 
-• [Expression](/Gui.DependencySystem/_Expression.md)
+• [Expression](../Gui.DependencySystem/_Expression.md)
 
 • *TemplateBindingExpression*
 
@@ -16,7 +16,7 @@ Describes a run-time instance of a [TemplateBindingExtension](/Gui.Core/_Templat
 
 | Name | Description |
 | --- | --- |
-| ○ *TemplateBindingExtension* | Gets the [TemplateBindingExtension](/Gui.Core/_TemplateBindingExtension.md) object of this expression instance |
+| ○ *TemplateBindingExtension* | Gets the [TemplateBindingExtension](_TemplateBindingExtension.md) object of this expression instance |
 
 ● Dependency Property   ○ Reflection Property
 
@@ -26,7 +26,7 @@ TemplateBindingExpression has no attached properties
 
 # Methods
 
-## From [Expression](/Gui.DependencySystem/_Expression.md)
+## From [Expression](../Gui.DependencySystem/_Expression.md)
 
 | Name | Description |
 | --- | --- |

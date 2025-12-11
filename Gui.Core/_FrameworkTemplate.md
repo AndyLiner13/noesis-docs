@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._FrameworkTemplate.html
 
 # FrameworkTemplate Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.frameworktemplate.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.frameworktemplate.aspx)
 
 Enables the instantiation of a tree of elements for a template.
 
@@ -10,11 +10,11 @@ Enables the instantiation of a tree of elements for a template.
 
 • *FrameworkTemplate*
 
-• [ControlTemplate](/Gui.Core/_ControlTemplate.md)
+• [ControlTemplate](_ControlTemplate.md)
 
-• [DataTemplate](/Gui.Core/_DataTemplate.md)
+• [DataTemplate](_DataTemplate.md)
 
-• [ItemsPanelTemplate](/Gui.Core/_ItemsPanelTemplate.md)
+• [ItemsPanelTemplate](_ItemsPanelTemplate.md)
 
 # Properties
 

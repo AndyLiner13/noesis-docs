@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core._UIElementCollection.html
 
 # UIElementCollection Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.controls.uielementcollection.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.controls.uielementcollection.aspx)
 
-Represents an ordered collection of [UIElement](/Gui.Core/_UIElement.md) child elements.
+Represents an ordered collection of [UIElement](_UIElement.md) child elements.
 
 # Inheritance Hierarchy
 

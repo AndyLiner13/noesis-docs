@@ -12,11 +12,11 @@ This tutorial is based on [Bidirectional Features in WPF Overview](https://learn
 
 # FlowDirection
 
-The basic property that defines the content flow direction in NoesisGUI is *FlowDirection*. This property can be set to one of two enumeration values, *LeftToRight* and *RightToLeft*. The property is available to all elements that inherit from [FrameworkElement](/Gui.Core/_FrameworkElement.md). An element within the tree will inherit the *FlowDirection* from its container.
+The basic property that defines the content flow direction in NoesisGUI is *FlowDirection*. This property can be set to one of two enumeration values, *LeftToRight* and *RightToLeft*. The property is available to all elements that inherit from [FrameworkElement](_FrameworkElement.md). An element within the tree will inherit the *FlowDirection* from its container.
 
-The following examples set the flow direction of [TextBlock](/Gui.Core/_TextBlock.md) elements.
+The following examples set the flow direction of [TextBlock](_TextBlock.md) elements.
 
-![BidiTutorialImg0.png](/BidiTutorialImg0/png.md)
+![BidiTutorialImg0.png](https://www.noesisengine.com/docs/BidiTutorialImg0.png)
 
 [RUN ▶](https://www.noesisengine.com/xamltoy/37b132fb7f0f0bfd75100b87dbcbf20d)
 
@@ -37,11 +37,11 @@ The following examples set the flow direction of [TextBlock](/Gui.Core/_TextBloc
 
 # Span Elements
 
-The [Span](/Gui.Core/_Span.md) element work as a boundary separator between texts with different flow direction. Even [Span](/Gui.Core/_Span.md) elements with the same flow direction are considered to have different bidirectional scopes with means that the [Span](/Gui.Core/_Span.md) element are ordered in the container's *FlowDirection*, only the content within the [Span](/Gui.Core/_Span.md) element follows the *FlowDirection* of the [Span](/Gui.Core/_Span.md).
+The [Span](_Span.md) element work as a boundary separator between texts with different flow direction. Even [Span](_Span.md) elements with the same flow direction are considered to have different bidirectional scopes with means that the [Span](_Span.md) element are ordered in the container's *FlowDirection*, only the content within the [Span](_Span.md) element follows the *FlowDirection* of the [Span](_Span.md).
 
-The following example shows how to use the [Span](/Gui.Core/_Span.md) and [Run](/Gui.Core/_Run.md) elements combined with *FlowDirection*.
+The following example shows how to use the [Span](_Span.md) and [Run](_Run.md) elements combined with *FlowDirection*.
 
-![BidiTutorialImg1.png](/BidiTutorialImg1/png.md)
+![BidiTutorialImg1.png](https://www.noesisengine.com/docs/BidiTutorialImg1.png)
 
 [RUN ▶](https://www.noesisengine.com/xamltoy/51a79dc4a0705c1e026ca757cf0c72ce)
 
@@ -74,13 +74,13 @@ The following example shows how to use the [Span](/Gui.Core/_Span.md) and [Run](
 </Page>
 ```
 
-In the [TextBlock](/Gui.Core/_TextBlock.md) elements in the sample, the [Span](/Gui.Core/_Span.md) elements are laid our according to the *FlowDirection* of their parents, but the text within each [Span](/Gui.Core/_Span.md) element flows according to its own *FlowDirection*. This is applicable to Latin and Arabic or any other language.
+In the [TextBlock](_TextBlock.md) elements in the sample, the [Span](_Span.md) elements are laid our according to the *FlowDirection* of their parents, but the text within each [Span](_Span.md) element flows according to its own *FlowDirection*. This is applicable to Latin and Arabic or any other language.
 
 # Non-text Elements
 
-*FlowDirection* defines not only how texts flows in a textual element but also the flow direction of almost every other UI element. The following example shows a [ToolBar](/Gui.Core/_ToolBar.md) that uses a horizontal [LinearGradientBrush](/Gui.Core/_LinearGradientBrush.md) to draw its background. After setting the *FlowDirection* to *RightToLeft*, not only the [ToolBar](/Gui.Core/_ToolBar.md) buttons are arranged from right to left, but even the [LinearGradientBrush](/Gui.Core/_LinearGradientBrush.md) realigns its offset to flow from right to left.
+*FlowDirection* defines not only how texts flows in a textual element but also the flow direction of almost every other UI element. The following example shows a [ToolBar](_ToolBar.md) that uses a horizontal [LinearGradientBrush](_LinearGradientBrush.md) to draw its background. After setting the *FlowDirection* to *RightToLeft*, not only the [ToolBar](_ToolBar.md) buttons are arranged from right to left, but even the [LinearGradientBrush](_LinearGradientBrush.md) realigns its offset to flow from right to left.
 
-![BidiTutorialImg2.png](/BidiTutorialImg2/png.md)
+![BidiTutorialImg2.png](https://www.noesisengine.com/docs/BidiTutorialImg2.png)
 
 [RUN ▶](https://www.noesisengine.com/xamltoy/9e12ca4b306373f8fd58ec0c82fed3db)
 
@@ -106,9 +106,9 @@ In the [TextBlock](/Gui.Core/_TextBlock.md) elements in the sample, the [Span](/
 </Page>
 ```
 
-A [UniformGrid](/Gui.Core/_UniformGrid.md) will normally lay out its child elements from left to right, starting in the first row (top to bottom, left to right). You can reverse the left-to-right behavior by using the *FlowDirection* property.
+A [UniformGrid](_UniformGrid.md) will normally lay out its child elements from left to right, starting in the first row (top to bottom, left to right). You can reverse the left-to-right behavior by using the *FlowDirection* property.
 
-![BidiTutorialImg3.png](/BidiTutorialImg3/png.md)
+![BidiTutorialImg3.png](https://www.noesisengine.com/docs/BidiTutorialImg3.png)
 
 # FlowDirection Exceptions
 
@@ -116,9 +116,9 @@ There are a few cases where *FlowDirection* does not behave as expected. This se
 
 ## Image
 
-Unlike other UI elements, an [Image](/Gui.Core/_Image.md) does not inherit the *FlowDirection* from the container. However, if the *FlowDirection* is set explicitly to *RightToLeft*, an [Image](/Gui.Core/_Image.md) is displayed flipped horizontally. This is implemented as a convenient feature for developers of bidirectional content; because is some cases, horizontally flipping the image produces the desired effect.
+Unlike other UI elements, an [Image](_Image.md) does not inherit the *FlowDirection* from the container. However, if the *FlowDirection* is set explicitly to *RightToLeft*, an [Image](_Image.md) is displayed flipped horizontally. This is implemented as a convenient feature for developers of bidirectional content; because is some cases, horizontally flipping the image produces the desired effect.
 
-![BidiTutorialImg4.png](/BidiTutorialImg4/png.md)
+![BidiTutorialImg4.png](https://www.noesisengine.com/docs/BidiTutorialImg4.png)
 
 [RUN ▶](https://www.noesisengine.com/xamltoy/aade274306acc6e9f7a1ee603f46baf4)
 
@@ -132,11 +132,11 @@ Unlike other UI elements, an [Image](/Gui.Core/_Image.md) does not inherit the *
 
 ## Paths
 
-In addition to an [Image](/Gui.Core/_Image.md), another interesting element is [Path](/Gui.Core/_Path.md). A [Path](/Gui.Core/_Path.md) is an object that can draw a series of connected lines and curves. It behaves in a manner similar to an [Image](/Gui.Core/_Image.md) regarding its *FlowDirection*; for example its *RightToLeft* *FlowDirection* is a horizontal mirror of its *LeftToRight* one. However, unlike an [Image](/Gui.Core/_Image.md), [Path](/Gui.Core/_Path.md) inherits its *FlowDirection* from the container and one does not need to specify it explicitly.
+In addition to an [Image](_Image.md), another interesting element is [Path](_Path.md). A [Path](_Path.md) is an object that can draw a series of connected lines and curves. It behaves in a manner similar to an [Image](_Image.md) regarding its *FlowDirection*; for example its *RightToLeft* *FlowDirection* is a horizontal mirror of its *LeftToRight* one. However, unlike an [Image](_Image.md), [Path](_Path.md) inherits its *FlowDirection* from the container and one does not need to specify it explicitly.
 
-The following example draws a simple arrow using 3 lines. The first arrow inherits the *RightToLeft* flow direction from the [StackPanel](/Gui.Core/_StackPanel.md) so that its start and end points are measured from a root on the right side. The second arrow which has an explicit *RightToLeft* *FlowDirection* also starts on the right side. However, the third arrow has its starting root on the left side. For more information on drawing see [LineGeometry](/Gui.Core/_LineGeometry.md) and [GeometryGroup](/Gui.Core/_GeometryGroup.md).
+The following example draws a simple arrow using 3 lines. The first arrow inherits the *RightToLeft* flow direction from the [StackPanel](_StackPanel.md) so that its start and end points are measured from a root on the right side. The second arrow which has an explicit *RightToLeft* *FlowDirection* also starts on the right side. However, the third arrow has its starting root on the left side. For more information on drawing see [LineGeometry](_LineGeometry.md) and [GeometryGroup](_GeometryGroup.md).
 
-![BidiTutorialImg5.png](/BidiTutorialImg5/png.md)
+![BidiTutorialImg5.png](https://www.noesisengine.com/docs/BidiTutorialImg5.png)
 
 [RUN ▶](https://www.noesisengine.com/xamltoy/2727b95c03033cdbd6287324ea8ebb91)
 
@@ -194,7 +194,7 @@ The *digitSubstitution* member of the class *NumberFormatInfo* defines the cultu
 
 The following example demonstrates using Arabic and English numbers if a NoesisGUI instance running with an Arabic language ("ar-SA") set.
 
-![BidiTutorialImg6.png](/BidiTutorialImg6/png.md)
+![BidiTutorialImg6.png](https://www.noesisengine.com/docs/BidiTutorialImg6.png)
 
 [RUN ▶](https://www.noesisengine.com/xamltoy/282b5dff0f1abd27d0551f39bbe18bc8)
 

@@ -2,11 +2,11 @@ Source: https://www.noesisengine.com/docs/Gui.Core._ToolTipService.html
 
 # ToolTipService Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.controls.tooltipservice.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.controls.tooltipservice.aspx)
 
 Represents a service that provides properties and events to control the display and behavior of tooltips.
 
-You define a tooltip for an element by setting the [FrameworkElement](/Gui.Core/_FrameworkElement.md).ToolTip property. The [ToolTip](/Gui.Core/_ToolTip.md) property takes one child. The content of the child can vary from a simple text string to more complex content such as a [StackPanel](/Gui.Core/_StackPanel.md) that has embedded text and [Image](/Gui.Core/_Image.md) elements.
+You define a tooltip for an element by setting the [FrameworkElement](_FrameworkElement.md).ToolTip property. The [ToolTip](_ToolTip.md) property takes one child. The content of the child can vary from a simple text string to more complex content such as a [StackPanel](_StackPanel.md) that has embedded text and [Image](_Image.md) elements.
 
 # Inheritance Hierarchy
 

@@ -7,13 +7,13 @@ When used with a compatible client, the *Language Server* provides rich editor f
 
 We offer a [Visual Studio Code](https://noesisengine.com/vscode) extension that serves as a client for the *Language Server*. This client is fully compatible with any Noesis instance, including Unity and Unreal
 
-![LanguageServerImg1.png](/LanguageServerImg1/png.md)
+![LanguageServerImg1.png](https://www.noesisengine.com/docs/LanguageServerImg1.png)
 
 Our plugin automatically launches the server when using Unity or Unreal editors. If you're working in vanilla C++ or C#, a custom *Language Server* implementation is required. In cases where no language servers are detected, the Visual *Studio Code* extension initiates an internal server binary. However, this binary exclusively supports core Noesis types. To incorporate your custom types, you'll need to compile a custom *Language Server* with the required type definitions.
 
 # Application Framework
 
-The [Application Framework](/Gui.Core/ApplicationTutorial.md) comes equipped with a custom *Language Server*, which is initially deactivated. To enable it, utilize the '--lang\_server' command line. For a seamless experience with the *Language Server*, we suggest utilizing the '--root projectpath' command line. This switch disables the [embedded file providers](/Gui.Core/ProvidersTutorial.md) and enables direct access to the filesystem, supporting [Hot Reload](/Gui.Core/HotReloadTutorial.md).
+The [Application Framework](ApplicationTutorial.md) comes equipped with a custom *Language Server*, which is initially deactivated. To enable it, utilize the '--lang\_server' command line. For a seamless experience with the *Language Server*, we suggest utilizing the '--root projectpath' command line. This switch disables the [embedded file providers](ProvidersTutorial.md) and enables direct access to the filesystem, supporting [Hot Reload](HotReloadTutorial.md).
 
 ```
 Samples.HelloWorld.exe --lang_server --root Packages\Samples\HelloWorld\Data
@@ -29,7 +29,7 @@ C++
 LangServer::SetName("LostGhost");
 ```
 
-Following that, it's essential to register the providers responsible for [loading files](/Gui.Core/ProvidersTutorial.md) on the server.
+Following that, it's essential to register the providers responsible for [loading files](ProvidersTutorial.md) on the server.
 
 C++
 

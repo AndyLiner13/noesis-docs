@@ -26,8 +26,8 @@ Is the base class for simple animations that outputs a value to an unique proper
 
 ## Methods
 
-- **GetAnimatedValue**: this virtual method that is called from the TimeManager to return the current value to set to the target property. The method receives the timeline active clock and the default origin and destination values. See [Clocks](/Gui.Animation/Clocks.md) for more details about this.
-- **Start**: starts this timeline animation over the target object and property. To allow the reutilization of clocks, an existing clock can be passed to the animation, but if none is passed, a new one is created automatically. The HandoffBehavior controls if the animation has to replace existing animations of add to the composite chain. See more on this on the [Clocks](/Gui.Animation/Clocks.md) page.
+- **GetAnimatedValue**: this virtual method that is called from the TimeManager to return the current value to set to the target property. The method receives the timeline active clock and the default origin and destination values. See [Clocks](Clocks.md) for more details about this.
+- **Start**: starts this timeline animation over the target object and property. To allow the reutilization of clocks, an existing clock can be passed to the animation, but if none is passed, a new one is created automatically. The HandoffBehavior controls if the animation has to replace existing animations of add to the composite chain. See more on this on the [Clocks](Clocks.md) page.
 
 ```
 Ptr<DoubleAnimation> animation = NsCreateComponent<DoubleAnimation>();
@@ -91,7 +91,7 @@ Also is a templatized class, specialized for several types (for example, ColorAn
 
 This class contains a collection of KeyFrames. Each pair of contiguous keyframe defines a segment of time by specifying the starting and end values and key times. There are four type of KeyFrames
 
-![KeyFrame.png](/KeyFrame/png.md)
+![KeyFrame.png](https://www.noesisengine.com/docs/KeyFrame.png)
 
 | Methods | | --- | --- | --- |
 | Name | Sup | Comments |

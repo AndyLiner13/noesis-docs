@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._BaseValueConverter.html
 
 # BaseValueConverter Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace)
 
 Base class for value converters used in Bindings.
 
@@ -10,9 +10,9 @@ Base class for value converters used in Bindings.
 
 • *BaseValueConverter*
 
-• [AlternationConverter](/Gui.Core/_AlternationConverter.md)
+• [AlternationConverter](_AlternationConverter.md)
 
-• [BooleanToVisibilityConverter](/Gui.Core/_BooleanToVisibilityConverter.md)
+• [BooleanToVisibilityConverter](_BooleanToVisibilityConverter.md)
 
 # Properties
 

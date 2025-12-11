@@ -4,7 +4,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.GettingStartedNative.html
 
 The aim of this tutorial is to get you started with the *NoesisGUI C++ SDK* and its directory structure. You will learn to build, configure and begin using the SDK to create high-performance native applications.
 
-In the root directory of the SDK you can find [XamlPlayer](/Gui.Core/FirstSteps.md), a useful tool to quickly do your first UI experiments.
+In the root directory of the SDK you can find [XamlPlayer](FirstSteps.md), a useful tool to quickly do your first UI experiments.
 
 NOTE
 
@@ -12,9 +12,9 @@ In the root directory you can also find 'SDKBrowser', an application that will g
 
 # Building Samples
 
-All provided samples in the SDK, including the [Application Framework](/Gui.Core/ApplicationTutorial.md), comes with full source. There is a solution for each platform inside the '*NoesisSDK/Build/*' directory for building all the examples. For example, *Visual Studio* solution for 64-bits can be found at '*NoesisSDK/Build/NoesisGUI-win-x86\_64.sln*'.
+All provided samples in the SDK, including the [Application Framework](ApplicationTutorial.md), comes with full source. There is a solution for each platform inside the '*NoesisSDK/Build/*' directory for building all the examples. For example, *Visual Studio* solution for 64-bits can be found at '*NoesisSDK/Build/NoesisGUI-win-x86\_64.sln*'.
 
-Each sample also contains a [Blend](/Gui.Core/BlendTutorial.md) solution inside its '*Data*' folder. For example, the *Blend* project for the *Menu3D* sample is located at '*NoesisSDK/Src/Packages/Samples/Menu3D/Data/Menu3D-blend.sln*'.
+Each sample also contains a [Blend](BlendTutorial.md) solution inside its '*Data*' folder. For example, the *Blend* project for the *Menu3D* sample is located at '*NoesisSDK/Src/Packages/Samples/Menu3D/Data/Menu3D-blend.sln*'.
 
 NOTE
 
@@ -99,34 +99,34 @@ With all prerequisites satisfied just build the generated makefile (.mk) for the
 
 Binaries are generated in '*NoesisSDK/Bin/*'. There is one sub-folder for each supported platform. For example, *Menu3D* sample for Windows 64-bits will be generated at '*NoesisSK/Bin/windows\_x86\_64/Samples.Menu3D.exe*'.
 
-All our samples are built using the [Application Framework](/Gui.Core/ApplicationTutorial.md) and support common functionality like:
+All our samples are built using the [Application Framework](ApplicationTutorial.md) and support common functionality like:
 
 - The following command line switches:
   - **--render [D3D11|GL|Metal|...]**: overrides the default renderer.
   - **--vsync [0|1]**: disables vertical synchronization.
   - **--samples N**: enables multisample anti-aliasing (MSAA), by default it is off.
-  - **--ppaa [0|1]**: enables [cheap antialiasing](/Gui.Core/AntialiasingTutorial.md#per-primitive-antialiasing) anti-aliasing (enabled by default).
+  - **--ppaa [0|1]**: enables [cheap antialiasing](AntialiasingTutorial.md#per-primitive-antialiasing) anti-aliasing (enabled by default).
   - **--linear**: for switching to [linear rendering](http://www.kinematicsoup.com/news/2016/6/15/gamma-and-linear-space-what-they-are-how-they-differ), by default rendering happens in gamma space.
   - **--lcd [0|1]**: enables subpixel rendering compatible with LCD displays.
   - **--log\_binding**: to increase the verbosity of logging when using data binding.
   - **--emulate\_touch**: enables emulation of touch input from mouse events.
-  - **--root dir\_path**: to read resources from the specified filesystem path (for [hot-reloading](/Gui.Core/HotReloadTutorial.md#hot-reload-in-sdk-samples)).
+  - **--root dir\_path**: to read resources from the specified filesystem path (for [hot-reloading](HotReloadTutorial.md#hot-reload-in-sdk-samples)).
 - The following Shortcut keys:
   - **CTRL + T**: display the debug toolbar.
   - **CTRL + W**: toggles wireframe mode when rendering triangles.
   - **CTRL + B**: each batch submitted to the GPU is given a unique solid color.
   - **CTRL + O**: display pixel overdraw using blending layers. Different colors are used for each type of triangle: *green* for normal, *red* for opacities and *blue* for clipping masks.
-  - **CTRL + P**: [per-primitive Antialiasing](/Gui.Core/AntialiasingTutorial.md#per-primitive-antialiasing) extrudes the contours of the geometry and smooths them. Useful when GPU multisampling is not enabled.
-  - **CTRL + F**: display a [performance](/Gui.Core/Optimizing.md) stats panel.
+  - **CTRL + P**: [per-primitive Antialiasing](AntialiasingTutorial.md#per-primitive-antialiasing) extrudes the contours of the geometry and smooths them. Useful when GPU multisampling is not enabled.
+  - **CTRL + F**: display a [performance](Optimizing.md) stats panel.
   - **F10**: takes a [RenderDoc](https://renderdoc.org/) capture.
 
 # Creating Applications
 
 Once you get familiar with our samples you are ready to start creating your own applications. For that purpose we highly recommend reading the following documents:
 
-- The [C++ Architecture Guide](/Gui.Core/CppArchitectureGuide.md), to learn about NoesisGUI C++ architecture.
-- The [Integration guide](/Gui.Core/SDKGuide.md), to discover how to integrate NoesisGUI into your own application.
+- The [C++ Architecture Guide](CppArchitectureGuide.md), to learn about NoesisGUI C++ architecture.
+- The [Integration guide](SDKGuide.md), to discover how to integrate NoesisGUI into your own application.
 
 # VSCode Extension
 
-We also provide a [Visual Studio Code Extension](https://noesisengine.com/vscode), which provides a rich editing experience for the XAML documents, using the NoesisGUI language server. For more information on the language server, see our [Language Server tutorial](/Gui.Core/LanguageServer.md)
+We also provide a [Visual Studio Code Extension](https://noesisengine.com/vscode), which provides a rich editing experience for the XAML documents, using the NoesisGUI language server. For more information on the language server, see our [Language Server tutorial](LanguageServer.md)

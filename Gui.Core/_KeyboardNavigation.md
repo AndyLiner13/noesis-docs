@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._KeyboardNavigation.html
 
 # KeyboardNavigation Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.input.keyboardnavigation.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.input.keyboardnavigation.aspx)
 
 Provides logical and directional navigation between focusable objects.
 
@@ -17,7 +17,7 @@ XAML
 </Menu>
 ```
 
-The [KeyboardNavigation](/Gui.Core/_KeyboardNavigation.md) class is responsible for implementing default keyboard focus navigation when one of the navigation keys is pressed.
+The [KeyboardNavigation](_KeyboardNavigation.md) class is responsible for implementing default keyboard focus navigation when one of the navigation keys is pressed.
 
 # Inheritance Hierarchy
 
@@ -46,8 +46,8 @@ The [KeyboardNavigation](/Gui.Core/_KeyboardNavigation.md) class is responsible 
 
 | Name | Description |
 | --- | --- |
-|  *MoveFocus(source, request)* | Request to move the focus from source element in the specified direction. Returns true if focus is moved successfully, returns false if there is no next element. Note: Internally used by [FrameworkElement](/Gui.Core/_FrameworkElement.md) to implement *MoveFocus()* |
-|  *PredictFocus(source, direction)* | Returns the element that would receive focus for a specified focus traversal direction, without actually moving focus to that element. Note: Internally used by [FrameworkElement](/Gui.Core/_FrameworkElement.md) to implement *PredictFocus()* |
+|  *MoveFocus(source, request)* | Request to move the focus from source element in the specified direction. Returns true if focus is moved successfully, returns false if there is no next element. Note: Internally used by [FrameworkElement](_FrameworkElement.md) to implement *MoveFocus()* |
+|  *PredictFocus(source, direction)* | Returns the element that would receive focus for a specified focus traversal direction, without actually moving focus to that element. Note: Internally used by [FrameworkElement](_FrameworkElement.md) to implement *PredictFocus()* |
 
 # Events
 

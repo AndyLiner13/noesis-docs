@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._TypeExtension.html
 
 # TypeExtension Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.markup.typeextension.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.markup.typeextension.aspx)
 
 Implements a markup extension that returns a *Type* based on a string input.
 
@@ -14,7 +14,7 @@ Type references are commonly used for style, template, and databinding feature a
 
 # Inheritance Hierarchy
 
-• [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+• [MarkupExtension](_MarkupExtension.md)
 
 • *TypeExtension*
 
@@ -37,7 +37,7 @@ TypeExtension has no attached properties
 | --- | --- |
 |  *GetEffectiveType(typeName)* | Gets the effective Noesis type from XAML system types |
 
-## From [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+## From [MarkupExtension](_MarkupExtension.md)
 
 | Name | Description |
 | --- | --- |

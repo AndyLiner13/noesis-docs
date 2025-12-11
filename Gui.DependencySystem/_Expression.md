@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.DependencySystem._Expression.html
 
 # Expression Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.expression.aspx)
+## namespace [Noesis](../Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.expression.aspx)
 
 Base implementation for all expressions.
 
@@ -10,9 +10,9 @@ Base implementation for all expressions.
 
 • *Expression*
 
-• [BaseBindingExpression](/Gui.Core/_BaseBindingExpression.md)
+• [BaseBindingExpression](../Gui.Core/_BaseBindingExpression.md)
 
-• [TemplateBindingExpression](/Gui.Core/_TemplateBindingExpression.md)
+• [TemplateBindingExpression](../Gui.Core/_TemplateBindingExpression.md)
 
 # Properties
 

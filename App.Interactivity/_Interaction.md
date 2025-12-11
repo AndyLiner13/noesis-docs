@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/App.Interactivity._Interaction.html
 
 # Interaction Class
 
-## namespace [NoesisApp](/Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
+## namespace [NoesisApp](../Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
 
 Manages a collection of behaviors and triggers that expand the object functionality from XAML.
 

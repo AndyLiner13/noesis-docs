@@ -2,11 +2,11 @@ Source: https://www.noesisengine.com/docs/Gui.Core.ExtendingTutorial.html
 
 # Extending NoesisGUI
 
-Being based in XAML, NoesisGUI is a framework that can be extended in many ways. For example, you can create your own *Converters*, [Commands](/Gui.Core/CommandsTutorial.md), [CustomControls](/Gui.Core/CustomControlTutorial.md), [UserControls](/Gui.Core/UserControlTutorial.md) or [code-behind](/Gui.Core/CodeBehindTutorial.md) classes. This tutorial is focused on the steps that have to be performed to extend NoesisGUI using your own classes.
+Being based in XAML, NoesisGUI is a framework that can be extended in many ways. For example, you can create your own *Converters*, [Commands](CommandsTutorial.md), [CustomControls](CustomControlTutorial.md), [UserControls](UserControlTutorial.md) or [code-behind](CodeBehindTutorial.md) classes. This tutorial is focused on the steps that have to be performed to extend NoesisGUI using your own classes.
 
 # Example
 
-First thing we are going to do is writing a very simple XAML with a [TextBox](/Gui.Core/_TextBox.md) where you can write text and a [TextBlock](/Gui.Core/_TextBlock.md) that outputs the text you write filtered through a [converter](/Gui.Core/_BaseValueConverter.md). The converter we are going to implement transforms the input to upper case.
+First thing we are going to do is writing a very simple XAML with a [TextBox](_TextBox.md) where you can write text and a [TextBlock](_TextBlock.md) that outputs the text you write filtered through a [converter](_BaseValueConverter.md). The converter we are going to implement transforms the input to upper case.
 
 ```
 <Grid
@@ -64,9 +64,9 @@ namespace Sample
 
 The code shown above illustrates the key points that are needed to implement a new class:
 
-- New classes must always derive from their corresponding base class. In this case the base class is [BaseValueConverter](/Gui.Core/_BaseValueConverter.md) because we are interested in the *IValueConverter* interface.
-- The new class must implement the required methods. *BaseValueConverter* requires us to implement *TryConvert* and *TryConvertBack*, but in this specific sample, conversion in only one direction, we only need implementing *TryConvert*. It is implemented by [unboxing](/Gui.Core/CppArchitectureGuide.md#boxing) the text, converting to uppercase and returning the boxed object.
-- And last, [reflection tags](/Gui.Core/CppArchitectureGuide.md#reflection) must be added to our new class:
+- New classes must always derive from their corresponding base class. In this case the base class is [BaseValueConverter](_BaseValueConverter.md) because we are interested in the *IValueConverter* interface.
+- The new class must implement the required methods. *BaseValueConverter* requires us to implement *TryConvert* and *TryConvertBack*, but in this specific sample, conversion in only one direction, we only need implementing *TryConvert*. It is implemented by [unboxing](CppArchitectureGuide.md#boxing) the text, converting to uppercase and returning the boxed object.
+- And last, [reflection tags](CppArchitectureGuide.md#reflection) must be added to our new class:
 
 > ```
 > NS_IMPLEMENT_INLINE_REFLECTION_(UppercaseConverter, BaseValueConverter, "Sample.UppercaseConverter")
@@ -74,7 +74,7 @@ The code shown above illustrates the key points that are needed to implement a n
 >
 > Here we are indicating that our class *UppercaseConverter* derives from *BaseValueConverter* and is registered with the name *'UppercaseConverter'* under the namespace *'Sample'*. This is the identifier that XAMLs will be using to reference this native class.
 
-Before using this class inside a XAML it must be registered in the component factory. This must be done after Noesis initialization and before loading the corresponding XAML. Our [application framework](/Gui.Core/ApplicationTutorial.md) provides a virtual function that can be used for this purpose:
+Before using this class inside a XAML it must be registered in the component factory. This must be done after Noesis initialization and before loading the corresponding XAML. Our [application framework](ApplicationTutorial.md) provides a virtual function that can be used for this purpose:
 
 ```
 class AppLauncher final: public ApplicationLauncher
@@ -89,7 +89,7 @@ private:
 
 Once the class is properly registered, the XAML will load without errors and our converter will accordingly be used.
 
-![ExtendingTutorialImg1.jpg](/ExtendingTutorialImg1/jpg.md)
+![ExtendingTutorialImg1.jpg](https://www.noesisengine.com/docs/ExtendingTutorialImg1.jpg)
 
 ## Extending in C#
 

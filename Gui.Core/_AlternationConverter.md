@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._AlternationConverter.html
 
 # AlternationConverter Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.alternationconverter)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.alternationconverter)
 
 Converts an integer to/from an object by applying the integer as an index to a list of objects.
 
@@ -32,7 +32,7 @@ Converts an integer to/from an object by applying the integer as an index to a l
 
 # Inheritance Hierarchy
 
-• [BaseValueConverter](/Gui.Core/_BaseValueConverter.md)
+• [BaseValueConverter](_BaseValueConverter.md)
 
 • *AlternationConverter*
 
@@ -40,7 +40,7 @@ Converts an integer to/from an object by applying the integer as an index to a l
 
 | Name | Description |
 | --- | --- |
-| ○ *Values* | Gets a list of objects that the [AlternationConverter](/Gui.Core/_AlternationConverter.md) returns when an integer is passed to the Convert() method |
+| ○ *Values* | Gets a list of objects that the [AlternationConverter](_AlternationConverter.md) returns when an integer is passed to the Convert() method |
 
 ● Dependency Property   ○ Reflection Property
 
@@ -50,7 +50,7 @@ AlternationConverter has no attached properties
 
 # Methods
 
-## From [BaseValueConverter](/Gui.Core/_BaseValueConverter.md)
+## From [BaseValueConverter](_BaseValueConverter.md)
 
 | Name | Description |
 | --- | --- |

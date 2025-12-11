@@ -8,15 +8,15 @@ This section is intended as a reference guide for ways to improve the performanc
 
 Note
 
-![Optimizing1.png](/Optimizing1/png.md)
+![Optimizing1.png](https://www.noesisengine.com/docs/Optimizing1.png)
 
-For optimizing graphics performance [XamlPlayer](/Gui.Core/FirstSteps.md) has a Statistics panel that can be toggled on with CTRL + F. This information is also available programmatically in the IView interface.
+For optimizing graphics performance [XamlPlayer](FirstSteps.md) has a Statistics panel that can be toggled on with CTRL + F. This information is also available programmatically in the IView interface.
 
 ## Antialiasing
 
 NoesisGUI implements a very fast antialiasing algorithm that can be used instead of GPU full-scene antialiasing. To use it you have to activate the PPAA (per-primitive algorithm) algorithm in the view. PPAA implements antialiasing by extruding the contours of the triangles smoothing them. The paths are slightly altered though.
 
-Although it depends on the hardware, *PPAA* is normally a lot faster than GPU MSAA. We recommend using it whenever possible. Our [application framework](/Gui.Core/ApplicationTutorial.md) enables *PPAA* by default.
+Although it depends on the hardware, *PPAA* is normally a lot faster than GPU MSAA. We recommend using it whenever possible. Our [application framework](ApplicationTutorial.md) enables *PPAA* by default.
 
 ## Opacity Groups
 
@@ -37,7 +37,7 @@ For example, in the following XAML:
 
 Although the aspect of both rectangles is the same, the first one is being rendered to an offscreen texture and later being copied to the main surface. It is very important not using this kind of opacity when there is only a single node (like in this example). In these cases is better transferring the alpha to the brush, like shown in the second example. We could detect and optimize this case in the future but it is better not relying on it.
 
-When you use a [Brush](/Gui.Core/_Brush.md) to set the *Fill* or *Stroke* of an element, it is better to set the *Brush.Opacity* value rather than the setting the element's *Opacity* property.
+When you use a [Brush](_Brush.md) to set the *Fill* or *Stroke* of an element, it is better to set the *Brush.Opacity* value rather than the setting the element's *Opacity* property.
 
 Tip
 
@@ -56,7 +56,7 @@ The statistics panel display the percentage of triangles for each kind of brush.
 
 ## Share Resources
 
-Use [dictionaries](/Gui.Core/_ResourceDictionary.md) to share resources whenever possible. This is key to reducing memory usage but it is also important to increase rendering performance because it allow us to improve batching. Using resources in [Blend](/Gui.Core/BlendTutorial.md) is very easy, you only have to click on the white dot of the resource and select "Convert to New Resource...".
+Use [dictionaries](_ResourceDictionary.md) to share resources whenever possible. This is key to reducing memory usage but it is also important to increase rendering performance because it allow us to improve batching. Using resources in [Blend](BlendTutorial.md) is very easy, you only have to click on the white dot of the resource and select "Convert to New Resource...".
 
 ```
 <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -88,4 +88,4 @@ Use [dictionaries](/Gui.Core/_ResourceDictionary.md) to share resources whenever
 
 # Loading times
 
-Using several resource dictionaries to organize styles and resources is a good practice. But keep in mind that every time you reference a resource dictionary in a XAML, that dictionary is loaded and all its resources created again. Therefore, as described in the [styling](/Gui.Core/StylingTutorial.md) guide, it is recommended to include those dictionaries, if they are used along your whole application, in the global dictionary, so they are loaded only once and are always accessible.
+Using several resource dictionaries to organize styles and resources is a good practice. But keep in mind that every time you reference a resource dictionary in a XAML, that dictionary is loaded and all its resources created again. Therefore, as described in the [styling](StylingTutorial.md) guide, it is recommended to include those dictionaries, if they are used along your whole application, in the global dictionary, so they are loaded only once and are always accessible.

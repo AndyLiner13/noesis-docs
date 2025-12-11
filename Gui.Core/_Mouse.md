@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._Mouse.html
 
 # Mouse Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.input.mouse.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.input.mouse.aspx)
 
 Represents the mouse device.
 

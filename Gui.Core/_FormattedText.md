@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._FormattedText.html
 
 # FormattedText Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.media.formattedtext.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://msdn.microsoft.com/en-us/library/system.windows.media.formattedtext.aspx)
 
 Provides low-level control for drawing text.
 
@@ -27,9 +27,9 @@ FormattedText has no attached properties
 |  *GetGlyphPosition(chIndex, afterChar, x, y)* | Gets x/y coordinates at where the specified glyph is positioned. If the glyph is outside layout limits then -10 is returned for both x/y coordinates |
 |  *GetLineInfo(index)* | Gets information about the specified line |
 |  *GetNumLines()* | Gets the number of lines based on the last layout |
-|  *HasVisualBrush()* | Indicates if this [FormattedText](/Gui.Core/_FormattedText.md) uses any [VisualBrush](/Gui.Core/_VisualBrush.md) |
+|  *HasVisualBrush()* | Indicates if this [FormattedText](_FormattedText.md) uses any [VisualBrush](_VisualBrush.md) |
 |  *HitTest(x, y, isInside, isTrailing)* | Obtains the glyph index under the specified x/y coordinates, indicating if the point is inside the glyph bounds |
-|  *IsEmpty()* | Indicates if this [FormattedText](/Gui.Core/_FormattedText.md) has no text |
+|  *IsEmpty()* | Indicates if this [FormattedText](_FormattedText.md) has no text |
 |  *Layout(alignment, wrapping, trimming, maxWidth, maxHeight, padding, lineHeight, lineStacking, flowDirection, discardNonVisibleGlyphs)* | Layouts and prepares text for rendering for the given constraints |
 |  *Measure(alignment, wrapping, trimming, maxWidth, maxHeight, lineHeight, lineStacking, flowDirection)* | Obtains the size of the stored runs for the given constraints |
 

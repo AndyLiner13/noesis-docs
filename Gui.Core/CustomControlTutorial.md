@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core.CustomControlTutorial.html
 
 # CustomControl Tutorial
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/CustomControl)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/CustomControl)
 
-In contrast with [UserControls](/Gui.Core/UserControlTutorial.md), that are created by *composition* of controls, a *CustomControl* **extends** an existing control. *CustomControls* can be styled and it is usually the best approach to build a control library.
+In contrast with [UserControls](UserControlTutorial.md), that are created by *composition* of controls, a *CustomControl* **extends** an existing control. *CustomControls* can be styled and it is usually the best approach to build a control library.
 
 Creating a CustomControl is quite simple but the challenge is to do it the right way. So before you start creating a control try to answer the following questions:
 
@@ -20,18 +20,18 @@ This tutorial gives you a step by step walktrough on how to create a custom cont
 
 Choosing the right base class is crucial and can save a lot of time. Compare the features of your control with existing controls and start with one that matches close. The following list should give you a good overview from the most lightweight to more heavyweight base types:
 
-- [UIElement](/Gui.Core/_UIElement.md): The most lightweight base class to start from. It has support for *Layout*, *Input*, *Focus* and *Events*.
-- [FrameworkElement](/Gui.Core/_FrameworkElement.md): Derives from *UIElement* and adds support for styling, tooltips and context menus. It is the first base class that takes part in the logical tree and so it supports [data binding](/Gui.Core/DataBindingTutorial.md) and resource lookup.
-- [Control](/Gui.Core/_Control.md): is the most common base class for controls (its name speaks for itself). It supports templates and adds some basic properties as *Foreground*, *Background* and *FontSize*.
-- [ContentControl](/Gui.Core/_ContentControl.md): is a control that has an additional *Content* property. This is often used for simple containers.
-- [HeaderedContentControl](/Gui.Core/_HeaderedContentControl.md): is a control that has an *Content* and a *Header* property. This is used for controls with a header like [Expander](/Gui.Core/_Expander.md), [TabControl](/Gui.Core/_TabControl.md) or [GroupBox](/Gui.Core/_GroupBox.md)
-- [ItemsControl](/Gui.Core/_ItemsControl.md): a control that has an additional *Items* collection. This is a good choice for controls that display a dynamic list of items without selection.
-- [Selector](/Gui.Core/_Selector.md): an *ItemsControl* whose items can be indexed and selected. This is used for [ListBox](/Gui.Core/_ListBox.md), [ComboBox](/Gui.Core/_ComboBox.md), [ListView](/Gui.Controls/_ListView.md) or [TabControl](/Gui.Core/_TabControl.md)
-- [RangeBase](/Gui.Core/_RangeBase.md): is the base class for controls that display a value range like [Slider](/Gui.Core/_Slider.md) or [ProgressBar](/Gui.Core/_ProgressBar.md). It adds a *Value*, *Minimum* and *Maximum* property.
+- [UIElement](_UIElement.md): The most lightweight base class to start from. It has support for *Layout*, *Input*, *Focus* and *Events*.
+- [FrameworkElement](_FrameworkElement.md): Derives from *UIElement* and adds support for styling, tooltips and context menus. It is the first base class that takes part in the logical tree and so it supports [data binding](DataBindingTutorial.md) and resource lookup.
+- [Control](_Control.md): is the most common base class for controls (its name speaks for itself). It supports templates and adds some basic properties as *Foreground*, *Background* and *FontSize*.
+- [ContentControl](_ContentControl.md): is a control that has an additional *Content* property. This is often used for simple containers.
+- [HeaderedContentControl](_HeaderedContentControl.md): is a control that has an *Content* and a *Header* property. This is used for controls with a header like [Expander](_Expander.md), [TabControl](_TabControl.md) or [GroupBox](_GroupBox.md)
+- [ItemsControl](_ItemsControl.md): a control that has an additional *Items* collection. This is a good choice for controls that display a dynamic list of items without selection.
+- [Selector](_Selector.md): an *ItemsControl* whose items can be indexed and selected. This is used for [ListBox](_ListBox.md), [ComboBox](_ComboBox.md), [ListView](../Gui.Controls/_ListView.md) or [TabControl](_TabControl.md)
+- [RangeBase](_RangeBase.md): is the base class for controls that display a value range like [Slider](_Slider.md) or [ProgressBar](_ProgressBar.md). It adds a *Value*, *Minimum* and *Maximum* property.
 
 # Implementation
 
-In our example we will derive from [Control](/Gui.Core/_Control.md) base class because our control requires templates to present date and time information. Other features added by more complex base classes are not required. We will follow the steps described in the [tutorial](/Gui.Core/ExtendingTutorial.md) that describes how to extend NoesisGUI.
+In our example we will derive from [Control](_Control.md) base class because our control requires templates to present date and time information. Other features added by more complex base classes are not required. We will follow the steps described in the [tutorial](ExtendingTutorial.md) that describes how to extend NoesisGUI.
 
 C++
 
@@ -241,15 +241,15 @@ public class DateTime : Control
 
 Using this control in any application will require that you specify a template for the *DateTime* type.
 
-To decouple the UI of your control from its logic, consider using [data binding](/Gui.Core/DataBindingTutorial.md). This is particularly important when you define the appearance of your control in the [ControlTemplate](/Gui.Core/_ControlTemplate.md). When you use data binding, you might be able to eliminate the need to reference specific parts of the UI from the code. It's a good idea to avoid referencing elements that are in the ControlTemplate because when the code references a specific element and the ControlTemplate is changed, the referenced element needs to be included in the new ControlTemplate.
+To decouple the UI of your control from its logic, consider using [data binding](DataBindingTutorial.md). This is particularly important when you define the appearance of your control in the [ControlTemplate](_ControlTemplate.md). When you use data binding, you might be able to eliminate the need to reference specific parts of the UI from the code. It's a good idea to avoid referencing elements that are in the ControlTemplate because when the code references a specific element and the ControlTemplate is changed, the referenced element needs to be included in the new ControlTemplate.
 
-We are going to provide two different approaches to demonstrate the power of control [styling and templating](/Gui.Core/StylingTutorial.md).
+We are going to provide two different approaches to demonstrate the power of control [styling and templating](StylingTutorial.md).
 
 ### Digital Clock
 
 The *first* template shows the date and time as a digital clock:
 
-![CustomControlTutorialImg1.jpg](/CustomControlTutorialImg1/jpg.md)
+![CustomControlTutorialImg1.jpg](https://www.noesisengine.com/docs/CustomControlTutorialImg1.jpg)
 
 ```
 <!-- Digital clock style -->
@@ -281,7 +281,7 @@ The *first* template shows the date and time as a digital clock:
 
 The *second* template is an attempt to simulate an analog clock:
 
-![CustomControlTutorialImg2.jpg](/CustomControlTutorialImg2/jpg.md)
+![CustomControlTutorialImg2.jpg](https://www.noesisengine.com/docs/CustomControlTutorialImg2.jpg)
 
 ```
 <!-- Converters needed -->
@@ -379,7 +379,7 @@ The *second* template is an attempt to simulate an analog clock:
 
 ## Converters
 
-The analog-clock style needs a few [converters](/Gui.Core/_BaseValueConverter.md) to transform control properties into the appropriate rotation angles.
+The analog-clock style needs a few [converters](_BaseValueConverter.md) to transform control properties into the appropriate rotation angles.
 
 C++
 

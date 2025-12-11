@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.ProvidersTutorial.html
 
 # Resource Providers
 
-In Noesis, the resource loading process is facilitated through the installation of custom providers. These specialized providers play a pivotal role in handling various resource types, such as XAML, Texture, and Font. Providers can be installed globally, for a specific [Uri](/Gui.Providers/_Uri.md) scheme or even to a particular assembly name.
+In Noesis, the resource loading process is facilitated through the installation of custom providers. These specialized providers play a pivotal role in handling various resource types, such as XAML, Texture, and Font. Providers can be installed globally, for a specific [Uri](../Gui.Providers/_Uri.md) scheme or even to a particular assembly name.
 
 # Global Providers
 
@@ -51,14 +51,14 @@ Although the implementation of the method 'GetMemoryBase' is optional, we highly
 
 # Scheme/Assemby Providers
 
-Besides the global resource providers, it's also possible to install providers specific to a particular assembly or scheme. For example, the following code will install a handler for pack [Uris](/Gui.Providers/_Uri.md) that contain the assembly name "*MyExtensions*".
+Besides the global resource providers, it's also possible to install providers specific to a particular assembly or scheme. For example, the following code will install a handler for pack [Uris](../Gui.Providers/_Uri.md) that contain the assembly name "*MyExtensions*".
 
 ```
 // This will handle uris like '/MyExtensions;component/MainWindow.xaml'
 Noesis::GUI::SetAssemblyXamlProvider("MyExtensions", xamlProvider);
 ```
 
-Likewise, a similar process applies to installing handlers for specific [Uri](/Gui.Providers/_Uri.md) schemes. For example, the following code will handle all [Uris](/Gui.Providers/_Uri.md) using the "*noesis*" scheme.
+Likewise, a similar process applies to installing handlers for specific [Uri](../Gui.Providers/_Uri.md) schemes. For example, the following code will handle all [Uris](../Gui.Providers/_Uri.md) using the "*noesis*" scheme.
 
 ```
 // This will handle uris like 'noesis:///MainWindow.xaml'
@@ -89,7 +89,7 @@ public:
 };
 ```
 
-The implementation is straightforward. You basically must provide a stream for each [Uri](/Gui.Providers/_Uri.md) that is requested. You can find two *XamlProvider* implementations in our [Application Framework](/Gui.Core/ApplicationTutorial.md): *LocalXamlProvider* for loading XAMLs from disk and *EmbeddedXamlProvider* for loading XAMLs embedded in the executable.
+The implementation is straightforward. You basically must provide a stream for each [Uri](../Gui.Providers/_Uri.md) that is requested. You can find two *XamlProvider* implementations in our [Application Framework](ApplicationTutorial.md): *LocalXamlProvider* for loading XAMLs from disk and *EmbeddedXamlProvider* for loading XAMLs embedded in the executable.
 
 ## Texture provider
 
@@ -135,7 +135,7 @@ struct TextureInfo
 };
 ```
 
-The [Application Framework](/Gui.Core/ApplicationTutorial.md) provides a helper class, *FileTextureProvider*, that will create textures from image files stored on disk. It exposes a virtual function that must be implemented to load the requested filename at the given [Uri](/Gui.Providers/_Uri.md).
+The [Application Framework](ApplicationTutorial.md) provides a helper class, *FileTextureProvider*, that will create textures from image files stored on disk. It exposes a virtual function that must be implemented to load the requested filename at the given [Uri](../Gui.Providers/_Uri.md).
 
 ```
 class FileTextureProvider: public TextureProvider
@@ -145,7 +145,7 @@ protected:
 };
 ```
 
-Similar to *XamlProvider* you can find *LocalTextureProvider* and *EmbeddedTextureProvider* implementations within the [Application Framework](/Gui.Core/ApplicationTutorial.md).
+Similar to *XamlProvider* you can find *LocalTextureProvider* and *EmbeddedTextureProvider* implementations within the [Application Framework](ApplicationTutorial.md).
 
 ## Font provider
 
@@ -197,11 +197,11 @@ protected:
 
 The most efficient way to provide custom fonts for Noesis is creating a new class derived from *CachedFontProvider* and in its constructor registering a fixed list of fonts with its corresponding attributes using *RegisterFont*.
 
-Similar to the rest of providers, *LocalFontProvider* and *EmbeddedFontProvider* are sample implementations available in the [Application Framework](/Gui.Core/ApplicationTutorial.md). We recommend using this classes instead of *CachedFontProvider*.
+Similar to the rest of providers, *LocalFontProvider* and *EmbeddedFontProvider* are sample implementations available in the [Application Framework](ApplicationTutorial.md). We recommend using this classes instead of *CachedFontProvider*.
 
 # Hot Reload
 
-Providers also expose a delegate to inform when a resource needs to be [reloaded](/Gui.Core/HotReloadTutorial.md). Each time this delegate is invoked the corresponding resource will be hot reloaded. *RaiseXamlChanged*, *RaiseTextureChanged* and *RaiseFontChanged* are the corresponding functions in charge of notifying Noesis that a resource needs to be reloaded.
+Providers also expose a delegate to inform when a resource needs to be [reloaded](HotReloadTutorial.md). Each time this delegate is invoked the corresponding resource will be hot reloaded. *RaiseXamlChanged*, *RaiseTextureChanged* and *RaiseFontChanged* are the corresponding functions in charge of notifying Noesis that a resource needs to be reloaded.
 
 ```
 class XamlProvider: public BaseComponent

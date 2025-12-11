@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core._StreamGeometryContext.html
 
 # StreamGeometryContext Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace)
 
-Describes a geometry using drawing commands. This class is used with the [StreamGeometry](/Gui.Core/_StreamGeometry.md) class to create a lightweight geometry that does not support data binding, animation, or modification.
+Describes a geometry using drawing commands. This class is used with the [StreamGeometry](_StreamGeometry.md) class to create a lightweight geometry that does not support data binding, animation, or modification.
 
 # Inheritance Hierarchy
 

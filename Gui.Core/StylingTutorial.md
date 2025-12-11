@@ -2,15 +2,15 @@ Source: https://www.noesisengine.com/docs/Gui.Core.StylingTutorial.html
 
 # Styles and Templates Tutorial
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Styles)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Snippets/Styles)
 
 NoesisGUI styling and templating refer to a suite of features (styles, templates, triggers, and storyboards) that allow developers and designers to create visually compelling effects and to create a consistent appearance for their product. Although developers and or designers can customize the appearance extensively on an application-by-application basis, a strong styling and templating model is necessary to allow maintenance and sharing of the appearance within and among applications. NoesisGUI provides that model.
 
 # Styles
 
-A style, represented by the [Style](/Gui.Core/_Style.md) class, is a pretty simple entity. Its main function is to group together property values that could otherwise be set individually. You can share this group of values among multiple elements.
+A style, represented by the [Style](_Style.md) class, is a pretty simple entity. Its main function is to group together property values that could otherwise be set individually. You can share this group of values among multiple elements.
 
-![StylingTutorialImg1.jpg](/StylingTutorialImg1/jpg.md)
+![StylingTutorialImg1.jpg](https://www.noesisengine.com/docs/StylingTutorialImg1.jpg)
 
 The texts in the previous image are customized by setting six properties. Without a *Style*, you would need to duplicate these identical assignments on all the texts, as shown next:
 
@@ -29,7 +29,7 @@ The texts in the previous image are customized by setting six properties. Withou
 </StackPanel>
 ```
 
-But with a *Style*, you can add a level of indirection setting them in one place and pointing each [TextBlock](/Gui.Core/_TextBlock.md) to this new element, as shown in the following code snippet.
+But with a *Style*, you can add a level of indirection setting them in one place and pointing each [TextBlock](_TextBlock.md) to this new element, as shown in the following code snippet.
 
 ```
 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -52,7 +52,7 @@ But with a *Style*, you can add a level of indirection setting them in one place
 </StackPanel>
 ```
 
-*Style* uses a collection of *Setters* to set the target properties. Creating a [Setter](/Gui.Core/_Setter.md) is just a matter of specifying the name of a dependency property and its desired value.
+*Style* uses a collection of *Setters* to set the target properties. Creating a [Setter](_Setter.md) is just a matter of specifying the name of a dependency property and its desired value.
 
 If you want to enforce that a *Style* can only be applied to a particular type, you can set its *TargetType* property accordingly. Also you no longer need to prefix the property names inside *Setters* with the type name. Applying a *TargetType* to a *Style* gives you another feature as well. If you omit its *Key*, the *Style* gets implicitly applied to all elements of that target type within the same scope. This is typically called a *typed style* as opposed to a *named style*. The scope of a typed *Style* is determined by the location of the *Style* resource.
 
@@ -77,7 +77,7 @@ If you want to enforce that a *Style* can only be applied to a particular type, 
 </StackPanel>
 ```
 
-*Styles* can also define some values of an element based on one or more conditions through the use of [Triggers](/Gui.Core/_Trigger.md). For example, if we want that text changes its foreground color and moves a bit to the right while the mouse pointer is over, we would add the following code:
+*Styles* can also define some values of an element based on one or more conditions through the use of [Triggers](_Trigger.md). For example, if we want that text changes its foreground color and moves a bit to the right while the mouse pointer is over, we would add the following code:
 
 ```
 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -153,13 +153,13 @@ And even better, we can use some animation to make the transition smoother. This
 </StackPanel>
 ```
 
-![StylingTutorialImg2.jpg](/StylingTutorialImg2/jpg.md)
+![StylingTutorialImg2.jpg](https://www.noesisengine.com/docs/StylingTutorialImg2.jpg)
 
 # Templates
 
-A template allows you to completely replace a control's visual tree with anything you can imagine while keeping all of its functionality intact. The source code for every control is completely separated from its default visual tree representations. Control templates are represented by the [ControlTemplate](/Gui.Core/_ControlTemplate.md) class that derives from the abstract [FrameworkTemplate](/Gui.Core/_FrameworkTemplate.md) class which defines the *VisualTree* content property, that is, the tree of elements that specify the desired look of a control.
+A template allows you to completely replace a control's visual tree with anything you can imagine while keeping all of its functionality intact. The source code for every control is completely separated from its default visual tree representations. Control templates are represented by the [ControlTemplate](_ControlTemplate.md) class that derives from the abstract [FrameworkTemplate](_FrameworkTemplate.md) class which defines the *VisualTree* content property, that is, the tree of elements that specify the desired look of a control.
 
-Next we are going to use templates to redesign the appearance of a common [Button](/Gui.Core/_Button.md) control.
+Next we are going to use templates to redesign the appearance of a common [Button](_Button.md) control.
 
 ```
 <Grid
@@ -176,7 +176,7 @@ Next we are going to use templates to redesign the appearance of a common [Butto
 </Grid>
 ```
 
-Now we have a simple circle representing our button although the content, the text in this case, disappeared. If you are creating a control template that is meant to be broadly reusable, you need to do some work to respect various properties of the target control. We could add a [TextBlock](/Gui.Core/_TextBlock.md) to the control template and use data binding to show the *Button* content. Of course, a *Button* can contain non-text *Content*, so using a *TextBlock* to display it, creates an artificial limitation. To ensure that all types of *Content* get displayed properly in the template, we can use a [ContentPresenter](/Gui.Core/_ContentPresenter.md), that was specifically designed for that purpose.
+Now we have a simple circle representing our button although the content, the text in this case, disappeared. If you are creating a control template that is meant to be broadly reusable, you need to do some work to respect various properties of the target control. We could add a [TextBlock](_TextBlock.md) to the control template and use data binding to show the *Button* content. Of course, a *Button* can contain non-text *Content*, so using a *TextBlock* to display it, creates an artificial limitation. To ensure that all types of *Content* get displayed properly in the template, we can use a [ContentPresenter](_ContentPresenter.md), that was specifically designed for that purpose.
 
 ```
 <Grid
@@ -224,11 +224,11 @@ With this template, the button has lost some interactivity feedback, user has no
 </Grid>
 ```
 
-![StylingTutorialImg3.jpg](/StylingTutorialImg3/jpg.md)
+![StylingTutorialImg3.jpg](https://www.noesisengine.com/docs/StylingTutorialImg3.jpg)
 
 At the beginning of this section we explained that controls are *lookless* and have an implementation that is completely independent from their visuals. But this is not entirely true. Some controls have built-in logic that only applies based on the existence of certain elements in its visual tree. To find them it looks for specific names in the form of *PART\_XXX* and sometimes for specific types as well. If such elements are found, additional behavior is applied to them. The specific names and behaviors are different for each control.
 
-For example, if a [ProgressBar](/Gui.Core/_ProgressBar.md) control template has elements named *PART\_Indicator* and *PART\_Track*, the control ensures that the width of *PART\_Indicator* remains the correct percentage of the *PART\_Track*'s width, based on ProgressBar's *Value*, *Minimum* and *Maximum* properties.
+For example, if a [ProgressBar](_ProgressBar.md) control template has elements named *PART\_Indicator* and *PART\_Track*, the control ensures that the width of *PART\_Indicator* remains the correct percentage of the *PART\_Track*'s width, based on ProgressBar's *Value*, *Minimum* and *Maximum* properties.
 
 # Themes
 
@@ -270,7 +270,7 @@ Although all the control templates thus far are applied directly to elements for
 > </StackPanel>
 > ```
 
-![StylingTutorialImg4.jpg](/StylingTutorialImg4/jpg.md)
+![StylingTutorialImg4.jpg](https://www.noesisengine.com/docs/StylingTutorialImg4.jpg)
 
 - It also enables you to provide default yet overridable property values that control the look of the template. In other words, it enables you to respect the templated parent's properties but still provide your own default values.
 
@@ -313,11 +313,11 @@ Although all the control templates thus far are applied directly to elements for
 > </StackPanel>
 > ```
 
-![StylingTutorialImg5.jpg](/StylingTutorialImg5/jpg.md)
+![StylingTutorialImg5.jpg](https://www.noesisengine.com/docs/StylingTutorialImg5.jpg)
 
 ## Default styles
 
-In contrast with WPF, that provides a fully functional theme by default installed in the operating system, NoesisGUI only provides a debug theme in the core library to define default styles for each control. Every application must provide a [ResourceDictionary](/Gui.Core/_ResourceDictionary.md) containing styles and templates for all controls that appear in the application. The dictionary must provide values for all properties. Properties not set will take the value from our internal debug theme that displays controls in pink to help detecting unset values. Functions for setting default font and properties are also exposed.
+In contrast with WPF, that provides a fully functional theme by default installed in the operating system, NoesisGUI only provides a debug theme in the core library to define default styles for each control. Every application must provide a [ResourceDictionary](_ResourceDictionary.md) containing styles and templates for all controls that appear in the application. The dictionary must provide values for all properties. Properties not set will take the value from our internal debug theme that displays controls in pink to help detecting unset values. Functions for setting default font and properties are also exposed.
 
 C++
 
@@ -341,9 +341,9 @@ Noesis.GUI.SetFontDefaultProperties(15, FontWeight.Normal, FontStretch.Normal, F
 
 NOTE
 
-In [Unity](/Gui.Core/Unity3DTutorial.md#configuring-noesisgui) and [Unreal](/Gui.Core/UnrealTutorial.md#noesis-settings), these properties are exposed in 'Noesis Settings' panel as 'Application Resources' and 'Default Font'
+In [Unity](Unity3DTutorial.md#configuring-noesisgui) and [Unreal](UnrealTutorial.md#noesis-settings), these properties are exposed in 'Noesis Settings' panel as 'Application Resources' and 'Default Font'
 
-When using the [Application Framework](/Gui.Core/ApplicationTutorial.md), the *Resources* property of the *Application* can be used for the same purpose. *MergedDictionaries* is a useful property for adding a whole XAML to the target dictionary.
+When using the [Application Framework](ApplicationTutorial.md), the *Resources* property of the *Application* can be used for the same purpose. *MergedDictionaries* is a useful property for adding a whole XAML to the target dictionary.
 
 ```
 <Application
@@ -370,11 +370,11 @@ When using the [Application Framework](/Gui.Core/ApplicationTutorial.md), the *R
 
 NOTE
 
-Styles are complex to write and it requires time to obtain the desired results. Our Application Framework provides a [rich theme](/Gui.Core/ApplicationTutorial.md#noesis-theme) with support for accent colors and dark & light modes. All our samples use this theme.
+Styles are complex to write and it requires time to obtain the desired results. Our Application Framework provides a [rich theme](ApplicationTutorial.md#noesis-theme) with support for accent colors and dark & light modes. All our samples use this theme.
 
 ## Local styles
 
-[FrameworkElement](/Gui.Core/_FrameworkElement.md) is the base class for all controls, and it has a *Resources* property that can be used for adding local resources. The following sample displays three buttons, each one with a different style.
+[FrameworkElement](_FrameworkElement.md) is the base class for all controls, and it has a *Resources* property that can be used for adding local resources. The following sample displays three buttons, each one with a different style.
 
 ```
 <StackPanel
@@ -415,7 +415,7 @@ Styles are complex to write and it requires time to obtain the desired results. 
 </StackPanel>
 ```
 
-![StylingTutorialImg6.jpg](/StylingTutorialImg6/jpg.md)
+![StylingTutorialImg6.jpg](https://www.noesisengine.com/docs/StylingTutorialImg6.jpg)
 
 NOTE
 
@@ -457,7 +457,7 @@ Controls can only have one style set in its *Style* property, so if a few proper
 </Grid>
 ```
 
-![StylingTutorialImg7.jpg](/StylingTutorialImg7/jpg.md)
+![StylingTutorialImg7.jpg](https://www.noesisengine.com/docs/StylingTutorialImg7.jpg)
 
 Notice that *BigButtonStyle* is based on any previously defined typed style that exists for the Button. This usually refers to the style defined in the application dictionary.
 
@@ -497,4 +497,4 @@ Moving our locally defined typed style for the Button in front of BigButtonStyle
 </Grid>
 ```
 
-![StylingTutorialImg8.jpg](/StylingTutorialImg8/jpg.md)
+![StylingTutorialImg8.jpg](https://www.noesisengine.com/docs/StylingTutorialImg8.jpg)

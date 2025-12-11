@@ -4,7 +4,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core.RenderingTutorial.html
 
 NoesisGUI rendering architecture is designed to have two threads working in parallel: the *ui* thread and the *render* thread. Although, as explained later, this is not strictly mandatory. You can have more threads or even have no extra threads at all. Under no circumstances our core library will create threads under the hood. This responsibility is delegated to the client who is in charge of invoking *Noesis* from the appropriate thread.
 
-![RenderingTutorialImg1.jpg](/RenderingTutorialImg1/jpg.md)
+![RenderingTutorialImg1.jpg](https://www.noesisengine.com/docs/RenderingTutorialImg1.jpg)
 
 # UI Thread
 
@@ -50,7 +50,7 @@ Please note that 'Update' never blocks and allocates memory when not synchronize
 
 # Render Thread
 
-This is the thread that directly interacts with the GPU through the *RenderDevice* abstract class. Being *Noesis* rendering agnostic, it is client code responsibility to provide one *RenderDevice* implementation. The [Application Framework](/Gui.Core/ApplicationTutorial.md) provides many reference implementations that can be used as a starting point to create a custom one. *RenderDevice* exposes a few functions to control the internal *Vector Graphics* context created. Default values should work well for most scenarios.
+This is the thread that directly interacts with the GPU through the *RenderDevice* abstract class. Being *Noesis* rendering agnostic, it is client code responsibility to provide one *RenderDevice* implementation. The [Application Framework](ApplicationTutorial.md) provides many reference implementations that can be used as a starting point to create a custom one. *RenderDevice* exposes a few functions to control the internal *Vector Graphics* context created. Default values should work well for most scenarios.
 
 ```
 Ptr<GLRenderDevice> device = *new GLRenderDevice();

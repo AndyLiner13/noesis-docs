@@ -2,19 +2,19 @@ Source: https://www.noesisengine.com/docs/Gui.Core._BaseBinding.html
 
 # BaseBinding Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.data.bindingbase.aspx)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](http://msdn.microsoft.com/en-us/library/system.windows.data.bindingbase.aspx)
 
-Defines the common features for [Binding](/Gui.Core/_Binding.md).
+Defines the common features for [Binding](_Binding.md).
 
 # Inheritance Hierarchy
 
-• [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+• [MarkupExtension](_MarkupExtension.md)
 
 • *BaseBinding*
 
-• [Binding](/Gui.Core/_Binding.md)
+• [Binding](_Binding.md)
 
-• [MultiBinding](/Gui.Core/_MultiBinding.md)
+• [MultiBinding](_MultiBinding.md)
 
 # Properties
 
@@ -33,7 +33,7 @@ BaseBinding has no attached properties
 
 # Methods
 
-## From [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+## From [MarkupExtension](_MarkupExtension.md)
 
 | Name | Description |
 | --- | --- |

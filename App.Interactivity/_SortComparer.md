@@ -2,15 +2,15 @@ Source: https://www.noesisengine.com/docs/App.Interactivity._SortComparer.html
 
 # SortComparer Class
 
-## namespace [NoesisApp](/Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
+## namespace [NoesisApp](../Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
 
-Base class for Comparer object used by [CollectionSortBehavior](/App.Interactivity/_CollectionSortBehavior.md). It compares 2 items.
+Base class for Comparer object used by [CollectionSortBehavior](_CollectionSortBehavior.md). It compares 2 items.
 
 # Inheritance Hierarchy
 
 • *SortComparer*
 
-• [StringSortComparer](/App.Interactivity/_StringSortComparer.md)
+• [StringSortComparer](_StringSortComparer.md)
 
 # Properties
 

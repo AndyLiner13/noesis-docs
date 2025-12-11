@@ -2,7 +2,7 @@ Source: https://www.noesisengine.com/docs/Gui.Core._LogicalTreeHelper.html
 
 # LogicalTreeHelper Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace)
 
 Contains static methods useful for performing common tasks with nodes in a logical tree.
 

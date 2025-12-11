@@ -2,9 +2,9 @@ Source: https://www.noesisengine.com/docs/Gui.Core._MultiBinding.html
 
 # MultiBinding Class
 
-## namespace [Noesis](/Gui.Core/_ClassHierarchy.md#noesis-namespace) | [MSDN](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.multibinding)
+## namespace [Noesis](_ClassHierarchy.md#noesis-namespace) | [MSDN](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.multibinding)
 
-Describes a collection of [Binding](/Gui.Core/_Binding.md) objects attached to a single binding target property.
+Describes a collection of [Binding](_Binding.md) objects attached to a single binding target property.
 
 Example:
 
@@ -29,9 +29,9 @@ Example:
 
 # Inheritance Hierarchy
 
-• [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+• [MarkupExtension](_MarkupExtension.md)
 
-• [BaseBinding](/Gui.Core/_BaseBinding.md)
+• [BaseBinding](_BaseBinding.md)
 
 • *MultiBinding*
 
@@ -39,7 +39,7 @@ Example:
 
 | Name | Description |
 | --- | --- |
-| ○ *Bindings* | Gets the collection of [Binding](/Gui.Core/_Binding.md) objects within this [MultiBinding](/Gui.Core/_MultiBinding.md) instance |
+| ○ *Bindings* | Gets the collection of [Binding](_Binding.md) objects within this [MultiBinding](_MultiBinding.md) instance |
 | ○ *Converter* | Gets or sets the converter to use to convert the source values to or from the target value |
 | ○ *ConverterParameter* | Gets or sets the parameter to pass to the Converter |
 | ○ *Mode* | Gets or sets the binding mode. It can be set to one of the following values of the *BindingMode* enumeration:   - *OneWay*: The target is updated whenever the source changes. - *TwoWay*: A change to either the target or source updates the other. - *OneWayToSource*: The opposite of *OneWay*. The source is updated whenever the targetchanges. - *OneTime*: This works just like *OneWay*, except changes to the source are notreflected at the target. The target retains a snapshot of the source at the time the *Binding* is initiated. |
@@ -47,7 +47,7 @@ Example:
 
 ● Dependency Property   ○ Reflection Property
 
-## From [BaseBinding](/Gui.Core/_BaseBinding.md)
+## From [BaseBinding](_BaseBinding.md)
 
 | Name | Description |
 | --- | --- |
@@ -68,7 +68,7 @@ MultiBinding has no attached properties
 | --- | --- |
 |  *ProvideValue(provider)* | Can return 0 when the source object is not resolvable (doesn't throw exception) |
 
-## From [MarkupExtension](/Gui.Core/_MarkupExtension.md)
+## From [MarkupExtension](_MarkupExtension.md)
 
 | Name | Description |
 | --- | --- |

@@ -2,15 +2,15 @@ Source: https://www.noesisengine.com/docs/App.Interactivity._FilterPredicate.htm
 
 # FilterPredicate Class
 
-## namespace [NoesisApp](/Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
+## namespace [NoesisApp](../Gui.Core/_ClassHierarchy.md#noesisapp-namespace)
 
-Base class for Filter predicate object used by [CollectionFilterBehavior](/App.Interactivity/_CollectionFilterBehavior.md).
+Base class for Filter predicate object used by [CollectionFilterBehavior](_CollectionFilterBehavior.md).
 
 # Inheritance Hierarchy
 
 • *FilterPredicate*
 
-• [StringFilterPredicate](/App.Interactivity/_StringFilterPredicate.md)
+• [StringFilterPredicate](_StringFilterPredicate.md)
 
 # Properties
 

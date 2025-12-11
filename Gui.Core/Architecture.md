@@ -4,11 +4,11 @@ Source: https://www.noesisengine.com/docs/Gui.Core.Architecture.html
 
 This section provides information about the class hierarchy involved in the UI. It covers most of the major subsystems, and describes how they interact.
 
-![BaseClasses.png](/BaseClasses/png.md)
+![BaseClasses.png](https://www.noesisengine.com/docs/BaseClasses.png)
 
 # DependencyObject
 
-See [Dependency System Overview](/Gui.DependencySystem/Index.md) for a complete description of DependencyObject functionality.
+See [Dependency System Overview](../Gui.DependencySystem/Index.md) for a complete description of DependencyObject functionality.
 
 # Visual
 

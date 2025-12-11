@@ -10,11 +10,11 @@ Hot Reload parses the XAML to see exactly what changed when you make an edit, an
 
 Changes in resource dictionaries are also supported, even in multiple XAMLs. Hot Reload creates new styles when modifying sealed ones. Theme modifications are reapplied without having to restart the application.
 
-![HotReloadTutorial0.gif](/HotReloadTutorial0/gif.md)
+![HotReloadTutorial0.gif](https://www.noesisengine.com/docs/HotReloadTutorial0.gif)
 
 # Enable Hot Reload
 
-Hot Reload is only supported in 'Profile' configurations of NoesisGUI. It also needs assistance from the installed [Resource Providers](/Gui.Core/ProvidersTutorial.md#hot-reloading). Providers must invoke the corresponding delegate when changes happen, for example in a filesystem.
+Hot Reload is only supported in 'Profile' configurations of NoesisGUI. It also needs assistance from the installed [Resource Providers](ProvidersTutorial.md#hot-reloading). Providers must invoke the corresponding delegate when changes happen, for example in a filesystem.
 
 The following providers included in the App Framework already implement support for Hot Reload using a filesystem watcher:
 
@@ -45,6 +45,6 @@ Samples.HelloWorld --root W:/Noesis/NoesisSDK/Native/Src/Packages/Samples/HelloW
 
 # Hot Reload on Remote App
 
-Hot Reload is also supported remotely, for example when running your application in a mobile device or in a video game console. This is supported by connecting to the remote application with the [Inspector](/Gui.Core/InspectorTutorial.md) and setting up a local 'Project path'.
+Hot Reload is also supported remotely, for example when running your application in a mobile device or in a video game console. This is supported by connecting to the remote application with the [Inspector](InspectorTutorial.md) and setting up a local 'Project path'.
 
-![InspectorTutorialImg5.png](/InspectorTutorialImg5/png.md)
+![InspectorTutorialImg5.png](https://www.noesisengine.com/docs/InspectorTutorialImg5.png)

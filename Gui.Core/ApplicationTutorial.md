@@ -2,27 +2,27 @@ Source: https://www.noesisengine.com/docs/Gui.Core.ApplicationTutorial.html
 
 # Application Framework
 
-![github](/github/png.md) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/ApplicationTutorial)
+![github](https://www.noesisengine.com/docs/github.png) [Tutorial Data](https://github.com/Noesis/Tutorials/tree/master/Samples/ApplicationTutorial)
 
-![ApplicationTutorialImg1.png](/ApplicationTutorialImg1/png.md)
+![ApplicationTutorialImg1.png](https://www.noesisengine.com/docs/ApplicationTutorialImg1.png)
 
-Although noesisGUI can be fully integrated within your application, as shown in the [integration](/Gui.Core/SDKGuide.md) tutorial, an *Application Framework* is also provided. This framework is an *Open Source* library that provides abstractions to create multiplatform applications. The framework is a good example about how to use Noesis and it provides many helpers that can be useful. All our public samples use the application framework.
+Although noesisGUI can be fully integrated within your application, as shown in the [integration](SDKGuide.md) tutorial, an *Application Framework* is also provided. This framework is an *Open Source* library that provides abstractions to create multiplatform applications. The framework is a good example about how to use Noesis and it provides many helpers that can be useful. All our public samples use the application framework.
 
-The extensions provided, like [Application](/App.ApplicationLauncher/_Application.md) and [Window](/App.ApplicationLauncher/_Window.md), are compatible with WPF, so compatible with *Microsoft Blend*. Using the application framework you can design applications that will indistinctly run in a Windows window, macOS window, iPhone screen, or Xbox TV for example. The framework supports all the platforms where NoesisGUI is available.
+The extensions provided, like [Application](../App.ApplicationLauncher/_Application.md) and [Window](../App.ApplicationLauncher/_Window.md), are compatible with WPF, so compatible with *Microsoft Blend*. Using the application framework you can design applications that will indistinctly run in a Windows window, macOS window, iPhone screen, or Xbox TV for example. The framework supports all the platforms where NoesisGUI is available.
 
 The following is a list of the functionality exposed by the *Application Framework*:
 
-- Multiplatform abstractions for [Application](/App.ApplicationLauncher/_Application.md) and [Window](/App.ApplicationLauncher/_Window.md).
+- Multiplatform abstractions for [Application](../App.ApplicationLauncher/_Application.md) and [Window](../App.ApplicationLauncher/_Window.md).
 - Multiplatform handling of input events: keyboard, mouse, touch, gamepads and VR controllers.
 - Support for playing sounds.
-- Video playback functionality using the [MediaPlayer](/App.MediaElement/_MediaPlayer.md).
-- [Resource Providers](/Gui.Core/ProvidersTutorial.md) implementation for loading assets.
+- Video playback functionality using the [MediaPlayer](../App.MediaElement/_MediaPlayer.md).
+- [Resource Providers](ProvidersTutorial.md) implementation for loading assets.
 - [Noesis Theme](#noesis-theme).
 - Render implementations for each supported graphics API.
 - [ShaderCompiler](#shader-compiler) tool.
-- [Shader Effects and Brushes](/Gui.Core/ShadersTutorial.md).
-- The [Interactivity](/App.Interactivity/Behaviors.md) package.
-- A [Language Server](/Gui.Core/LanguageServer.md) compatible with [Visual Studio Code](https://noesisengine.com/vscode).
+- [Shader Effects and Brushes](ShadersTutorial.md).
+- The [Interactivity](../App.Interactivity/Behaviors.md) package.
+- A [Language Server](LanguageServer.md) compatible with [Visual Studio Code](https://noesisengine.com/vscode).
 
 NOTE
 
@@ -66,8 +66,8 @@ int NsMain(int argc, char **argv)
 
 The *Launcher* is the first instance you create. It is in charge of application initialization and main message loop. It also provides a few important overridable functions:
 
-- *RegisterComponents*: for registering classes in the component factory. Each extended class that need to be instantiated by XAML needs to be registered here as explained in the [Extending NoesisGUI](/Gui.Core/ExtendingTutorial.md) tutorial. For the framework you need to register at least the *Application* and *Window* class.
-- *GetXamlProvider*, *GetFontProvider* and *GetTextureProvider*: for customizing how resources are loaded. You can install custom handlers for XAMLs, font and textures as explained in the [Customizing Resource Loading](/Gui.Core/ProvidersTutorial.md) tutorial.
+- *RegisterComponents*: for registering classes in the component factory. Each extended class that need to be instantiated by XAML needs to be registered here as explained in the [Extending NoesisGUI](ExtendingTutorial.md) tutorial. For the framework you need to register at least the *Application* and *Window* class.
+- *GetXamlProvider*, *GetFontProvider* and *GetTextureProvider*: for customizing how resources are loaded. You can install custom handlers for XAMLs, font and textures as explained in the [Customizing Resource Loading](ProvidersTutorial.md) tutorial.
 
 ```
 class AppLauncher final: public ApplicationLauncher
@@ -109,7 +109,7 @@ The Embedded family of resource providers found in the framework allows you to e
 
 # Application
 
-The [Application](/App.ApplicationLauncher/_Application.md) class directly correspond to the [WPF Application Class](https://msdn.microsoft.com/en-us/library/system.windows.application(v=vs.110).aspx). Each application provides its own implementation inheriting from *Application* base class.
+The [Application](../App.ApplicationLauncher/_Application.md) class directly correspond to the [WPF Application Class](https://msdn.microsoft.com/en-us/library/system.windows.application(v=vs.110).aspx). Each application provides its own implementation inheriting from *Application* base class.
 
 ```
 namespace RssReader
@@ -151,7 +151,7 @@ App.xaml
 
 # Window
 
-The [Window](/App.ApplicationLauncher/_Window.md) class mimics the [WPF Window Class](https://msdn.microsoft.com/en-us/library/system.windows.window(v=vs.110).aspx). It is a container that shows its content inside an operating system window. Public properties like *Title*, *ResizeMode*, *WindowStyle*, *Width* and *Height* control the aspect of the native window.
+The [Window](../App.ApplicationLauncher/_Window.md) class mimics the [WPF Window Class](https://msdn.microsoft.com/en-us/library/system.windows.window(v=vs.110).aspx). It is a container that shows its content inside an operating system window. Public properties like *Title*, *ResizeMode*, *WindowStyle*, *Width* and *Height* control the aspect of the native window.
 
 MainWindow.xaml
 
@@ -220,7 +220,7 @@ MainWindow.xaml
 </Window>
 ```
 
-*Window* base class is normally extended to implement [code-behind](/Gui.Core/CodeBehindTutorial.md) functionality.
+*Window* base class is normally extended to implement [code-behind](CodeBehindTutorial.md) functionality.
 
 ```
 namespace RssReader
@@ -310,7 +310,7 @@ App.xaml
 </Application>
 ```
 
-![NoesisTheme.png](/NoesisTheme/png.md)
+![NoesisTheme.png](https://www.noesisengine.com/docs/NoesisTheme.png)
 
 # Command Line Switches
 
@@ -319,7 +319,7 @@ The following command line switches are supported by all applications created wi
 - **--render [D3D11|GL|Metal|...]**: overrides the default renderer.
 - **--vsync [0|1]**: disables vertical synchronization.
 - **--samples N**: enables multisample anti-aliasing (MSAA), by default it is off.
-- **--ppaa [0|1]**: enables [cheap antialiasing](/Gui.Core/AntialiasingTutorial.md#per-primitive-antialiasing) anti-aliasing (enabled by default).
+- **--ppaa [0|1]**: enables [cheap antialiasing](AntialiasingTutorial.md#per-primitive-antialiasing) anti-aliasing (enabled by default).
 - **--linear**: for switching to [linear rendering](http://www.kinematicsoup.com/news/2016/6/15/gamma-and-linear-space-what-they-are-how-they-differ), by default rendering happens in gamma space.
 - **--lcd [0|1]**: enables subpixel rendering compatible with LCD displays.
 - **--log\_binding**: to increase the verbosity of logging when using data binding.
@@ -334,8 +334,8 @@ The following shortcuts enable debugging functionality to inspect the performanc
 - **CTRL + W**: toggles wireframe mode when rendering triangles.
 - **CTRL + B**: each batch submitted to the GPU is given a unique solid color.
 - **CTRL + O**: displays pixel overdraw using blending layers. Different colors are used for each type of triangle: *green* for normal, *red* for opacities and *blue* for clipping masks.
-- **CTRL + P**: [per-primitive Antialiasing](/Gui.Core/AntialiasingTutorial.md#per-primitive-antialiasing) extrudes the contours of the geometry and smooths them. Useful when GPU multisampling is not enabled.
-- **CTRL + F**: display a [performance](/Gui.Core/Optimizing.md) stats panel.
+- **CTRL + P**: [per-primitive Antialiasing](AntialiasingTutorial.md#per-primitive-antialiasing) extrudes the contours of the geometry and smooths them. Useful when GPU multisampling is not enabled.
+- **CTRL + F**: display a [performance](Optimizing.md) stats panel.
 - **F10**: takes a [RenderDoc](https://renderdoc.org/) capture.
 
 # Shader Compiler
@@ -360,11 +360,11 @@ Some differences between vanilla HLSL and ShaderCompiler language:
 - Types *half4*, *half3*, *half2* and *half* are used for mediump precision.
 - Types *fixed4*, *fixed3*, *fixed2* and *fixed* are used for lowp precision.
 - Uniforms constants are enclosed in a global *uniforms* structure.
-- For [Brushes](/Gui.Core/_BrushShader.md), the header 'BrushHelpers.h' must be used.
-- For [Effects](/Gui.Core/_ShaderEffect.md), the header 'EffectsHelper.h' must be used.
-- The entry point is *main\_brush* for [Brushes](/Gui.Core/_BrushShader.md) and *main\_effect* for [Effects](/Gui.Core/_ShaderEffect.md).
+- For [Brushes](_BrushShader.md), the header 'BrushHelpers.h' must be used.
+- For [Effects](_ShaderEffect.md), the header 'EffectsHelper.h' must be used.
+- The entry point is *main\_brush* for [Brushes](_BrushShader.md) and *main\_effect* for [Effects](_ShaderEffect.md).
 
-The different between brushes and effects is described in this [Shader tutorial](/Gui.Core/ShadersTutorial.md).
+The different between brushes and effects is described in this [Shader tutorial](ShadersTutorial.md).
 
 The following code is an example of *Brush*:
 

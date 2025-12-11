@@ -17,7 +17,7 @@ Is the object that describes how a value changes over time.
 
 A single timeline can be applied to many properties, and there are many types of timelines that vary from simple linear interpolations to the composition of several timelines using non-linear functions like splines.
 
-The timeline hierarchy is the most important concept in the animation package, so a detailed explanation is here: [Timeline](/Gui.Animation/Timeline.md)
+The timeline hierarchy is the most important concept in the animation package, so a detailed explanation is here: [Timeline](Timeline.md)
 
 ## Clock
 
@@ -25,7 +25,7 @@ Every active timeline has al least one clock associated to it.
 
 The clock is the responsible of computing the current time, call the timeline to get the updated value, and assign the resulting value to the target property.
 
-A single clock can be applied to many properties in different objects. See more here [Clocks](/Gui.Animation/Clocks.md)
+A single clock can be applied to many properties in different objects. See more here [Clocks](Clocks.md)
 
 ## Time Manager
 
